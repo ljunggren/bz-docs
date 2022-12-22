@@ -1,21 +1,30 @@
 ---
 id: feature
-title: Why do test automation
+title: Defining a feature file
 ---
 
-import YouTubeEmbed from "@site/src/components/YouTubeEmbed";
+We start by defining a feature file that describes a simple Google search.
 
-# Why do test automation
+```gherkin
+Feature: Google search
+	When I go to the Google search page, and search for an item,
+	I expect to see some reference to that item in the result summary.
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
+Scenario: Search returns relevant result
+	Given that I have gone to the Google page
+	When I search "cats"
+	Then "cats" should be mentioned in the results
 
-Docusaurus has **much more to offer**!
+Scenario Outline: Search returns relevant result - data-driven
+	Given that I have gone to the Google page
+    When I search <searchTerm>
+	Then <searchTerm> should be mentioned in the results
 
-Have **5 more minutes**? Take a look at **[versioning](../tutorial-extras/manage-docs-versions.md)** and **[i18n](../tutorial-extras/translate-your-site.md)**.
+Examples
 
-Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/facebook/docusaurus/discussions/4610)
+|searchTerm|
+|cats      |
+|dogs      |
+```
 
-## What's next?
 
-<YouTubeEmbed embedId="YcCw6cS7Uy0">Docusaurus green</YouTubeEmbed>
-bananna

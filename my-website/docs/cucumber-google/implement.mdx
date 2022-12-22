@@ -1,21 +1,38 @@
 ---
 id: implement
-title: Why do test automation
+title: Implement the test steps
 ---
 
-import YouTubeEmbed from "@site/src/components/YouTubeEmbed";
+Now it's time to implement the test steps. Try to make the test step implementation as short and re-usable as possible. 
 
-# Why do test automation
+1. Go to the project root
+2. Click "Modules" ("code domain")
+3. Create Module ("Search")
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
+![](../images/create-module-search.png)
 
-Docusaurus has **much more to offer**!
+4. Create test ("Navigate to Google")
 
-Have **5 more minutes**? Take a look at **[versioning](../tutorial-extras/manage-docs-versions.md)** and **[i18n](../tutorial-extras/translate-your-site.md)**.
+![](../images/navigate-to-google.png)
 
-Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/facebook/docusaurus/discussions/4610)
+5. Make sure the URL is right. This test can be left blank.
 
-## What's next?
+![](../images/navigate-to-google-contents.png)
 
-<YouTubeEmbed embedId="YcCw6cS7Uy0">Docusaurus green</YouTubeEmbed>
-bananna
+6. Create test ("Search Google")
+
+![](../images/search-google.png)
+
+7. Record a test doing a simple Google search
+8. Make sure you are using `$parameter.searchTerm` as parameter to make it data driven
+9. Pick some good value to be the default search term ("Boozang")
+
+![](../images/search-google-contents.png)
+
+11. Create  validation test case for the "Then" condition
+
+![](../images/validate-search-results.png)
+
+12. Now you should have a search module with the following tests
+
+![](../images/search-module-contents.png)

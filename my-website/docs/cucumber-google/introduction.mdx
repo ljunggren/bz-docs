@@ -1,21 +1,17 @@
 ---
 id: introduction
-title: Why do test automation
+title: Introduction
 ---
 
-import YouTubeEmbed from "@site/src/components/YouTubeEmbed";
+Let's jump directly to a hands-on example, where we define an End-to-end search scenario. In this example we use Cucumber scenarios to drive tests in Boozang. This is not mandatory, but it has many advantages, and it's the recommended test approach in Boozang.
 
-# Why do test automation
+We need to do the following steps in this example
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
+1. Define a Feature file with two Scenarios, where one is data-driven (Scenario Outline)
+2. Import the Feature file to Boozang
+3. Implement tests for each Sceanario test step
+4. Link each test step
+5. Dry-run the test
+6. Run the test on a CI server
 
-Docusaurus has **much more to offer**!
-
-Have **5 more minutes**? Take a look at **[versioning](../tutorial-extras/manage-docs-versions.md)** and **[i18n](../tutorial-extras/translate-your-site.md)**.
-
-Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/facebook/docusaurus/discussions/4610)
-
-## What's next?
-
-<YouTubeEmbed embedId="YcCw6cS7Uy0">Docusaurus green</YouTubeEmbed>
-bananna
+*Note: If you want to do the same test in a non-Cucumber way, simply define a test suite and link the tests together, or merge the actions to a single test.*

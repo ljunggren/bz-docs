@@ -1,3 +1,4 @@
+# Before we start
 
 ![](../images/side-by-side.png)
 

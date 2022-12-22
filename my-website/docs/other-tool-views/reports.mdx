@@ -1,0 +1,22 @@
+---
+id: reports
+title: Reports
+---
+
+<!-- ![report](../images/report.png) -->
+
+###### The report view
+
+The main report view contains the report from the test that was run in the browser last. The report view reflects only local runs of the test and is not in any way a consolidated view of reports (this consolidation can be done in a data warehouse or CI server). 
+
+###### The view link
+
+To find tests quickly, click the View link to go to the test. This is especially helpful when the testing report has been sent via email. 
+
+###### The diff link
+
+If an assertion fails that has content, such as Validate -> innerText, you can use the diff link to see the difference in content between the reference and resulted response. For dynamic data, hover over the name to see the values that were used. 
+
+###### Performance warnings
+
+To highlight slow actions or tests, this can be done under Environment -> Advanced -> Performance Reminder. Here you can adjust settings that can trigger slow tests to trigger warnings or even fail tests. 

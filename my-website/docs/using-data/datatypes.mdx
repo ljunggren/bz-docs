@@ -1,0 +1,44 @@
+---
+id: datatypes
+title: Data types
+---
+
+<!-- ![data](../images/data.png) -->
+
+Boozang supports several different data types: Property, Object, Array, CSV, File, Request data and JS (Javascript function). 
+
+###### Properties
+
+The property is a simple name-value pair and can be referenced directly. For instance, a property username = boozang added on test-level, can be referenced `{{$test.username}} (=boozang)`. 
+
+*Tip: You can verify this in execution by printing it to your application console window by creating the following Javascript action` $TW.console.log($test.username)`.*
+
+###### Objects
+
+Objects in Boozang are the one-level sub-set of JSON objects and are ideal for grouping related data together. For instance, create the Object loginInfo and add username = boozang and password = p@ssw0rd. The data can be referenced by typing `{{$test.loginInfo.username}}` and `{{$test.loginInfo.password}}`.
+
+###### Array
+
+The arrays are great for storing a list of items. 
+
+Tip: Arrays can be used to drive data loops
+
+###### CSV data
+
+CSV data allows you to handle a large collection of Objects and copy data from software such as Excel. Create a name for the collection, such as inventory items. Start by adding the field names as headings separated by tab spaces. When you are done defining the data, hit Enter and fill out the values tab-separated. Pro-tip: You can copy a whole table from Excel by using copy-paste. 
+
+*Tip: CSV data can be used to drive data loops.* 
+
+###### File data
+
+File data is used to test file upload and similar user interactions. Try and use small sample files as large files tend to weight down on the test client, consuming memory or slowing down performance. It is also recommended to fetch files from an external source (see Request Data). 
+
+###### Request Data
+
+It is also possible to fetch data from an external source. Simply type in a URL and choose CSV, JSON or File. The CSV file should be comma-separated (`field1name1, fieldname2, \n value1, value2`) and not tab-separated. 
+
+###### JS (Javascript functions
+
+It is also possible to specify Javascript functions directly. The functions can be in two forms: Date.now() or fining the data hit Enter and fill out the values tab-separated. 
+
+*Tip: You can copy a whole table from Excel by using copy-paste.* 

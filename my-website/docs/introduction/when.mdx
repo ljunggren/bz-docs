@@ -1,21 +1,17 @@
----
-id: when
-title: Why do test automation
----
+# When to use Boozang
 
-import YouTubeEmbed from "@site/src/components/YouTubeEmbed";
+## Good fit vs bad fit
 
-# Why do test automation
+Boozang is great when testing anything that runs in the web browser. This includes any modern SaaS application, no matter how complex. It’s great when you need to automate testing of flows that can be determined by a machine, that doesn't exhibit random behaviour. 
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
+A rule of thumb is that the more you feel the need to run regression testing, the more value you will find in the Boozang implementation. This means, if you release business-critical software often, you will find great value in Boozang. If you release rarely and bugs don't have a significant impact, maybe not so much. 
 
-Docusaurus has **much more to offer**!
+A less than ideal fit is also SaaS applications that have a graphical interface that needs a human to make a judgment call. These flows can never be fully automated, and the value of automation can be limited. 
 
-Have **5 more minutes**? Take a look at **[versioning](../tutorial-extras/manage-docs-versions.md)** and **[i18n](../tutorial-extras/translate-your-site.md)**.
+## A note on supported technology
 
-Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/facebook/docusaurus/discussions/4610)
+Boozang supports any application that runs in the web browser. Boozang also supports hybrid approaches, such as Cordova, Ionic, and Xamarin.
 
-## What's next?
+Since March 2019, Boozang also fully supports Shadow DOM / Web Components. 
 
-<YouTubeEmbed embedId="YcCw6cS7Uy0">Docusaurus green</YouTubeEmbed>
-bananna
+Boozang does not support any testing of native IOS applications, Android applications, or any desktop-based applications. 

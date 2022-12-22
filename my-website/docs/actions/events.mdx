@@ -1,0 +1,53 @@
+---
+id: events
+title: Events
+---
+
+There are three types of events supported in Boozang: Set, Click, Keypress, and Change. These are fairly straightforward, but not obvious which event will be captured during a recording. See list of events that will be generated for different recording scenarios below.  
+
+- Set events: Generated when filling forms and using drop-downs, even customized drop-downs. Set is an "intelligent" event, and is comprised of a combination of browser events. This allows for single-action recording of customized drop-downs and file dialogs, and is part of the reason Boozang recording can be so powerful. 
+- Click events: Generated when clicking buttons or page elements. Not generated when clicking inside a form input, drop-down or on a checkbox. 
+- Change events: Generated when filling inputs in forms and clicking mouse, tab, or enter
+- Key events: Generated when pressing keys in special circumstances. 
+
+This might seem contra-intuitive, but guarantees that form fills are recorded as stable as possible. Usually, regardless of user habits (using mouse or tab key), forms should be recorded the same way. 
+
+###### Set events
+
+The set event is generated in the recording by merging events in the browser acting on the same component. As you can see in the form fill test below, the click events and enter text events have been merged to a single "Set" event. 
+
+There are some cases where Boozang doesn't manage to create the set event, like in the last mouse click. If this shouldn't be a click, but rather a set (input box, checkbox, or drop-down), it can be switched to a set event afterwards. 
+
+<!-- ![event-click](../images/event-click.png) -->
+
+###### Mouse click events
+
+This event corresponds to a mouse action, meaning a click or a movement of the mouse. By default, Boozang captures on clicks in the recording (otherwise the recording becomes very noisy catching too many events). The exception to this is when holding the mouse button down, to emulate drag and drop. In this case, Boozang registers a particular drag-and-drop event.  You can add mouse events manually to emulate mouse-over events and to create specific mouse conditions. 
+
+*Advanced*
+
+Here you can add additional validations as a post-condition for an action. 
+
+###### Change events
+
+<!-- ![event-change](../images/event-change.png) -->
+
+The change event is used to record state change in forms and checkboxes. When filling a form field, the data will be shown in brackets, like
+
+`(John Doe)` or `($parameter.name)` or `($test.name)`
+
+If a checkbox is clicked, the `value` attribute will be shown in the brackets. In the below example
+
+```html
+<input type="checkbox" name="vehicle2" value="Car"> 
+```
+
+the action will show `(car)` when being checked and blank string when being unchecked.
+
+###### Key events
+
+<!-- ![event-key](../images/event-key.png) -->
+
+This event corresponds to a keypress. This is captured in the recording for every time a key is pressed. The default recorded keypress is `Group` which will generate the following Javascript events: `keydown`, `keypress` and `keyup`, in that order. You can change the drop-down to generate a specific event only. 
+
+You can also generate a special key or char code by clicking the field and clicking the keyboard button. 
