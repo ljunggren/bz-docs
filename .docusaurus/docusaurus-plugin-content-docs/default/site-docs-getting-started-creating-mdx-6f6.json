@@ -1,0 +1,26 @@
+{
+  "unversionedId": "getting-started/creating",
+  "id": "getting-started/creating",
+  "title": "Creating your project",
+  "description": "As soon as you have signed up, you can go ahead and create your first project in the Cloud dashboard, by clicking the button: \"Create Project\". There are a lot of options available here, but the only thing required is the project name.",
+  "source": "@site/docs/getting-started/creating.mdx",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/creating",
+  "permalink": "/docs/getting-started/creating",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/creating.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "creating",
+    "title": "Creating your project"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Environments",
+    "permalink": "/docs/getting-started/environments"
+  },
+  "next": {
+    "title": "Modules and tests",
+    "permalink": "/docs/getting-started/modules-and-tests"
+  }
+}

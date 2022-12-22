@@ -1,0 +1,17 @@
+{
+  "unversionedId": "tool-views/action-list",
+  "id": "tool-views/action-list",
+  "title": "The action list",
+  "description": "example image",
+  "source": "@site/docs/tool-views/action-list.mdx",
+  "sourceDirName": "tool-views",
+  "slug": "/tool-views/action-list",
+  "permalink": "/docs/tool-views/action-list",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tool-views/action-list.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "action-list",
+    "title": "The action list"
+  }
+}

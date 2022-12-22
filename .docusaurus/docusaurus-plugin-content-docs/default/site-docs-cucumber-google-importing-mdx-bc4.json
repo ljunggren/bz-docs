@@ -1,0 +1,26 @@
+{
+  "unversionedId": "cucumber-google/importing",
+  "id": "cucumber-google/importing",
+  "title": "Importing the file to Boozang",
+  "description": "It's now time to import the file to Boozang. You can import the feature file contents using copy paste or import the feature file via the file dialog. You can also use an external system, such as GitLab, GitHub, or Xray to import the feature files directly.",
+  "source": "@site/docs/cucumber-google/importing.mdx",
+  "sourceDirName": "cucumber-google",
+  "slug": "/cucumber-google/importing",
+  "permalink": "/docs/cucumber-google/importing",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/cucumber-google/importing.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "importing",
+    "title": "Importing the file to Boozang"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Defining a feature file",
+    "permalink": "/docs/cucumber-google/feature"
+  },
+  "next": {
+    "title": "Implement the test steps",
+    "permalink": "/docs/cucumber-google/implement"
+  }
+}

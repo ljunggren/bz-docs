@@ -1,0 +1,14 @@
+{
+  "unversionedId": "element-selectors/smart-selectors",
+  "id": "element-selectors/smart-selectors",
+  "title": "smart-selectors",
+  "description": "Element path operation",
+  "source": "@site/docs/element-selectors/smart-selectors.mdx",
+  "sourceDirName": "element-selectors",
+  "slug": "/element-selectors/smart-selectors",
+  "permalink": "/docs/element-selectors/smart-selectors",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/element-selectors/smart-selectors.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

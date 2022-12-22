@@ -1,0 +1,26 @@
+{
+  "unversionedId": "settings/content-policy",
+  "id": "settings/content-policy",
+  "title": "Content Policy",
+  "description": "The content policy contains several advanced features. Nevertheless, spending some time here to fine-tune the project can increase the stability of tests and also speed up test creation significantly.",
+  "source": "@site/docs/settings/content-policy.mdx",
+  "sourceDirName": "settings",
+  "slug": "/settings/content-policy",
+  "permalink": "/docs/settings/content-policy",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/settings/content-policy.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "content-policy",
+    "title": "Content Policy"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Environments",
+    "permalink": "/docs/settings/environments"
+  },
+  "next": {
+    "title": "Reports",
+    "permalink": "/docs/other-tool-views/reports"
+  }
+}

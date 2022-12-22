@@ -1,0 +1,26 @@
+{
+  "unversionedId": "actions/action-types",
+  "id": "actions/action-types",
+  "title": "Action types",
+  "description": "Actions are the steps that comprise a test case. This could be a mouse or keyword event, simulating a user action, or a validation (assertion) or even Javascript. There are also AI actions supported which are more elaborate actions such as \"Visit Links\" or \"Form Fill\".",
+  "source": "@site/docs/actions/action-types.mdx",
+  "sourceDirName": "actions",
+  "slug": "/actions/action-types",
+  "permalink": "/docs/actions/action-types",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/actions/action-types.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "action-types",
+    "title": "Action types"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Repairing an action",
+    "permalink": "/docs/element-selectors/repairing"
+  },
+  "next": {
+    "title": "Events",
+    "permalink": "/docs/actions/events"
+  }
+}

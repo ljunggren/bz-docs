@@ -1,0 +1,26 @@
+{
+  "unversionedId": "cucumber-google/linking",
+  "id": "cucumber-google/linking",
+  "title": "Linking the test",
+  "description": "Now it's time to link all the tests. Make sure all the test steps in every scenario goes from \"red\" to \"black\".",
+  "source": "@site/docs/cucumber-google/linking.mdx",
+  "sourceDirName": "cucumber-google",
+  "slug": "/cucumber-google/linking",
+  "permalink": "/docs/cucumber-google/linking",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/cucumber-google/linking.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "linking",
+    "title": "Linking the test"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Implement the test steps",
+    "permalink": "/docs/cucumber-google/implement"
+  },
+  "next": {
+    "title": "Dry-run the test",
+    "permalink": "/docs/cucumber-google/dry-run"
+  }
+}

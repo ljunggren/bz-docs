@@ -1,0 +1,26 @@
+{
+  "unversionedId": "introduction/onboarding",
+  "id": "introduction/onboarding",
+  "title": "Onboarding",
+  "description": "Docusaurus green",
+  "source": "@site/docs/introduction/onboarding.mdx",
+  "sourceDirName": "introduction",
+  "slug": "/introduction/onboarding",
+  "permalink": "/docs/introduction/onboarding",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/introduction/onboarding.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "onboarding",
+    "title": "Onboarding"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Before we start",
+    "permalink": "/docs/introduction/before"
+  },
+  "next": {
+    "title": "At a glance",
+    "permalink": "/docs/introduction/glance"
+  }
+}

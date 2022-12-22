@@ -1,0 +1,26 @@
+{
+  "unversionedId": "cucumber-google/implement",
+  "id": "cucumber-google/implement",
+  "title": "Implement the test steps",
+  "description": "Docusaurus green",
+  "source": "@site/docs/cucumber-google/implement.mdx",
+  "sourceDirName": "cucumber-google",
+  "slug": "/cucumber-google/implement",
+  "permalink": "/docs/cucumber-google/implement",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/cucumber-google/implement.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "implement",
+    "title": "Implement the test steps"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Importing the file to Boozang",
+    "permalink": "/docs/cucumber-google/importing"
+  },
+  "next": {
+    "title": "Linking the test",
+    "permalink": "/docs/cucumber-google/linking"
+  }
+}

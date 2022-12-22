@@ -1,0 +1,26 @@
+{
+  "unversionedId": "getting-started/signing-up",
+  "id": "getting-started/signing-up",
+  "title": "Signing up",
+  "description": "Docusaurus green",
+  "source": "@site/docs/getting-started/signing-up.mdx",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/signing-up",
+  "permalink": "/docs/getting-started/signing-up",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/signing-up.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "signing-up",
+    "title": "Signing up"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "When to use Boozang",
+    "permalink": "/docs/introduction/when"
+  },
+  "next": {
+    "title": "Environments",
+    "permalink": "/docs/getting-started/environments"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "actions/refresh",
+  "id": "actions/refresh",
+  "title": "Refresh window / Load page",
+  "description": "The refresh window/load page action is used to force a reload of the browser window. This can also be used to force loading a new page (meaning going to a new page without having to navigate to it). There is also an option to Clear Cookies and Clear Localstorage.",
+  "source": "@site/docs/actions/refresh.mdx",
+  "sourceDirName": "actions",
+  "slug": "/actions/refresh",
+  "permalink": "/docs/actions/refresh",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/actions/refresh.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "refresh",
+    "title": "Refresh window / Load page"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Comment (annotations)",
+    "permalink": "/docs/actions/comment"
+  },
+  "next": {
+    "title": "Visit links",
+    "permalink": "/docs/actions/visit"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "tool-views/record",
+  "id": "tool-views/record",
+  "title": "Record / Play",
+  "description": "play-modes",
+  "source": "@site/docs/tool-views/record.mdx",
+  "sourceDirName": "tool-views",
+  "slug": "/tool-views/record",
+  "permalink": "/docs/tool-views/record",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tool-views/record.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "record",
+    "title": "Record / Play"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "The toolbar",
+    "permalink": "/docs/tool-views/toolbar"
+  },
+  "next": {
+    "title": "Introduction",
+    "permalink": "/docs/element-selectors/introduction"
+  }
+}

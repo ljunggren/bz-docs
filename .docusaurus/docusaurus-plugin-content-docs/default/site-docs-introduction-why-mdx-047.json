@@ -1,0 +1,26 @@
+{
+  "unversionedId": "introduction/why",
+  "id": "introduction/why",
+  "title": "Why do test automation",
+  "description": "Docusaurus green",
+  "source": "@site/docs/introduction/why.mdx",
+  "sourceDirName": "introduction",
+  "slug": "/introduction/why",
+  "permalink": "/docs/introduction/why",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/introduction/why.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "why",
+    "title": "Why do test automation"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "At a glance",
+    "permalink": "/docs/introduction/glance"
+  },
+  "next": {
+    "title": "Why use Boozang",
+    "permalink": "/docs/introduction/why-boozang"
+  }
+}

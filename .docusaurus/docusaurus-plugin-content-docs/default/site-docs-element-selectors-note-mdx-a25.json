@@ -1,0 +1,26 @@
+{
+  "unversionedId": "element-selectors/note",
+  "id": "element-selectors/note",
+  "title": "A note on Element Selectors",
+  "description": "Our element selector policy is based on natural language. This means Boozang primarily uses what an end-user sees, rather than hidden element attributes, such as class or id.",
+  "source": "@site/docs/element-selectors/note.mdx",
+  "sourceDirName": "element-selectors",
+  "slug": "/element-selectors/note",
+  "permalink": "/docs/element-selectors/note",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/element-selectors/note.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "note",
+    "title": "A note on Element Selectors"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/element-selectors/introduction"
+  },
+  "next": {
+    "title": "Selecting an element",
+    "permalink": "/docs/element-selectors/selecting"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "unversionedId": "introduction/before",
+  "id": "introduction/before",
+  "title": "Before we start",
+  "description": "This is the official documentation for the Boozang test automation tool. It can be read as a book or used as a reference. Use the left navigation bar to navigate to the topic of interest. This documentation is available in English and Chinese. Toggle the language using the flag icon in the header.",
+  "source": "@site/docs/introduction/before.md",
+  "sourceDirName": "introduction",
+  "slug": "/introduction/before",
+  "permalink": "/docs/introduction/before",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/introduction/before.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "next": {
+    "title": "Onboarding",
+    "permalink": "/docs/introduction/onboarding"
+  }
+}

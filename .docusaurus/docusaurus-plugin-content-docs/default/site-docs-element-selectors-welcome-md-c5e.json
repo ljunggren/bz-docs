@@ -1,0 +1,14 @@
+{
+  "unversionedId": "element-selectors/welcome",
+  "id": "element-selectors/welcome",
+  "title": "Welcome",
+  "description": "This is the official documentation for the Boozang test automation tool. It can be read as a book or used as a reference. Use the left navigation bar to navigate to the topic of interest. This documentation is available in English and Chinese. Toggle the language using the flag icon in the header.",
+  "source": "@site/docs/element-selectors/welcome.md",
+  "sourceDirName": "element-selectors",
+  "slug": "/element-selectors/welcome",
+  "permalink": "/docs/element-selectors/welcome",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/element-selectors/welcome.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

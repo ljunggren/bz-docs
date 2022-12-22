@@ -1,0 +1,2160 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "versionLabel": "Next",
+          "versionPath": "/docs",
+          "tagsPath": "/docs/tags",
+          "versionEditUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs",
+          "versionEditUrlLocalized": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/i18n/en/docusaurus-plugin-content-docs/current",
+          "versionBanner": null,
+          "versionBadge": false,
+          "versionClassName": "docs-version-current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/Users/matsljunggren/Workspace/bz-docs/sidebars.js",
+          "contentPath": "/Users/matsljunggren/Workspace/bz-docs/docs",
+          "contentPathLocalized": "/Users/matsljunggren/Workspace/bz-docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "docs": [
+            {
+              "unversionedId": "actions/action-types",
+              "id": "actions/action-types",
+              "title": "Action types",
+              "description": "Actions are the steps that comprise a test case. This could be a mouse or keyword event, simulating a user action, or a validation (assertion) or even Javascript. There are also AI actions supported which are more elaborate actions such as \"Visit Links\" or \"Form Fill\".",
+              "source": "@site/docs/actions/action-types.mdx",
+              "sourceDirName": "actions",
+              "slug": "/actions/action-types",
+              "permalink": "/docs/actions/action-types",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/actions/action-types.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "action-types",
+                "title": "Action types"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Repairing an action",
+                "permalink": "/docs/element-selectors/repairing"
+              },
+              "next": {
+                "title": "Events",
+                "permalink": "/docs/actions/events"
+              }
+            },
+            {
+              "unversionedId": "actions/comment",
+              "id": "actions/comment",
+              "title": "Comment (annotations)",
+              "description": "Why use comment",
+              "source": "@site/docs/actions/comment.mdx",
+              "sourceDirName": "actions",
+              "slug": "/actions/comment",
+              "permalink": "/docs/actions/comment",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/actions/comment.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "comment",
+                "title": "Comment (annotations)"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Javascript",
+                "permalink": "/docs/actions/javascript"
+              },
+              "next": {
+                "title": "Refresh window / Load page",
+                "permalink": "/docs/actions/refresh"
+              }
+            },
+            {
+              "unversionedId": "actions/events",
+              "id": "actions/events",
+              "title": "Events",
+              "description": "There are three types of events supported in Boozang: Set, Click, Keypress, and Change. These are fairly straightforward, but not obvious which event will be captured during a recording. See list of events that will be generated for different recording scenarios below.",
+              "source": "@site/docs/actions/events.mdx",
+              "sourceDirName": "actions",
+              "slug": "/actions/events",
+              "permalink": "/docs/actions/events",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/actions/events.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "events",
+                "title": "Events"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Action types",
+                "permalink": "/docs/actions/action-types"
+              },
+              "next": {
+                "title": "Validations (assertions)",
+                "permalink": "/docs/actions/validations"
+              }
+            },
+            {
+              "unversionedId": "actions/extract",
+              "id": "actions/extract",
+              "title": "Extract data",
+              "description": "This is used to extract data from the application window and to store in a data variable.",
+              "source": "@site/docs/actions/extract.mdx",
+              "sourceDirName": "actions",
+              "slug": "/actions/extract",
+              "permalink": "/docs/actions/extract",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/actions/extract.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "extract",
+                "title": "Extract data"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Validations (assertions)",
+                "permalink": "/docs/actions/validations"
+              },
+              "next": {
+                "title": "Javascript",
+                "permalink": "/docs/actions/javascript"
+              }
+            },
+            {
+              "unversionedId": "actions/javascript",
+              "id": "actions/javascript",
+              "title": "Javascript",
+              "description": "The Javascript action",
+              "source": "@site/docs/actions/javascript.mdx",
+              "sourceDirName": "actions",
+              "slug": "/actions/javascript",
+              "permalink": "/docs/actions/javascript",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/actions/javascript.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "javascript",
+                "title": "Javascript"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Extract data",
+                "permalink": "/docs/actions/extract"
+              },
+              "next": {
+                "title": "Comment (annotations)",
+                "permalink": "/docs/actions/comment"
+              }
+            },
+            {
+              "unversionedId": "actions/refresh",
+              "id": "actions/refresh",
+              "title": "Refresh window / Load page",
+              "description": "The refresh window/load page action is used to force a reload of the browser window. This can also be used to force loading a new page (meaning going to a new page without having to navigate to it). There is also an option to Clear Cookies and Clear Localstorage.",
+              "source": "@site/docs/actions/refresh.mdx",
+              "sourceDirName": "actions",
+              "slug": "/actions/refresh",
+              "permalink": "/docs/actions/refresh",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/actions/refresh.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "refresh",
+                "title": "Refresh window / Load page"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Comment (annotations)",
+                "permalink": "/docs/actions/comment"
+              },
+              "next": {
+                "title": "Visit links",
+                "permalink": "/docs/actions/visit"
+              }
+            },
+            {
+              "unversionedId": "actions/validations",
+              "id": "actions/validations",
+              "title": "Validations (assertions)",
+              "description": "Creating a simple validation",
+              "source": "@site/docs/actions/validations.mdx",
+              "sourceDirName": "actions",
+              "slug": "/actions/validations",
+              "permalink": "/docs/actions/validations",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/actions/validations.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "validations",
+                "title": "Validations (assertions)"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Events",
+                "permalink": "/docs/actions/events"
+              },
+              "next": {
+                "title": "Extract data",
+                "permalink": "/docs/actions/extract"
+              }
+            },
+            {
+              "unversionedId": "actions/visit",
+              "id": "actions/visit",
+              "title": "Visit links",
+              "description": "The visit links action is used to automatically crawl a set of pages based on a navigation bar. To crawl a full navigation panel, such as side navigation or hamburger menu, select this in the Panel option. Target element defaults to \"A\" tags but can be changed using the DOM picker in case the navigation contains a different element than regular links. It's possible to execute a script before each click, but this can normally be left blank.",
+              "source": "@site/docs/actions/visit.mdx",
+              "sourceDirName": "actions",
+              "slug": "/actions/visit",
+              "permalink": "/docs/actions/visit",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/actions/visit.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "visit",
+                "title": "Visit links"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Refresh window / Load page",
+                "permalink": "/docs/actions/refresh"
+              },
+              "next": {
+                "title": "Introduction",
+                "permalink": "/docs/using-data/introduction"
+              }
+            },
+            {
+              "unversionedId": "cucumber-google/dry-run",
+              "id": "cucumber-google/dry-run",
+              "title": "Dry-run the test",
+              "description": "Now it's time to dry-run the test. Press play and make sure the test executes successfully.",
+              "source": "@site/docs/cucumber-google/dry-run.mdx",
+              "sourceDirName": "cucumber-google",
+              "slug": "/cucumber-google/dry-run",
+              "permalink": "/docs/cucumber-google/dry-run",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/cucumber-google/dry-run.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "dry-run",
+                "title": "Dry-run the test"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Linking the test",
+                "permalink": "/docs/cucumber-google/linking"
+              },
+              "next": {
+                "title": "Overview of the tool",
+                "permalink": "/docs/tool-views/overview"
+              }
+            },
+            {
+              "unversionedId": "cucumber-google/feature",
+              "id": "cucumber-google/feature",
+              "title": "Defining a feature file",
+              "description": "We start by defining a feature file that describes a simple Google search.",
+              "source": "@site/docs/cucumber-google/feature.mdx",
+              "sourceDirName": "cucumber-google",
+              "slug": "/cucumber-google/feature",
+              "permalink": "/docs/cucumber-google/feature",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/cucumber-google/feature.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "feature",
+                "title": "Defining a feature file"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/cucumber-google/introduction"
+              },
+              "next": {
+                "title": "Importing the file to Boozang",
+                "permalink": "/docs/cucumber-google/importing"
+              }
+            },
+            {
+              "unversionedId": "cucumber-google/implement",
+              "id": "cucumber-google/implement",
+              "title": "Implement the test steps",
+              "description": "Docusaurus green",
+              "source": "@site/docs/cucumber-google/implement.mdx",
+              "sourceDirName": "cucumber-google",
+              "slug": "/cucumber-google/implement",
+              "permalink": "/docs/cucumber-google/implement",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/cucumber-google/implement.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "implement",
+                "title": "Implement the test steps"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Importing the file to Boozang",
+                "permalink": "/docs/cucumber-google/importing"
+              },
+              "next": {
+                "title": "Linking the test",
+                "permalink": "/docs/cucumber-google/linking"
+              }
+            },
+            {
+              "unversionedId": "cucumber-google/importing",
+              "id": "cucumber-google/importing",
+              "title": "Importing the file to Boozang",
+              "description": "It's now time to import the file to Boozang. You can import the feature file contents using copy paste or import the feature file via the file dialog. You can also use an external system, such as GitLab, GitHub, or Xray to import the feature files directly.",
+              "source": "@site/docs/cucumber-google/importing.mdx",
+              "sourceDirName": "cucumber-google",
+              "slug": "/cucumber-google/importing",
+              "permalink": "/docs/cucumber-google/importing",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/cucumber-google/importing.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "importing",
+                "title": "Importing the file to Boozang"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Defining a feature file",
+                "permalink": "/docs/cucumber-google/feature"
+              },
+              "next": {
+                "title": "Implement the test steps",
+                "permalink": "/docs/cucumber-google/implement"
+              }
+            },
+            {
+              "unversionedId": "cucumber-google/introduction",
+              "id": "cucumber-google/introduction",
+              "title": "Introduction",
+              "description": "Docusaurus green",
+              "source": "@site/docs/cucumber-google/introduction.mdx",
+              "sourceDirName": "cucumber-google",
+              "slug": "/cucumber-google/introduction",
+              "permalink": "/docs/cucumber-google/introduction",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/cucumber-google/introduction.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "introduction",
+                "title": "Introduction"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "In-tool help",
+                "permalink": "/docs/getting-started/in-tool-help"
+              },
+              "next": {
+                "title": "Defining a feature file",
+                "permalink": "/docs/cucumber-google/feature"
+              }
+            },
+            {
+              "unversionedId": "cucumber-google/linking",
+              "id": "cucumber-google/linking",
+              "title": "Linking the test",
+              "description": "Now it's time to link all the tests. Make sure all the test steps in every scenario goes from \"red\" to \"black\".",
+              "source": "@site/docs/cucumber-google/linking.mdx",
+              "sourceDirName": "cucumber-google",
+              "slug": "/cucumber-google/linking",
+              "permalink": "/docs/cucumber-google/linking",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/cucumber-google/linking.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "linking",
+                "title": "Linking the test"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Implement the test steps",
+                "permalink": "/docs/cucumber-google/implement"
+              },
+              "next": {
+                "title": "Dry-run the test",
+                "permalink": "/docs/cucumber-google/dry-run"
+              }
+            },
+            {
+              "unversionedId": "element-selectors/dom-picker",
+              "id": "element-selectors/dom-picker",
+              "title": "DOM picker",
+              "description": "Docusaurus green",
+              "source": "@site/docs/element-selectors/dom-picker.mdx",
+              "sourceDirName": "element-selectors",
+              "slug": "/element-selectors/dom-picker",
+              "permalink": "/docs/element-selectors/dom-picker",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/element-selectors/dom-picker.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "dom-picker",
+                "title": "DOM picker"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Selecting an element",
+                "permalink": "/docs/element-selectors/selecting"
+              },
+              "next": {
+                "title": "Element Policy",
+                "permalink": "/docs/element-selectors/element-policy"
+              }
+            },
+            {
+              "unversionedId": "element-selectors/element-policy",
+              "id": "element-selectors/element-policy",
+              "title": "Element Policy",
+              "description": "Under the kebab menu, you can also access the element policy.",
+              "source": "@site/docs/element-selectors/element-policy.mdx",
+              "sourceDirName": "element-selectors",
+              "slug": "/element-selectors/element-policy",
+              "permalink": "/docs/element-selectors/element-policy",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/element-selectors/element-policy.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "element-policy",
+                "title": "Element Policy"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "DOM picker",
+                "permalink": "/docs/element-selectors/dom-picker"
+              },
+              "next": {
+                "title": "Repairing an action",
+                "permalink": "/docs/element-selectors/repairing"
+              }
+            },
+            {
+              "unversionedId": "element-selectors/introduction",
+              "id": "element-selectors/introduction",
+              "title": "Introduction",
+              "description": "The element selection policy has undergone changes related to our 6.x release (April 2021). I recommend checking out these updates in on our blog//boozang.com/element-selectors/",
+              "source": "@site/docs/element-selectors/introduction.mdx",
+              "sourceDirName": "element-selectors",
+              "slug": "/element-selectors/introduction",
+              "permalink": "/docs/element-selectors/introduction",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/element-selectors/introduction.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "introduction",
+                "title": "Introduction"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Record / Play",
+                "permalink": "/docs/tool-views/record"
+              },
+              "next": {
+                "title": "A note on Element Selectors",
+                "permalink": "/docs/element-selectors/note"
+              }
+            },
+            {
+              "unversionedId": "element-selectors/note",
+              "id": "element-selectors/note",
+              "title": "A note on Element Selectors",
+              "description": "Our element selector policy is based on natural language. This means Boozang primarily uses what an end-user sees, rather than hidden element attributes, such as class or id.",
+              "source": "@site/docs/element-selectors/note.mdx",
+              "sourceDirName": "element-selectors",
+              "slug": "/element-selectors/note",
+              "permalink": "/docs/element-selectors/note",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/element-selectors/note.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "note",
+                "title": "A note on Element Selectors"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/element-selectors/introduction"
+              },
+              "next": {
+                "title": "Selecting an element",
+                "permalink": "/docs/element-selectors/selecting"
+              }
+            },
+            {
+              "unversionedId": "element-selectors/repairing",
+              "id": "element-selectors/repairing",
+              "title": "Repairing an action",
+              "description": "example image",
+              "source": "@site/docs/element-selectors/repairing.mdx",
+              "sourceDirName": "element-selectors",
+              "slug": "/element-selectors/repairing",
+              "permalink": "/docs/element-selectors/repairing",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/element-selectors/repairing.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "repairing",
+                "title": "Repairing an action"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Element Policy",
+                "permalink": "/docs/element-selectors/element-policy"
+              },
+              "next": {
+                "title": "Action types",
+                "permalink": "/docs/actions/action-types"
+              }
+            },
+            {
+              "unversionedId": "element-selectors/selecting",
+              "id": "element-selectors/selecting",
+              "title": "Selecting an element",
+              "description": "Boozang uses custom element selectors based on what a user will see rather than classes, ids or other attributes. This means that to use class or id, this usually needs to be explicitly defined. By avoiding using classes and ids as primary identifiers, Boozang tests become very stable to code changes and can automate applications with dynamic ids and classes freely.",
+              "source": "@site/docs/element-selectors/selecting.mdx",
+              "sourceDirName": "element-selectors",
+              "slug": "/element-selectors/selecting",
+              "permalink": "/docs/element-selectors/selecting",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/element-selectors/selecting.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "selecting",
+                "title": "Selecting an element"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "A note on Element Selectors",
+                "permalink": "/docs/element-selectors/note"
+              },
+              "next": {
+                "title": "DOM picker",
+                "permalink": "/docs/element-selectors/dom-picker"
+              }
+            },
+            {
+              "unversionedId": "element-selectors/smart-selectors",
+              "id": "element-selectors/smart-selectors",
+              "title": "smart-selectors",
+              "description": "Element path operation",
+              "source": "@site/docs/element-selectors/smart-selectors.mdx",
+              "sourceDirName": "element-selectors",
+              "slug": "/element-selectors/smart-selectors",
+              "permalink": "/docs/element-selectors/smart-selectors",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/element-selectors/smart-selectors.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "element-selectors/welcome",
+              "id": "element-selectors/welcome",
+              "title": "Welcome",
+              "description": "This is the official documentation for the Boozang test automation tool. It can be read as a book or used as a reference. Use the left navigation bar to navigate to the topic of interest. This documentation is available in English and Chinese. Toggle the language using the flag icon in the header.",
+              "source": "@site/docs/element-selectors/welcome.md",
+              "sourceDirName": "element-selectors",
+              "slug": "/element-selectors/welcome",
+              "permalink": "/docs/element-selectors/welcome",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/element-selectors/welcome.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "getting-started/creating",
+              "id": "getting-started/creating",
+              "title": "Creating your project",
+              "description": "As soon as you have signed up, you can go ahead and create your first project in the Cloud dashboard, by clicking the button: \"Create Project\". There are a lot of options available here, but the only thing required is the project name.",
+              "source": "@site/docs/getting-started/creating.mdx",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/creating",
+              "permalink": "/docs/getting-started/creating",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/creating.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "creating",
+                "title": "Creating your project"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Environments",
+                "permalink": "/docs/getting-started/environments"
+              },
+              "next": {
+                "title": "Modules and tests",
+                "permalink": "/docs/getting-started/modules-and-tests"
+              }
+            },
+            {
+              "unversionedId": "getting-started/environments",
+              "id": "getting-started/environments",
+              "title": "Environments",
+              "description": "example image",
+              "source": "@site/docs/getting-started/environments.mdx",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/environments",
+              "permalink": "/docs/getting-started/environments",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/environments.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "environments",
+                "title": "Environments"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Signing up",
+                "permalink": "/docs/getting-started/signing-up"
+              },
+              "next": {
+                "title": "Creating your project",
+                "permalink": "/docs/getting-started/creating"
+              }
+            },
+            {
+              "unversionedId": "getting-started/in-tool-help",
+              "id": "getting-started/in-tool-help",
+              "title": "In-tool help",
+              "description": "As Boozang is completely hosted in the Cloud it's easy to do changes and add useful features quickly. This has a huge upside as we can deploy features that customer asks for to all our customers at the same time, to the benefit of all. This also means that new things can appear in the user interface without warning, and in some cases, the documentation might not be up-to-date all the time.",
+              "source": "@site/docs/getting-started/in-tool-help.mdx",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/in-tool-help",
+              "permalink": "/docs/getting-started/in-tool-help",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/in-tool-help.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "in-tool-help",
+                "title": "In-tool help"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Recording your first test",
+                "permalink": "/docs/getting-started/recording"
+              },
+              "next": {
+                "title": "Introduction",
+                "permalink": "/docs/cucumber-google/introduction"
+              }
+            },
+            {
+              "unversionedId": "getting-started/modules-and-tests",
+              "id": "getting-started/modules-and-tests",
+              "title": "Modules and tests",
+              "description": "Object-Oriented testing",
+              "source": "@site/docs/getting-started/modules-and-tests.mdx",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/modules-and-tests",
+              "permalink": "/docs/getting-started/modules-and-tests",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/modules-and-tests.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "modules-and-tests",
+                "title": "Modules and tests"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Creating your project",
+                "permalink": "/docs/getting-started/creating"
+              },
+              "next": {
+                "title": "Recording your first test",
+                "permalink": "/docs/getting-started/recording"
+              }
+            },
+            {
+              "unversionedId": "getting-started/recording",
+              "id": "getting-started/recording",
+              "title": "Recording your first test",
+              "description": "Boozang works within the browser which allows for a very stable recording function. Simply click on the record button in the tool. As you perform actions on your web page actions will be recorded. To remove an un-wanted action that was recorded press the trashbin next to the action in the main tool view.",
+              "source": "@site/docs/getting-started/recording.mdx",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/recording",
+              "permalink": "/docs/getting-started/recording",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/recording.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "recording",
+                "title": "Recording your first test"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Modules and tests",
+                "permalink": "/docs/getting-started/modules-and-tests"
+              },
+              "next": {
+                "title": "In-tool help",
+                "permalink": "/docs/getting-started/in-tool-help"
+              }
+            },
+            {
+              "unversionedId": "getting-started/signing-up",
+              "id": "getting-started/signing-up",
+              "title": "Signing up",
+              "description": "Docusaurus green",
+              "source": "@site/docs/getting-started/signing-up.mdx",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/signing-up",
+              "permalink": "/docs/getting-started/signing-up",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/signing-up.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "signing-up",
+                "title": "Signing up"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "When to use Boozang",
+                "permalink": "/docs/introduction/when"
+              },
+              "next": {
+                "title": "Environments",
+                "permalink": "/docs/getting-started/environments"
+              }
+            },
+            {
+              "unversionedId": "intro",
+              "id": "intro",
+              "title": "Tutorial Intro",
+              "description": "Let's discover Docusaurus in less than 5 minutes.",
+              "source": "@site/docs/intro.md",
+              "sourceDirName": ".",
+              "slug": "/intro",
+              "permalink": "/docs/intro",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              }
+            },
+            {
+              "unversionedId": "introduction/before",
+              "id": "introduction/before",
+              "title": "Before we start",
+              "description": "This is the official documentation for the Boozang test automation tool. It can be read as a book or used as a reference. Use the left navigation bar to navigate to the topic of interest. This documentation is available in English and Chinese. Toggle the language using the flag icon in the header.",
+              "source": "@site/docs/introduction/before.md",
+              "sourceDirName": "introduction",
+              "slug": "/introduction/before",
+              "permalink": "/docs/introduction/before",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/introduction/before.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "docs",
+              "next": {
+                "title": "Onboarding",
+                "permalink": "/docs/introduction/onboarding"
+              }
+            },
+            {
+              "unversionedId": "introduction/glance",
+              "id": "introduction/glance",
+              "title": "At a glance",
+              "description": "At the core",
+              "source": "@site/docs/introduction/glance.mdx",
+              "sourceDirName": "introduction",
+              "slug": "/introduction/glance",
+              "permalink": "/docs/introduction/glance",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/introduction/glance.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "glance",
+                "title": "At a glance"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Onboarding",
+                "permalink": "/docs/introduction/onboarding"
+              },
+              "next": {
+                "title": "Why do test automation",
+                "permalink": "/docs/introduction/why"
+              }
+            },
+            {
+              "unversionedId": "introduction/onboarding",
+              "id": "introduction/onboarding",
+              "title": "Onboarding",
+              "description": "Docusaurus green",
+              "source": "@site/docs/introduction/onboarding.mdx",
+              "sourceDirName": "introduction",
+              "slug": "/introduction/onboarding",
+              "permalink": "/docs/introduction/onboarding",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/introduction/onboarding.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "onboarding",
+                "title": "Onboarding"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Before we start",
+                "permalink": "/docs/introduction/before"
+              },
+              "next": {
+                "title": "At a glance",
+                "permalink": "/docs/introduction/glance"
+              }
+            },
+            {
+              "unversionedId": "introduction/welcome",
+              "id": "introduction/welcome",
+              "title": "welcome",
+              "description": "This is the official documentation for the Boozang test automation tool. It can be read as a book or used as a reference. Use the left navigation bar to navigate to the topic of interest. This documentation is available in English and Chinese. Toggle the language using the flag icon in the header.",
+              "source": "@site/docs/introduction/welcome.md",
+              "sourceDirName": "introduction",
+              "slug": "/introduction/welcome",
+              "permalink": "/docs/introduction/welcome",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/introduction/welcome.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {}
+            },
+            {
+              "unversionedId": "introduction/when",
+              "id": "introduction/when",
+              "title": "When to use Boozang",
+              "description": "Good fit vs bad fit",
+              "source": "@site/docs/introduction/when.mdx",
+              "sourceDirName": "introduction",
+              "slug": "/introduction/when",
+              "permalink": "/docs/introduction/when",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/introduction/when.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "docs",
+              "previous": {
+                "title": "Why use Boozang",
+                "permalink": "/docs/introduction/why-boozang"
+              },
+              "next": {
+                "title": "Signing up",
+                "permalink": "/docs/getting-started/signing-up"
+              }
+            },
+            {
+              "unversionedId": "introduction/why",
+              "id": "introduction/why",
+              "title": "Why do test automation",
+              "description": "Docusaurus green",
+              "source": "@site/docs/introduction/why.mdx",
+              "sourceDirName": "introduction",
+              "slug": "/introduction/why",
+              "permalink": "/docs/introduction/why",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/introduction/why.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "why",
+                "title": "Why do test automation"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "At a glance",
+                "permalink": "/docs/introduction/glance"
+              },
+              "next": {
+                "title": "Why use Boozang",
+                "permalink": "/docs/introduction/why-boozang"
+              }
+            },
+            {
+              "unversionedId": "introduction/why-boozang",
+              "id": "introduction/why-boozang",
+              "title": "Why use Boozang",
+              "description": "Stable to code changes",
+              "source": "@site/docs/introduction/why-boozang.md",
+              "sourceDirName": "introduction",
+              "slug": "/introduction/why-boozang",
+              "permalink": "/docs/introduction/why-boozang",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/introduction/why-boozang.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "docs",
+              "previous": {
+                "title": "Why do test automation",
+                "permalink": "/docs/introduction/why"
+              },
+              "next": {
+                "title": "When to use Boozang",
+                "permalink": "/docs/introduction/when"
+              }
+            },
+            {
+              "unversionedId": "other-tool-views/reports",
+              "id": "other-tool-views/reports",
+              "title": "Reports",
+              "description": "The report view",
+              "source": "@site/docs/other-tool-views/reports.mdx",
+              "sourceDirName": "other-tool-views",
+              "slug": "/other-tool-views/reports",
+              "permalink": "/docs/other-tool-views/reports",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/other-tool-views/reports.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "reports",
+                "title": "Reports"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Content Policy",
+                "permalink": "/docs/settings/content-policy"
+              },
+              "next": {
+                "title": "Team",
+                "permalink": "/docs/other-tool-views/team"
+              }
+            },
+            {
+              "unversionedId": "other-tool-views/team",
+              "id": "other-tool-views/team",
+              "title": "Team",
+              "description": "Adding team members",
+              "source": "@site/docs/other-tool-views/team.mdx",
+              "sourceDirName": "other-tool-views",
+              "slug": "/other-tool-views/team",
+              "permalink": "/docs/other-tool-views/team",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/other-tool-views/team.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "team",
+                "title": "Team"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Reports",
+                "permalink": "/docs/other-tool-views/reports"
+              }
+            },
+            {
+              "unversionedId": "settings/content-policy",
+              "id": "settings/content-policy",
+              "title": "Content Policy",
+              "description": "The content policy contains several advanced features. Nevertheless, spending some time here to fine-tune the project can increase the stability of tests and also speed up test creation significantly.",
+              "source": "@site/docs/settings/content-policy.mdx",
+              "sourceDirName": "settings",
+              "slug": "/settings/content-policy",
+              "permalink": "/docs/settings/content-policy",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/settings/content-policy.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "content-policy",
+                "title": "Content Policy"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Environments",
+                "permalink": "/docs/settings/environments"
+              },
+              "next": {
+                "title": "Reports",
+                "permalink": "/docs/other-tool-views/reports"
+              }
+            },
+            {
+              "unversionedId": "settings/databind",
+              "id": "settings/databind",
+              "title": "Data bidning",
+              "description": "",
+              "source": "@site/docs/settings/overview copy 3.mdx",
+              "sourceDirName": "settings",
+              "slug": "/settings/databind",
+              "permalink": "/docs/settings/databind",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/settings/overview copy 3.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "databind",
+                "title": "Data bidning"
+              }
+            },
+            {
+              "unversionedId": "settings/environments",
+              "id": "settings/environments",
+              "title": "Environments",
+              "description": "environment",
+              "source": "@site/docs/settings/environments.mdx",
+              "sourceDirName": "settings",
+              "slug": "/settings/environments",
+              "permalink": "/docs/settings/environments",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/settings/environments.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "environments",
+                "title": "Environments"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Overview",
+                "permalink": "/docs/settings/overview"
+              },
+              "next": {
+                "title": "Content Policy",
+                "permalink": "/docs/settings/content-policy"
+              }
+            },
+            {
+              "unversionedId": "settings/overview",
+              "id": "settings/overview",
+              "title": "Overview",
+              "description": "Settings allow you to customize Boozang to work with your application. It also allows you to set your personal user preferences. \"Content-Policy\" and \"Element Definitions\" are somewhat complex, but can be potentially very helpful for more complex testing scenarios.",
+              "source": "@site/docs/settings/overview.mdx",
+              "sourceDirName": "settings",
+              "slug": "/settings/overview",
+              "permalink": "/docs/settings/overview",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/settings/overview.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "overview",
+                "title": "Overview"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Troubleshooting",
+                "permalink": "/docs/using-data/troubleshooting"
+              },
+              "next": {
+                "title": "Environments",
+                "permalink": "/docs/settings/environments"
+              }
+            },
+            {
+              "unversionedId": "tool-views/action-list",
+              "id": "tool-views/action-list",
+              "title": "The action list",
+              "description": "example image",
+              "source": "@site/docs/tool-views/action-list.mdx",
+              "sourceDirName": "tool-views",
+              "slug": "/tool-views/action-list",
+              "permalink": "/docs/tool-views/action-list",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tool-views/action-list.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "action-list",
+                "title": "The action list"
+              }
+            },
+            {
+              "unversionedId": "tool-views/hamburger",
+              "id": "tool-views/hamburger",
+              "title": "The hamburger menu",
+              "description": "example image",
+              "source": "@site/docs/tool-views/hamburger.mdx",
+              "sourceDirName": "tool-views",
+              "slug": "/tool-views/hamburger",
+              "permalink": "/docs/tool-views/hamburger",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tool-views/hamburger.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "hamburger",
+                "title": "The hamburger menu"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "The sidebar",
+                "permalink": "/docs/tool-views/sidebar"
+              },
+              "next": {
+                "title": "The top bar",
+                "permalink": "/docs/tool-views/topbar"
+              }
+            },
+            {
+              "unversionedId": "tool-views/overview",
+              "id": "tool-views/overview",
+              "title": "Overview of the tool",
+              "description": "In this section, we explain all the toolbars and controls, basically what does what. You can skip this section and use as a reference when you get stuck or have some questions.",
+              "source": "@site/docs/tool-views/overview.mdx",
+              "sourceDirName": "tool-views",
+              "slug": "/tool-views/overview",
+              "permalink": "/docs/tool-views/overview",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tool-views/overview.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "overview",
+                "title": "Overview of the tool"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Dry-run the test",
+                "permalink": "/docs/cucumber-google/dry-run"
+              },
+              "next": {
+                "title": "The sidebar",
+                "permalink": "/docs/tool-views/sidebar"
+              }
+            },
+            {
+              "unversionedId": "tool-views/record",
+              "id": "tool-views/record",
+              "title": "Record / Play",
+              "description": "play-modes",
+              "source": "@site/docs/tool-views/record.mdx",
+              "sourceDirName": "tool-views",
+              "slug": "/tool-views/record",
+              "permalink": "/docs/tool-views/record",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tool-views/record.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "record",
+                "title": "Record / Play"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "The toolbar",
+                "permalink": "/docs/tool-views/toolbar"
+              },
+              "next": {
+                "title": "Introduction",
+                "permalink": "/docs/element-selectors/introduction"
+              }
+            },
+            {
+              "unversionedId": "tool-views/sidebar",
+              "id": "tool-views/sidebar",
+              "title": "The sidebar",
+              "description": "Docusaurus green",
+              "source": "@site/docs/tool-views/sidebar.mdx",
+              "sourceDirName": "tool-views",
+              "slug": "/tool-views/sidebar",
+              "permalink": "/docs/tool-views/sidebar",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tool-views/sidebar.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "sidebar",
+                "title": "The sidebar"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Overview of the tool",
+                "permalink": "/docs/tool-views/overview"
+              },
+              "next": {
+                "title": "The hamburger menu",
+                "permalink": "/docs/tool-views/hamburger"
+              }
+            },
+            {
+              "unversionedId": "tool-views/toolbar",
+              "id": "tool-views/toolbar",
+              "title": "The toolbar",
+              "description": "example image",
+              "source": "@site/docs/tool-views/toolbar.mdx",
+              "sourceDirName": "tool-views",
+              "slug": "/tool-views/toolbar",
+              "permalink": "/docs/tool-views/toolbar",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tool-views/toolbar.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "toolbar",
+                "title": "The toolbar"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "The top bar",
+                "permalink": "/docs/tool-views/topbar"
+              },
+              "next": {
+                "title": "Record / Play",
+                "permalink": "/docs/tool-views/record"
+              }
+            },
+            {
+              "unversionedId": "tool-views/topbar",
+              "id": "tool-views/topbar",
+              "title": "The top bar",
+              "description": "example image",
+              "source": "@site/docs/tool-views/topbar.mdx",
+              "sourceDirName": "tool-views",
+              "slug": "/tool-views/topbar",
+              "permalink": "/docs/tool-views/topbar",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tool-views/topbar.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "topbar",
+                "title": "The top bar"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "The hamburger menu",
+                "permalink": "/docs/tool-views/hamburger"
+              },
+              "next": {
+                "title": "The toolbar",
+                "permalink": "/docs/tool-views/toolbar"
+              }
+            },
+            {
+              "unversionedId": "tutorial-basics/congratulations",
+              "id": "tutorial-basics/congratulations",
+              "title": "Congratulations!",
+              "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
+              "source": "@site/docs/tutorial-basics/congratulations.md",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/congratulations",
+              "permalink": "/docs/tutorial-basics/congratulations",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/congratulations.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "sidebar_position": 6
+              }
+            },
+            {
+              "unversionedId": "tutorial-basics/create-a-blog-post",
+              "id": "tutorial-basics/create-a-blog-post",
+              "title": "Create a Blog Post",
+              "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+              "source": "@site/docs/tutorial-basics/create-a-blog-post.md",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/create-a-blog-post",
+              "permalink": "/docs/tutorial-basics/create-a-blog-post",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/create-a-blog-post.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              }
+            },
+            {
+              "unversionedId": "tutorial-basics/create-a-document",
+              "id": "tutorial-basics/create-a-document",
+              "title": "Create a Document",
+              "description": "Documents are groups of pages connected through:",
+              "source": "@site/docs/tutorial-basics/create-a-document.md",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/create-a-document",
+              "permalink": "/docs/tutorial-basics/create-a-document",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/create-a-document.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              }
+            },
+            {
+              "unversionedId": "tutorial-basics/create-a-page",
+              "id": "tutorial-basics/create-a-page",
+              "title": "Create a Page",
+              "description": "Add Markdown or React files to src/pages to create a standalone page:",
+              "source": "@site/docs/tutorial-basics/create-a-page.md",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/create-a-page",
+              "permalink": "/docs/tutorial-basics/create-a-page",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/create-a-page.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              }
+            },
+            {
+              "unversionedId": "tutorial-basics/deploy-your-site",
+              "id": "tutorial-basics/deploy-your-site",
+              "title": "Deploy your site",
+              "description": "Docusaurus is a static-site-generator (also called Jamstack).",
+              "source": "@site/docs/tutorial-basics/deploy-your-site.md",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/deploy-your-site",
+              "permalink": "/docs/tutorial-basics/deploy-your-site",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/deploy-your-site.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5
+              }
+            },
+            {
+              "unversionedId": "tutorial-basics/markdown-features",
+              "id": "tutorial-basics/markdown-features",
+              "title": "Markdown Features",
+              "description": "Docusaurus supports Markdown and a few additional features.",
+              "source": "@site/docs/tutorial-basics/markdown-features.mdx",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/markdown-features",
+              "permalink": "/docs/tutorial-basics/markdown-features",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/markdown-features.mdx",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              }
+            },
+            {
+              "unversionedId": "tutorial-extras/manage-docs-versions",
+              "id": "tutorial-extras/manage-docs-versions",
+              "title": "Manage Docs Versions",
+              "description": "Docusaurus can manage multiple versions of your docs.",
+              "source": "@site/docs/tutorial-extras/manage-docs-versions.md",
+              "sourceDirName": "tutorial-extras",
+              "slug": "/tutorial-extras/manage-docs-versions",
+              "permalink": "/docs/tutorial-extras/manage-docs-versions",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-extras/manage-docs-versions.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              }
+            },
+            {
+              "unversionedId": "tutorial-extras/translate-your-site",
+              "id": "tutorial-extras/translate-your-site",
+              "title": "Translate your site",
+              "description": "Let's translate docs/intro.md to French.",
+              "source": "@site/docs/tutorial-extras/translate-your-site.md",
+              "sourceDirName": "tutorial-extras",
+              "slug": "/tutorial-extras/translate-your-site",
+              "permalink": "/docs/tutorial-extras/translate-your-site",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-extras/translate-your-site.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              }
+            },
+            {
+              "unversionedId": "using-data/databind",
+              "id": "using-data/databind",
+              "title": "Data bidning",
+              "description": "A note on form fills and data",
+              "source": "@site/docs/using-data/databind.mdx",
+              "sourceDirName": "using-data",
+              "slug": "/using-data/databind",
+              "permalink": "/docs/using-data/databind",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/using-data/databind.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "databind",
+                "title": "Data bidning"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Data types",
+                "permalink": "/docs/using-data/datatypes"
+              },
+              "next": {
+                "title": "Regular Expressions",
+                "permalink": "/docs/using-data/regexp"
+              }
+            },
+            {
+              "unversionedId": "using-data/datatypes",
+              "id": "using-data/datatypes",
+              "title": "Data types",
+              "description": "Boozang supports several different data types: Property, Object, Array, CSV, File, Request data and JS (Javascript function).",
+              "source": "@site/docs/using-data/datatypes.mdx",
+              "sourceDirName": "using-data",
+              "slug": "/using-data/datatypes",
+              "permalink": "/docs/using-data/datatypes",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/using-data/datatypes.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "datatypes",
+                "title": "Data types"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/using-data/introduction"
+              },
+              "next": {
+                "title": "Data bidning",
+                "permalink": "/docs/using-data/databind"
+              }
+            },
+            {
+              "unversionedId": "using-data/introduction",
+              "id": "using-data/introduction",
+              "title": "Introduction",
+              "description": "Docusaurus green",
+              "source": "@site/docs/using-data/introduction.mdx",
+              "sourceDirName": "using-data",
+              "slug": "/using-data/introduction",
+              "permalink": "/docs/using-data/introduction",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/using-data/introduction.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "introduction",
+                "title": "Introduction"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Visit links",
+                "permalink": "/docs/actions/visit"
+              },
+              "next": {
+                "title": "Data types",
+                "permalink": "/docs/using-data/datatypes"
+              }
+            },
+            {
+              "unversionedId": "using-data/predefined",
+              "id": "using-data/predefined",
+              "title": "Predefined regexp",
+              "description": "There are also pre-programmed regular expressions in Boozang that can be used. Here is a list of the current ones.",
+              "source": "@site/docs/using-data/predefined.mdx",
+              "sourceDirName": "using-data",
+              "slug": "/using-data/predefined",
+              "permalink": "/docs/using-data/predefined",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/using-data/predefined.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "predefined",
+                "title": "Predefined regexp"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Regular Expressions",
+                "permalink": "/docs/using-data/regexp"
+              },
+              "next": {
+                "title": "Troubleshooting",
+                "permalink": "/docs/using-data/troubleshooting"
+              }
+            },
+            {
+              "unversionedId": "using-data/regexp",
+              "id": "using-data/regexp",
+              "title": "Regular Expressions",
+              "description": "regexp",
+              "source": "@site/docs/using-data/regexp.mdx",
+              "sourceDirName": "using-data",
+              "slug": "/using-data/regexp",
+              "permalink": "/docs/using-data/regexp",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/using-data/regexp.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "regexp",
+                "title": "Regular Expressions"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Data bidning",
+                "permalink": "/docs/using-data/databind"
+              },
+              "next": {
+                "title": "Predefined regexp",
+                "permalink": "/docs/using-data/predefined"
+              }
+            },
+            {
+              "unversionedId": "using-data/troubleshooting",
+              "id": "using-data/troubleshooting",
+              "title": "Troubleshooting",
+              "description": "Docusaurus green",
+              "source": "@site/docs/using-data/troubleshooting.mdx",
+              "sourceDirName": "using-data",
+              "slug": "/using-data/troubleshooting",
+              "permalink": "/docs/using-data/troubleshooting",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/using-data/troubleshooting.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "troubleshooting",
+                "title": "Troubleshooting"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Predefined regexp",
+                "permalink": "/docs/using-data/predefined"
+              },
+              "next": {
+                "title": "Overview",
+                "permalink": "/docs/settings/overview"
+              }
+            }
+          ],
+          "sidebars": {
+            "docs": [
+              {
+                "type": "category",
+                "label": "Introduction",
+                "collapsed": false,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "introduction/before"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "introduction/onboarding"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "introduction/glance"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "introduction/why"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "introduction/why-boozang"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "introduction/when"
+                  }
+                ],
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Getting Started",
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "getting-started/signing-up"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "getting-started/environments"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "getting-started/creating"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "getting-started/modules-and-tests"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "getting-started/recording"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "getting-started/in-tool-help"
+                  }
+                ],
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "An End-to-End example",
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "cucumber-google/introduction"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "cucumber-google/feature"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "cucumber-google/importing"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "cucumber-google/implement"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "cucumber-google/linking"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "cucumber-google/dry-run"
+                  }
+                ],
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Views and toolbars",
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "tool-views/overview"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tool-views/sidebar"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tool-views/hamburger"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tool-views/topbar"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tool-views/toolbar"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tool-views/record"
+                  }
+                ],
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Element Selectors",
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "element-selectors/introduction"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "element-selectors/note"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "element-selectors/selecting"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "element-selectors/dom-picker"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "element-selectors/element-policy"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "element-selectors/repairing"
+                  }
+                ],
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Actions",
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "actions/action-types"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "actions/events"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "actions/validations"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "actions/extract"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "actions/javascript"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "actions/comment"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "actions/refresh"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "actions/visit"
+                  }
+                ],
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Using data",
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "using-data/introduction"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "using-data/datatypes"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "using-data/databind"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "using-data/regexp"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "using-data/predefined"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "using-data/troubleshooting"
+                  }
+                ],
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Settings",
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "settings/overview"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "settings/environments"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "settings/content-policy"
+                  }
+                ],
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Other tool views",
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "other-tool-views/reports"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "other-tool-views/team"
+                  }
+                ],
+                "collapsible": true
+              }
+            ]
+          },
+          "mainDocId": "introduction/before",
+          "categoryGeneratedIndices": []
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [
+        {
+          "id": "welcome",
+          "metadata": {
+            "permalink": "/blog/welcome",
+            "source": "@site/blog/2021-08-26-welcome/index.md",
+            "title": "Welcome",
+            "description": "Docusaurus blogging features are powered by the blog plugin.",
+            "date": "2021-08-26T00:00:00.000Z",
+            "formattedDate": "August 26, 2021",
+            "tags": [
+              {
+                "label": "facebook",
+                "permalink": "/blog/tags/facebook"
+              },
+              {
+                "label": "hello",
+                "permalink": "/blog/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.405,
+            "truncated": false,
+            "authors": [
+              {
+                "name": "Sébastien Lorber",
+                "title": "Docusaurus maintainer",
+                "url": "https://sebastienlorber.com",
+                "imageURL": "https://github.com/slorber.png",
+                "key": "slorber"
+              },
+              {
+                "name": "Yangshun Tay",
+                "title": "Front End Engineer @ Facebook",
+                "url": "https://github.com/yangshun",
+                "imageURL": "https://github.com/yangshun.png",
+                "key": "yangshun"
+              }
+            ],
+            "frontMatter": {
+              "slug": "welcome",
+              "title": "Welcome",
+              "authors": [
+                "slorber",
+                "yangshun"
+              ],
+              "tags": [
+                "facebook",
+                "hello",
+                "docusaurus"
+              ]
+            },
+            "nextItem": {
+              "title": "MDX Blog Post",
+              "permalink": "/blog/mdx-blog-post"
+            }
+          },
+          "content": "[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).\n\nSimply add Markdown files (or folders) to the `blog` directory.\n\nRegular blog authors can be added to `authors.yml`.\n\nThe blog post date can be extracted from filenames, such as:\n\n- `2019-05-30-welcome.md`\n- `2019-05-30-welcome/index.md`\n\nA blog post folder can be convenient to co-locate blog post images:\n\n![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)\n\nThe blog supports tags as well!\n\n**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config."
+        },
+        {
+          "id": "mdx-blog-post",
+          "metadata": {
+            "permalink": "/blog/mdx-blog-post",
+            "source": "@site/blog/2021-08-01-mdx-blog-post.mdx",
+            "title": "MDX Blog Post",
+            "description": "Blog posts support Docusaurus Markdown features, such as MDX.",
+            "date": "2021-08-01T00:00:00.000Z",
+            "formattedDate": "August 1, 2021",
+            "tags": [
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.175,
+            "truncated": false,
+            "authors": [
+              {
+                "name": "Sébastien Lorber",
+                "title": "Docusaurus maintainer",
+                "url": "https://sebastienlorber.com",
+                "imageURL": "https://github.com/slorber.png",
+                "key": "slorber"
+              }
+            ],
+            "frontMatter": {
+              "slug": "mdx-blog-post",
+              "title": "MDX Blog Post",
+              "authors": [
+                "slorber"
+              ],
+              "tags": [
+                "docusaurus"
+              ]
+            },
+            "prevItem": {
+              "title": "Welcome",
+              "permalink": "/blog/welcome"
+            },
+            "nextItem": {
+              "title": "Long Blog Post",
+              "permalink": "/blog/long-blog-post"
+            }
+          },
+          "content": "Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features), such as [MDX](https://mdxjs.com/).\n\n:::tip\n\nUse the power of React to create interactive blog posts.\n\n```js\n<button onClick={() => alert('button clicked!')}>Click me!</button>\n```\n\n<button onClick={() => alert('button clicked!')}>Click me!</button>\n\n:::"
+        },
+        {
+          "id": "long-blog-post",
+          "metadata": {
+            "permalink": "/blog/long-blog-post",
+            "source": "@site/blog/2019-05-29-long-blog-post.md",
+            "title": "Long Blog Post",
+            "description": "This is the summary of a very long blog post,",
+            "date": "2019-05-29T00:00:00.000Z",
+            "formattedDate": "May 29, 2019",
+            "tags": [
+              {
+                "label": "hello",
+                "permalink": "/blog/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 2.05,
+            "truncated": true,
+            "authors": [
+              {
+                "name": "Endilie Yacop Sucipto",
+                "title": "Maintainer of Docusaurus",
+                "url": "https://github.com/endiliey",
+                "imageURL": "https://github.com/endiliey.png",
+                "key": "endi"
+              }
+            ],
+            "frontMatter": {
+              "slug": "long-blog-post",
+              "title": "Long Blog Post",
+              "authors": "endi",
+              "tags": [
+                "hello",
+                "docusaurus"
+              ]
+            },
+            "prevItem": {
+              "title": "MDX Blog Post",
+              "permalink": "/blog/mdx-blog-post"
+            },
+            "nextItem": {
+              "title": "First Blog Post",
+              "permalink": "/blog/first-blog-post"
+            }
+          },
+          "content": "This is the summary of a very long blog post,\n\nUse a `<!--` `truncate` `-->` comment to limit blog post size in the list view.\n\n<!--truncate-->\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet"
+        },
+        {
+          "id": "first-blog-post",
+          "metadata": {
+            "permalink": "/blog/first-blog-post",
+            "source": "@site/blog/2019-05-28-first-blog-post.md",
+            "title": "First Blog Post",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
+            "date": "2019-05-28T00:00:00.000Z",
+            "formattedDate": "May 28, 2019",
+            "tags": [
+              {
+                "label": "hola",
+                "permalink": "/blog/tags/hola"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.12,
+            "truncated": false,
+            "authors": [
+              {
+                "name": "Gao Wei",
+                "title": "Docusaurus Core Team",
+                "url": "https://github.com/wgao19",
+                "image_url": "https://github.com/wgao19.png",
+                "imageURL": "https://github.com/wgao19.png"
+              }
+            ],
+            "frontMatter": {
+              "slug": "first-blog-post",
+              "title": "First Blog Post",
+              "authors": {
+                "name": "Gao Wei",
+                "title": "Docusaurus Core Team",
+                "url": "https://github.com/wgao19",
+                "image_url": "https://github.com/wgao19.png",
+                "imageURL": "https://github.com/wgao19.png"
+              },
+              "tags": [
+                "hola",
+                "docusaurus"
+              ]
+            },
+            "prevItem": {
+              "title": "Long Blog Post",
+              "permalink": "/blog/long-blog-post"
+            }
+          },
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet"
+        }
+      ],
+      "blogListPaginated": [
+        {
+          "items": [
+            "welcome",
+            "mdx-blog-post",
+            "long-blog-post",
+            "first-blog-post"
+          ],
+          "metadata": {
+            "permalink": "/blog",
+            "page": 1,
+            "postsPerPage": 10,
+            "totalPages": 1,
+            "totalCount": 4,
+            "previousPage": null,
+            "nextPage": null,
+            "blogDescription": "Blog",
+            "blogTitle": "Blog"
+          }
+        }
+      ],
+      "blogTags": {
+        "/blog/tags/facebook": {
+          "name": "facebook",
+          "items": [
+            "welcome"
+          ],
+          "permalink": "/blog/tags/facebook",
+          "pages": [
+            {
+              "items": [
+                "welcome"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/facebook",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 1,
+                "previousPage": null,
+                "nextPage": null,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/hello": {
+          "name": "hello",
+          "items": [
+            "welcome",
+            "long-blog-post"
+          ],
+          "permalink": "/blog/tags/hello",
+          "pages": [
+            {
+              "items": [
+                "welcome",
+                "long-blog-post"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/hello",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 2,
+                "previousPage": null,
+                "nextPage": null,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/docusaurus": {
+          "name": "docusaurus",
+          "items": [
+            "welcome",
+            "mdx-blog-post",
+            "long-blog-post",
+            "first-blog-post"
+          ],
+          "permalink": "/blog/tags/docusaurus",
+          "pages": [
+            {
+              "items": [
+                "welcome",
+                "mdx-blog-post",
+                "long-blog-post",
+                "first-blog-post"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/docusaurus",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 4,
+                "previousPage": null,
+                "nextPage": null,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/hola": {
+          "name": "hola",
+          "items": [
+            "first-blog-post"
+          ],
+          "permalink": "/blog/tags/hola",
+          "pages": [
+            {
+              "items": [
+                "first-blog-post"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/hola",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 1,
+                "previousPage": null,
+                "nextPage": null,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        }
+      },
+      "blogTagsListPath": "/blog/tags"
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
+      },
+      {
+        "type": "mdx",
+        "permalink": "/markdown-page",
+        "source": "@site/src/pages/markdown-page.md",
+        "title": "Markdown page example",
+        "description": "You don't need React to write simple standalone pages.",
+        "frontMatter": {
+          "title": "Markdown page example"
+        }
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {
+    "default": null
+  },
+  "docusaurus-theme-classic": {
+    "default": null
+  }
+}

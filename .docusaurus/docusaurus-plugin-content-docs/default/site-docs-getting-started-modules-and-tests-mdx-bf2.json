@@ -1,0 +1,26 @@
+{
+  "unversionedId": "getting-started/modules-and-tests",
+  "id": "getting-started/modules-and-tests",
+  "title": "Modules and tests",
+  "description": "Object-Oriented testing",
+  "source": "@site/docs/getting-started/modules-and-tests.mdx",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/modules-and-tests",
+  "permalink": "/docs/getting-started/modules-and-tests",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/modules-and-tests.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "modules-and-tests",
+    "title": "Modules and tests"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Creating your project",
+    "permalink": "/docs/getting-started/creating"
+  },
+  "next": {
+    "title": "Recording your first test",
+    "permalink": "/docs/getting-started/recording"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "actions/javascript",
+  "id": "actions/javascript",
+  "title": "Javascript",
+  "description": "The Javascript action",
+  "source": "@site/docs/actions/javascript.mdx",
+  "sourceDirName": "actions",
+  "slug": "/actions/javascript",
+  "permalink": "/docs/actions/javascript",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/actions/javascript.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "javascript",
+    "title": "Javascript"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Extract data",
+    "permalink": "/docs/actions/extract"
+  },
+  "next": {
+    "title": "Comment (annotations)",
+    "permalink": "/docs/actions/comment"
+  }
+}

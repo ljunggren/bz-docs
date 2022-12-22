@@ -1,0 +1,26 @@
+{
+  "unversionedId": "actions/comment",
+  "id": "actions/comment",
+  "title": "Comment (annotations)",
+  "description": "Why use comment",
+  "source": "@site/docs/actions/comment.mdx",
+  "sourceDirName": "actions",
+  "slug": "/actions/comment",
+  "permalink": "/docs/actions/comment",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/actions/comment.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "comment",
+    "title": "Comment (annotations)"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Javascript",
+    "permalink": "/docs/actions/javascript"
+  },
+  "next": {
+    "title": "Refresh window / Load page",
+    "permalink": "/docs/actions/refresh"
+  }
+}
