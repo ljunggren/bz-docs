@@ -40,7 +40,7 @@ const config = {
         title: 'Boozang',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/bz-square-padded.png',
         },
         items: [
           {
