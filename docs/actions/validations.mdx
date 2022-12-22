@@ -1,0 +1,89 @@
+---
+id: validations
+title: Validations (assertions)
+---
+
+<!-- ![validations](../images/validations.png) -->
+
+###### Creating a simple validation
+
+In a test, it´s common to make sure that a certain outcome is achieved. In Boozang, we do this using validation, also known as assertions. To create a validation, click on the validation icon and select the element to validate it in the application window. The default validation content format: "validate exists" will be created. If you want to change the validation content format you can do this using the dropdown in the tool window. 
+
+###### Content formats
+
+The following content formats are supported
+
+- Exists (default): Validates if an element exists. It generates a success condition if the element in the path exists, and a fail condition if it doesn't exist. 
+- Not exists: Opposite to Exists. It generates a fail condition if the element in the path exist, and a success condition if it doesn't exist. 
+- Dynamic Exist: Uses the value of the expectation to determine what it runs. If expectation evaluates to `true`  Exists will execute, if `false`, Not Exists will execute. 
+- innerText: Used for String comparisons of the innerText content of the element. It generates a success condition if match, a fail condition on mismatch and an error condition if element doesn't exist. 
+- Input value: Used to do String comparisons of an input box. It generates a success condition if match, a fail condition on mismatch and an error condition if element doesn't exist. 
+- Is Enabled: Check if an element is enabled. It generates a success condition if the element is enabled,  a fail condition if the element is disabled, and error if the element doesn't exist. 
+- Is Disabled: Opposite of Is Enabled. It generates a fail condition if the element is enabled,  a success condition if the element is disabled, and error if the element doesn't exist. 
+- Is Checked: Checks if a checkbox is checked. It generates success if the element is checked, fail if the element is unchecked, and error if the element doesn't exist. 
+- Screenshot: Does a pixel-by-pixel comparison of an image. After an element has been selected, a checksum is generated of the image content. This action will generate success if an identical image is found at the element location and fail otherwise. An error will be generated if the element doesn´t exist. 
+- Data: Check an element if it contains a set of data. The data expectation can contain several data entries. It generates success if all data is found in any order, fail if any data is missing and error if element doesn't exist. Powerful to check if a table or list have a certain data entry. 
+- Script: Write custom validation using Javascript. Generates success if true is returned and fail if false is returned.
+- Request/Response (API): Does a validation on an API end-point. See section for API testing. 
+
+As you can see, a lot of these commands have three expected results: Success, Fail, and Error. Note how Exists and Not Exists should only be able to return Success or Fail.
+
+###### Compare
+
+This is the comparison operator. The following operators are self-explanatory
+
+- Equals (==) and Not Equals (!=).
+- Greater-than (`>`), Greater-than-or-equals `>=`).
+- Lesser-than (`<`), Lesser-than-or-equals (`<=`).
+
+and these are a bit more complex
+
+- regex: Use regular expressions in the Expectation field
+- Include: Checks for any occurrences of a String. It generates success if it finds a match and it will fail otherwise. If the element doesn't exist, it generates an error.   
+- Exclude: Opposite of Include. It fails if it finds a match, success otherwise. If the element doesn't exist, it generates an error.   
+
+**Expectation**
+
+This is the comparison value to use. This could be a string or regular expression (in the case of the regex operator). 
+
+*Advanced (accessible from kebab menu)*
+
+<!-- ![match](images/match.png) -->
+
+This is used to pre-process a validation and is useful when filtering out dynamic data. 
+
+Imagine the following example: 
+
+```html
+<div>
+  The date is 2019-09-12 and I'm feeling good.
+</div>
+```
+
+In this case, it would be desirable to validate the message itself and that any date is shown, but not a specific date. By setting `Match` and `Replacement String` like
+
+```
+Match: ([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))
+Replacement string: YYYY-MM-DD
+```
+
+The expectation value for `Validation Equals`becomes
+
+```html
+<div>
+  The date is YYYY-MM-DD and I'm feeling good.
+</div> 
+```
+
+This can also be used to make sure sensitive information doesn't end up in any reports or on the Cloud server.
+
+###### Javascript validations
+
+The default validation is HTML validation. By changing the method to "Script", you can directly do validations using Javascript. The Javascript function is written in the standard Boozang format
+
+  `(function(){
+    //return true/false;
+    })()`
+
+and must return true or false. If an element has been picked with the DOM picker this will be available using the handle `$element`. Standard data handles, such as `$project`, `$module`, and `$test` will also be available, as well as the test window handles `$TW`. For more information about data see <a href="/doc/data.html">data</a> section. 
+

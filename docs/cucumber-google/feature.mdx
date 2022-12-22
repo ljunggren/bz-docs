@@ -1,0 +1,30 @@
+---
+id: feature
+title: Defining a feature file
+---
+
+We start by defining a feature file that describes a simple Google search.
+
+```gherkin
+Feature: Google search
+	When I go to the Google search page, and search for an item,
+	I expect to see some reference to that item in the result summary.
+
+Scenario: Search returns relevant result
+	Given that I have gone to the Google page
+	When I search "cats"
+	Then "cats" should be mentioned in the results
+
+Scenario Outline: Search returns relevant result - data-driven
+	Given that I have gone to the Google page
+    When I search <searchTerm>
+	Then <searchTerm> should be mentioned in the results
+
+Examples
+
+|searchTerm|
+|cats      |
+|dogs      |
+```
+
+

@@ -1,0 +1,32 @@
+---
+id: troubleshooting
+title: Troubleshooting
+---
+
+###### Console window
+
+<!-- ![console](../images/console.png) -->
+
+When running a test, it is sometimes desirable to inspect the data that is being run. In many cases, upstream test cases are sending data as parameters, and it gets even more tricky when data is being loaded from external data sources or Javascript functions. To inspect the data that is being used, you can use the console window. This window is located in the hamburger menu and allows users to spy on data.
+
+The console can be used to check the following data:
+
+- Assigned data: `$parameter`, `$test`, `$module`, and `$project`
+- Loop data: `$loop`
+- Regexp data generators: `/[a-z]{3,10}@bzmail[.]com/` (email),  `/[A-Z][0-9][A-Z] [0-9][A-Z][0-9]/` (Canadian zipcode)
+- Complex data generators: `/{today|YYYY-MM-DD}/`, `/{tomorrow|MM/DD hh:ss}/`
+
+
+
+###### Tmp data
+
+<!-- ![tmpdata](../images/tmpdata.png) -->
+
+There is also another way to inspect data and do more advanced troubleshooting. For each action, in the action details menu, you can find a link called "Tmp data". This data is updated every time a test is run and will show the data that was used when the action was run. This allows you to keep the last input data that was used and replay the action with this data.
+
+To inspect data during a run, add a breakpoint to the test or pause the test case during a run. Click on the action that uses the data, and click "Tmp data" in action details. 
+
+To re-run the action with the data that you see in the "Tmp data" window,  check the checkbox "As initial data for playing the action". To keep this data (not override the data in the next run) hit the "keep" button, and the data will be saved in the keep tab. 
+
+*Tip: Hit keep and Save to save the action data in the database to troubleshoot with other team members.*
+
