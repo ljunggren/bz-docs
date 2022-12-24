@@ -15,12 +15,6 @@
         "items": [
           {
             "type": "link",
-            "label": "Before we start",
-            "href": "/docs/introduction/before",
-            "docId": "introduction/before"
-          },
-          {
-            "type": "link",
             "label": "Onboarding",
             "href": "/docs/introduction/onboarding",
             "docId": "introduction/onboarding"
@@ -373,6 +367,110 @@
           }
         ],
         "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Features",
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Loops",
+            "href": "/docs/features/loops",
+            "docId": "features/loops"
+          },
+          {
+            "type": "link",
+            "label": "Switch (flag)",
+            "href": "/docs/features/switch",
+            "docId": "features/switch"
+          },
+          {
+            "type": "link",
+            "label": "Keywords",
+            "href": "/docs/features/keywords",
+            "docId": "features/keywords"
+          },
+          {
+            "type": "link",
+            "label": "Notes & Todos",
+            "href": "/docs/features/notes",
+            "docId": "features/notes"
+          },
+          {
+            "type": "link",
+            "label": "Loading Element",
+            "href": "/docs/features/loading",
+            "docId": "features/loading"
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Cucumber",
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Feature Integration",
+            "href": "/docs/cucumber/feature",
+            "docId": "cucumber/feature"
+          },
+          {
+            "type": "link",
+            "label": "Xray Integration",
+            "href": "/docs/cucumber/xray",
+            "docId": "cucumber/xray"
+          },
+          {
+            "type": "link",
+            "label": "Other platforms",
+            "href": "/docs/cucumber/other",
+            "docId": "cucumber/other"
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Model-based testing",
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Advantages",
+            "href": "/docs/model-based/advantages",
+            "docId": "model-based/advantages"
+          },
+          {
+            "type": "link",
+            "label": "How to do model-based testing",
+            "href": "/docs/model-based/how-to",
+            "docId": "model-based/how-to"
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Other",
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Security Concerns",
+            "href": "/docs/other/security",
+            "docId": "other/security"
+          },
+          {
+            "type": "link",
+            "label": "Trade-offs",
+            "href": "/docs/other/trade-offs",
+            "docId": "other/trade-offs"
+          }
+        ],
+        "collapsible": true
       }
     ]
   },
@@ -425,6 +523,36 @@
       "description": "The visit links action is used to automatically crawl a set of pages based on a navigation bar. To crawl a full navigation panel, such as side navigation or hamburger menu, select this in the Panel option. Target element defaults to \"A\" tags but can be changed using the DOM picker in case the navigation contains a different element than regular links. It's possible to execute a script before each click, but this can normally be left blank.",
       "sidebar": "docs"
     },
+    "api-testing/introduction": {
+      "id": "api-testing/introduction",
+      "title": "API testing",
+      "description": "Docusaurus green"
+    },
+    "api-testing/open-api": {
+      "id": "api-testing/open-api",
+      "title": "Open API support",
+      "description": "Open API import"
+    },
+    "api-testing/temporary-database": {
+      "id": "api-testing/temporary-database",
+      "title": "Temporary database",
+      "description": "Tree view"
+    },
+    "api-testing/tree-view": {
+      "id": "api-testing/tree-view",
+      "title": "Tree view",
+      "description": "Tree view"
+    },
+    "ci-server/introduction": {
+      "id": "ci-server/introduction",
+      "title": "Introduction",
+      "description": "To connect to an external CI server using Boozang, you'll need to use the Docker runner or NPM package described in the previous section. We will automatically generate the script code needed to get this up and running. The script can then be customized to suit your particular setup."
+    },
+    "ci-server/jenkins": {
+      "id": "ci-server/jenkins",
+      "title": "Jenkins",
+      "description": "Jenkins Ci integration is fairly straightforward, and we recommend using the Docker Xvfb runner. That way we avoid setting up Xvfb for headless runs, which can be quite complex."
+    },
     "cucumber-google/dry-run": {
       "id": "cucumber-google/dry-run",
       "title": "Dry-run the test",
@@ -459,6 +587,24 @@
       "id": "cucumber-google/linking",
       "title": "Linking the test",
       "description": "Now it's time to link all the tests. Make sure all the test steps in every scenario goes from \"red\" to \"black\".",
+      "sidebar": "docs"
+    },
+    "cucumber/feature": {
+      "id": "cucumber/feature",
+      "title": "Feature Integration",
+      "description": "In addition to integrating with CI servers for test execution, Boozang supports loading Cucumber feature files from an external system. This is convenient as it allows teams to keep the Cucumber features stored with the application source code (in the case of GitLab, GitHub, or BitBucket) or as part of the test management life-cycle (in the case of XRay / Jira).",
+      "sidebar": "docs"
+    },
+    "cucumber/other": {
+      "id": "cucumber/other",
+      "title": "Other platforms",
+      "description": "GitLab",
+      "sidebar": "docs"
+    },
+    "cucumber/xray": {
+      "id": "cucumber/xray",
+      "title": "Xray Integration",
+      "description": "Xray for Jira",
       "sidebar": "docs"
     },
     "element-selectors/dom-picker": {
@@ -507,6 +653,36 @@
       "title": "Welcome",
       "description": "This is the official documentation for the Boozang test automation tool. It can be read as a book or used as a reference. Use the left navigation bar to navigate to the topic of interest. This documentation is available in English and Chinese. Toggle the language using the flag icon in the header."
     },
+    "features/keywords": {
+      "id": "features/keywords",
+      "title": "Keywords",
+      "description": "Docusaurus green",
+      "sidebar": "docs"
+    },
+    "features/loading": {
+      "id": "features/loading",
+      "title": "Loading Element",
+      "description": "Loading element",
+      "sidebar": "docs"
+    },
+    "features/loops": {
+      "id": "features/loops",
+      "title": "Loops",
+      "description": "Docusaurus green",
+      "sidebar": "docs"
+    },
+    "features/notes": {
+      "id": "features/notes",
+      "title": "Notes & Todos",
+      "description": "Notes & Todos",
+      "sidebar": "docs"
+    },
+    "features/switch": {
+      "id": "features/switch",
+      "title": "Switch (flag)",
+      "description": "Switch (flag)",
+      "sidebar": "docs"
+    },
     "getting-started/creating": {
       "id": "getting-started/creating",
       "title": "Creating your project",
@@ -548,12 +724,6 @@
       "title": "Tutorial Intro",
       "description": "Let's discover Docusaurus in less than 5 minutes."
     },
-    "introduction/before": {
-      "id": "introduction/before",
-      "title": "Before we start",
-      "description": "This is the official documentation for the Boozang test automation tool. It can be read as a book or used as a reference. Use the left navigation bar to navigate to the topic of interest. This documentation is available in English and Chinese. Toggle the language using the flag icon in the header.",
-      "sidebar": "docs"
-    },
     "introduction/glance": {
       "id": "introduction/glance",
       "title": "At a glance",
@@ -589,6 +759,18 @@
       "description": "Stable to code changes",
       "sidebar": "docs"
     },
+    "model-based/advantages": {
+      "id": "model-based/advantages",
+      "title": "Advantages",
+      "description": "Auto-generated re-usable test steps",
+      "sidebar": "docs"
+    },
+    "model-based/how-to": {
+      "id": "model-based/how-to",
+      "title": "How to do model-based testing",
+      "description": "Model-based testing",
+      "sidebar": "docs"
+    },
     "other-tool-views/reports": {
       "id": "other-tool-views/reports",
       "title": "Reports",
@@ -599,6 +781,18 @@
       "id": "other-tool-views/team",
       "title": "Team",
       "description": "Adding team members",
+      "sidebar": "docs"
+    },
+    "other/security": {
+      "id": "other/security",
+      "title": "Security Concerns",
+      "description": "Fragment security",
+      "sidebar": "docs"
+    },
+    "other/trade-offs": {
+      "id": "other/trade-offs",
+      "title": "Trade-offs",
+      "description": "There are several limitations to the Boozang technology, some that are a limiting factor of the technology and security of the browser context, and others that are conscious product decisions. Here is an attempt to address some of them head-on.",
       "sidebar": "docs"
     },
     "settings/content-policy": {
@@ -664,46 +858,6 @@
       "title": "The top bar",
       "description": "example image",
       "sidebar": "docs"
-    },
-    "tutorial-basics/congratulations": {
-      "id": "tutorial-basics/congratulations",
-      "title": "Congratulations!",
-      "description": "You have just learned the basics of Docusaurus and made some changes to the initial template."
-    },
-    "tutorial-basics/create-a-blog-post": {
-      "id": "tutorial-basics/create-a-blog-post",
-      "title": "Create a Blog Post",
-      "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed..."
-    },
-    "tutorial-basics/create-a-document": {
-      "id": "tutorial-basics/create-a-document",
-      "title": "Create a Document",
-      "description": "Documents are groups of pages connected through:"
-    },
-    "tutorial-basics/create-a-page": {
-      "id": "tutorial-basics/create-a-page",
-      "title": "Create a Page",
-      "description": "Add Markdown or React files to src/pages to create a standalone page:"
-    },
-    "tutorial-basics/deploy-your-site": {
-      "id": "tutorial-basics/deploy-your-site",
-      "title": "Deploy your site",
-      "description": "Docusaurus is a static-site-generator (also called Jamstack)."
-    },
-    "tutorial-basics/markdown-features": {
-      "id": "tutorial-basics/markdown-features",
-      "title": "Markdown Features",
-      "description": "Docusaurus supports Markdown and a few additional features."
-    },
-    "tutorial-extras/manage-docs-versions": {
-      "id": "tutorial-extras/manage-docs-versions",
-      "title": "Manage Docs Versions",
-      "description": "Docusaurus can manage multiple versions of your docs."
-    },
-    "tutorial-extras/translate-your-site": {
-      "id": "tutorial-extras/translate-your-site",
-      "title": "Translate your site",
-      "description": "Let's translate docs/intro.md to French."
     },
     "using-data/databind": {
       "id": "using-data/databind",

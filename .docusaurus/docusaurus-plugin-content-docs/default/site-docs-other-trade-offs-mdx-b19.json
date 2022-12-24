@@ -1,0 +1,22 @@
+{
+  "unversionedId": "other/trade-offs",
+  "id": "other/trade-offs",
+  "title": "Trade-offs",
+  "description": "There are several limitations to the Boozang technology, some that are a limiting factor of the technology and security of the browser context, and others that are conscious product decisions. Here is an attempt to address some of them head-on.",
+  "source": "@site/docs/other/trade-offs.mdx",
+  "sourceDirName": "other",
+  "slug": "/other/trade-offs",
+  "permalink": "/docs/other/trade-offs",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/other/trade-offs.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "trade-offs",
+    "title": "Trade-offs"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Security Concerns",
+    "permalink": "/docs/other/security"
+  }
+}

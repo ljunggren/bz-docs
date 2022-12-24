@@ -1,0 +1,53 @@
+---
+id: github-actions
+title: GitHub actions
+---
+
+Boozang supports integration to GitHub actions. This particular implementation uses the  GabrielBB/xvfb-action@v1 package to enable headless browseer runs. It utilizes Multiple Cucumber HTML Reporter (https://www.npmjs.com/package/multiple-cucumber-html-reporter) to generate HTML Cucumber report dashboards, and publishes the test results as GitHub pages. 
+
+*Note: This implementation can probably be improved, and we invite you to share any updates with us, either via email or on our [forum](https://boozang.com/forum). *
+
+###### Implementation steps
+
+1. Add a directory .github in your project root
+2. Create the directory .github/workflows
+3. Add the below code into the file .github/workflows/my-test-flow.yml
+4. Enable GitHub pages for your repo
+5. Push the code
+6. The test results will be published on the GitHub pages of your repo
+
+###### Sample code
+
+Below is a sample of code generated. Note that most of these settings will vary depending on your particular project settings and selected test to run.  
+
+```
+name: my-test-flow
+on: [push]
+jobs:
+  run-boozang-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: npm install -g boozang
+      
+      - name: Run headless test with Boozang
+        uses: GabrielBB/xvfb-action@v1
+        with:
+          working-directory: ./ #optional
+          run: boozang --file="json/report" "http://staging-be.boozang.com/extension?parameter=&token=my-secret-token5e3f275e64f84941a326d4d8&group=&scope=&env=4&key=1&self=0#5e3f275e64f84941a326d4d8/jira61/m72/t10"    
+      
+      - run: npm install multiple-cucumber-html-reporter --save-dev && node reporter.js
+        if: always()
+  
+      - name: Deploy report page
+        if: always()
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+
+```
+

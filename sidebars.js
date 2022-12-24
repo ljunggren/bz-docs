@@ -5,7 +5,6 @@ module.exports = {
       label: 'Introduction',
       collapsed: false,
       items: [
-        "introduction/before",
         "introduction/onboarding",
         "introduction/glance",
         "introduction/why",
@@ -111,6 +110,46 @@ module.exports = {
       items: [
         'other-tool-views/reports',
         'other-tool-views/team',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Features',
+      collapsed: true,
+      items: [
+        'features/loops',
+        'features/switch',
+        'features/keywords',
+        'features/notes',
+        'features/loading',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Cucumber',
+      collapsed: true,
+      items: [
+        'cucumber/feature',
+        'cucumber/xray',
+        'cucumber/other',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Model-based testing',
+      collapsed: true,
+      items: [
+        'model-based/advantages',
+        'model-based/how-to',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Other',
+      collapsed: true,
+      items: [
+        'other/security',
+        'other/trade-offs',
       ],
     }
   ],

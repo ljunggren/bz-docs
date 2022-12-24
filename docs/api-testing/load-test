@@ -1,0 +1,8 @@
+---
+id: load-test
+title: Load testing
+---
+
+import YouTubeEmbed from "@site/src/components/YouTubeEmbed";
+
+<YouTubeEmbed embedId="Vzp5W-AoVJM">API load test</YouTubeEmbed>

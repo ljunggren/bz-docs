@@ -15,10 +15,6 @@
     "title": "Onboarding"
   },
   "sidebar": "docs",
-  "previous": {
-    "title": "Before we start",
-    "permalink": "/docs/introduction/before"
-  },
   "next": {
     "title": "At a glance",
     "permalink": "/docs/introduction/glance"

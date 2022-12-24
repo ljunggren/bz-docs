@@ -1,0 +1,26 @@
+{
+  "unversionedId": "model-based/advantages",
+  "id": "model-based/advantages",
+  "title": "Advantages",
+  "description": "Auto-generated re-usable test steps",
+  "source": "@site/docs/model-based/advantages.mdx",
+  "sourceDirName": "model-based",
+  "slug": "/model-based/advantages",
+  "permalink": "/docs/model-based/advantages",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/model-based/advantages.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "advantages",
+    "title": "Advantages"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Other platforms",
+    "permalink": "/docs/cucumber/other"
+  },
+  "next": {
+    "title": "How to do model-based testing",
+    "permalink": "/docs/model-based/how-to"
+  }
+}

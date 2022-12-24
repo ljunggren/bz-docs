@@ -8,7 +8,7 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "introduction/before",
+          "mainDocId": "introduction/onboarding",
           "docs": [
             {
               "id": "actions/action-types",
@@ -51,6 +51,30 @@
               "sidebar": "docs"
             },
             {
+              "id": "api-testing/introduction",
+              "path": "/docs/api-testing/introduction"
+            },
+            {
+              "id": "api-testing/open-api",
+              "path": "/docs/api-testing/open-api"
+            },
+            {
+              "id": "api-testing/temporary-database",
+              "path": "/docs/api-testing/temporary-database"
+            },
+            {
+              "id": "api-testing/tree-view",
+              "path": "/docs/api-testing/tree-view"
+            },
+            {
+              "id": "ci-server/introduction",
+              "path": "/docs/ci-server/introduction"
+            },
+            {
+              "id": "ci-server/jenkins",
+              "path": "/docs/ci-server/jenkins"
+            },
+            {
               "id": "cucumber-google/dry-run",
               "path": "/docs/cucumber-google/dry-run",
               "sidebar": "docs"
@@ -78,6 +102,21 @@
             {
               "id": "cucumber-google/linking",
               "path": "/docs/cucumber-google/linking",
+              "sidebar": "docs"
+            },
+            {
+              "id": "cucumber/feature",
+              "path": "/docs/cucumber/feature",
+              "sidebar": "docs"
+            },
+            {
+              "id": "cucumber/other",
+              "path": "/docs/cucumber/other",
+              "sidebar": "docs"
+            },
+            {
+              "id": "cucumber/xray",
+              "path": "/docs/cucumber/xray",
               "sidebar": "docs"
             },
             {
@@ -119,6 +158,31 @@
               "path": "/docs/element-selectors/welcome"
             },
             {
+              "id": "features/keywords",
+              "path": "/docs/features/keywords",
+              "sidebar": "docs"
+            },
+            {
+              "id": "features/loading",
+              "path": "/docs/features/loading",
+              "sidebar": "docs"
+            },
+            {
+              "id": "features/loops",
+              "path": "/docs/features/loops",
+              "sidebar": "docs"
+            },
+            {
+              "id": "features/notes",
+              "path": "/docs/features/notes",
+              "sidebar": "docs"
+            },
+            {
+              "id": "features/switch",
+              "path": "/docs/features/switch",
+              "sidebar": "docs"
+            },
+            {
               "id": "getting-started/creating",
               "path": "/docs/getting-started/creating",
               "sidebar": "docs"
@@ -153,11 +217,6 @@
               "path": "/docs/intro"
             },
             {
-              "id": "introduction/before",
-              "path": "/docs/introduction/before",
-              "sidebar": "docs"
-            },
-            {
               "id": "introduction/glance",
               "path": "/docs/introduction/glance",
               "sidebar": "docs"
@@ -187,6 +246,16 @@
               "sidebar": "docs"
             },
             {
+              "id": "model-based/advantages",
+              "path": "/docs/model-based/advantages",
+              "sidebar": "docs"
+            },
+            {
+              "id": "model-based/how-to",
+              "path": "/docs/model-based/how-to",
+              "sidebar": "docs"
+            },
+            {
               "id": "other-tool-views/reports",
               "path": "/docs/other-tool-views/reports",
               "sidebar": "docs"
@@ -194,6 +263,16 @@
             {
               "id": "other-tool-views/team",
               "path": "/docs/other-tool-views/team",
+              "sidebar": "docs"
+            },
+            {
+              "id": "other/security",
+              "path": "/docs/other/security",
+              "sidebar": "docs"
+            },
+            {
+              "id": "other/trade-offs",
+              "path": "/docs/other/trade-offs",
               "sidebar": "docs"
             },
             {
@@ -250,38 +329,6 @@
               "sidebar": "docs"
             },
             {
-              "id": "tutorial-basics/congratulations",
-              "path": "/docs/tutorial-basics/congratulations"
-            },
-            {
-              "id": "tutorial-basics/create-a-blog-post",
-              "path": "/docs/tutorial-basics/create-a-blog-post"
-            },
-            {
-              "id": "tutorial-basics/create-a-document",
-              "path": "/docs/tutorial-basics/create-a-document"
-            },
-            {
-              "id": "tutorial-basics/create-a-page",
-              "path": "/docs/tutorial-basics/create-a-page"
-            },
-            {
-              "id": "tutorial-basics/deploy-your-site",
-              "path": "/docs/tutorial-basics/deploy-your-site"
-            },
-            {
-              "id": "tutorial-basics/markdown-features",
-              "path": "/docs/tutorial-basics/markdown-features"
-            },
-            {
-              "id": "tutorial-extras/manage-docs-versions",
-              "path": "/docs/tutorial-extras/manage-docs-versions"
-            },
-            {
-              "id": "tutorial-extras/translate-your-site",
-              "path": "/docs/tutorial-extras/translate-your-site"
-            },
-            {
               "id": "using-data/databind",
               "path": "/docs/using-data/databind",
               "sidebar": "docs"
@@ -315,8 +362,8 @@
           "sidebars": {
             "docs": {
               "link": {
-                "path": "/docs/introduction/before",
-                "label": "introduction/before"
+                "path": "/docs/introduction/onboarding",
+                "label": "introduction/onboarding"
               }
             }
           }

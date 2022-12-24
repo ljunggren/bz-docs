@@ -18,5 +18,9 @@
   "previous": {
     "title": "Reports",
     "permalink": "/docs/other-tool-views/reports"
+  },
+  "next": {
+    "title": "Loops",
+    "permalink": "/docs/features/loops"
   }
 }

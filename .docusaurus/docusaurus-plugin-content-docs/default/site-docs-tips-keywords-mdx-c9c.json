@@ -1,0 +1,22 @@
+{
+  "unversionedId": "tips/keywords",
+  "id": "tips/keywords",
+  "title": "Keywords",
+  "description": "Docusaurus green",
+  "source": "@site/docs/tips/keywords.mdx",
+  "sourceDirName": "tips",
+  "slug": "/tips/keywords",
+  "permalink": "/docs/tips/keywords",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tips/keywords.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "keywords",
+    "title": "Keywords"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Loops",
+    "permalink": "/docs/tips/loops"
+  }
+}

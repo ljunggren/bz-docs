@@ -100,7 +100,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs','39f'),
+    component: ComponentCreator('/docs','07d'),
     routes: [
       {
         path: '/docs/actions/action-types',
@@ -151,6 +151,36 @@ export default [
         'sidebar': "docs"
       },
       {
+        path: '/docs/api-testing/introduction',
+        component: ComponentCreator('/docs/api-testing/introduction','41a'),
+        exact: true
+      },
+      {
+        path: '/docs/api-testing/open-api',
+        component: ComponentCreator('/docs/api-testing/open-api','697'),
+        exact: true
+      },
+      {
+        path: '/docs/api-testing/temporary-database',
+        component: ComponentCreator('/docs/api-testing/temporary-database','e10'),
+        exact: true
+      },
+      {
+        path: '/docs/api-testing/tree-view',
+        component: ComponentCreator('/docs/api-testing/tree-view','7fc'),
+        exact: true
+      },
+      {
+        path: '/docs/ci-server/introduction',
+        component: ComponentCreator('/docs/ci-server/introduction','137'),
+        exact: true
+      },
+      {
+        path: '/docs/ci-server/jenkins',
+        component: ComponentCreator('/docs/ci-server/jenkins','600'),
+        exact: true
+      },
+      {
         path: '/docs/cucumber-google/dry-run',
         component: ComponentCreator('/docs/cucumber-google/dry-run','29e'),
         exact: true,
@@ -183,6 +213,24 @@ export default [
       {
         path: '/docs/cucumber-google/linking',
         component: ComponentCreator('/docs/cucumber-google/linking','466'),
+        exact: true,
+        'sidebar': "docs"
+      },
+      {
+        path: '/docs/cucumber/feature',
+        component: ComponentCreator('/docs/cucumber/feature','9e3'),
+        exact: true,
+        'sidebar': "docs"
+      },
+      {
+        path: '/docs/cucumber/other',
+        component: ComponentCreator('/docs/cucumber/other','0ae'),
+        exact: true,
+        'sidebar': "docs"
+      },
+      {
+        path: '/docs/cucumber/xray',
+        component: ComponentCreator('/docs/cucumber/xray','86a'),
         exact: true,
         'sidebar': "docs"
       },
@@ -233,6 +281,36 @@ export default [
         exact: true
       },
       {
+        path: '/docs/features/keywords',
+        component: ComponentCreator('/docs/features/keywords','45c'),
+        exact: true,
+        'sidebar': "docs"
+      },
+      {
+        path: '/docs/features/loading',
+        component: ComponentCreator('/docs/features/loading','473'),
+        exact: true,
+        'sidebar': "docs"
+      },
+      {
+        path: '/docs/features/loops',
+        component: ComponentCreator('/docs/features/loops','917'),
+        exact: true,
+        'sidebar': "docs"
+      },
+      {
+        path: '/docs/features/notes',
+        component: ComponentCreator('/docs/features/notes','102'),
+        exact: true,
+        'sidebar': "docs"
+      },
+      {
+        path: '/docs/features/switch',
+        component: ComponentCreator('/docs/features/switch','4cf'),
+        exact: true,
+        'sidebar': "docs"
+      },
+      {
         path: '/docs/getting-started/creating',
         component: ComponentCreator('/docs/getting-started/creating','bb3'),
         exact: true,
@@ -274,12 +352,6 @@ export default [
         exact: true
       },
       {
-        path: '/docs/introduction/before',
-        component: ComponentCreator('/docs/introduction/before','7c0'),
-        exact: true,
-        'sidebar': "docs"
-      },
-      {
         path: '/docs/introduction/glance',
         component: ComponentCreator('/docs/introduction/glance','99d'),
         exact: true,
@@ -315,6 +387,18 @@ export default [
         'sidebar': "docs"
       },
       {
+        path: '/docs/model-based/advantages',
+        component: ComponentCreator('/docs/model-based/advantages','f6f'),
+        exact: true,
+        'sidebar': "docs"
+      },
+      {
+        path: '/docs/model-based/how-to',
+        component: ComponentCreator('/docs/model-based/how-to','58c'),
+        exact: true,
+        'sidebar': "docs"
+      },
+      {
         path: '/docs/other-tool-views/reports',
         component: ComponentCreator('/docs/other-tool-views/reports','668'),
         exact: true,
@@ -323,6 +407,18 @@ export default [
       {
         path: '/docs/other-tool-views/team',
         component: ComponentCreator('/docs/other-tool-views/team','b4e'),
+        exact: true,
+        'sidebar': "docs"
+      },
+      {
+        path: '/docs/other/security',
+        component: ComponentCreator('/docs/other/security','d9e'),
+        exact: true,
+        'sidebar': "docs"
+      },
+      {
+        path: '/docs/other/trade-offs',
+        component: ComponentCreator('/docs/other/trade-offs','d26'),
         exact: true,
         'sidebar': "docs"
       },
@@ -389,46 +485,6 @@ export default [
         component: ComponentCreator('/docs/tool-views/topbar','a91'),
         exact: true,
         'sidebar': "docs"
-      },
-      {
-        path: '/docs/tutorial-basics/congratulations',
-        component: ComponentCreator('/docs/tutorial-basics/congratulations','7ef'),
-        exact: true
-      },
-      {
-        path: '/docs/tutorial-basics/create-a-blog-post',
-        component: ComponentCreator('/docs/tutorial-basics/create-a-blog-post','2c8'),
-        exact: true
-      },
-      {
-        path: '/docs/tutorial-basics/create-a-document',
-        component: ComponentCreator('/docs/tutorial-basics/create-a-document','f0d'),
-        exact: true
-      },
-      {
-        path: '/docs/tutorial-basics/create-a-page',
-        component: ComponentCreator('/docs/tutorial-basics/create-a-page','ca5'),
-        exact: true
-      },
-      {
-        path: '/docs/tutorial-basics/deploy-your-site',
-        component: ComponentCreator('/docs/tutorial-basics/deploy-your-site','508'),
-        exact: true
-      },
-      {
-        path: '/docs/tutorial-basics/markdown-features',
-        component: ComponentCreator('/docs/tutorial-basics/markdown-features','f90'),
-        exact: true
-      },
-      {
-        path: '/docs/tutorial-extras/manage-docs-versions',
-        component: ComponentCreator('/docs/tutorial-extras/manage-docs-versions','d64'),
-        exact: true
-      },
-      {
-        path: '/docs/tutorial-extras/translate-your-site',
-        component: ComponentCreator('/docs/tutorial-extras/translate-your-site','16a'),
-        exact: true
       },
       {
         path: '/docs/using-data/databind',

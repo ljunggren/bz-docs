@@ -1,0 +1,26 @@
+{
+  "unversionedId": "cucumber/xray",
+  "id": "cucumber/xray",
+  "title": "Xray Integration",
+  "description": "Xray for Jira",
+  "source": "@site/docs/cucumber/xray.mdx",
+  "sourceDirName": "cucumber",
+  "slug": "/cucumber/xray",
+  "permalink": "/docs/cucumber/xray",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/cucumber/xray.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "xray",
+    "title": "Xray Integration"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Feature Integration",
+    "permalink": "/docs/cucumber/feature"
+  },
+  "next": {
+    "title": "Other platforms",
+    "permalink": "/docs/cucumber/other"
+  }
+}

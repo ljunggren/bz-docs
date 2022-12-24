@@ -1,0 +1,26 @@
+{
+  "unversionedId": "cucumber/feature",
+  "id": "cucumber/feature",
+  "title": "Feature Integration",
+  "description": "In addition to integrating with CI servers for test execution, Boozang supports loading Cucumber feature files from an external system. This is convenient as it allows teams to keep the Cucumber features stored with the application source code (in the case of GitLab, GitHub, or BitBucket) or as part of the test management life-cycle (in the case of XRay / Jira).",
+  "source": "@site/docs/cucumber/feature.mdx",
+  "sourceDirName": "cucumber",
+  "slug": "/cucumber/feature",
+  "permalink": "/docs/cucumber/feature",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/cucumber/feature.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "feature",
+    "title": "Feature Integration"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Loading Element",
+    "permalink": "/docs/features/loading"
+  },
+  "next": {
+    "title": "Xray Integration",
+    "permalink": "/docs/cucumber/xray"
+  }
+}

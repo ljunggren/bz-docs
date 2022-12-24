@@ -1,0 +1,31 @@
+---
+id: loops
+title: Loops
+---
+
+import YouTubeEmbed from "@site/src/components/YouTubeEmbed";
+
+<YouTubeEmbed embedId="zHDmcl2pIh0">Docusaurus green</YouTubeEmbed>
+
+## Looping a test
+
+A loop means to repeat execution until a certain condition is fulfilled. In Boozang, a data loop is like a for-condition running over a data set, meaning the test gets executed once for each data entry. 
+
+<!-- ![loop](../images/loop.png) -->
+
+To set a test to loop over a set of data (to repeat its execution for each data entry), click on the first line of the test (denoting the test settings) and click the Kebab icon -> Advanced. In "Loop data" select the data you want to loop over. The test will be run once for each data entry, and the current data entry will be available in the `$loop`handle. 
+
+The following data formats are supported to drive loops
+
+- CSV: The assigned `$loop` item will be of `Object` format (JSON) 
+- Arrays:  The assigned `$loop`item will be of `Property` format (String) 
+- Request data: This is supported if the fetched data is `CSV`or `Array`.
+
+## Looping an action
+
+We also support looping a single action. In the "Pre/End script" tag you can either add an array to loop over the values, or add a single integer to loop a fixed set of times. If you choose to loop over data, the value will be assigned to the `$action` variable.
+
+```
+["apple","banana","pear"]: loop 3 times, $action will get the value "apple", "banana", "pear"
+5: loop action five times
+```

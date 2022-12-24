@@ -227,6 +227,108 @@
               }
             },
             {
+              "unversionedId": "api-testing/introduction",
+              "id": "api-testing/introduction",
+              "title": "API testing",
+              "description": "Docusaurus green",
+              "source": "@site/docs/api-testing/introduction.mdx",
+              "sourceDirName": "api-testing",
+              "slug": "/api-testing/introduction",
+              "permalink": "/docs/api-testing/introduction",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/api-testing/introduction.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "introduction",
+                "title": "API testing"
+              }
+            },
+            {
+              "unversionedId": "api-testing/open-api",
+              "id": "api-testing/open-api",
+              "title": "Open API support",
+              "description": "Open API import",
+              "source": "@site/docs/api-testing/open-api.mdx",
+              "sourceDirName": "api-testing",
+              "slug": "/api-testing/open-api",
+              "permalink": "/docs/api-testing/open-api",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/api-testing/open-api.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "open-api",
+                "title": "Open API support"
+              }
+            },
+            {
+              "unversionedId": "api-testing/temporary-database",
+              "id": "api-testing/temporary-database",
+              "title": "Temporary database",
+              "description": "Tree view",
+              "source": "@site/docs/api-testing/temporary-database.mdx",
+              "sourceDirName": "api-testing",
+              "slug": "/api-testing/temporary-database",
+              "permalink": "/docs/api-testing/temporary-database",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/api-testing/temporary-database.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "temporary-database",
+                "title": "Temporary database"
+              }
+            },
+            {
+              "unversionedId": "api-testing/tree-view",
+              "id": "api-testing/tree-view",
+              "title": "Tree view",
+              "description": "Tree view",
+              "source": "@site/docs/api-testing/tree-view.mdx",
+              "sourceDirName": "api-testing",
+              "slug": "/api-testing/tree-view",
+              "permalink": "/docs/api-testing/tree-view",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/api-testing/tree-view.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "tree-view",
+                "title": "Tree view"
+              }
+            },
+            {
+              "unversionedId": "ci-server/introduction",
+              "id": "ci-server/introduction",
+              "title": "Introduction",
+              "description": "To connect to an external CI server using Boozang, you'll need to use the Docker runner or NPM package described in the previous section. We will automatically generate the script code needed to get this up and running. The script can then be customized to suit your particular setup.",
+              "source": "@site/docs/ci-server/introduction.mdx",
+              "sourceDirName": "ci-server",
+              "slug": "/ci-server/introduction",
+              "permalink": "/docs/ci-server/introduction",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ci-server/introduction.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "introduction",
+                "title": "Introduction"
+              }
+            },
+            {
+              "unversionedId": "ci-server/jenkins",
+              "id": "ci-server/jenkins",
+              "title": "Jenkins",
+              "description": "Jenkins Ci integration is fairly straightforward, and we recommend using the Docker Xvfb runner. That way we avoid setting up Xvfb for headless runs, which can be quite complex.",
+              "source": "@site/docs/ci-server/jenkins.mdx",
+              "sourceDirName": "ci-server",
+              "slug": "/ci-server/jenkins",
+              "permalink": "/docs/ci-server/jenkins",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ci-server/jenkins.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "jenkins",
+                "title": "Jenkins"
+              }
+            },
+            {
               "unversionedId": "cucumber-google/dry-run",
               "id": "cucumber-google/dry-run",
               "title": "Dry-run the test",
@@ -380,6 +482,84 @@
               "next": {
                 "title": "Dry-run the test",
                 "permalink": "/docs/cucumber-google/dry-run"
+              }
+            },
+            {
+              "unversionedId": "cucumber/feature",
+              "id": "cucumber/feature",
+              "title": "Feature Integration",
+              "description": "In addition to integrating with CI servers for test execution, Boozang supports loading Cucumber feature files from an external system. This is convenient as it allows teams to keep the Cucumber features stored with the application source code (in the case of GitLab, GitHub, or BitBucket) or as part of the test management life-cycle (in the case of XRay / Jira).",
+              "source": "@site/docs/cucumber/feature.mdx",
+              "sourceDirName": "cucumber",
+              "slug": "/cucumber/feature",
+              "permalink": "/docs/cucumber/feature",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/cucumber/feature.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "feature",
+                "title": "Feature Integration"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Loading Element",
+                "permalink": "/docs/features/loading"
+              },
+              "next": {
+                "title": "Xray Integration",
+                "permalink": "/docs/cucumber/xray"
+              }
+            },
+            {
+              "unversionedId": "cucumber/other",
+              "id": "cucumber/other",
+              "title": "Other platforms",
+              "description": "GitLab",
+              "source": "@site/docs/cucumber/other-platforms.mdx",
+              "sourceDirName": "cucumber",
+              "slug": "/cucumber/other",
+              "permalink": "/docs/cucumber/other",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/cucumber/other-platforms.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "other",
+                "title": "Other platforms"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Xray Integration",
+                "permalink": "/docs/cucumber/xray"
+              },
+              "next": {
+                "title": "Advantages",
+                "permalink": "/docs/model-based/advantages"
+              }
+            },
+            {
+              "unversionedId": "cucumber/xray",
+              "id": "cucumber/xray",
+              "title": "Xray Integration",
+              "description": "Xray for Jira",
+              "source": "@site/docs/cucumber/xray.mdx",
+              "sourceDirName": "cucumber",
+              "slug": "/cucumber/xray",
+              "permalink": "/docs/cucumber/xray",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/cucumber/xray.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "xray",
+                "title": "Xray Integration"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Feature Integration",
+                "permalink": "/docs/cucumber/feature"
+              },
+              "next": {
+                "title": "Other platforms",
+                "permalink": "/docs/cucumber/other"
               }
             },
             {
@@ -567,6 +747,136 @@
               "frontMatter": {}
             },
             {
+              "unversionedId": "features/keywords",
+              "id": "features/keywords",
+              "title": "Keywords",
+              "description": "Docusaurus green",
+              "source": "@site/docs/features/keywords.mdx",
+              "sourceDirName": "features",
+              "slug": "/features/keywords",
+              "permalink": "/docs/features/keywords",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/features/keywords.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "keywords",
+                "title": "Keywords"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Switch (flag)",
+                "permalink": "/docs/features/switch"
+              },
+              "next": {
+                "title": "Notes & Todos",
+                "permalink": "/docs/features/notes"
+              }
+            },
+            {
+              "unversionedId": "features/loading",
+              "id": "features/loading",
+              "title": "Loading Element",
+              "description": "Loading element",
+              "source": "@site/docs/features/loading.mdx",
+              "sourceDirName": "features",
+              "slug": "/features/loading",
+              "permalink": "/docs/features/loading",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/features/loading.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "loading",
+                "title": "Loading Element"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Notes & Todos",
+                "permalink": "/docs/features/notes"
+              },
+              "next": {
+                "title": "Feature Integration",
+                "permalink": "/docs/cucumber/feature"
+              }
+            },
+            {
+              "unversionedId": "features/loops",
+              "id": "features/loops",
+              "title": "Loops",
+              "description": "Docusaurus green",
+              "source": "@site/docs/features/loops.mdx",
+              "sourceDirName": "features",
+              "slug": "/features/loops",
+              "permalink": "/docs/features/loops",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/features/loops.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "loops",
+                "title": "Loops"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Team",
+                "permalink": "/docs/other-tool-views/team"
+              },
+              "next": {
+                "title": "Switch (flag)",
+                "permalink": "/docs/features/switch"
+              }
+            },
+            {
+              "unversionedId": "features/notes",
+              "id": "features/notes",
+              "title": "Notes & Todos",
+              "description": "Notes & Todos",
+              "source": "@site/docs/features/notes.mdx",
+              "sourceDirName": "features",
+              "slug": "/features/notes",
+              "permalink": "/docs/features/notes",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/features/notes.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "notes",
+                "title": "Notes & Todos"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Keywords",
+                "permalink": "/docs/features/keywords"
+              },
+              "next": {
+                "title": "Loading Element",
+                "permalink": "/docs/features/loading"
+              }
+            },
+            {
+              "unversionedId": "features/switch",
+              "id": "features/switch",
+              "title": "Switch (flag)",
+              "description": "Switch (flag)",
+              "source": "@site/docs/features/switch.mdx",
+              "sourceDirName": "features",
+              "slug": "/features/switch",
+              "permalink": "/docs/features/switch",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/features/switch.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "switch",
+                "title": "Switch (flag)"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Loops",
+                "permalink": "/docs/features/loops"
+              },
+              "next": {
+                "title": "Keywords",
+                "permalink": "/docs/features/keywords"
+              }
+            },
+            {
               "unversionedId": "getting-started/creating",
               "id": "getting-started/creating",
               "title": "Creating your project",
@@ -740,25 +1050,6 @@
               }
             },
             {
-              "unversionedId": "introduction/before",
-              "id": "introduction/before",
-              "title": "Before we start",
-              "description": "This is the official documentation for the Boozang test automation tool. It can be read as a book or used as a reference. Use the left navigation bar to navigate to the topic of interest. This documentation is available in English and Chinese. Toggle the language using the flag icon in the header.",
-              "source": "@site/docs/introduction/before.md",
-              "sourceDirName": "introduction",
-              "slug": "/introduction/before",
-              "permalink": "/docs/introduction/before",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/introduction/before.md",
-              "tags": [],
-              "version": "current",
-              "frontMatter": {},
-              "sidebar": "docs",
-              "next": {
-                "title": "Onboarding",
-                "permalink": "/docs/introduction/onboarding"
-              }
-            },
-            {
               "unversionedId": "introduction/glance",
               "id": "introduction/glance",
               "title": "At a glance",
@@ -801,10 +1092,6 @@
                 "title": "Onboarding"
               },
               "sidebar": "docs",
-              "previous": {
-                "title": "Before we start",
-                "permalink": "/docs/introduction/before"
-              },
               "next": {
                 "title": "At a glance",
                 "permalink": "/docs/introduction/glance"
@@ -897,6 +1184,58 @@
               }
             },
             {
+              "unversionedId": "model-based/advantages",
+              "id": "model-based/advantages",
+              "title": "Advantages",
+              "description": "Auto-generated re-usable test steps",
+              "source": "@site/docs/model-based/advantages.mdx",
+              "sourceDirName": "model-based",
+              "slug": "/model-based/advantages",
+              "permalink": "/docs/model-based/advantages",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/model-based/advantages.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "advantages",
+                "title": "Advantages"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Other platforms",
+                "permalink": "/docs/cucumber/other"
+              },
+              "next": {
+                "title": "How to do model-based testing",
+                "permalink": "/docs/model-based/how-to"
+              }
+            },
+            {
+              "unversionedId": "model-based/how-to",
+              "id": "model-based/how-to",
+              "title": "How to do model-based testing",
+              "description": "Model-based testing",
+              "source": "@site/docs/model-based/how-to.mdx",
+              "sourceDirName": "model-based",
+              "slug": "/model-based/how-to",
+              "permalink": "/docs/model-based/how-to",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/model-based/how-to.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "how-to",
+                "title": "How to do model-based testing"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Advantages",
+                "permalink": "/docs/model-based/advantages"
+              },
+              "next": {
+                "title": "Security Concerns",
+                "permalink": "/docs/other/security"
+              }
+            },
+            {
               "unversionedId": "other-tool-views/reports",
               "id": "other-tool-views/reports",
               "title": "Reports",
@@ -942,6 +1281,58 @@
               "previous": {
                 "title": "Reports",
                 "permalink": "/docs/other-tool-views/reports"
+              },
+              "next": {
+                "title": "Loops",
+                "permalink": "/docs/features/loops"
+              }
+            },
+            {
+              "unversionedId": "other/security",
+              "id": "other/security",
+              "title": "Security Concerns",
+              "description": "Fragment security",
+              "source": "@site/docs/other/security.mdx",
+              "sourceDirName": "other",
+              "slug": "/other/security",
+              "permalink": "/docs/other/security",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/other/security.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "security",
+                "title": "Security Concerns"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "How to do model-based testing",
+                "permalink": "/docs/model-based/how-to"
+              },
+              "next": {
+                "title": "Trade-offs",
+                "permalink": "/docs/other/trade-offs"
+              }
+            },
+            {
+              "unversionedId": "other/trade-offs",
+              "id": "other/trade-offs",
+              "title": "Trade-offs",
+              "description": "There are several limitations to the Boozang technology, some that are a limiting factor of the technology and security of the browser context, and others that are conscious product decisions. Here is an attempt to address some of them head-on.",
+              "source": "@site/docs/other/trade-offs.mdx",
+              "sourceDirName": "other",
+              "slug": "/other/trade-offs",
+              "permalink": "/docs/other/trade-offs",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/other/trade-offs.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "id": "trade-offs",
+                "title": "Trade-offs"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Security Concerns",
+                "permalink": "/docs/other/security"
               }
             },
             {
@@ -1213,142 +1604,6 @@
               }
             },
             {
-              "unversionedId": "tutorial-basics/congratulations",
-              "id": "tutorial-basics/congratulations",
-              "title": "Congratulations!",
-              "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
-              "source": "@site/docs/tutorial-basics/congratulations.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/congratulations",
-              "permalink": "/docs/tutorial-basics/congratulations",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/congratulations.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 6,
-              "frontMatter": {
-                "sidebar_position": 6
-              }
-            },
-            {
-              "unversionedId": "tutorial-basics/create-a-blog-post",
-              "id": "tutorial-basics/create-a-blog-post",
-              "title": "Create a Blog Post",
-              "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
-              "source": "@site/docs/tutorial-basics/create-a-blog-post.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/create-a-blog-post",
-              "permalink": "/docs/tutorial-basics/create-a-blog-post",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/create-a-blog-post.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 3,
-              "frontMatter": {
-                "sidebar_position": 3
-              }
-            },
-            {
-              "unversionedId": "tutorial-basics/create-a-document",
-              "id": "tutorial-basics/create-a-document",
-              "title": "Create a Document",
-              "description": "Documents are groups of pages connected through:",
-              "source": "@site/docs/tutorial-basics/create-a-document.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/create-a-document",
-              "permalink": "/docs/tutorial-basics/create-a-document",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/create-a-document.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 2,
-              "frontMatter": {
-                "sidebar_position": 2
-              }
-            },
-            {
-              "unversionedId": "tutorial-basics/create-a-page",
-              "id": "tutorial-basics/create-a-page",
-              "title": "Create a Page",
-              "description": "Add Markdown or React files to src/pages to create a standalone page:",
-              "source": "@site/docs/tutorial-basics/create-a-page.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/create-a-page",
-              "permalink": "/docs/tutorial-basics/create-a-page",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/create-a-page.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 1,
-              "frontMatter": {
-                "sidebar_position": 1
-              }
-            },
-            {
-              "unversionedId": "tutorial-basics/deploy-your-site",
-              "id": "tutorial-basics/deploy-your-site",
-              "title": "Deploy your site",
-              "description": "Docusaurus is a static-site-generator (also called Jamstack).",
-              "source": "@site/docs/tutorial-basics/deploy-your-site.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/deploy-your-site",
-              "permalink": "/docs/tutorial-basics/deploy-your-site",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/deploy-your-site.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 5,
-              "frontMatter": {
-                "sidebar_position": 5
-              }
-            },
-            {
-              "unversionedId": "tutorial-basics/markdown-features",
-              "id": "tutorial-basics/markdown-features",
-              "title": "Markdown Features",
-              "description": "Docusaurus supports Markdown and a few additional features.",
-              "source": "@site/docs/tutorial-basics/markdown-features.mdx",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/markdown-features",
-              "permalink": "/docs/tutorial-basics/markdown-features",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-basics/markdown-features.mdx",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 4,
-              "frontMatter": {
-                "sidebar_position": 4
-              }
-            },
-            {
-              "unversionedId": "tutorial-extras/manage-docs-versions",
-              "id": "tutorial-extras/manage-docs-versions",
-              "title": "Manage Docs Versions",
-              "description": "Docusaurus can manage multiple versions of your docs.",
-              "source": "@site/docs/tutorial-extras/manage-docs-versions.md",
-              "sourceDirName": "tutorial-extras",
-              "slug": "/tutorial-extras/manage-docs-versions",
-              "permalink": "/docs/tutorial-extras/manage-docs-versions",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-extras/manage-docs-versions.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 1,
-              "frontMatter": {
-                "sidebar_position": 1
-              }
-            },
-            {
-              "unversionedId": "tutorial-extras/translate-your-site",
-              "id": "tutorial-extras/translate-your-site",
-              "title": "Translate your site",
-              "description": "Let's translate docs/intro.md to French.",
-              "source": "@site/docs/tutorial-extras/translate-your-site.md",
-              "sourceDirName": "tutorial-extras",
-              "slug": "/tutorial-extras/translate-your-site",
-              "permalink": "/docs/tutorial-extras/translate-your-site",
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-extras/translate-your-site.md",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 2,
-              "frontMatter": {
-                "sidebar_position": 2
-              }
-            },
-            {
               "unversionedId": "using-data/databind",
               "id": "using-data/databind",
               "title": "Data bidning",
@@ -1512,10 +1767,6 @@
                 "label": "Introduction",
                 "collapsed": false,
                 "items": [
-                  {
-                    "type": "doc",
-                    "id": "introduction/before"
-                  },
                   {
                     "type": "doc",
                     "id": "introduction/onboarding"
@@ -1774,10 +2025,90 @@
                   }
                 ],
                 "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Features",
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "features/loops"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "features/switch"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "features/keywords"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "features/notes"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "features/loading"
+                  }
+                ],
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Cucumber",
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "cucumber/feature"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "cucumber/xray"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "cucumber/other"
+                  }
+                ],
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Model-based testing",
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "model-based/advantages"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "model-based/how-to"
+                  }
+                ],
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Other",
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "other/security"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "other/trade-offs"
+                  }
+                ],
+                "collapsible": true
               }
             ]
           },
-          "mainDocId": "introduction/before",
+          "mainDocId": "introduction/onboarding",
           "categoryGeneratedIndices": []
         }
       ]

@@ -1,0 +1,17 @@
+{
+  "unversionedId": "ci-server/introduction",
+  "id": "ci-server/introduction",
+  "title": "Introduction",
+  "description": "To connect to an external CI server using Boozang, you'll need to use the Docker runner or NPM package described in the previous section. We will automatically generate the script code needed to get this up and running. The script can then be customized to suit your particular setup.",
+  "source": "@site/docs/ci-server/introduction.mdx",
+  "sourceDirName": "ci-server",
+  "slug": "/ci-server/introduction",
+  "permalink": "/docs/ci-server/introduction",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ci-server/introduction.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "introduction",
+    "title": "Introduction"
+  }
+}
