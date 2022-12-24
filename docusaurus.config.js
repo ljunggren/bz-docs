@@ -58,6 +58,10 @@ const config = {
             title: 'Docs',
             items: [
               {
+                label: 'Start page',
+                to: 'http://docs.boozang.com/docs/introduction/onboarding',
+              },
+              {
                 label: 'Previous version',
                 to: 'http://docs-old.boozang.com',
               },
@@ -72,7 +76,7 @@ const config = {
               },
               {
                 label: 'Videos',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://boozang.com/videos',
               },
               {
                 label: 'LinkedIn',
