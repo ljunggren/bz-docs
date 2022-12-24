@@ -132,6 +132,8 @@ module.exports = {
         'cucumber/feature',
         'cucumber/xray',
         'cucumber/other',
+        'cucumber/rca',
+        'cucumber/log-formatter',
       ],
     },
     {
