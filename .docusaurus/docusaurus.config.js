@@ -4,9 +4,9 @@ Your edits in this file will be overwritten in the next build!
 Modify the docusaurus.config.js file at your site's root instead.
 */
 export default {
-  "title": "My Site",
-  "tagline": "Dinosaurs are cool",
-  "url": "https://your-docusaurus-test-site.com",
+  "title": "Boozang",
+  "tagline": "Codeless test automation",
+  "url": "https://boozang.com",
   "baseUrl": "/",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
@@ -31,7 +31,7 @@ export default {
     "navbar": {
       "title": "Boozang",
       "logo": {
-        "alt": "My Site Logo",
+        "alt": "Boozang Logo",
         "src": "img/bz-square-padded.png"
       },
       "items": [
@@ -51,8 +51,12 @@ export default {
           "title": "Docs",
           "items": [
             {
-              "label": "Tutorial",
-              "to": "/docs/intro"
+              "label": "Start page",
+              "to": "http://docs.boozang.com/docs/introduction/onboarding"
+            },
+            {
+              "label": "Previous version",
+              "to": "http://docs-old.boozang.com"
             }
           ]
         },
@@ -60,16 +64,16 @@ export default {
           "title": "Community",
           "items": [
             {
-              "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
+              "label": "Udemy Course",
+              "href": "https://www.udemy.com/course/advanced-test-automation-using-boozang/"
             },
             {
-              "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
+              "label": "Videos",
+              "href": "https://boozang.com/videos"
             },
             {
-              "label": "Twitter",
-              "href": "https://twitter.com/docusaurus"
+              "label": "LinkedIn",
+              "href": "https://linkedin.com/company/10640313"
             }
           ]
         },
@@ -78,16 +82,16 @@ export default {
           "items": [
             {
               "label": "Blog",
-              "to": "/blog"
+              "to": "https://boozang.com/blog"
             },
             {
               "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
+              "href": "https://github.com/ljunggren"
             }
           ]
         }
       ],
-      "copyright": "Copyright © 2022 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2022 Boozang Technologies, Inc. Built with Docusaurus."
     },
     "prism": {
       "theme": {
