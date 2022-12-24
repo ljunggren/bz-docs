@@ -58,8 +58,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Previous version',
+                to: 'http://docs-old.boozang.com',
               },
             ],
           },
@@ -67,16 +67,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Udemy Course',
+                href: 'https://www.udemy.com/course/advanced-test-automation-using-boozang/',
               },
               {
-                label: 'Discord',
+                label: 'Videos',
                 href: 'https://discordapp.com/invite/docusaurus',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'LinkedIn',
+                href: 'https://linkedin.com/company/10640313',
               },
             ],
           },
@@ -85,16 +85,16 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                to: 'https://boozang.com/blog',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/ljunggren',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Boozang Technologies, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
