@@ -126,6 +126,17 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'CI server',
+      collapsed: true,
+      items: [
+        'ci-server/introduction',
+        'ci-server/jenkins',
+        'ci-server/github-actions',
+        'ci-server/gitlab',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Cucumber',
       collapsed: true,
       items: [
