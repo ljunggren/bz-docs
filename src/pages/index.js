@@ -1,4 +1,5 @@
 import React from 'react';
+import  { Redirect } from 'react-router-dom'
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -27,14 +28,15 @@ function HomepageHeader() {
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
-  );
+  return <Redirect to='/docs/introduction/onboarding'  />
+  // return (
+  //   <Layout
+  //     title={`Hello from ${siteConfig.title}`}
+  //     description="Description will go into a meta tag in <head />">
+  //     <HomepageHeader />
+  //     <main>
+  //       <HomepageFeatures />
+  //     </main>
+  //   </Layout>
+  // );
 }
