@@ -44,6 +44,8 @@ module.exports = {
       items: [
         'core-concepts/action-types',
         'core-concepts/features',
+        'core-concepts/canvas',
+
       ],
     },
     {
