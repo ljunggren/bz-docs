@@ -33,6 +33,7 @@ module.exports = {
       collapsed: true,
       items: [
         'core-concepts/modules',
+        'core-concepts/test-types',
         'core-concepts/action-types',
         'core-concepts/control-flow',
         'core-concepts/utilities',
@@ -92,7 +93,7 @@ module.exports = {
       label: 'API testing',
       collapsed: true,
       items: [
-        'api-testing/introduction',
+        'api-testing/api-json',
         'api-testing/tree-view',
         'api-testing/temporary-database',
         'api-testing/load-test',
