@@ -19,11 +19,23 @@ module.exports = {
       collapsed: true,
       items: [
         'the-tool/overview', 
+        'the-tool/navigation', 
         'the-tool/toolbars',
         'the-tool/action-list',
         'the-tool/record',
         'the-tool/settings',
         'the-tool/other',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Core Concepts',
+      collapsed: true,
+      items: [
+        'core-concepts/modules',
+        'core-concepts/action-types',
+        'core-concepts/control-flow',
+        'core-concepts/utilities',
       ],
     },
     {
@@ -35,17 +47,6 @@ module.exports = {
         'element-selectors/dom-picker',
         'element-selectors/element-policy',
         'element-selectors/repairing',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Core Concepts',
-      collapsed: true,
-      items: [
-        'core-concepts/action-types',
-        'core-concepts/features',
-        'core-concepts/canvas',
-
       ],
     },
     {
@@ -75,14 +76,15 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Cucumber',
+      label: 'Integrations',
       collapsed: true,
       items: [
-        'cucumber/feature',
-        'cucumber/xray',
-        'cucumber/other',
-        'cucumber/rca',
-        'cucumber/log-formatter',
+        'integrations/feature',
+        'integrations/xray',
+        'integrations/other',
+        'integrations/rca',
+        'integrations/log-formatter',
+        "integrations/further",
       ],
     },
     {
@@ -94,6 +96,14 @@ module.exports = {
         'api-testing/tree-view',
         'api-testing/temporary-database',
         'api-testing/load-test',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Canvas testing',
+      collapsed: true,
+      items: [
+        'canvas/canvas',
       ],
     },
     {
