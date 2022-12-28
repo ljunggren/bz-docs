@@ -1,13 +1,14 @@
 ---
-id: loops
-title: Loops
+id: features
+title: Features
 ---
+ ## Loops
 
 import YouTubeEmbed from "@site/src/components/YouTubeEmbed";
 
-<YouTubeEmbed embedId="zHDmcl2pIh0">Docusaurus green</YouTubeEmbed>
+<YouTubeEmbed embedId="zHDmcl2pIh0">Loops</YouTubeEmbed>
 
-## Looping a test
+### Looping a test
 
 A loop means to repeat execution until a certain condition is fulfilled. In Boozang, a data loop is like a for-condition running over a data set, meaning the test gets executed once for each data entry. 
 
@@ -21,7 +22,7 @@ The following data formats are supported to drive loops
 - Arrays:  The assigned `$loop`item will be of `Property` format (String) 
 - Request data: This is supported if the fetched data is `CSV`or `Array`.
 
-## Looping an action
+### Looping an action
 
 We also support looping a single action. In the "Pre/End script" tag you can either add an array to loop over the values, or add a single integer to loop a fixed set of times. If you choose to loop over data, the value will be assigned to the `$action` variable.
 
@@ -29,3 +30,26 @@ We also support looping a single action. In the "Pre/End script" tag you can eit
 ["apple","banana","pear"]: loop 3 times, $action will get the value "apple", "banana", "pear"
 5: loop action five times
 ```
+
+## Switch (case)
+
+<YouTubeEmbed embedId="Gj9yAf6KG-w">Switch (flag)</YouTubeEmbed>
+
+## Notes
+
+<YouTubeEmbed embedId="YmBce5D9nGM">Notes & Todos</YouTubeEmbed>
+
+## Keywords
+
+<YouTubeEmbed embedId="zHDmcl2pIh0">Docusaurus green</YouTubeEmbed>
+
+In data-driven testing, we support the keywords "bz-skip" and "bz-stop" to be able to trigger conditional functionality based on data. As soon as "bz-skip" occur the test will skip without generating a failure. If "bz-stop" occur the all upstream tests will stop without generating an error.  
+
+
+## Loading
+
+<YouTubeEmbed embedId="ofUZX1QxOeA">Loading element</YouTubeEmbed>
+
+
+
+

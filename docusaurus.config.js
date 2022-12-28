@@ -37,7 +37,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Boozang',
+        title: '',
         logo: {
           alt: 'Boozang Logo',
           src: 'img/bz-square-padded.png',
