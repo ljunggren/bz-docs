@@ -10,6 +10,7 @@ module.exports = {
         "introduction/why",
         "introduction/getting-started",
         "introduction/end-to-end",
+        "introduction/the-book",
       ],
     },
     {
@@ -31,8 +32,6 @@ module.exports = {
       collapsed: true,
       items: [
         'element-selectors/introduction',
-        'element-selectors/note',
-        'element-selectors/selecting',
         'element-selectors/dom-picker',
         'element-selectors/element-policy',
         'element-selectors/repairing',

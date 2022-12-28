@@ -4,27 +4,27 @@ title: Regular Expressions
 ---
 ![regexp](../images/regexp.png)
 
-###### Boozang regular expression engine
+- Boozang regular expression engine
 
 Boozang also supports a regular expression engine that can generate random data that complies with a certain regular expression. This can be useful when generating random test data, but also when creating test validations to make sure certain field constraints are being enforced. 
 
-###### Setting up regular expressions
+- Setting up regular expressions
 
 To set up a new regular expression, click Settings -> Content Policy and scroll down to the regular expressions. Here you can find several pre-defined regex and associated labels. First, make sure the type of regular expression isn´t in the list. As a phone number or zip code will vary from country to country, it´s natural that these are modified to match your specific project. 
 
 Also, make sure that all possible labels are matching the indicated regular expressions. This way, auto-fill functionality and future AI functions will be able to better identify different fields and make "better guesses".  
 
-###### Setting up a new regular expression
+- Setting up a new regular expression
 
 To set up a new regular expression, click new and add in the necessary fields. The Field mapping will determine which form labels to look for when trying to match data. Use the OR sign ("|") to separate several fields. 
 
 <!-- ![autofill](../images/autofill.png) -->
 
-###### Using auto-fill functionality
+- Using auto-fill functionality
 
 When using the auto-fill functionality in the toolbar, the Boozang tool without choosing to data-bind, Boozang will use the regexp engine to generate data into the form. When recording, this can be used to quickly create test cases with temp data. 
 
-###### Binding auto-fill with data-bind
+- Binding auto-fill with data-bind
 
 When enabling data-bind and clicking autofill form, Boozang will look in the current data scope for matching data. If that isn´t found, Boozang will use the regexp engine to automatically bind the data scope to the form. This is a great way to quickly create a data-driven test case.
 
