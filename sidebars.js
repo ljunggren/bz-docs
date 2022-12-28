@@ -93,6 +93,7 @@ module.exports = {
       label: 'API testing',
       collapsed: true,
       items: [
+        'api-testing/api-overview',
         'api-testing/api-json',
         'api-testing/tree-view',
         'api-testing/temporary-database',

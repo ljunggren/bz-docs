@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://boozang.com/advanced-api-testing/ -->
+<html lang="en-US"><script type="text/javascript" async="" src="./apix4 view in Boozang - Boozang_files/js"></script><script type="text/javascript" async="" src="./apix4 view in Boozang - Boozang_files/analytics.js"></script><script type="text/javascript" async="" src="./apix4 view in Boozang - Boozang_files/gtm.js"></script><script type="text/javascript" async="" src="./apix4 view in Boozang - Boozang_files/uwt.js"></script><script type="text/javascript" async="" src="./apix4 view in Boozang - Boozang_files/insight.min.js"></script><script src="./apix4 view in Boozang - Boozang_files/10152440414827018" async=""></script><script type="text/javascript" async="" src="./apix4 view in Boozang - Boozang_files/fbevents.js"></script><script type="text/javascript" async="" src="./apix4 view in Boozang - Boozang_files/mixpanel-2-latest.min.js"></script><script type="text/javascript" src="./apix4 view in Boozang - Boozang_files/commons.c42222c4cb2f8913500f.js.gz" async="" status="loaded"></script><script type="text/javascript" src="./apix4 view in Boozang - Boozang_files/google-tag-manager.dynamic.js.gz" async="" status="loaded"></script><script type="text/javascript" src="./apix4 view in Boozang - Boozang_files/twitter-ads.dynamic.js.gz" async="" status="loaded"></script><script type="text/javascript" src="./apix4 view in Boozang - Boozang_files/linkedin-insight-tag.dynamic.js.gz" async="" status="loaded"></script><script type="text/javascript" src="./apix4 view in Boozang - Boozang_files/facebook-pixel.dynamic.js.gz" async="" status="loaded"></script><script type="text/javascript" src="./apix4 view in Boozang - Boozang_files/hotjar.dynamic.js.gz" async="" status="loaded"></script><script type="text/javascript" src="./apix4 view in Boozang - Boozang_files/mixpanel.dynamic.js.gz" async="" status="loaded"></script><script type="text/javascript" async="" src="./apix4 view in Boozang - Boozang_files/analytics.min.js"></script><script type="application/javascript">(function() {
+    let _fun=EventTarget.prototype.addEventListener;
+    EventTarget.prototype._addEventListener = _fun
+    
+    EventTarget.prototype.addEventListener=function(t,f,c){
+      if(EventTarget.prototype._addEventListener != _fun){
+        EventTarget.prototype._addEventListener = _fun
+      }
+      if(this==window&&t=="beforeunload"){
+        this._addEventListener(t,function(event){
+          let play=localStorage.getItem("playModel")
+          if(t=="beforeunload"&&play=="play"){
+          }else{
+            return f(event)
+          }
+        },c)
+      }else{
+        this._addEventListener(t,f,c)
+      }
+    }
+  })();</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content=" Codeless testing that works">
+    <!-- <link rel="icon" href="../../favicon.ico">-->
+
+    <link rel="pingback" href="https://boozang.com/xmlrpc.php">
+    <title>Boozang | A new API testing view in Boozang - Boozang    </title>
+
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="dlm-version" content="4.7.70">
+	<!-- This site is optimized with the Yoast SEO plugin v19.12 - https://yoast.com/wordpress/plugins/seo/ -->
+	<!-- Admin only notice: this page does not show a meta description because it does not have one, either write it for this page specifically or go into the [SEO - Search Appearance] menu and set up a template. -->
+	<link rel="canonical" href="https://boozang.com/advanced-api-testing/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="A new API testing view in Boozang - Boozang">
+	<meta property="og:description" content="We are really excited to announce that Boozang now provides unlimited API testing for FREE so I’m reposting some relevant blog posts. By introducing a new set of API testing features in Boozang, we provide a single browser-based solution for both API and UI tests, allowing for a unified testing process based on Cucumber / BDD, fully integrated to JIRA / XRay. Background Most people will agree that Postman stands […]">
+	<meta property="og:url" content="https://boozang.com/advanced-api-testing/">
+	<meta property="og:site_name" content="Boozang">
+	<meta property="article:publisher" content="https://www.facebook.com/boozangcloud/">
+	<meta property="article:published_time" content="2021-07-08T01:15:58+00:00">
+	<meta property="article:modified_time" content="2021-08-12T00:28:21+00:00">
+	<meta property="og:image" content="https://boozang.com/wp-content/uploads/2021/07/advanced-api-testing.png">
+	<meta property="og:image:width" content="900">
+	<meta property="og:image:height" content="490">
+	<meta property="og:image:type" content="image/png">
+	<meta name="author" content="ljunggren">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:creator" content="@boozangcloud">
+	<meta name="twitter:site" content="@boozangcloud">
+	<meta name="twitter:label1" content="Written by">
+	<meta name="twitter:data1" content="ljunggren">
+	<meta name="twitter:label2" content="Est. reading time">
+	<meta name="twitter:data2" content="11 minutes">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://boozang.com/advanced-api-testing/#article","isPartOf":{"@id":"https://boozang.com/advanced-api-testing/"},"author":{"name":"ljunggren","@id":"https://boozang.com/#/schema/person/19dc9db06ed33ec658e16811e0b75efe"},"headline":"A new API testing view in Boozang","datePublished":"2021-07-08T01:15:58+00:00","dateModified":"2021-08-12T00:28:21+00:00","mainEntityOfPage":{"@id":"https://boozang.com/advanced-api-testing/"},"wordCount":1849,"commentCount":0,"publisher":{"@id":"https://boozang.com/#organization"},"image":{"@id":"https://boozang.com/advanced-api-testing/#primaryimage"},"thumbnailUrl":"https://boozang.com/wp-content/uploads/2021/07/advanced-api-testing.png","articleSection":["Tips &amp; Tricks","New Features"],"inLanguage":"en-US","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://boozang.com/advanced-api-testing/#respond"]}]},{"@type":"WebPage","@id":"https://boozang.com/advanced-api-testing/","url":"https://boozang.com/advanced-api-testing/","name":"A new API testing view in Boozang - Boozang","isPartOf":{"@id":"https://boozang.com/#website"},"primaryImageOfPage":{"@id":"https://boozang.com/advanced-api-testing/#primaryimage"},"image":{"@id":"https://boozang.com/advanced-api-testing/#primaryimage"},"thumbnailUrl":"https://boozang.com/wp-content/uploads/2021/07/advanced-api-testing.png","datePublished":"2021-07-08T01:15:58+00:00","dateModified":"2021-08-12T00:28:21+00:00","breadcrumb":{"@id":"https://boozang.com/advanced-api-testing/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://boozang.com/advanced-api-testing/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://boozang.com/advanced-api-testing/#primaryimage","url":"https://boozang.com/wp-content/uploads/2021/07/advanced-api-testing.png","contentUrl":"https://boozang.com/wp-content/uploads/2021/07/advanced-api-testing.png","width":900,"height":490},{"@type":"BreadcrumbList","@id":"https://boozang.com/advanced-api-testing/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://boozang.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://boozang.com/blog/"},{"@type":"ListItem","position":3,"name":"A new API testing view in Boozang"}]},{"@type":"WebSite","@id":"https://boozang.com/#website","url":"https://boozang.com/","name":"Boozang","description":"Codeless testing that works","publisher":{"@id":"https://boozang.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://boozang.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://boozang.com/#organization","name":"Boozang","url":"https://boozang.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://boozang.com/#/schema/logo/image/","url":"https://boozang.com/wp-content/uploads/2019/02/boozang-black.png","contentUrl":"https://boozang.com/wp-content/uploads/2019/02/boozang-black.png","width":150,"height":36,"caption":"Boozang"},"image":{"@id":"https://boozang.com/#/schema/logo/image/"},"sameAs":["https://www.linkedin.com/company/10640313/","https://www.youtube.com/channel/UCh1DvPtyZxxsoVyUY8eYjsw","https://www.facebook.com/boozangcloud/","https://twitter.com/boozangcloud"]},{"@type":"Person","@id":"https://boozang.com/#/schema/person/19dc9db06ed33ec658e16811e0b75efe","name":"ljunggren","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://boozang.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/3d2d7ee5e039e0a02ecfc3d5eded52dd?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/3d2d7ee5e039e0a02ecfc3d5eded52dd?s=96&d=mm&r=g","caption":"ljunggren"},"url":"https://boozang.com/author/ljunggren/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com/">
+<link rel="dns-prefetch" href="https://use.fontawesome.com/">
+<link rel="alternate" type="application/rss+xml" title="Boozang » A new API testing view in Boozang Comments Feed" href="https://boozang.com/advanced-api-testing/feed/">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/boozang.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script><script src="./apix4 view in Boozang - Boozang_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="./apix4 view in Boozang - Boozang_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="classic-theme-styles-css" href="./apix4 view in Boozang - Boozang_files/classic-themes.min.css" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="af-fontawesome-css" href="./apix4 view in Boozang - Boozang_files/all.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="af-fontawesome-compat-v4-css" href="./apix4 view in Boozang - Boozang_files/v4-shims.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="af-widgets-css" href="./apix4 view in Boozang - Boozang_files/widgets.css" type="text/css" media="all">
+<link rel="stylesheet" id="email-subscribers-css" href="./apix4 view in Boozang - Boozang_files/email-subscribers-public.css" type="text/css" media="all">
+<link rel="stylesheet" id="wordfenceAJAXcss-css" href="./apix4 view in Boozang - Boozang_files/wordfenceBox.1670945819.css" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css-css" href="./apix4 view in Boozang - Boozang_files/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="style-css" href="./apix4 view in Boozang - Boozang_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-5-css" href="./apix4 view in Boozang - Boozang_files/all.css" type="text/css" media="all">
+<link rel="stylesheet" id="boozang-fifth-custom-css" href="./apix4 view in Boozang - Boozang_files/custom.css" type="text/css" media="all">
+<link rel="stylesheet" id="comp-css" href="./apix4 view in Boozang - Boozang_files/comp.css" type="text/css" media="all">
+<link rel="stylesheet" id="cookie-notice-front-css" href="./apix4 view in Boozang - Boozang_files/front.min.css" type="text/css" media="all">
+<script type="text/javascript" src="./apix4 view in Boozang - Boozang_files/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="./apix4 view in Boozang - Boozang_files/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="wfi18njs-js-extra">
+/* <![CDATA[ */
+var WordfenceI18nStrings = {"${totalIPs} addresses in this network":"${totalIPs} addresses in this network","%s in POST body: %s":"%s in POST body: %s","%s in cookie: %s":"%s in cookie: %s","%s in file: %s":"%s in file: %s","%s in query string: %s":"%s in query string: %s","%s is not valid hostname":"%s is not valid hostname",".htaccess Updated":".htaccess Updated",".htaccess change":".htaccess change","404 Not Found":"404 Not Found","Activity Log Sent":"Activity Log Sent","Add action to allowlist":"Add action to allowlist","Add code to .htaccess":"Add code to .htaccess","All Hits":"All Hits","All capabilties of admin user %s were successfully revoked.":"All capabilties of admin user %s were successfully revoked.","An error occurred":"An error occurred","An error occurred when adding the request to the allowlist.":"An error occurred when adding the request to the allowlist.","Are you sure you want to allowlist this action?":"Are you sure you want to allowlist this action?","Authentication Code":"Authentication Code","Background Request Blocked":"Background Request Blocked","Block This Network":"Block This Network","Blocked":"Blocked","Blocked By Firewall":"Blocked By Firewall","Blocked WAF":"Blocked WAF","Blocked by Wordfence":"Blocked by Wordfence","Blocked by Wordfence plugin settings":"Blocked by Wordfence plugin settings","Blocked by the Wordfence Application Firewall and plugin settings":"Blocked by the Wordfence Application Firewall and plugin settings","Blocked by the Wordfence Security Network":"Blocked by the Wordfence Security Network","Blocked by the Wordfence Web Application Firewall":"Blocked by the Wordfence Web Application Firewall","Bot":"Bot","Cancel Changes":"Cancel Changes","Cellphone Sign-In Recovery Codes":"Cellphone Sign-In Recovery Codes","Cellphone Sign-in activated for user.":"Cellphone Sign-in activated for user.","Click here to download a backup copy of this file now":"Click here to download a backup copy of this file now","Click here to download a backup copy of your .htaccess file now":"Click here to download a backup copy of your .htaccess file now","Click to fix .htaccess":"Click to fix .htaccess","Close":"Close","Crawlers":"Crawlers","Diagnostic report has been sent successfully.":"Diagnostic report has been sent successfully.","Directory Listing Disabled":"Directory Listing Disabled","Directory listing has been disabled on your server.":"Directory listing has been disabled on your server.","Disabled":"Disabled","Dismiss":"Dismiss","Don't ask again":"Don't ask again","Download":"Download","Download Backup File":"Download Backup File","Each line of 16 letters and numbers is a single recovery code, with optional spaces for readability. When typing your password, enter \"wf\" followed by the entire code like \"mypassword wf1234 5678 90AB CDEF\". If your site shows a separate prompt for entering a code after entering only your username and password, enter only the code like \"1234 5678 90AB CDEF\". Your recovery codes are:":"Each line of 16 letters and numbers is a single recovery code, with optional spaces for readability. When typing your password, enter \"wf\" followed by the entire code like \"mypassword wf1234 5678 90AB CDEF\". If your site shows a separate prompt for entering a code after entering only your username and password, enter only the code like \"1234 5678 90AB CDEF\". Your recovery codes are:","Email Diagnostic Report":"Email Diagnostic Report","Email Wordfence Activity Log":"Email Wordfence Activity Log","Enter a valid IP or domain":"Enter a valid IP or domain","Enter the email address you would like to send the Wordfence activity log to. Note that the activity log may contain thousands of lines of data. This log is usually only sent to a member of the Wordfence support team. It also contains your PHP configuration from the phpinfo() function for diagnostic data.":"Enter the email address you would like to send the Wordfence activity log to. Note that the activity log may contain thousands of lines of data. This log is usually only sent to a member of the Wordfence support team. It also contains your PHP configuration from the phpinfo() function for diagnostic data.","Error":"Error","Error Enabling All Options Page":"Error Enabling All Options Page","Error Restoring Defaults":"Error Restoring Defaults","Error Saving Option":"Error Saving Option","Error Saving Options":"Error Saving Options","Failed Login":"Failed Login","Failed Login: Invalid Username":"Failed Login: Invalid Username","Failed Login: Valid Username":"Failed Login: Valid Username","File hidden successfully":"File hidden successfully","File restored OK":"File restored OK","Filter Traffic":"Filter Traffic","Firewall Response":"Firewall Response","Full Path Disclosure":"Full Path Disclosure","Google Bot":"Google Bot","Google Crawlers":"Google Crawlers","HTTP Response Code":"HTTP Response Code","Human":"Human","Humans":"Humans","IP":"IP","Key:":"Key:","Last Updated: %s":"Last Updated: %s","Learn more about repairing modified files.":"Learn more about repairing modified files.","Loading...":"Loading...","Locked Out":"Locked Out","Locked out from logging in":"Locked out from logging in","Logged In":"Logged In","Logins":"Logins","Logins and Logouts":"Logins and Logouts","Look up IP or Domain":"Look up IP or Domain","Manual block by administrator":"Manual block by administrator","Next Update Check: %s":"Next Update Check: %s","No activity to report yet. Please complete your first scan.":"No activity to report yet. Please complete your first scan.","No issues have been ignored.":"No issues have been ignored.","No new issues have been found.":"No new issues have been found.","No rules were updated. Please verify you have permissions to write to the \/wp-content\/wflogs directory.":"No rules were updated. Please verify you have permissions to write to the \/wp-content\/wflogs directory.","No rules were updated. Please verify your website can reach the Wordfence servers.":"No rules were updated. Please verify your website can reach the Wordfence servers.","No rules were updated. Your website has reached the maximum number of rule update requests. Please try again later.":"No rules were updated. Your website has reached the maximum number of rule update requests. Please try again later.","Note: Status will update when changes are saved":"Note: Status will update when changes are saved","OK":"OK","Pages Not Found":"Pages Not Found","Paid Members Only":"Paid Members Only","Please enter a valid IP address or domain name for your whois lookup.":"Please enter a valid IP address or domain name for your whois lookup.","Please enter a valid email address.":"Please enter a valid email address.","Please include your support ticket number or forum username.":"Please include your support ticket number or forum username.","Please make a backup of this file before proceeding. If you need to restore this backup file, you can copy it to the following path from your site's root:":"Please make a backup of this file before proceeding. If you need to restore this backup file, you can copy it to the following path from your site's root:","Please specify a reason":"Please specify a reason","Please specify a valid IP address range in the form of \"1.2.3.4 - 1.2.3.5\" without quotes. Make sure the dash between the IP addresses in a normal dash (a minus sign on your keyboard) and not another character that looks like a dash.":"Please specify a valid IP address range in the form of \"1.2.3.4 - 1.2.3.5\" without quotes. Make sure the dash between the IP addresses in a normal dash (a minus sign on your keyboard) and not another character that looks like a dash.","Please specify either an IP address range, Hostname or a web browser pattern to match.":"Please specify either an IP address range, Hostname or a web browser pattern to match.","Recent Activity":"Recent Activity","Recovery Codes":"Recovery Codes","Redirected":"Redirected","Redirected by Country Blocking bypass URL":"Redirected by Country Blocking bypass URL","Referer":"Referer","Registered Users":"Registered Users","Restore Defaults":"Restore Defaults","Rule Update Failed":"Rule Update Failed","Rules Updated":"Rules Updated","Save Changes":"Save Changes","Scan Complete.":"Scan Complete.","Scan the code below with your authenticator app to add this account. Some authenticator apps also allow you to type in the text version instead.":"Scan the code below with your authenticator app to add this account. Some authenticator apps also allow you to type in the text version instead.","Security Event":"Security Event","Send":"Send","Sorry, but no data for that IP or domain was found.":"Sorry, but no data for that IP or domain was found.","Specify a valid IP range":"Specify a valid IP range","Specify a valid hostname":"Specify a valid hostname","Specify an IP range, Hostname or Browser pattern":"Specify an IP range, Hostname or Browser pattern","Success deleting file":"Success deleting file","Success removing option":"Success removing option","Success restoring file":"Success restoring file","Success updating option":"Success updating option","Successfully deleted admin":"Successfully deleted admin","Successfully revoked admin":"Successfully revoked admin","Test Email Sent":"Test Email Sent","The 'How does Wordfence get IPs' option was successfully updated to the recommended value.":"The 'How does Wordfence get IPs' option was successfully updated to the recommended value.","The Full Path disclosure issue has been fixed":"The Full Path disclosure issue has been fixed","The admin user %s was successfully deleted.":"The admin user %s was successfully deleted.","The file %s was successfully deleted.":"The file %s was successfully deleted.","The file %s was successfully hidden from public view.":"The file %s was successfully hidden from public view.","The file %s was successfully restored.":"The file %s was successfully restored.","The option %s was successfully removed.":"The option %s was successfully removed.","The request has been allowlisted. Please try it again.":"The request has been allowlisted. Please try it again.","There was an error while sending the email.":"There was an error while sending the email.","This will be shown only once. Keep these codes somewhere safe.":"This will be shown only once. Keep these codes somewhere safe.","Throttled":"Throttled","Two Factor Status":"Two Factor Status","Type":"Type","Type: %s":"Type: %s","URL":"URL","Unable to automatically hide file":"Unable to automatically hide file","Use one of these %s codes to log in if you are unable to access your phone. Codes are 16 characters long, plus optional spaces. Each one may be used only once.":"Use one of these %s codes to log in if you are unable to access your phone. Codes are 16 characters long, plus optional spaces. Each one may be used only once.","Use one of these %s codes to log in if you lose access to your authenticator device. Codes are 16 characters long, plus optional spaces. Each one may be used only once.":"Use one of these %s codes to log in if you lose access to your authenticator device. Codes are 16 characters long, plus optional spaces. Each one may be used only once.","User Agent":"User Agent","User ID":"User ID","Username":"Username","WHOIS LOOKUP":"WHOIS LOOKUP","We are about to change your <em>.htaccess<\/em> file. Please make a backup of this file before proceeding.":"We are about to change your <em>.htaccess<\/em> file. Please make a backup of this file before proceeding.","We can't modify your .htaccess file for you because: %s":"We can't modify your .htaccess file for you because: %s","We encountered a problem":"We encountered a problem","Wordfence Firewall blocked a background request to WordPress for the URL %s. If this occurred as a result of an intentional action, you may consider allowlisting the request to allow it in the future.":"Wordfence Firewall blocked a background request to WordPress for the URL %s. If this occurred as a result of an intentional action, you may consider allowlisting the request to allow it in the future.","Wordfence is working...":"Wordfence is working...","You are using Nginx as your web server. You'll need to disable autoindexing in your nginx.conf. See the <a target='_blank'  rel='noopener noreferrer' href='https:\/\/nginx.org\/en\/docs\/http\/ngx_http_autoindex_module.html'>Nginx docs for more info<\/a> on how to do this.":"You are using Nginx as your web server. You'll need to disable autoindexing in your nginx.conf. See the <a target='_blank'  rel='noopener noreferrer' href='https:\/\/nginx.org\/en\/docs\/http\/ngx_http_autoindex_module.html'>Nginx docs for more info<\/a> on how to do this.","You are using an Nginx web server and using a FastCGI processor like PHP5-FPM. You will need to manually delete or hide those files.":"You are using an Nginx web server and using a FastCGI processor like PHP5-FPM. You will need to manually delete or hide those files.","You are using an Nginx web server and using a FastCGI processor like PHP5-FPM. You will need to manually modify your php.ini to disable <em>display_error<\/em>":"You are using an Nginx web server and using a FastCGI processor like PHP5-FPM. You will need to manually modify your php.ini to disable <em>display_error<\/em>","You forgot to include a reason you're blocking this IP range. We ask you to include this for your own record keeping.":"You forgot to include a reason you're blocking this IP range. We ask you to include this for your own record keeping.","You have unsaved changes to your options. If you leave this page, those changes will be lost.":"You have unsaved changes to your options. If you leave this page, those changes will be lost.","Your .htaccess has been updated successfully. Please verify your site is functioning normally.":"Your .htaccess has been updated successfully. Please verify your site is functioning normally.","Your Wordfence activity log was sent to %s":"Your Wordfence activity log was sent to %s","Your rules have been updated successfully.":"Your rules have been updated successfully.","Your rules have been updated successfully. You are currently using the free version of Wordfence. Upgrade to Wordfence premium to have your rules updated automatically as new threats emerge. <a href=\"https:\/\/www.wordfence.com\/wafUpdateRules1\/wordfence-signup\/\">Click here to purchase a premium license<\/a>. <em>Note: Your rules will still update every 30 days as a free user.<\/em>":"Your rules have been updated successfully. You are currently using the free version of Wordfence. Upgrade to Wordfence premium to have your rules updated automatically as new threats emerge. <a href=\"https:\/\/www.wordfence.com\/wafUpdateRules1\/wordfence-signup\/\">Click here to purchase a premium license<\/a>. <em>Note: Your rules will still update every 30 days as a free user.<\/em>","Your test email was sent to the requested email address. The result we received from the WordPress wp_mail() function was: %s<br \/><br \/>A 'True' result means WordPress thinks the mail was sent without errors. A 'False' result means that WordPress encountered an error sending your mail. Note that it's possible to get a 'True' response with an error elsewhere in your mail system that may cause emails to not be delivered.":"Your test email was sent to the requested email address. The result we received from the WordPress wp_mail() function was: %s<br \/><br \/>A 'True' result means WordPress thinks the mail was sent without errors. A 'False' result means that WordPress encountered an error sending your mail. Note that it's possible to get a 'True' response with an error elsewhere in your mail system that may cause emails to not be delivered.","blocked by firewall":"blocked by firewall","blocked by firewall for %s":"blocked by firewall for %s","blocked by real-time IP blocklist":"blocked by real-time IP blocklist","blocked by the Wordfence Security Network":"blocked by the Wordfence Security Network","blocked for %s":"blocked for %s","locked out from logging in":"locked out from logging in"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./apix4 view in Boozang - Boozang_files/wfi18n.1670945819.js" id="wfi18njs-js"></script>
+<script type="text/javascript" id="wordfenceAJAXjs-js-extra">
+/* <![CDATA[ */
+var WFAJAXWatcherVars = {"nonce":"a009d0201a"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./apix4 view in Boozang - Boozang_files/admin.ajaxWatcher.1670945819.js" id="wordfenceAJAXjs-js"></script>
+<script type="text/javascript" src="./apix4 view in Boozang - Boozang_files/custom_script.js" id="custom_script-js"></script>
+<script type="text/javascript" id="cookie-notice-front-js-extra">
+/* <![CDATA[ */
+var cnArgs = {"ajaxUrl":"https:\/\/boozang.com\/wp-admin\/admin-ajax.php","nonce":"4f138f2ff7","hideEffect":"fade","position":"bottom","onScroll":"0","onScrollOffset":"100","onClick":"0","cookieName":"cookie_notice_accepted","cookieTime":"2592000","cookieTimeRejected":"2592000","globalCookie":"0","redirection":"0","cache":"1","refuse":"0","revokeCookies":"0","revokeCookiesOpt":"automatic","secure":"1"};
+/* ]]> */
+</script>
+<script async="" type="text/javascript" src="./apix4 view in Boozang - Boozang_files/front.min.js" id="cookie-notice-front-js"></script>
+<link rel="https://api.w.org/" href="https://boozang.com/wp-json/"><link rel="alternate" type="application/json" href="https://boozang.com/wp-json/wp/v2/posts/4754"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://boozang.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://boozang.com/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 6.1.1">
+<link rel="shortlink" href="https://boozang.com/?p=4754">
+<link rel="alternate" type="application/json+oembed" href="https://boozang.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fboozang.com%2Fadvanced-api-testing%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://boozang.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fboozang.com%2Fadvanced-api-testing%2F&amp;format=xml">
+<script>
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="bsxpXW52URytXL9aqjebpk8LPjAlLktn";;analytics.SNIPPET_VERSION="4.15.3";
+  analytics.load("bsxpXW52URytXL9aqjebpk8LPjAlLktn");
+  analytics.page();
+  }}();
+</script>
+<link href="./apix4 view in Boozang - Boozang_files/css" rel="stylesheet">
+<link href="./apix4 view in Boozang - Boozang_files/css2" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://boozang.com/wp-content/themes/boozang-fifth/icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://boozang.com/wp-content/themes/boozang-fifth/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://boozang.com/wp-content/themes/boozang-fifth/icon/favicon-16x16.png">
+<link rel="manifest" href="https://boozang.com/wp-content/themes/boozang-fifth/icon/site.webmanifest">
+<link rel="mask-icon" href="https://boozang.com/wp-content/themes/boozang-fifth/icon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+<script async="" src="./apix4 view in Boozang - Boozang_files/hotjar-1053169.js"></script><script async="" src="./apix4 view in Boozang - Boozang_files/modules.352fddba5b21bbfc3a08.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+
+<body class="post-template-default single single-post postid-4754 single-format-standard logged-in cookies-not-set">
+
+        
+    <header class="header_small lightblue overlay-lightblue" style="background: url(&#39;https://boozang.com/wp-content/uploads/2020/06/newspapers.jpg&#39;) no-repeat center;
+  background-size: cover">
+
+        <!-- get menu -->
+        
+<div id="nav-wrap" class="">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav class="main_menu" role="navigation" aria-label="Main Navigation">
+                    <a class="logo" href="https://boozang.com/" aria-label="Boozang home page">
+                        <!--extra double size image for retina-->
+                                                <img class="logo-img" src="./apix4 view in Boozang - Boozang_files/boozang_logo_reverse.png" srcset="https://boozang.com/wp-content/themes/boozang-fifth/img/boozang_logo_reverse@2x.png 325w" width="208" height="51" alt="Boozang home page">
+                                            </a>
+
+                    <div class="nav_links">
+                        <div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-2675" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2675"><a href="https://boozang.com/advanced-api-testing/#" aria-haspopup="true" aria-expanded="false">Product</a>
+<ul class="sub-menu">
+	<li id="menu-item-2676" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2676"><a href="https://boozang.com/feature-overview/">Feature Overview</a></li>
+	<li id="menu-item-2678" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2678"><a href="https://boozang.com/cucumber-support/">BDD/Cucumber support</a></li>
+	<li id="menu-item-3165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3165"><a href="https://boozang.com/data-handling/">Data Handling</a></li>
+</ul>
+</li>
+<li id="menu-item-1085" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1085"><a href="https://boozang.com/videos/">Videos</a></li>
+<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="https://boozang.com/pricing/">Pricing</a></li>
+<li id="menu-item-86" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-86"><a href="https://boozang.com/advanced-api-testing/#" aria-haspopup="true" aria-expanded="false">Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-1080" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1080"><a href="https://boozang.com/about-us/">About Us</a></li>
+	<li id="menu-item-4935" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4935"><a href="http://docs.boozang.com/">Documentation</a></li>
+	<li id="menu-item-3277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3277"><a href="https://boozang.com/forum/">Forum</a></li>
+	<li id="menu-item-1081" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1081"><a href="https://boozang.com/faqs/">FAQs</a></li>
+</ul>
+</li>
+<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-28"><a href="https://boozang.com/blog/">Blog</a></li>
+</ul></div>                        <div class="signup">
+                            <ul>
+                                <li>
+                                    <a href="https://ai.boozang.com/" aria-label="Boozang Login">
+                                        Login
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://ai.boozang.com/#security/signup" aria-label="Boozang Sign Up">
+                                        Sign Up
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--hamburger-->
+                    <button class="menu_toggle_btn" aria-expanded="false" aria-label="Mobile Menu">
+                        <div aria-hidden="true"></div>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="nav-mobile">
+    <a class="logo" href="https://boozang.com/" aria-label="Boozang home page">
+
+        <img class="logo-img" src="./apix4 view in Boozang - Boozang_files/boozang_logo_reverse.png" srcset="https://boozang.com/wp-content/themes/boozang-fifth/img/boozang_logo_reverse@2x.png 325w" width="208" height="51" alt="Boozang home page">
+    </a>
+    <div class="nav_links">
+        <div class="menu-main-menu-container"><ul id="menu-main-menu-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2675"><a href="https://boozang.com/advanced-api-testing/#" aria-haspopup="true" aria-expanded="false">Product</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2676"><a href="https://boozang.com/feature-overview/">Feature Overview</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2678"><a href="https://boozang.com/cucumber-support/">BDD/Cucumber support</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3165"><a href="https://boozang.com/data-handling/">Data Handling</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1085"><a href="https://boozang.com/videos/">Videos</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="https://boozang.com/pricing/">Pricing</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-86"><a href="https://boozang.com/advanced-api-testing/#" aria-haspopup="true" aria-expanded="false">Resources</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1080"><a href="https://boozang.com/about-us/">About Us</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4935"><a href="http://docs.boozang.com/">Documentation</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3277"><a href="https://boozang.com/forum/">Forum</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1081"><a href="https://boozang.com/faqs/">FAQs</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-28"><a href="https://boozang.com/blog/">Blog</a></li>
+</ul></div>        <div class="signup">
+            <ul>
+                <li>
+                    <a href="https://ai.boozang.com/" aria-label="Boozang Login">
+                        Login
+                    </a>
+                </li>
+                <li>
+                    <a class="btn signup_btn" href="https://ai.boozang.com/#security/signup" aria-label="Boozang Sign Up">
+                        Free Trial
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        <div class="header_items_section">
+            <div class="container">
+                <div class="row">
+                    <!-- column for pages-->
+                    <div class="col-md-10 offset-md-1">
+
+                                                <h1 class="header_heading">
+                                                        <!-- title in header for single post -->
+                            A new API testing view in Boozang                        </h1>
+                        <p class="header_text">
+                                                    </p>
+                    </div>
+
+                    <!-- column / columns for front pages-->
+                                        <!-- row -->
+                </div>
+                <!-- btn links -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-xl-8">
+                        <ul class="btn_links">
+                            <!-- repeater field -->
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<div class="container_blog">
+    <div class="blog_flow section_spacing_top_medium">
+        <div class="container">
+            <div class="row">
+
+                                
+                <!--get content.php-->
+                <!--content for posts-->
+
+<!-- column size -->
+<div class="col-lg-8 offset-lg-2">
+
+
+    <!-- article  -->
+        <article class="post_card single">
+        <img width="900" height="490" src="./apix4 view in Boozang - Boozang_files/advanced-api-testing.png" class="attachment-banner-image size-banner-image wp-post-image" alt="" decoding="async" srcset="https://boozang.com/wp-content/uploads/2021/07/advanced-api-testing.png 900w, https://boozang.com/wp-content/uploads/2021/07/advanced-api-testing-300x163.png 300w, https://boozang.com/wp-content/uploads/2021/07/advanced-api-testing-768x418.png 768w" sizes="(max-width: 900px) 100vw, 900px">
+        <!-- link if post page  -->
+        
+        <!-- content -->
+        <div class="post_content">
+
+            <!-- categories -->
+            <a class="category" href="https://boozang.com/category/tipstricks/">Tips &amp; Tricks</a>, <a class="category" href="https://boozang.com/category/new-features/">New Features</a>            
+                <!-- post_heading -->
+                <header class="post_heading">
+                    <h2 class="blog_post_title">
+                        A new API testing view in Boozang                    </h2>
+                </header>
+
+                <!-- meta - single-->
+                                <div class="blog_post_meta">
+                    <p>
+                        by ljunggren &nbsp; | &nbsp;
+                    </p>
+                    <p>
+                        July 8, 2021                    </p>
+                </div>
+                
+                <main class="post_text">
+                    <!-- content and exerpt-->
+                    <!--if search.php or archive.php -> show only excerpts-->
+                    
+<p><em>We are really excited to announce that Boozang now provides unlimited API testing for FREE so I’m reposting some relevant blog posts.</em></p>
+
+
+
+<p>By introducing a new set of API testing features in Boozang, we provide a single browser-based solution for both API and UI tests, allowing for a unified testing process based on Cucumber / BDD, fully integrated to JIRA / XRay. </p>
+
+
+
+<span id="more-4754"></span>
+
+
+
+<h2><strong>Background</strong></h2>
+
+
+
+<p>Most people will agree that Postman stands out as the option most people will turn to when it comes to API testing. It’s easy to get started and relatively user-friendly. For more extensive end-to-end tests, we have found some limiting factors where Postman falls short. </p>
+
+
+
+<p>These includes</p>
+
+
+
+<ul><li>Mixing UI tests and API tests</li><li>Creating API tests suites where data is carried forward between the API calls</li><li>Creating BDD / Cucumber API tests</li><li>Integration to external systems, such as JIRA / XRay</li><li>Using the UI interactions to facilitate API test creation</li></ul>
+
+
+
+<p>In Boozang, we support all these use-cases. But we still lacked ease-of-use and debugging capabilities. In our latest feature release, we have tried to improve this significantly. </p>
+
+
+
+<p>We have also launched features that will allow you to easily migrate between other tools, such as Postman and JMeter. This way, it opens up for collaboration within an organization where different tools are used. Also, it greatly mitigates any lock-in concerns.</p>
+
+
+
+<h2><strong>API data model</strong></h2>
+
+
+
+<h4><strong>A note on test types</strong></h4>
+
+
+
+<p>In Boozang, two of our test types supports API calls</p>
+
+
+
+<ul><li>Regular tests</li><li>API tests</li></ul>
+
+
+
+<p>The only difference is that Regular tests can consist of both UI actions and API actions, while API tests cannot do UI actions. It’s therefore recommended that you use regular tests for mixed UI and API tests and API tests for pure API tests.&nbsp;</p>
+
+
+
+<p>For flexibility, both test types support Javascript, Group, and Plug-test case actions. </p>
+
+
+
+<p>Note: Nothing would stop you from using only regular tests, but for housekeeping purposes, we recommend that you utilize the API test type if you know you will not be adding UI interactions.</p>
+
+
+
+<h4><strong>Modules</strong></h4>
+
+
+
+<p>To create an API test, you will need to have a module created. In the below image, you can see that a generic module called “JSON-server” has been created.</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="770" height="444" src="./apix4 view in Boozang - Boozang_files/1-add-api-test.png" alt="" class="wp-image-4748" srcset="https://boozang.com/wp-content/uploads/2021/07/1-add-api-test.png 770w, https://boozang.com/wp-content/uploads/2021/07/1-add-api-test-300x173.png 300w, https://boozang.com/wp-content/uploads/2021/07/1-add-api-test-768x443.png 768w" sizes="(max-width: 770px) 100vw, 770px"></figure>
+
+
+
+<p>In projects where you use both UI and API tests, we recommend that you follow a shared module structure, where UI and API tests can be found in the same modules. If you decide to create a new API module structure, use a naming prefix, such as API, to keep them apart easily.&nbsp;</p>
+
+
+
+<h4><strong>API action relationships</strong></h4>
+
+
+
+<p>When creating an API test, an API action will automatically be added to the test. An API test can have several API actions, which will be executed in a sequence, similar to clicks and validations in a UI test.</p>
+
+
+
+<p>An API action can also execute several API calls. This means we have an unusually intricate hierarchy, with the following one -&gt; many relationships (denoted -*&gt;).&nbsp;</p>
+
+
+
+<pre class="wp-block-code"><code>Test suites -*&gt; API tests -*&gt; API actions -*&gt; API calls</code></pre>
+
+
+
+<p>This might seem overly complex, but there is a reason for this complexity. Boozang was built to be able to run complex end-to-end API call flows alongside UI actions. </p>
+
+
+
+<p>As a single UI action can trigger many API requests, this structure allows us to keep a one-to-one mapping between UI actions and API actions. Another bonus is that API load tests, that are set up on a per-action basis in Boozang, can support complex load scenarios, comprised of many API calls.</p>
+
+
+
+<h2><strong>The new API UI</strong></h2>
+
+
+
+<h4><strong>Creating an API test</strong></h4>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="899" height="771" src="./apix4 view in Boozang - Boozang_files/api-test-creation.png" alt="" class="wp-image-4782" srcset="https://boozang.com/wp-content/uploads/2021/07/api-test-creation.png 899w, https://boozang.com/wp-content/uploads/2021/07/api-test-creation-300x257.png 300w, https://boozang.com/wp-content/uploads/2021/07/api-test-creation-768x659.png 768w" sizes="(max-width: 899px) 100vw, 899px"></figure>
+
+
+
+<p>Click “New API test” within the selected module. Besides the name, make sure you select the API host. If the host isn’t shown, make sure it’s set up under Settings-&gt; Environment.</p>
+
+
+
+<p>Start by creating an API test from scratch. We will see the following view.</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="899" height="771" src="./apix4 view in Boozang - Boozang_files/api-action-details.png" alt="" class="wp-image-4783" srcset="https://boozang.com/wp-content/uploads/2021/07/api-action-details.png 899w, https://boozang.com/wp-content/uploads/2021/07/api-action-details-300x257.png 300w, https://boozang.com/wp-content/uploads/2021/07/api-action-details-768x659.png 768w" sizes="(max-width: 899px) 100vw, 899px"></figure>
+
+
+
+<p>The view is divided into an upper part and a lower part with sub-tabs. </p>
+
+
+
+<h4><strong>The API details (upper part)</strong></h4>
+
+
+
+<p><strong>List of API calls</strong></p>
+
+
+
+<p>For most API actions, a single API call is enough. There are some cases where is better to group API calls together in a single API action. Let’s imagine the product creation flow, where an API endpoint needs to be called to create the <em>product</em>, then the <em>product id</em> that is returned needs to be used to call a different API endpoint to create a default <em>subproduct</em>.</p>
+
+
+
+<p>As both of these API calls are used to create a single product, consider grouping them as two calls in the same “Create product” API action. </p>
+
+
+
+<p><strong>Add, copy, paste, delete, disable, re-order</strong></p>
+
+
+
+<p>All the API calls in the dropdown list can be manipulated with the controls on the right of the dropdown. Notice that you can use the up-down arrows to re-order the API calls. </p>
+
+
+
+<p><strong>HTTP Method (GET, POST, …) + end-point</strong></p>
+
+
+
+<p>Set the HTTP method and the end-point for the API call here. </p>
+
+
+
+<p><strong>Content-type</strong></p>
+
+
+
+<p>Indicates the Content-type in the POST data being sent. Typical content-type headers are “text/plain”, “application/xml”, “text/html”, “application/json”, “image/gif”, and “image/jpeg”. </p>
+
+
+
+<p>In Boozang, you typically want to use JSON data (Object data) for REST APIs. In this case, make sure the content-type is set to “application/json”.</p>
+
+
+
+<h4><strong>The API details (sub-tabs)</strong></h4>
+
+
+
+<p>For each API call, you can configure the request details in the sub-tabs</p>
+
+
+
+<p><strong>Authentication</strong></p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="767" height="193" src="./apix4 view in Boozang - Boozang_files/api-subtab-authentication.png" alt="" class="wp-image-4795" srcset="https://boozang.com/wp-content/uploads/2021/07/api-subtab-authentication.png 767w, https://boozang.com/wp-content/uploads/2021/07/api-subtab-authentication-300x75.png 300w" sizes="(max-width: 767px) 100vw, 767px"></figure>
+
+
+
+<p>Handles API authentication. As an alternative to setting the authentication headers manually under Headers tab, you can specify the authentication method here. Either pick from one of the suggested policies, or use an auth token directly from the UI interface.</p>
+
+
+
+<p>If you choose to use an authorization token from the UI interface, you’ll need to set up the <em>Retrieve token</em> test-case using Boozang AI authorization. This can be setup in <em>Settings -&gt; Environments</em>. </p>
+
+
+
+<p><strong>Headers</strong></p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="757" height="152" src="./apix4 view in Boozang - Boozang_files/api-subtab-headers.png" alt="" class="wp-image-4796" srcset="https://boozang.com/wp-content/uploads/2021/07/api-subtab-headers.png 757w, https://boozang.com/wp-content/uploads/2021/07/api-subtab-headers-300x60.png 300w" sizes="(max-width: 757px) 100vw, 757px"></figure>
+
+
+
+<p>Add request headers using the JSON or key-value editor. </p>
+
+
+
+<p>Remember that you can use dynamic data from all data scopes here ($project, $module, $test, $parameter). This is useful to carry over data from a previous API test (or call), or even a UI test.</p>
+
+
+
+<p><strong>Query</strong></p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="765" height="152" src="./apix4 view in Boozang - Boozang_files/api-subtab-query.png" alt="" class="wp-image-4797" srcset="https://boozang.com/wp-content/uploads/2021/07/api-subtab-query.png 765w, https://boozang.com/wp-content/uploads/2021/07/api-subtab-query-300x60.png 300w" sizes="(max-width: 765px) 100vw, 765px"></figure>
+
+
+
+<p>The request URL queries can sometimes be a little messy. Use the query editor to be able to add URL parameters using the JSON or key-value editor.</p>
+
+
+
+<p>As mentioned previously, you can use dynamic data from all data scopes here ($project, $module, $test, $parameter). </p>
+
+
+
+<p><strong>Body</strong> <strong>(POST only)</strong></p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="762" height="181" src="./apix4 view in Boozang - Boozang_files/api-subtab-body.png" alt="" class="wp-image-4798" srcset="https://boozang.com/wp-content/uploads/2021/07/api-subtab-body.png 762w, https://boozang.com/wp-content/uploads/2021/07/api-subtab-body-300x71.png 300w" sizes="(max-width: 762px) 100vw, 762px"></figure>
+
+
+
+<p>Use the JSON or Key-value editor to set the body content for HTTP POST. </p>
+
+
+
+<p>As mentioned previously, you can use dynamic data from all data scopes here ($project, $module, $test, $parameter).</p>
+
+
+
+<p><strong>Script</strong></p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="759" height="245" src="./apix4 view in Boozang - Boozang_files/api-subtab-script.png" alt="" class="wp-image-4800" srcset="https://boozang.com/wp-content/uploads/2021/07/api-subtab-script.png 759w, https://boozang.com/wp-content/uploads/2021/07/api-subtab-script-300x97.png 300w" sizes="(max-width: 759px) 100vw, 759px"></figure>
+
+
+
+<p>Use the script window to validate the response and assert if the API call is successful or not. Note how returning <em>true </em>means success and <em>false</em> means failure.  </p>
+
+
+
+<p>The key data structure here is <em>$result</em>. This contains the whole result payload that is being returned. The following things can be accessed from the $result</p>
+
+
+
+<ul><li>$result.actionResult: Boozang internal containing the execution status</li><li>$result.headers: The response headers</li><li>$result.idx: Boozang internal id for load tests</li><li>$result.request: The request object</li><li>$result.responseJSON: The response parsed as JSON</li><li>$result.responseText: The response as text</li><li>$result.status: The HTTP response code</li></ul>
+
+
+
+<p>If you want to examine these in detail you can add the following script</p>
+
+
+
+<pre class="wp-block-code"><code>(()=&gt;{
+  console.log("BZ-LOG: ### Result: " + $result.responseJSON.id)
+  if ($result.status &gt;201) {
+    return false;
+  } 
+  console.log("BZ-LOG: ### actionResult ", $result.actionResult); 
+  console.log("BZ-LOG: ### headers ", $result.headers); 
+  console.log("BZ-LOG: ### idx ", $result.idx);
+  console.log("BZ-LOG: ### request ", $result.request);
+  console.log("BZ-LOG: ### responseText ", $result.responseJSON);
+  console.log("BZ-LOG: ### responseText ", $result.responseText);
+  console.log("BZ-LOG: ### status ", $result.status);
+
+return true;
+})();</code></pre>
+
+
+
+<p>This way they will show up in the Boozang console window (and the Chrome console).</p>
+
+
+
+<p>This script is not limited to only validating HTTP response codes, like in the default script. In below example the script validates that the response id is a number. It also saves the response id in a temporary variable (<em>$test.response_id</em>).</p>
+
+
+
+<pre class="wp-block-code"><code>(()=&gt;{
+  console.log("BZ-LOG: ### Result: " + $result.responseJSON.id)
+  if ($result.status &gt;201) {
+    return false;
+  } 
+  
+  console.log("BZ-LOG: ### Result: " + $result.responseJSON.id)
+  $test.response_id=$result.responseJSON.id;
+  return !isNaN($result.responseJSON.id);
+})();</code></pre>
+
+
+
+<p>As mentioned previously, you can use dynamic data from all data scopes here ($project, $module, $test, $parameter).</p>
+
+
+
+<p><strong>Try</strong></p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="759" height="183" src="./apix4 view in Boozang - Boozang_files/api-subtab-try.png" alt="" class="wp-image-4801" srcset="https://boozang.com/wp-content/uploads/2021/07/api-subtab-try.png 759w, https://boozang.com/wp-content/uploads/2021/07/api-subtab-try-300x72.png 300w" sizes="(max-width: 759px) 100vw, 759px"></figure>
+
+
+
+<p>Before running the test, make sure its setup correctly using the this tab. You can try using different data-sets. A green check-mark will show if the request was successful or not. Note how a checkmark appears on the script tab as well. This shows if the script returned <em>true</em> or <em>false</em>, which will be the exit status of the API call. </p>
+
+
+
+<h4>Adding an additional API call</h4>
+
+
+
+<p>You can add an additional API call using the plus (+) icon. As you can see, you can also, copy, paste, delete, and disable API calls in this menu. </p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="809" height="241" src="./apix4 view in Boozang - Boozang_files/2-add-api-call.png" alt="" class="wp-image-4749" srcset="https://boozang.com/wp-content/uploads/2021/07/2-add-api-call.png 809w, https://boozang.com/wp-content/uploads/2021/07/2-add-api-call-300x89.png 300w, https://boozang.com/wp-content/uploads/2021/07/2-add-api-call-768x229.png 768w" sizes="(max-width: 809px) 100vw, 809px"></figure>
+
+
+
+<h4><strong>How to use the API UI</strong></h4>
+
+
+
+<p>The best way of getting to know the API UI is to test it out on a familiar API. The layout should be familiar enough to Postman users, and to new users, it is recommended they try it out on an API placeholder service such as JSON-server.&nbsp;</p>
+
+
+
+<h2><strong>Importing and exporting API tests</strong></h2>
+
+
+
+<h4><strong>A note on imports</strong></h4>
+
+
+
+<p>Boozang now supports importing API calls. As an API call needs an API action, it’s ideal that the user starts by creating an empty API test as a starting point.</p>
+
+
+
+<p>Start by adding the API call using the plus button next to the API call drop-down.</p>
+
+
+
+<h4><strong>Exporting API call (Postman example)</strong></h4>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="441" height="383" src="./apix4 view in Boozang - Boozang_files/4-export-api-postman.png" alt="" class="wp-image-4751" srcset="https://boozang.com/wp-content/uploads/2021/07/4-export-api-postman.png 441w, https://boozang.com/wp-content/uploads/2021/07/4-export-api-postman-300x261.png 300w" sizes="(max-width: 441px) 100vw, 441px"></figure>
+
+
+
+<p>To export the API call from Postman, use the Source code view in the below image.</p>
+
+
+
+<p>Note: Boozang currently supports HTTP and cURL format.</p>
+
+
+
+<h4>&nbsp;<strong>Importing the API call to Boozang</strong></h4>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="578" height="661" src="./apix4 view in Boozang - Boozang_files/5-import-api-boozang.png" alt="" class="wp-image-4752" srcset="https://boozang.com/wp-content/uploads/2021/07/5-import-api-boozang.png 578w, https://boozang.com/wp-content/uploads/2021/07/5-import-api-boozang-262x300.png 262w" sizes="(max-width: 578px) 100vw, 578px"></figure>
+
+
+
+<p>Simple copy-paste the text content from the Postman window to the Boozang window according to the below image.&nbsp;</p>
+
+
+
+<p>Remember to verify that the correct format is selected.</p>
+
+
+
+<p>After the import, use the “Try” tab to verify that the API call can be made and that the import was successful. If not, verify that the information in the other tabs is correct.</p>
+
+
+
+<h4><strong>Exporting an API call</strong></h4>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="898" height="687" src="./apix4 view in Boozang - Boozang_files/api-subtab-export.png" alt="" class="wp-image-4827" srcset="https://boozang.com/wp-content/uploads/2021/07/api-subtab-export.png 898w, https://boozang.com/wp-content/uploads/2021/07/api-subtab-export-300x230.png 300w, https://boozang.com/wp-content/uploads/2021/07/api-subtab-export-768x588.png 768w" sizes="(max-width: 898px) 100vw, 898px"></figure>
+
+
+
+<p>As most tools don’t share the API test hierarchy, we support export of individual API calls rather than whole API tests. Just like in Postman, API calls can be dependent on dynamic data from Boozang variables, and as these variables might not be meaningful outside Boozang, the export needs to be done using real data. </p>
+
+
+
+<p>As you can see from the above image, the export therefore happens from within the Try-tab, where the user can pick the values used. </p>
+
+
+
+<p>After clicking the “Export” button, the user chooses the export format</p>
+
+
+
+<ul><li>HTTP: Good for imports into other tools, easy to read</li><li>CURL: Good for imports into other tools, troubleshooting</li></ul>
+
+
+
+<p>Using the cURL export function is very useful when troubleshooting, as it can be run from command-line. That’s why this should be the format of choice when opening a ticket to a team that doesn’t have access to the Boozang tool. </p>
+
+
+
+<h2><strong>Conclusion</strong></h2>
+
+
+
+<p>There are great tools out there for API testing, like Postman, but it’s limited when you have advanced data dependencies between API calls. If you have dependencies between API and UI tests, you’ll probably need to build your own framework.</p>
+
+
+
+<p>Boozang is focused on solving these kind of problems, using a single browser-based solution. As we support BDD / Cucumber and JIRA / XRay integration we enable a unified testing process where Gherkin business language can be used for all tests, regardless if it’s manual, UI tests, or API tests. </p>
+
+
+
+<p>By having a unified testing process instead of a siloed approach, tools such as JIRA and XRay can truly be utilized, allowing for improved output from the whole organization, not just the Quality Assurance team.</p>
+
+
+
+<p></p>
+                </main>
+
+                
+            <!-- meta - blog page-->
+            
+        </div>
+    </article>
+</div>
+                
+                
+            </div>
+        </div>
+            </div>
+
+    <!-- newsletter widget -->
+    <section class="newsletter section_spacing_top_medium">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="newsletter_content">
+
+                        <div class="widget_text newsletter-form"><div class="textwidget custom-html-widget"> <h3 class="heading">Subscribe to Our Blog.</h3>
+          <p class="text">Stay up to date with the latest feature releases and news.
+					</p></div></div><div class="newsletter-form"><div class="emaillist" id="es_form_f1-n1"><form action="https://boozang.com/advanced-api-testing/#es_form_f1-n1" method="post" class="es_subscription_form es_shortcode_form " id="es_subscription_form_63aca5e522138" data-source="ig-es" data-form-id="1"><div class="es-field-wrap"><label><input class="es_required_field es_txt_email ig_es_form_field_email" type="email" name="esfpx_email" value="mats.ljunggren@boozang.com" placeholder="your_name@domain.com" required="required"></label></div><input type="hidden" name="esfpx_lists[]" value="45f8b119d383"><input type="hidden" name="esfpx_form_id" value="1"><input type="hidden" name="es" value="subscribe">
+			<input type="hidden" name="esfpx_es_form_identifier" value="f1-n1">
+			<input type="hidden" name="esfpx_es_email_page" value="4754">
+			<input type="hidden" name="esfpx_es_email_page_url" value="https://boozang.com/advanced-api-testing/">
+			<input type="hidden" name="esfpx_status" value="Unconfirmed">
+			<input type="hidden" name="esfpx_es-subscribe" id="es-subscribe-63aca5e522138" value="86daa9025a">
+			<label style="position:absolute;top:-99999px;left:-99999px;z-index:-99;"><input type="email" name="esfpx_es_hp_email" class="es_required_field" tabindex="-1" autocomplete="-1" value=""></label><input type="submit" name="submit" class="es_subscription_form_submit es_submit_button es_textbox_button" id="es_subscription_form_submit_63aca5e522138" value="Subscribe"><span class="es_spinner_image" id="spinner-image"><img src="./apix4 view in Boozang - Boozang_files/spinner.gif" alt="Loading"></span></form><span class="es_subscription_message " id="es_subscription_message_63aca5e522138"></span></div></div>                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- signup for pages -->
+<section class="signup_section  section_spacing_top_small">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-sm-10 col-lg-8">
+                <div class="row justify-content-between">
+                    
+                    <div class="col-md-6">
+                        <div class="button_item">
+                            <div class="text_section">
+                                                                <h3 class="heading"> Create your account for free!</h3>
+                                                                                            </div>
+                            <div class="btn_container">
+                                                                <a class="btn link" href="https://ai.boozang.com/#security/signup" target="_blank" rel="noopener noreferrer">Sign up for free                                </a>
+                                                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="button_item">
+                            <div class="text_section">
+                                                                <h3 class="heading"> Prefer a demo instead?</h3>
+                                                                                            </div>
+                            <div class="btn_container">
+                                                                <a class="btn link" href="https://calendly.com/boozang/boozang-demo" target="_blank" rel="noopener noreferrer">Request Demo                                </a>
+                                                            </div>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+        </div>
+</div></section>
+<!-- footer -->
+<footer id="footer" class="footer-main section_spacing_top_small">
+    <div class="container">
+        <div class="row align-items-start justify-content-between">
+            <div class="col-lg-3">
+                <div class="logo">
+                    <a href="https://boozang.com/" class="logo" aria-label="Boozang home page">
+                        <img class="logo-img" src="./apix4 view in Boozang - Boozang_files/boozang_logo_reverse.png" srcset="https://boozang.com/wp-content/themes/boozang-fifth/img/boozang_logo_reverse@2x.png 325w" width="208" height="51" alt="Boozang home page">
+                    </a>
+                </div>
+                <div class="social-icons">
+                                        <ul class="social">
+
+                                                
+                        <li class="social-item">
+                            <a href="https://www.facebook.com/boozangcloud/" aria-label="facebook">
+                                <i class="fab fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+                        
+                        <li class="social-item">
+                            <a href="https://www.linkedin.com/company/boozang" aria-label="linkedin-in">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+                        
+                        <li class="social-item">
+                            <a href="https://mobile.twitter.com/boozangcloud" aria-label="twitter">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+                                                                        <li class="social-item">
+                            <a href="mailto:administrator@boozang.com" target="_top" aria-label="Boozang email">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                                    </div>
+            </div>
+
+            <div class="col-lg-9 col-xl-8">
+                <div class="row align-items-start links">
+                                        <div class="col-6 col-md-3">
+                        <h3 class="footer-links-heading">Product </h3>
+
+                                                <ul class="footer-links">
+                            
+                            
+                            <li class="link-item">
+                                <a href="https://boozang.com/feature-overview/" target="">Feature Overview</a>
+                            </li>
+                            
+                            
+                            <li class="link-item">
+                                <a href="https://boozang.com/cucumber-support" target="">Cucumber Support</a>
+                            </li>
+                            
+                            
+                            <li class="link-item">
+                                <a href="https://boozang.com/data-handling" target="">Data Handling</a>
+                            </li>
+                                                    </ul>
+                                            </div>
+                                        <div class="col-6 col-md-3">
+                        <h3 class="footer-links-heading">Company </h3>
+
+                                                <ul class="footer-links">
+                            
+                            
+                            <li class="link-item">
+                                <a href="https://boozang.com/" target="">Home</a>
+                            </li>
+                            
+                            
+                            <li class="link-item">
+                                <a href="https://boozang.com/blog" target="">Blog</a>
+                            </li>
+                            
+                            
+                            <li class="link-item">
+                                <a href="https://boozang.com/about-us" target="">About Us</a>
+                            </li>
+                            
+                            
+                            <li class="link-item">
+                                <a href="https://boozang.com/about-us" target="">Join Us</a>
+                            </li>
+                            
+                            
+                            <li class="link-item">
+                                <a href="https://ai.boozang.com/" target="_blank">Log In</a>
+                            </li>
+                                                    </ul>
+                                            </div>
+                                        <div class="col-6 col-md-3">
+                        <h3 class="footer-links-heading">Resources </h3>
+
+                                                <ul class="footer-links">
+                            
+                            
+                            <li class="link-item">
+                                <a href="https://boozang.com/videos" target="">Video Tutorials</a>
+                            </li>
+                            
+                            
+                            <li class="link-item">
+                                <a href="https://boozang.com/faqs" target="">FAQs</a>
+                            </li>
+                            
+                            
+                            <li class="link-item">
+                                <a href="https://boozang.com/pricing/" target="">Pricing</a>
+                            </li>
+                                                    </ul>
+                                            </div>
+                                        <div class="col-6 col-md-3">
+                        <h3 class="footer-links-heading">Legal </h3>
+
+                                                <ul class="footer-links">
+                            
+                            
+                            <li class="link-item">
+                                <a href="https://boozang.com/privacy-policy" target="">Privacy Policy</a>
+                            </li>
+                            
+                            
+                            <li class="link-item">
+                                <a href="https://boozang.com/terms-of-service" target="">Terms of Service</a>
+                            </li>
+                                                    </ul>
+                                            </div>
+                                                        </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copy">
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col">
+                    <div class="copy">
+                        <p>© 2022 - Boozang INC. ALL RIGHTS RESERVED.
+                            Theme by <a href="http://karinljunggren.com/" target="_blank" rel="noopener noreferrer" aria-label="Karin Ljunggren Home Page">Karin</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" id="email-subscribers-js-extra">
+/* <![CDATA[ */
+var es_data = {"messages":{"es_empty_email_notice":"Please enter email address","es_rate_limit_notice":"You need to wait for some time before subscribing again","es_single_optin_success_message":"Successfully Subscribed.","es_email_exists_notice":"Email Address already exists!","es_unexpected_error_notice":"Oops.. Unexpected error occurred.","es_invalid_email_notice":"Invalid email address","es_try_later_notice":"Please try after some time"},"es_ajax_url":"https:\/\/boozang.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./apix4 view in Boozang - Boozang_files/email-subscribers-public.js" id="email-subscribers-js"></script>
+<script type="text/javascript" id="dlm-xhr-js-extra">
+/* <![CDATA[ */
+var dlmXHRtranslations = {"error":"An error occurred while trying to download the file. Please try again."};
+/* ]]> */
+</script>
+<script type="text/javascript" id="dlm-xhr-js-before">
+const dlmXHR = {"xhr_links":{"class":["download-link","download-button"]},"prevent_duplicates":true,"ajaxUrl":"https:\/\/boozang.com\/wp-admin\/admin-ajax.php","nonce":"62fd25f2b8"}; dlmXHRinstance = {};
+</script>
+<script type="text/javascript" src="./apix4 view in Boozang - Boozang_files/dlm-xhr.min.js" id="dlm-xhr-js"></script>
+
+		<!-- Cookie Notice plugin v2.4.4 by Hu-manity.co https://hu-manity.co/ -->
+		<div id="cookie-notice" role="dialog" class="cookie-revoke-hidden cn-position-bottom cn-effect-fade cookie-notice-visible" aria-label="Cookie Notice" style="background-color: rgba(0,0,0,1);"><div class="cookie-notice-container" style="color: #fff;"><span id="cn-notice-text" class="cn-text-container">We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.</span><span id="cn-notice-buttons" class="cn-buttons-container"><a href="https://boozang.com/advanced-api-testing/#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button cn-button-custom button" aria-label="Ok">Ok</a></span><span id="cn-close-notice" data-cookie-set="accept" class="cn-close-icon" title="No"></span></div>
+			
+		</div>
+		<!-- / Cookie Notice plugin -->
+
+</div><div id="wfboxOverlay" style="display: none;"></div><div id="wordfenceBox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="wfboxWrapper"><div><div id="wfboxTopLeft" style="float: left;"></div><div id="wfboxTopCenter" style="float: left;"></div><div id="wfboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="wfboxMiddleLeft" style="float: left;"></div><div id="wfboxContent" style="float: left;"><div id="wfboxTitle" style="float: left;"></div><div id="wfboxCurrent" style="float: left;"></div><div id="wfboxLoadingOverlay" style="float: left;"></div><div id="wfboxLoadingGraphic" style="float: left;"></div></div><div id="wfboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="wfboxBottomLeft" style="float: left;"></div><div id="wfboxBottomCenter" style="float: left;"></div><div id="wfboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><img src="./apix4 view in Boozang - Boozang_files/adsct" height="1" width="1" style="display: none;"><img src="./apix4 view in Boozang - Boozang_files/adsct(1)" height="1" width="1" style="display: none;"><iframe id="_hjSafeContext_53966955" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="./apix4 view in Boozang - Boozang_files/saved_resource.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" tabindex="-1" aria-hidden="true" id="_hjRemoteVarsFrame" src="./apix4 view in Boozang - Boozang_files/box-5e66f98b4ee957db209dc6f63e3d59dd.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe></body></html>
