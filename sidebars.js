@@ -51,7 +51,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Using data',
+      label: 'Using Data',
       collapsed: true,
       items: [
         'using-data/introduction',
