@@ -2,13 +2,133 @@
 id: control-flow
 title: Control Flow
 ---
- ## Loops
+ ## Loop data view
 
 import YouTubeEmbed from "@site/src/components/YouTubeEmbed";
 
 <YouTubeEmbed embedId="zHDmcl2pIh0">Loops</YouTubeEmbed>
 
-### Looping a test
+## Groups
+
+This post explains the changes we made on groups to simplify handling logic and loops. We introduce group types that guide the user when solving more advanced test automation challenges. 
+
+### Adding a group
+
+![add group](../images/group1.png "Adding a group")
+
+There are two ways to add a group. To add an empty group, use the add action button and select More actions -> Group. You can also select existing actions and use the Add group in the sidebar. This way, a group is added with the actions inside. The second method is powerful when refactoring a recorded test.
+
+### Breaking out of a group
+
+Group in it’s simplest form is used the same as a code block is used in programming.
+```
+{ ... }
+```
+
+Similarly, as we might use the break keyword in javascript, you can use the exit condition break group in Boozang.
+
+### Different functions of a group
+
+![add group](../images/group2.png "Adding a group")
+
+
+A group can serve many purposes. We provide templates for you to build the following logic
+
+- If-condition
+- Else-condition
+- Switch-conditions
+- While-loops
+- For-loops
+
+One difference from programming is that we also support combinations of logic and loops, but this is not a very common use-case, so we will not discuss this in detail. 
+
+### Logic: If-condition
+
+![if group](../images/group3.png "If group")
+
+
+The most fundamental condition is the if-condition. We support two basic if-conditions, either using a script validation or an element validation. 
+
+This condition is useful when you want to do a set of actions, depending on a specific condition or not.
+
+### Logic: Else-condition
+
+![else group](../images/group4.png "Else group")
+
+Equally fundamental is the Else-condition. Use this condition combined with an if-condition to capture all other cases that the if-condition misses.
+
+### If-Else example
+
+![add group](../images/group5.png "Adding a group")
+
+Look at the following idealized example where an if-else condition might come in handy: Red or Yellow, for the Boozang testing ground TheLab.
+
+As you can see, the user to click the Red button when the message “Red” is displayed, and the Yellow button when the message “Yellow” is displayed. Otherwise, an error message is shown. See below example of how to solve this using the If-Else construct in Boozang.
+
+### Logic: Switch
+
+![switch](../images/group6.png "Switch")
+
+We have also added a switch example. It’s very similar to Javascript as it supports choosing between many different outcomes. We solve this by introducing a flag on different groups. You can now “skip forward” to the block with the right flag, either by using the Javascript function:
+
+```$util.gotoFlag("flag_name")```
+
+Or by setting it on an action’s exit conditions.
+
+### Switch example
+
+Below is an example where we use a switch-statement to jump to three different outcomes
+
+### Loops: For-statement
+
+![for group](../images/group7.png "For loop example")
+
+Just as in programming, we can use groups to emulate the for-statement. We support two different for-loops, one that repeats the group N number of times and one where we loop over elements of a vector or the rows of a CSV. 
+
+Technically in Boozang, we use the group-loop construct. To access the values that are being populated, you need to use the $group-handle.
+
+### Example using For
+
+To illustrate the use of For, we look at a simple todo-list
+
+To add several items to the todo-list, we can use the
+
+In this example, we loop over the vector
+
+```["Pay rent", "Clean the house", "Feed the cat"]```
+
+to add some chores to a Todo-list application. 
+
+### Loops: While-statement
+
+![while group](../images/group8.png "While loop example")
+
+Sometimes it’s also useful to repeat a set of actions until a specific condition holds. Boozang implements this by looping a group an unlimited amount of times until the break group condition happens. 
+
+Example using While
+
+One example where this construct is useful is when cleaning up data. Looking at the todo-list example, we can use this to clean the list. Place the delete item action inside the while-loop and exit the loop as soon as there are no more delete-buttons available. As we know that the delete action will fail when there are no more delete button available, we can customize this exit condition to exit the group (and report as successful).
+
+### Error handling
+
+We have also added error handling to groups. Similar to programming, where you can add a 
+```
+try {...}
+catch (e) {...}
+```
+you can similarly use a group. Let’s say you have a form fill, and if anything goes wrong in the form fill, stop filling the form and continue the test. Put all the form fill actions in a group and handle the errors on the group’s exit conditions. 
+
+Example of Error handling
+
+Take a look at the following form fill example.
+
+By putting these actions in a group, they become tied to each other. As you can see from the execution, a single action that fails will fail the whole group. I have created an exit condition override on the group level to convert failures to warnings. This way, even though the form wasn’t submitted, the test can continue executing. 
+
+### Conclusions
+
+We have seen from some simple examples of how group, exit conditions, and flag can emulate all common constructs in programming. We added the group types to help the user use these constructs and make fewer mistakes. We hope that you will find the group types helpful. 
+
+## Looping a test
 
 <YouTubeEmbed embedId="0C-mJGLBGb0">Loop over test case data</YouTubeEmbed>
 

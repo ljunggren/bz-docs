@@ -23,6 +23,7 @@ module.exports = {
         'the-tool/toolbars',
         'the-tool/action-list',
         'the-tool/record',
+        'the-tool/code-editor',
         'the-tool/settings',
         'the-tool/other',
       ],
@@ -66,6 +67,16 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Reporting',
+      collapsed: true,
+      items: [
+        'reporting/overview',
+        'reporting/rca',
+        'reporting/log-formatter',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Continuous Integration',
       collapsed: true,
       items: [
@@ -83,8 +94,6 @@ module.exports = {
         'integrations/feature',
         'integrations/xray',
         'integrations/other',
-        'integrations/rca',
-        'integrations/log-formatter',
         "integrations/further",
       ],
     },
