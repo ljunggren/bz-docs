@@ -5,4 +5,21 @@ title: Log formatter
 
 import YouTubeEmbed from "@site/src/components/YouTubeEmbed";
 
+In using the reports provided by the open-source reporting engine for Cucumber, we found the report to sometimes be inadequate.
+
+We therefor created the Boozang log formatter, which takes the Boozang execution logs and formats it into an easy to readreport, 
+which directly links to the Boozang tool. Here, you can sort on the following different aspects, like
+
+- Completion
+- Id
+- Name
+- Result
+- Performance
+- Worker
+
+You can also automatically open the Boozang tool from certain key places in the report, and see failure screenshots.=
+
 <YouTubeEmbed embedId="YYi0thrp8Fc">Log formatters</YouTubeEmbed>
+
+In a way, this is a way to super-charge the system log, and another great advantage to the Cucumber standard reports is that
+this formatted system log can be monitored while the test run is executing, not afterwards.

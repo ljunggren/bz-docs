@@ -4,6 +4,9 @@ title: Control Flow
 ---
  ## Loop data view
 
+This execution view is useful when looping over spreadsheet data or similar. This is not only useful for test automation, but for robot-process automation use-cases,
+like data provisioning.
+
 import YouTubeEmbed from "@site/src/components/YouTubeEmbed";
 
 <YouTubeEmbed embedId="zHDmcl2pIh0">Loops</YouTubeEmbed>
@@ -155,9 +158,17 @@ We also support looping a single action. In the "Pre/End script" tag you can eit
 
 ### Looping over CSV data
 
+Boozang supports looping over CSV data, both in the Cucumber/Gherking domain (via Examples) and test domain.
+
 <YouTubeEmbed embedId="8i8ZykTqd1Y">Looping over CSV</YouTubeEmbed>
 
 ## Switch (case)
+
+Boozang also supports Switch statements using the flag concept. This allows you to skip over test steps until a test step, where a certain flag is found. 
+
+This utility function used is: `$util.gotoFlag("{name of flag"}`
+
+You can add a flag to a test step by clicking the "flag" icon in *Action Details* tab, and enter the name for the flag.
 
 <YouTubeEmbed embedId="Gj9yAf6KG-w">Switch (flag)</YouTubeEmbed>
 

@@ -2,13 +2,48 @@
 id: navigation
 title: Navigation
 ---
+In Boozang we use a tree navigation similar to desktop IDEs, such as Visual Studio code. 
+If you are familair with tools like this, it should be quite easy to get started with Boozang. If not, remember 
+that you can either explicitly navigate the test tree, or use the search to quickly find what you are looking for.
+
+One difference in Boozang compared to file-based editors, is that we make a distinction between
+- Modules / Tests: Code / test domain
+- Features / Scenarios: Cucumber-based business domain
+- AI models: Model domain
+- Components: Re-usable components
+
+For most users, the Module / Test domain and Features / Scenarios are suffient to cover most testing needs.
 
 ## Static vs. dynamic tabs
+
+Similar to Visual Studio code, we support static and dynamic tabs. In the context of tabbed interfaces, "static tabs" and "dynamic tabs" refer to the way that the tabs are generated and displayed.
+
+Static tabs are tabs that are hardcoded into the interface and are always present. These types of tabs are typically used to provide a consistent navigation structure for a user, as they allow the user to access a set of predefined pages or views at any time.
+
+Dynamic tabs, on the other hand, are tabs that are generated and displayed based on the current context or user actions. These types of tabs are often used to allow a user to open and work with multiple documents or pages simultaneously, as they allow the user to open and switch between multiple tabs as needed.
+
+For example, in a text editor like Boozang, static tabs might include tabs for the settings, reporting, and terminal views, while dynamic tabs might include tabs for open documents or files.
+
+## Sticky tabs
 
 import YouTubeEmbed from "@site/src/components/YouTubeEmbed";
 
 <YouTubeEmbed embedId="Ey9_9iwaA9c">Static vs. Dynamic tabs</YouTubeEmbed>
 
+A "sticky tab" is a tab that is "pinned" or "fixed" in place and does not close when the user navigates away from it or closes other tabs. This allows the user to keep certain tabs open and easily accessible, even if they are not currently being used.
+
+Sticky tabs can be useful in a variety of contexts, such as:
+
+Keeping a tab open that provides important information or context (e.g. a dashboard or reference page)
+Allowing a user to quickly switch between frequently used tabs (e.g. a list of emails or tasks)
+Ensuring that certain tabs are not accidentally closed (e.g. a form that is in the process of being filled out)
+To create a sticky tab, the user typically needs to use a specific keyboard shortcut or click on a "pin" icon that is displayed next to the tab. The specific method for creating a sticky tab can vary depending on the application or interface being used.
+
 ## Workspace
 
 <YouTubeEmbed embedId="iOkWLOQUnDo">Workspace</YouTubeEmbed>
+
+We also support a concept that we call workspace. This allows me to add a set of tests I'm working on to my workspace, so I can easily 
+switch between these tests quick. We have found it's very useful when working on a Cucumber / Gherkin scenario, and the test steps therein.
+
+To add a test to the workspace, simple use the tree menu and click "Add to workspace".

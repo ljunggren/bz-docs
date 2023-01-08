@@ -4,20 +4,44 @@ title: Utilities
 ---
  ## Notes
 
+You can add notes to a test step, by clicking "Set notes / Todos" in the *Action Details* view. A note will show up as a 
+blue badge in the action list, while a TODO will show up as a red badge. These can be very useful when leaving 
+unfinished testwork, especially when working in teams.
+
 import YouTubeEmbed from "@site/src/components/YouTubeEmbed";
 
 <YouTubeEmbed embedId="YmBce5D9nGM">Notes & Todos</YouTubeEmbed>
 
 ## Execute as single action
 
+Boozang default execution mode is *Execute as single action*. That means that form fills and 
+similar actions are executed in groupwithout communicating with the IDE. This greatly speeds up 
+test execution, but in some particular cases you might want to disable this.
+
+To make sure an action is executed in isolation, simply go to *Action Details* / ... (three dot menu -> Non-rapid action
+
 <YouTubeEmbed embedId="HRhM3dUovCQ">Execute as sigle action</YouTubeEmbed>
 
 ## Keywords
 
-<YouTubeEmbed embedId="zHDmcl2pIh0">Docusaurus green</YouTubeEmbed>
+In data-driven testing, we support the keywords "bz-skip" and "bz-stop" to be able to trigger conditional 
+functionality based on data. This mans as soon as a parameter is being sent with these keywords, a specific behavior is triggered.
 
-In data-driven testing, we support the keywords "bz-skip" and "bz-stop" to be able to trigger conditional functionality based on data. As soon as "bz-skip" occur the test will skip without generating a failure. If "bz-stop" occur the all upstream tests will stop without generating an error.  
+As soon as "bz-skip" occur the test will skip without generating a failure. 
 
-## Loading
+If "bz-stop" occur the all upstream tests will stop without generating an error.  
+
+<YouTubeEmbed embedId="zHDmcl2pIh0">Keyworks bz-skip and bz-stop</YouTubeEmbed>
+
+## Identify Loading Status
+
+In many applications there are loading indicators, such as spinners, to show the the application is not done rendering.
+
+Boozang supports automatically waiting for these elements to dissapear before proceeding with the testing. 
+
+As this is a global project setting, it increases
+test stability and means you can avoid inceasing custom time-outs for many actions. 
+
+You can set this in: *Settings* / *Content Policy* / *Identify Loading Status*
 
 <YouTubeEmbed embedId="ofUZX1QxOeA">Loading element</YouTubeEmbed>
