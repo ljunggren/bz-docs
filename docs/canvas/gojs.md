@@ -1,6 +1,6 @@
 ---
-id: canvas
-title: Canvas testing
+id: gojs
+title: A GoJS example
 ---
 
 ## The HTML Canvas 
@@ -19,7 +19,7 @@ We illustrate this with an example using GoJS. This is a versatile library for c
 
 It’s widely used, and has native support for all major Javascript frameworks, including React, Angular, and Vue.
 
-For a complete description of GoJS consult https://gojs.net/latest/index.html. You can also see a bunch of different diagram samples: https://gojs.net/latest/samples/index.html.
+For a complete description of GoJS consult [https://gojs.net/latest/index.html](https://gojs.net/latest/index.html). You can also see a bunch of different diagram samples: [https://gojs.net/latest/samples/index.html.](https://gojs.net/latest/samples/index.html).
 
 ## The Kanban board
 Take a look at an example of a clickable Kanban board, as shown [here](https://gojs.net/latest/samples/kanban.html).
@@ -66,7 +66,17 @@ Using these element selectors you can both capture events done on the canvas, su
 
 This means tests become stable to initial conditions changing. It also allows us to do actions and validations inside the canvas, instead of doing actions inside the canvas, and relying to validations outside, which is typical for other approaches.
 
-Summary
+## Offset
+
+![Kanban in booang](../images/gojs-offset.png "Kanban in Boozang")
+
+As we match the text content of an element in the HTML canvas, it's sometimes useful to specify a relative offset beetwen the text and where the drag-and-drop should be initiated
+
+## Try it
+
+In order to try different GoJS examples, you can check out [https://gojs.net/latest/samples/index.html.](https://gojs.net/latest/samples/index.html) or our own small Canvas example [https://thelab.boozang.com/canvasGame](https://thelab.boozang.com/canvasGame).
+
+## Summary
 Being able to implement different graphical elements using the HTML Canvas element can be really useful. Unfortunately, it often blocks you from doing any meaningful automated testing, forcing you do either change your development approach, or resort to manual testing.
 
 Boozang bridges this gap by introducing a new set of selectors that can look inside the Canvas element, allowing for the creation of sophisticated functional tests.

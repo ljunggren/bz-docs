@@ -116,7 +116,7 @@ module.exports = {
       label: 'Canvas testing',
       collapsed: true,
       items: [
-        'canvas/canvas',
+        'canvas/gojs',
       ],
     },
     {

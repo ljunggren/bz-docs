@@ -13,7 +13,7 @@ validation we have developed a new JSON-based expression language, similar to XP
 We introduce the following new *utility-functions*:
 
 ```
-
+- $util.extractData(data, JSONPathExpression)
 ```
 
 ## Usage examples
@@ -21,6 +21,50 @@ We introduce the following new *utility-functions*:
 This functionality is best descibed with an example
 
 ### Sample data for examples
+```
+### Extract specific node
+```
+"data.name" ==>
+{
+  data:{
+    name:"name-2"
+  }
+}
+```
+### Extract specific node and rename it
+```
+"data(abc).name" ==>
+{
+  abc:{
+    name:"name-2"
+  }
+}
+```
+### Extract specific node (array example)
+```
+"list.name" ==>
+{
+  list:[
+    {
+      name:"name-3"
+    },
+    {
+      name:"name-4"
+    }
+  ]
+}  
+```
+### Extract specific node (array example), remove key
+```
+"list().name" ==>
+[
+  {
+    name:"name-3"
+  },
+  {
+    name:"name-4"
+  }
+] 
 ```
 {
   name:"name-1",
@@ -49,27 +93,35 @@ This functionality is best descibed with an example
   ]
 }
 ```
-### Example 1: Extracting a node
+### Extracting a node
 ```
 "name" ==>
 {
   name:"name-1"
 }
-------------------------------------------------
+```
+### Extract a node and rename it
+```
 "name(Name)" ==>
 {
   Name:"name-1"
 }
-------------------------------------------------
+```
+### Extract a node and remove key
+```
 "name()" ==>
 "name-1"
-------------------------------------------------
+```
+### Extract multiple nodes
+```
 ["name","value"] ==>
 {
   name:"name-1",
   value:"value-1"
 }
-------------------------------------------------
+```
+### Extract matching nodes anywhere in the tree
+```
 "*.name" ==>
 {
   name:"name-1",
@@ -90,7 +142,9 @@ This functionality is best descibed with an example
     }
   ]
 }
-------------------------------------------------
+```
+### Extract several matching nodes anywhere in the tree
+```
 ["*.name","*.value"] ==>
 {
   name:"name-1",
@@ -120,7 +174,9 @@ This functionality is best descibed with an example
     }
   ]
 }
-------------------------------------------------
+```
+### Extract multiple matching nodes anywhere in the tree
+```
 {"*":["name","value"]} ==>
 {
   name:"name-1",
@@ -147,7 +203,9 @@ This functionality is best descibed with an example
     }
   ]
 }
-------------------------------------------------
+```
+### Extract matching nodes and remove path
+```
 "*().name" ==>
 {
   name:[
@@ -158,7 +216,9 @@ This functionality is best descibed with an example
     "name-5"
   ]
 }
-------------------------------------------------
+```
+### Extract matching nodes and remove path, renaming the key
+```
 "*(abc).name" ==>
 {
   abc:{
@@ -171,7 +231,9 @@ This functionality is best descibed with an example
     ]
   }
 }
-------------------------------------------------
+```
+### Extract matching nodes, rename root, and keep path
+```
 "*(abc).*.name" ==>
 {
   abc:{
@@ -194,7 +256,9 @@ This functionality is best descibed with an example
     ]
   }  
 }
-------------------------------------------------
+```
+### Extract matching nodes, skip root level
+```
 "+.name" ==>
 {
   data:{
@@ -209,7 +273,9 @@ This functionality is best descibed with an example
     }
   ]
 }
-------------------------------------------------
+```
+### Extract matching nodes, skip root level and set new root key
+```
 "+(abc).*.name" ==>
 {
   abc:{
@@ -231,43 +297,9 @@ This functionality is best descibed with an example
     ]
   }  
 }
-------------------------------------------------
-"data.name" ==>
-{
-  data:{
-    name:"name-2"
-  }
-}
-------------------------------------------------
-"data(abc).name" ==>
-{
-  abc:{
-    name:"name-2"
-  }
-}
-------------------------------------------------
-"list.name" ==>
-{
-  list:[
-    {
-      name:"name-3"
-    },
-    {
-      name:"name-4"
-    }
-  ]
-}  
-------------------------------------------------
-"list().name" ==>
-[
-  {
-    name:"name-3"
-  },
-  {
-    name:"name-4"
-  }
-] 
-------------------------------------------------
+```
+### Extract all matching nodes, remove keys
+```
 "list().*.name" ==>
 [
   {
@@ -282,7 +314,9 @@ This functionality is best descibed with an example
     }
   }
 ] 
-------------------------------------------------
+```
+### Extract matching nodes, flatten tree
+```
 "list().*().name" ==>
 [
   {
@@ -295,57 +329,8 @@ This functionality is best descibed with an example
     name:"name-5"
   }
 ]
-------------------------------------------------
+```
+### Extract mathcing nodes, return in array
+```
 "list().*().name()" ==>
 ["name-3", "name-4", "name-5"] 
-================================================
-// bz-if
-================================================
-[
-  {
-    "bz-if":{
-      "name":"name-1"
-    },
-  },
-  ["name","value"]
-] ==>
-{
-  name:"name-1",
-  value:"value-1"
-}
-------------------------------------------------
-[
-  {
-    "bz-if":{
-      "*.name":"name-2"
-    },
-  },
-  "*"
-] ==>
-{
-  name:"name-1",
-  value:"value-1",
-  data:{
-    name:"name-2",
-    value:"value-2"
-  },
-  list:[
-    {
-      name:"name-3",
-      value:"value-3"
-    },
-    {
-      name:"name-4",
-      value:"value-4",
-      age:33
-    },
-    {
-      obj:{
-        name:"name-5",
-        value:"value-5",
-        age:33
-      }
-    }
-  ]
-}
-
