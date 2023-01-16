@@ -217,42 +217,26 @@ This functionality is best descibed with an example
 ```
 "*(abc).name" ==>
 {
-  abc:{
-    name:[
-      "name-1",
-      "name-2",
-      "name-3",
-      "name-4",
-      "name-5"
-    ]
-  }
-}
-```
-### Extract matching nodes, rename root, and keep path
-```
-"*(abc).*.name" ==>
-{
-  abc:{
-    name:"name-1",
-    data:{
-      name:"name-2"
+  "abc": {
+    "name": "name-1",
+    "data": {
+      "name": "name-2"
     },
-    list:[
+    "list": [
       {
-        name:"name-3"
+        "name": "name-3"
       },
       {
-        name:"name-4"
+        "name": "name-4"
       },
       {
-        obj:{
-          name:"name-5"
+        "obj": {
+          "name": "name-5"
         }
       }
     ]
-  }  
+  }
 }
-```
 ### Extract matching nodes, skip root level
 ```
 "+.name" ==>
