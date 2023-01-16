@@ -22,6 +22,33 @@ This functionality is best descibed with an example
 
 ### Sample data for examples
 ```
+{
+  name:"name-1",
+  value:"value-1",
+  data:{
+    name:"name-2",
+    value:"value-2"
+  },
+  list:[
+    {
+      name:"name-3",
+      value:"value-3"
+    },
+    {
+      name:"name-4",
+      value:"value-4",
+      age:33
+    },
+    {
+      obj:{
+        name:"name-5",
+        value:"value-5",
+        age:33
+      }
+    }
+  ]
+}
+```
 ### Extract specific node
 ```
 "data.name" ==>
@@ -65,33 +92,6 @@ This functionality is best descibed with an example
     name:"name-4"
   }
 ] 
-```
-{
-  name:"name-1",
-  value:"value-1",
-  data:{
-    name:"name-2",
-    value:"value-2"
-  },
-  list:[
-    {
-      name:"name-3",
-      value:"value-3"
-    },
-    {
-      name:"name-4",
-      value:"value-4",
-      age:33
-    },
-    {
-      obj:{
-        name:"name-5",
-        value:"value-5",
-        age:33
-      }
-    }
-  ]
-}
 ```
 ### Extracting a node
 ```
@@ -147,32 +147,28 @@ This functionality is best descibed with an example
 ```
 ["*.name","*.value"] ==>
 {
-  name:"name-1",
-  value:"value-1",
-  data:{
-    name:"name-2",
-    value:"value-2"
+  "name": "name-1",
+  "data": {
+    "name": "name-2",
+    "value": "value-2"
   },
-  list:[
+  "list": [
     {
-      name:"name-3"
+      "name": "name-3",
+      "value": "value-3"
     },
     {
-      name:"name-4"
+      "name": "name-4",
+      "value": "value-4"
     },
     {
-      name:"name-5"
-    },
-    {
-      value:"value-3"
-    },
-    {
-      value:"value-4"
-    },
-    {
-      value:"value-5"
+      "obj": {
+        "name": "name-5",
+        "value": "value-5"
+      }
     }
-  ]
+  ],
+  "value": "value-1"
 }
 ```
 ### Extract multiple matching nodes anywhere in the tree
