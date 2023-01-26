@@ -17,7 +17,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/overview/why-boozang">
+            to="docs/continuous-integration">
             Go to docs ⏱️
           </Link>
         </div>

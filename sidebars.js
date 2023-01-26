@@ -2,69 +2,79 @@ module.exports = {
   docs: [
     {
       type: 'category',
-      label: 'Introduction',
+      label: 'Overview',
       collapsed: false,
       items: [
-        "introduction/onboarding",
-        "introduction/glance",
-        "introduction/why",
-        "introduction/getting-started",
-        "introduction/end-to-end",
-        "introduction/the-book",
+        // "introduction/onboarding",
+        // "introduction/glance",
+        "overview/why-boozang",
+        // "overview/getting-started",
+        "overview/boozang-from-the-trenches",
       ],
     },
     {
       type: 'category',
-      label: 'The Tool',
+      label: 'Getting Started',
       collapsed: true,
       items: [
-        'the-tool/overview', 
-        'the-tool/navigation', 
-        'the-tool/toolbars',
-        'the-tool/action-list',
-        'the-tool/record',
-        'the-tool/code-editor',
-        'the-tool/settings',
-        'the-tool/other',
-      ],
+        'getting-started/installing-boozang', 
+        'getting-started/how-to-use-boozang', 
+        "getting-started/end-to-end-testing",
+      ]
     },
+    // {
+    //   type: 'category',
+    //   label: 'The Tool',
+    //   collapsed: true,
+    //   items: [
+    //     'the-tool/overview', 
+    //     'the-tool/navigation', 
+    //     'the-tool/toolbars',
+    //     'the-tool/action-list',
+    //     'the-tool/record',
+    //     'the-tool/code-editor',
+    //     'the-tool/settings',
+    //     'the-tool/other',
+    //   ],
+    // },
     {
       type: 'category',
       label: 'Core Concepts',
       collapsed: true,
       items: [
+
         'core-concepts/modules',
-        'core-concepts/test-types',
+        'core-concepts/testing-types',
         'core-concepts/action-types',
         'core-concepts/control-flow',
         'core-concepts/utilities',
+        {
+          type: 'category',
+          label: 'Element Selectors',
+          items: [
+            'core-concepts/element-selectors/introduction',
+            'core-concepts/element-selectors/dom-picker',
+            'core-concepts/element-selectors/element-policy',
+            'core-concepts/element-selectors/repairing',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Using Data',
+          items: [
+            'core-concepts/using-data/introduction',
+            'core-concepts/using-data/datatypes',
+            'core-concepts/using-data/databind',
+            'core-concepts/using-data/regexp',
+            'core-concepts/using-data/predefined',
+            'core-concepts/using-data/troubleshooting',
+    
+          ],
+        },
+        'core-concepts/canvas-testing',
       ],
     },
-    {
-      type: 'category',
-      label: 'Element Selectors',
-      collapsed: true,
-      items: [
-        'element-selectors/introduction',
-        'element-selectors/dom-picker',
-        'element-selectors/element-policy',
-        'element-selectors/repairing',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Using Data',
-      collapsed: true,
-      items: [
-        'using-data/introduction',
-        'using-data/datatypes',
-        'using-data/databind',
-        'using-data/regexp',
-        'using-data/predefined',
-        'using-data/troubleshooting',
-
-      ],
-    },
+  
     {
       type: 'category',
       label: 'Reporting',
@@ -80,10 +90,10 @@ module.exports = {
       label: 'Continuous Integration',
       collapsed: true,
       items: [
-        'ci-server/introduction',
-        'ci-server/jenkins',
-        'ci-server/github-actions',
-        'ci-server/gitlab',
+        'continuous-integration/introduction',
+        'continuous-integration/jenkins',
+        'continuous-integration/github-actions',
+        'continuous-integration/gitlab',
       ],
     },
     {
@@ -111,21 +121,21 @@ module.exports = {
         'api-testing/load-test',
       ],
     },
-    {
-      type: 'category',
-      label: 'Canvas testing',
-      collapsed: true,
-      items: [
-        'canvas/gojs',
-      ],
-    },
+    // {
+    //   type: 'category',
+    //   label: 'Canvas testing',
+    //   collapsed: true,
+    //   items: [
+    //     'canvas/gojs',
+    //   ],
+    // },
     {
       type: 'category',
       label: 'Model-based testing',
       collapsed: true,
       items: [
-        'model-based/advantages',
-        'model-based/how-to',
+        'model-based-testing/advantages',
+        'model-based-testing/how-to',
       ],
     },
     {

@@ -1,6 +1,6 @@
 ---
-id: gojs
-title: A GoJS example
+id: canvas-testing
+title: Canvas Testing
 ---
 
 ## The HTML Canvas 

@@ -45,7 +45,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'introduction/onboarding',
+            docId: 'overview/why-boozang',
             position: 'left',
             label: 'Documentation',
           },
@@ -59,7 +59,7 @@ const config = {
             items: [
               {
                 label: 'Start page',
-                to: 'http://docs.boozang.com/docs/introduction/onboarding',
+                to: 'http://docs.boozang.com/docs/overview/why-boozang',
               },
               {
                 label: 'Previous version',
