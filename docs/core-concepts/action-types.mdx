@@ -48,32 +48,32 @@ You can also generate a special key or char code by clicking the field and click
 
 - Content formats: The following content formats are supported
 
-- Exists (default): Validates if an element exists. It generates a success condition if the element in the path exists, and a fail condition if it doesn't exist. 
-- Not exists: Opposite to Exists. It generates a fail condition if the element in the path exist, and a success condition if it doesn't exist. 
-- Dynamic Exist: Uses the value of the expectation to determine what it runs. If expectation evaluates to `true`  Exists will execute, if `false`, Not Exists will execute. 
-- innerText: Used for String comparisons of the innerText content of the element. It generates a success condition if match, a fail condition on mismatch and an error condition if element doesn't exist. 
-- Input value: Used to do String comparisons of an input box. It generates a success condition if match, a fail condition on mismatch and an error condition if element doesn't exist. 
-- Is Enabled: Check if an element is enabled. It generates a success condition if the element is enabled,  a fail condition if the element is disabled, and error if the element doesn't exist. 
-- Is Disabled: Opposite of Is Enabled. It generates a fail condition if the element is enabled,  a success condition if the element is disabled, and error if the element doesn't exist. 
-- Is Checked: Checks if a checkbox is checked. It generates success if the element is checked, fail if the element is unchecked, and error if the element doesn't exist. 
-- Screenshot: Does a pixel-by-pixel comparison of an image. After an element has been selected, a checksum is generated of the image content. This action will generate success if an identical image is found at the element location and fail otherwise. An error will be generated if the element doesn´t exist. 
-- Data: Check an element if it contains a set of data. The data expectation can contain several data entries. It generates success if all data is found in any order, fail if any data is missing and error if element doesn't exist. Powerful to check if a table or list have a certain data entry. 
-- Script: Write custom validation using Javascript. Generates success if true is returned and fail if false is returned.
-- Request/Response (API): Does a validation on an API end-point. See section for API testing. 
+  - Exists (default): Validates if an element exists. It generates a success condition if the element in the path exists, and a fail condition if it doesn't exist. 
+  - Not exists: Opposite to Exists. It generates a fail condition if the element in the path exist, and a success condition if it doesn't exist. 
+  - Dynamic Exist: Uses the value of the expectation to determine what it runs. If expectation evaluates to `true`  Exists will execute, if `false`, Not Exists will execute. 
+  - innerText: Used for String comparisons of the innerText content of the element. It generates a success condition if match, a fail condition on mismatch and an error condition if element doesn't exist. 
+  - Input value: Used to do String comparisons of an input box. It generates a success condition if match, a fail condition on mismatch and an error condition if element doesn't exist. 
+  - Is Enabled: Check if an element is enabled. It generates a success condition if the element is enabled,  a fail condition if the element is disabled, and error if the element doesn't exist. 
+  - Is Disabled: Opposite of Is Enabled. It generates a fail condition if the element is enabled,  a success condition if the element is disabled, and error if the element doesn't exist. 
+  - Is Checked: Checks if a checkbox is checked. It generates success if the element is checked, fail if the element is unchecked, and error if the element doesn't exist. 
+  - Screenshot: Does a pixel-by-pixel comparison of an image. After an element has been selected, a checksum is generated of the image content. This action will generate success if an identical image is found at the element location and fail otherwise. An error will be generated if the element doesn´t exist. 
+  - Data: Check an element if it contains a set of data. The data expectation can contain several data entries. It generates success if all data is found in any order, fail if any data is missing and error if element doesn't exist. Powerful to check if a table or list have a certain data entry. 
+  - Script: Write custom validation using Javascript. Generates success if true is returned and fail if false is returned.
+  - Request/Response (API): Does a validation on an API end-point. See section for API testing. 
 
 As you can see, a lot of these commands have three expected results: Success, Fail, and Error. Note how Exists and Not Exists should only be able to return Success or Fail.
 
 - Compare: This is the comparison operator. The following operators are self-explanatory
 
-- Equals (==) and Not Equals (!=).
-- Greater-than (`>`), Greater-than-or-equals `>=`).
-- Lesser-than (`<`), Lesser-than-or-equals (`<=`).
+  - Equals (==) and Not Equals (!=).
+  - Greater-than (`>`), Greater-than-or-equals `>=`).
+  - Lesser-than (`<`), Lesser-than-or-equals (`<=`).
 
-and these are a bit more complex
+  and these are a bit more complex
 
-- regex: Use regular expressions in the Expectation field
-- Include: Checks for any occurrences of a String. It generates success if it finds a match and it will fail otherwise. If the element doesn't exist, it generates an error.   
-- Exclude: Opposite of Include. It fails if it finds a match, success otherwise. If the element doesn't exist, it generates an error.   
+  - regex: Use regular expressions in the Expectation field
+  - Include: Checks for any occurrences of a String. It generates success if it finds a match and it will fail otherwise. If the element doesn't exist, it generates an error.   
+  - Exclude: Opposite of Include. It fails if it finds a match, success otherwise. If the element doesn't exist, it generates an error.   
 
 **Expectation**
 
@@ -135,8 +135,6 @@ This is used to extract data from the application window and to store in a data 
 
 <!-- ![extract-data](../images/extract-data.png) -->
 
-- Default behavior
-
 When you add an extract data action, you'll be prompted to select something from the application window. As you can see from the example, data is extracted the following way
 
 ```javascript
@@ -164,7 +162,7 @@ Boozang also allows you to execute Javascript directly in the application. This 
 
 - Syntax highlighting: In Javascript mode, you'll get syntax highlighting, similar to a desktop IDE.
 
-*Red more in our blog: https://boozang.com/new-feature-code-editor/*
+  *Read more in our blog: https://boozang.com/new-feature-code-editor/*
 
 - Debugging Javascript: To debug Javascript, you can add breakpoint directly in the code. This will activate the Chrome browser break-point, and gives you the full capability of the browser debug, such as step forward and inspect data. That means that you'll need to open the browser console to make sure to enable this. 
 
@@ -192,23 +190,13 @@ In Boozang, you can reference data directly in Javascript. To access data, use t
 <YouTubeEmbed embedId="ywuO4zPk3lk">Using Comments</YouTubeEmbed>
 
 
-- Why use comment
+- Why use comment: In some cases, errors can only be spotted by a human, such as UI bugs or poor choice of language. In this case, it can be useful to point this out so a team member on the receiving side can correct this. For these cases, we use the Comment action. 
 
-In some cases, errors can only be spotted by a human, such as UI bugs or poor choice of language. In this case, it can be useful to point this out so a team member on the receiving side can correct this. For these cases, we use the Comment action. 
+- The Comment action: The comment actions add a comment, or annotation, to the application. To add a comment, click on the Plus icon and select Add Comment, and select the element in the application page to Comment. You can write directly into the Comment dialog on the application.
 
-- The Comment action
+- Running a test with comments: When running a test with comments, the test will execute and stop at the first comment. To skip to the  next comment, press play again. This is very useful when fixing look & feel issues, as several issues can be recorded in the same test case. 
 
-<!-- ![annotation](../images/annotation.png) -->
-
-The comment actions add a comment, or annotation, to the application. To add a comment, click on the Plus icon and select Add Comment, and select the element in the application page to Comment. You can write directly into the Comment dialog on the application.
-
-- Running a test with comments
-
-When running a test with comments, the test will execute and stop at the first comment. To skip to the  next comment, press play again. This is very useful when fixing look & feel issues, as several issues can be recorded in the same test case. 
-
-- Show selection for Pass/Fail
-
-Sometimes it's nice to create a checklist for a manual tester to be guided through the application. You can use the Comment action to ask questions to the user and generate success or failure code based on user inputs. Simple click the "Show selection for Pass/Fail" to generate this kind of interactive comment. 
+- Show selection for Pass/Fail: Sometimes it's nice to create a checklist for a manual tester to be guided through the application. You can use the Comment action to ask questions to the user and generate success or failure code based on user inputs. Simple click the "Show selection for Pass/Fail" to generate this kind of interactive comment. 
 
 ## Refresh/load page
 

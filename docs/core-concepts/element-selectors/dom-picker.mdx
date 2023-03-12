@@ -11,19 +11,19 @@ The DOM picker allows the user to precisely specify the element selector. During
 
 Common cases when the element path needs to be changed
 
-###### Wrong element picked
+### Wrong element picked
 
 When clicking on the element, if the wrong element is highlighted, this means the path isn´t good. Try picking the element once more using the "Select element path" button. If the problem is still there, edit the element path by clicking the "Edit element path" button. This will open the DOM picker and allow you to adjust the policy for how the element is selected.
 
-###### Element index > 0
+### Element index > 0
 
 If the element index > 0 it means that the element isn´t uniquely identified. This will be indicated by a warning. Use the DOM picker to make sure the checkbox icon turns green (meaning element index ==0).
 
-###### Extract data
+### Extract data
 
 When extracting data, the data itself should not be used as an element selector.  Use the DOM picker to the key of id or class, or other attributes.
 
-###### Element path operation
+### Element path operation
 
 The element path has the following operations. Boozang uses an expanded version of the jQuery selection standard to create a more human-readable code to identify elements. The basic pattern is that the lowercase jQuery standard operations, while uppercase operations are case-insensitive. All recordings will generate Uppercase operations by default. The operations that will be recorded for a test-case is marked by an asterisk (`*`) 
 
