@@ -16,27 +16,15 @@ There are three types of events supported in Boozang: Set, Click, Keypress, and 
 
 This might seem contra-intuitive, but guarantees that form fills are recorded as stable as possible. Usually, regardless of user habits (using mouse or tab key), forms should be recorded the same way. 
 
-- Set events
-
-The set event is generated in the recording by merging events in the browser acting on the same component. As you can see in the form fill test below, the click events and enter text events have been merged to a single "Set" event. 
-
-There are some cases where Boozang doesn't manage to create the set event, like in the last mouse click. If this shouldn't be a click, but rather a set (input box, checkbox, or drop-down), it can be switched to a set event afterwards. 
+- Set events: The set event is generated in the recording by merging events in the browser acting on the same component. As you can see in the form fill test below, the click events and enter text events have been merged to a single "Set" event. There are some cases where Boozang doesn't manage to create the set event, like in the last mouse click. If this shouldn't be a click, but rather a set (input box, checkbox, or drop-down), it can be switched to a set event afterwards. 
 
 <!-- ![event-click](../images/event-click.png) -->
 
-- Mouse click events
+- Mouse click events: This event corresponds to a mouse action, meaning a click or a movement of the mouse. By default, Boozang captures on clicks in the recording (otherwise the recording becomes very noisy catching too many events). The exception to this is when holding the mouse button down, to emulate drag and drop. In this case, Boozang registers a particular drag-and-drop event.  You can add mouse events manually to emulate mouse-over events and to create specific mouse conditions. 
 
-This event corresponds to a mouse action, meaning a click or a movement of the mouse. By default, Boozang captures on clicks in the recording (otherwise the recording becomes very noisy catching too many events). The exception to this is when holding the mouse button down, to emulate drag and drop. In this case, Boozang registers a particular drag-and-drop event.  You can add mouse events manually to emulate mouse-over events and to create specific mouse conditions. 
+- Advanced: Here you can add additional validations as a post-condition for an action. 
 
-*Advanced*
-
-Here you can add additional validations as a post-condition for an action. 
-
-- Change events
-
-<!-- ![event-change](../images/event-change.png) -->
-
-The change event is used to record state change in forms and checkboxes. When filling a form field, the data will be shown in brackets, like
+- Change events: The change event is used to record state change in forms and checkboxes. When filling a form field, the data will be shown in brackets, like
 
 `(John Doe)` or `($parameter.name)` or `($test.name)`
 
@@ -48,26 +36,17 @@ If a checkbox is clicked, the `value` attribute will be shown in the brackets. I
 
 the action will show `(car)` when being checked and blank string when being unchecked.
 
-- Key events
-
-<!-- ![event-key](../images/event-key.png) -->
-
-This event corresponds to a keypress. This is captured in the recording for every time a key is pressed. The default recorded keypress is `Group` which will generate the following Javascript events: `keydown`, `keypress` and `keyup`, in that order. You can change the drop-down to generate a specific event only. 
+- Key events: This event corresponds to a keypress. This is captured in the recording for every time a key is pressed. The default recorded keypress is `Group` which will generate the following Javascript events: `keydown`, `keypress` and `keyup`, in that order. You can change the drop-down to generate a specific event only. 
 
 You can also generate a special key or char code by clicking the field and clicking the keyboard button. 
 
 ## Validations (assertions)
 
-
 <!-- ![validations](../images/validations.png) -->
 
-- Creating a simple validation
+- Creating a simple validation: In a test, it´s common to make sure that a certain outcome is achieved. In Boozang, we do this using validation, also known as assertions. To create a validation, click on the validation icon and select the element to validate it in the application window. The default validation content format: "validate exists" will be created. If you want to change the validation content format you can do this using the dropdown in the tool window. 
 
-In a test, it´s common to make sure that a certain outcome is achieved. In Boozang, we do this using validation, also known as assertions. To create a validation, click on the validation icon and select the element to validate it in the application window. The default validation content format: "validate exists" will be created. If you want to change the validation content format you can do this using the dropdown in the tool window. 
-
-- Content formats
-
-The following content formats are supported
+- Content formats: The following content formats are supported
 
 - Exists (default): Validates if an element exists. It generates a success condition if the element in the path exists, and a fail condition if it doesn't exist. 
 - Not exists: Opposite to Exists. It generates a fail condition if the element in the path exist, and a success condition if it doesn't exist. 
@@ -84,9 +63,7 @@ The following content formats are supported
 
 As you can see, a lot of these commands have three expected results: Success, Fail, and Error. Note how Exists and Not Exists should only be able to return Success or Fail.
 
-- Compare
-
-This is the comparison operator. The following operators are self-explanatory
+- Compare: This is the comparison operator. The following operators are self-explanatory
 
 - Equals (==) and Not Equals (!=).
 - Greater-than (`>`), Greater-than-or-equals `>=`).
@@ -185,38 +162,28 @@ Here it is needed to click on "Edit element" icon to open the DOM picker, and ex
 
 Boozang also allows you to execute Javascript directly in the application. This can be very useful when trying to do more advanced things that aren't covered by the set of actions Boozang has out of the box. 
 
-- Syntax highlighting
-
-In Javascript mode, you'll get syntax highlighting, similar to a desktop IDE.
+- Syntax highlighting: In Javascript mode, you'll get syntax highlighting, similar to a desktop IDE.
 
 *Red more in our blog: https://boozang.com/new-feature-code-editor/*
 
-- Debugging Javascript
+- Debugging Javascript: To debug Javascript, you can add breakpoint directly in the code. This will activate the Chrome browser break-point, and gives you the full capability of the browser debug, such as step forward and inspect data. That means that you'll need to open the browser console to make sure to enable this. 
 
-to debug Javascript, you can add breakpoint directly in the code. This will activate the Chrome browser break-point, and gives you the full capability of the browser debug, such as step forward and inspect data. That means that you'll need to open the browser console to make sure to enable this. 
-
-- Reference Data
-
-When writing Javascript, there are some particularities in Boozang that need to be respected. To access the application window, you will have to use the handle `$TW (test window)`. This means that to manipulate the application window document tree (DOM), the user needs to use `$TW.document`. When referencing the only document, it references the Boozang tool window, not the application window.
+- Reference Data: When writing Javascript, there are some particularities in Boozang that need to be respected. To access the application window, you will have to use the handle `$TW (test window)`. This means that to manipulate the application window document tree (DOM), the user needs to use `$TW.document`. When referencing the only document, it references the Boozang tool window, not the application window.
 
 In Boozang, you can reference data directly in Javascript. To access data, use the handles `$project`, `$module`, or `$test`, depending on what level the data was added. For instance, to reference a username that was added on the module level, use `$module.username`. 
 
-- Function
+- Functions: Boozang also supplies pre-made code snippets for the following common scenarios. 
 
-Boozang also supplies pre-made code snippets for the following common scenarios. 
+  - Load page
+  - Browser back, Browser forward
+  - Scroll to Top, Scroll to Bottom, Scroll one page down and right, Scoll one page up and left
+  - Retrieve URL
 
-- Load page
-- Browser back, Browser forward
-- Scroll to Top, Scroll to Bottom, Scroll one page down and right, Scoll one page up and left
-- Retrieve URL
+  Use these as-is or as starting points for you own custom Javascript commands. 
 
-Use these as-is or as starting points for you own custom Javascript commands. 
+- Trouble-shooting: To troubleshoot the application, it's sometimes useful to add debugging code. For instance, to write the contents of the module-level data "username" use `console.log($module.username)` to write it to the tool window and `$TW.console.log($module.username)` to write it to the application window. You can use the Chrome developer tools to verify this.
 
-- Trouble-shooting
-
-To troubleshoot the application, it's sometimes useful to add debugging code. For instance, to write the contents of the module-level data "username" use `console.log($module.username)` to write it to the tool window and `$TW.console.log($module.username)` to write it to the application window. You can use the Chrome developer tools to verify this.
-
-*Tip: Avoid using `$TW.alert()` as Boozang interprets this as application popup windows and intercepts them.* 
+  *Tip: Avoid using `$TW.alert()` as Boozang interprets this as application popup windows and intercepts them.* 
 
 ## Comment
 

@@ -18,7 +18,7 @@ module.exports = {
       collapsed: true,
       items: [
         'getting-started/installing-boozang', 
-        'getting-started/how-to-use-boozang', 
+        'getting-started/overview-of-the-tool', 
         "getting-started/end-to-end-testing",
       ]
     },
