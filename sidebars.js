@@ -68,10 +68,19 @@ module.exports = {
             'core-concepts/using-data/regexp',
             'core-concepts/using-data/predefined',
             'core-concepts/using-data/troubleshooting',
-    
           ],
         },
         'core-concepts/canvas-testing',
+        {
+          type: 'category',
+          label: 'Versioning',
+          items: [
+            'core-concepts/versioning/branching',
+            'core-concepts/versioning/stash',
+            'core-concepts/versioning/protected',
+            'core-concepts/versioning/end2end',
+          ],
+        },
       ],
     },
   
