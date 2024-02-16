@@ -1,0 +1,3936 @@
+Transcript for [Boozang Feature: Adaptive screen sizes](https://www.youtube.com/watch?v=QXFt52AvwUs) by [Merlin](https://merlin.foyer.work/)
+
+ before we had some issues
+ with lining up the
+ ide Boozang window and the application
+ window side by side
+ and we were trying to be too smart
+ now instead we have allowed you to
+ easily specify
+ what
+ window size of the application that you
+ want
+ you can do the adapter window size which
+ is of course what we were doing before
+ where we adapt the application window
+ but then you can now also of course set
+ to use 100 of the screen size
+ or
+ simply
+ take a set resolution usually on the
+ with
+ or
+ one of the predetermined devices like an
+ iphone
+ and of course if you need to add
+ devices to your list you'll go into more
+ options and you can simply
+ unselect what's not interesting for you
+ and add any devices that you might need
+ like this
+ so now of course i have my galaxy for
+ instance
+ so i think this is going to improve a
+ lot for you to experiment with different
+ screen sizes and emulate a lot of the
+ kind of simple
+ device testing
+ for the web in the web browser that you
+ need to do so i think this is a good
+ step for us to just improve the way that
+ you can adapt for different screen sizes
+ and do simple mobile testing so let us
+ know what you think about this
+ functionality i think it's a pretty good
+ improvement that we have in order to do
+ simple quick
+ tests on top on different screen sizesTranscript for [Boozang Feature: API load test](https://www.youtube.com/watch?v=Vzp5W-AoVJM) by [Merlin](https://merlin.foyer.work/)
+
+ one additional feature that we recently
+ changed in Boozang is the api loading test
+ so we supported this before but right
+ now we've changed it so it's a new
+ action type so the way it works is that
+ you will create
+ a new test and what we do here
+ is that
+ i don't know if you looked at the video
+ previously but we have now for instance
+ a post
+ a get and a delete and these are done uh
+ against by recording
+ this
+ ui right so
+ in the lab we have this
+ form fill functionality that post data
+ to an api
+ so what we've done now we have a post we
+ also have a get when you do show users
+ in db
+ and we also have a delete so that's what
+ you're seeing so what we're going to do
+ is we're going to create a new api test
+ and we're just going to call this load
+ test
+ and then we're going to choose the api
+ host
+ and what you want to do is
+ what we support
+ is the fact that
+ let's go back there
+ what we support here is that you can now
+ use existing api actions
+ that you've either recorded
+ or created in your load test so let's
+ start by that
+ so what we're doing here i'm doing
+ new and i do load test here
+ and when i do that as you see we have a
+ list of api tests and what we allow you
+ to do is not just doing like a thousand
+ post requests or a thousand
+ uh get requests it's you can do like a
+ group of things so what we're gonna do
+ is we're gonna post some data then we're
+ gonna try and load the data and then
+ we're going to delete it afterwards
+ which is usually a pretty good group
+ because you won't get tons of data build
+ up so we're going to try that now so i'm
+ going to use the plus and it's still
+ going to find this i'm going to do first
+ i'm going to select from the form the
+ post request
+ and then i'm going to add again i'm
+ going to do the get request
+ and then again i'm going to make sure we
+ have the delete
+ and then what you want to do is of
+ course you want to make sure that when
+ you post
+ you want to make sure that the variable
+ for the id is carried over
+ and actually here
+ we're lucky normally you needed to do
+ some manual work here but what you
+ basically want to do is you want to make
+ sure that what's being returned from one
+ of the scripts
+ is being set when you try to retrieve
+ the entry which is actually correct here
+ you see how it says parameter id here
+ right
+ and then you want to make sure that
+ that's also carried forward to the
+ delete function so we will open the
+ delete function
+ and as you see there is also the id
+ function there right
+ so so now of course
+ here you would normally need to do
+ a little bit of work but we're just
+ going to try and see how this works and
+ we're not going to do something crazy
+ we'll use
+ 30 we use 30 seconds 10 users and a ramp
+ up time of 10 seconds okay and we'll
+ play this
+ to see what we have in the end and in
+ the meantime you can actually kind of
+ play around with this and see what's
+ happening well it looks like
+ a bunch of things are being created
+ let's hope they're being deleted as well
+ so maybe there was a mistake i did but
+ we'll see very soon
+ if that's the case we will see as soon
+ as this completes
+ uh if it's managed to kind of clean up
+ the users because what's happening now
+ is you'll have a lot of concurrent users
+ doing the
+ requests and then in the end we're
+ hoping as you can see it cleaned up
+ afterwards so now what you want to do is
+ you want to hit this report icon
+ and now you can see here you can see
+ okay
+ we have the load test being executed
+ that's great but that's not what we want
+ to do you want to look at this ramp up
+ report because we did a ramp up load
+ test
+ and what you can see here is
+ as we ramp up and as the requests are
+ hanging the request time goes up a
+ little bit
+ hitting almost here around 1.5 seconds
+ but as you can see it managed to process
+ over 3 000 requests in 30 seconds so at
+ least that's uh
+ about 100 requests per second which is
+ about what you would expect so this is
+ the kind of simple api test you can do
+ you can simply group for instance a
+ creation api request a deletion
+ and you can play around with this and of
+ course
+ specify how you carry forward
+ the dataTranscript for [Boozang Feature: API logs (JSON tree view)](https://www.youtube.com/watch?v=DNjjG7SeGbY) by [Merlin](https://merlin.foyer.work/)
+
+ now i want to talk about a new feature
+ or more of an ux update that we did to
+ just really simplify
+ um
+ the presentation of
+ json data especially for troubleshooting
+ api request
+ so let's see here let me open one of
+ these and do an api request to create a
+ product
+ what we've done now is in the result
+ here you see that you have these very
+ easy to navigate here is the request
+ this is the data that's going out
+ you can see the company and you can see
+ the response and you can open and close
+ this json structure
+ so one of the tricks here
+ that are really useful is that you can
+ double click the request and it will
+ open up the whole tree
+ so it's really nice when you want to
+ expand the whole tree and you can do
+ this on on any level of course
+ so this is a small thing as you can see
+ it's very useful when you have a lot of
+ request and response for instance
+ when i'm looking at temporary database
+ sometimes i have
+ many of these requests and response and
+ it's pretty good to be able to open this
+ up and for instance
+ just open up the whole response to
+ troubleshoot what's going on and as you
+ can see we also have the syntax
+ highlighting here to make it easy to
+ troubleshoot and find any problemsTranscript for [Boozang Introduction: Branches, merging, and merge requests](https://www.youtube.com/watch?v=ja7ETXsjKGI) by [Merlin](https://merlin.foyer.work/)
+
+ in buang we just launched a larger
+ versioning control update where we
+ support uh proper branching merging like
+ we were before but also uh doing proper
+ commits doing po request or merge
+ request as we call them and I think it's
+ a much more professional way of working
+ especially if you're doing teamwork so
+ instead of the individual feature videos
+ I thought I'd do a little longer video
+ explain on how you can work with this uh
+ in practice this is just an example of
+ course we're going to work with the
+ project here called unit test so let's
+ uh launch it
+ here first of all this unit test stuff
+ is very very simple um let's just start
+ by creating uh a module here we're now
+ working on the master Branch so I will
+ create a a module called navigation here
+ and then I'm just going to do a very
+ simp simple navigation
+ test called click links and of course
+ this is not to demonstrate the power of
+ the Boozangg tool it is just to show you
+ how to work with versioning so of course
+ here we're just going to record a very
+ simple test going through a couple of
+ links here okay so what I'm doing is
+ I'll take the two two links here stop
+ the test and maybe remove this
+ unnecessary click that I did okay very
+ good now we're working directly on
+ master so I will go in here and click on
+ to see my uh updates I'll see the m is
+ red so I see I have updates I have
+ updates to the navigation module so just
+ like git make a commit and I'll say
+ added
+ navigation
+ test after the commit you will see it
+ here in the commit list okay but now is
+ this really professional let's say you
+ have a master running on the CI server
+ and many people working on it you could
+ have a people doing appeti it could
+ break the test maybe you want to merge
+ this in a controlled manner so first of
+ all what I want to do is I want to
+ create my own Branch maybe it's my
+ feature Branch right so this is my
+ feature Branch or for the current Sprint
+ let's say so now I have my own branch
+ but sometimes maybe I switch to master
+ and I work on it by mistake so let's not
+ do that let's protect this branch and
+ make it read only and here you have a
+ couple of options we can see here that I
+ can control the permissions but I can
+ also allow users to approve their own
+ merge requests which I want to be able
+ to do here because I'm demoing on on
+ this and I can't do a double comp
+ computer demo at this point so now when
+ this branch is controlled what I'm going
+ to do is I'm going to uh as you can see
+ I'm switched to the master Branch but as
+ you can see here it's read only I cannot
+ record I can only play the test to
+ verify that it's working or not so now
+ what I would like to do is I want to
+ switch to the feature Branch
+ okay and as you can see now I can record
+ again
+ and uh navigate and uh copy paste etc
+ etc this is a write and read Branch
+ right but when you are working so let me
+ just illustrate how that would look
+ let's say I just copy this link here and
+ I want
+ to you can see now I can do another
+ commit and I
+ say copied action
+ now if I switch to the to the uh
+ protected Branch the master Branch right
+ if I want to I can now uh create a merge
+ request and I'll show you how to do that
+ what you're going to do is you're just
+ going to merge from feature here and
+ then what you're going to see is you're
+ going to get
+ merge and then you're going to say it's
+ uh it's been sent to the Target Branch
+ because it's protected and you got to
+ approve it so I'm just going to show you
+ how you approve this uh merge request so
+ if you go here now if I'm in master as
+ you can see here I only have those four
+ actions right but now I'm going to
+ approve this merge
+ request and what you're going to see is
+ that now if I look at that test that we
+ were uh doing navigation click links you
+ can see that we we have those extra
+ actions
+ there but now we're going to look at an
+ even more complex uh case we're going to
+ look at uh doing a regular merge without
+ a merge request and then creating a
+ merge request with a conflict okay so
+ now in reality I might not have just a
+ feature Branch I might have also
+ made um a specific kind of brand for
+ instance for a bug fix and maybe this
+ should be merged in my own Branch before
+ it should generate a merge request
+ so this all different teams Works
+ differently with bug fixes and all these
+ things but let's um let's see what
+ happens here I'll just do one example
+ that illustrates how you could work so
+ first of all I'll create a new branch
+ called Bug 123 right so this would be
+ your bug number maybe
+ in um a bug and then in a ticket
+ system and then let's switch to first
+ Let's do an update in the feature
+ branch which
+ is maybe I'll record something okay to
+ make it a little more
+ interesting but at the same time
+ uh and then we of course have to commit
+ the changes sometimes I forget forget
+ this because you didn't have to before
+ in buang and now they have to be
+ committed so what I'll do is I'll just
+ go ahead and create a
+ commit
+ added
+ clicks now what I'm going to do is I'm
+ going to try and merge this uh no I'm
+ actually going to create the conflict
+ let's create a conflict that's more fun
+ so I'll go go to the feature Branch I
+ switch
+ here uh I'm oh I'm in the feature Branch
+ I'll go to the bug
+ branch and what I'll do is I'll take um
+ that navigation test that we had and I'm
+ actually just going to create something
+ in the beginning of the test here
+ instead and that should generate a
+ conflict so let me try to
+ First go ahead and uh
+ commit those
+ changes here added initial
+ clicks now we should have a conflict if
+ I'm trying to merge the bug and the
+ feature Branch so let's try and do that
+ so what I'll do is I click on merge and
+ I click on feature and I try to merge
+ it as you can see we have an unresolved
+ conflict here okay so what you want to
+ do is now you can actually select and
+ here you can see uh that it has Auto
+ selected for you but if you want you can
+ remove those clicks there you see this
+ would be the feature Branch this is the
+ current Branch I'm in and this is the
+ result that you want to commit but let's
+ say we want to get both of these things
+ so we'll scroll
+ down and as you can see it seemed to
+ have figured out from the conflict
+ automatically but of course I can change
+ here if I need to right there is also
+ something we can do if you see that
+ there is an issue you can also uh paste
+ and create initial actions here and you
+ can also actually drag and drop for the
+ order of them so this is a pretty
+ powerful view uh but usually that's not
+ necessary so it has me to go to the next
+ conflict there are no more conflicts so
+ now I can go ahead and Commit This and
+ as you can see I have now managed to
+ merge this feature Branch uh to bug 123
+ Branch now we're just going to do one
+ more complex
+ scenario what we're going to do is we're
+ going to try and
+ merge the feature branch into master and
+ then bug one two three into Master to
+ see if we can create a
+ conflict so I'm going to start by
+ switching to the master Branch you
+ always want to be just like it in the
+ branch you want to merge
+ into now I'm going to go and start by
+ merging the feature branch that doesn't
+ have those uh changes right
+ now so I'm going to I'm going to merge
+ this into master I'm going to commit and
+ it's going to create the merge
+ request but now instead of accepting
+ this which would of course be the normal
+ case I'm going to merge bug one two 3 in
+ creating kind of a a new where emerge
+ request
+ right now if the user tries to approve
+ this old merge request
+ Quest H it's it can actually do
+ it but if I approve
+ this and then I'm going to this merge
+ request you can see that there will be
+ conflicts right cu the Assumption was
+ when we created the merch request it was
+ done on a different Baseline for this
+ test so you can now look at the
+ conflict but remember this is this is a
+ merge request so you don't want to
+ resolve this here so what you will do is
+ you would reject the merge request
+ say remmer merge with Source Branch or
+ master or whatever you you want to do or
+ Master Branch or depending on how you
+ work so in this case when the merge
+ request has been
+ denied you want to make sure that you
+ take the brch you're working in and
+ remerge those changes from the master
+ branch and then try again to see if the
+ merch request can be uh
+ redone so this way in buang we think
+ it's a more professional way of working
+ and allows you to have a stable master
+ or CI Branch while having several people
+ uh on your team working on the same
+ project and same tests at the same timeTranscript for [Boozang Feature: Coded tests](https://www.youtube.com/watch?v=YnAPWQPtP3Y) by [Merlin](https://merlin.foyer.work/)
+
+ now i'm going to talk about coded tests
+ in Boozang and
+ what we've seen here i have a very
+ simple
+ straightforward test that i actually
+ recorded and now there is a new coded
+ view in Boozang
+ where if you switch over you get the
+ actual code for the test and as you can
+ see because the selectors are so simple
+ you see that it simply is
+ script set first name script set and a
+ number of set actions followed by two
+ click actions and this is where you can
+ do like a lot now in code so you can
+ choose if you want to work in code or if
+ you want to work more with the recorder
+ replay standard approach
+ and
+ we think that in certain cases it's best
+ to work in code in other cases better to
+ record your journey so from what i
+ usually do is i start by making the test
+ using the record function
+ and then maybe i'll edit or fix it using
+ the code function but you can play
+ around with that
+ another very good thing is of course we
+ have a very powerful tool a lot of
+ features are hidden
+ but here of course when i write script i
+ get out to complete so that way i can
+ also explore what functionality we have
+ in the tool
+ using code
+ another really cool thing is of course
+ if you are
+ and copying this test
+ of course i can basically just take the
+ code
+ take and create a new test let's say
+ fill the form
+ and here it's
+ form fill
+ and now if i just paste this back here
+ and i can also make modifications let's
+ say i'll
+ i'll just copy this now i can go back
+ into action view and the test is
+ automatically updated so now you can go
+ back and forth between code
+ and
+ recording action view and that way you
+ can also learn the code language very
+ easily by just recording a test and then
+ switching over
+ so let us know what you think about this
+ new functionalityTranscript for [Boozang Feature: Content Policy tab](https://www.youtube.com/watch?v=g5WifRqufwY) by [Merlin](https://merlin.foyer.work/)
+
+ let me demonstrate
+ um
+ the setting here which is loading
+ element
+ which we just released for the 680
+ feature release
+ before i do that i just want to do a
+ little recap and explain the content
+ policy window all the stuff you can set
+ here
+ this
+ app dictionary is a little bit
+ experimental a way to support
+ multi-language um
+ we don't have any users
+ right now using this functionality since
+ we launched it so i think
+ this would require a little bit with us
+ working with you to make this
+ really good
+ something that is very very useful is
+ ignore request url as you know Boozang
+ always listens to
+ all the requests that goes out from the
+ browser and waits for it to make sure
+ that all the api requests are completed
+ that way if you have a slow uh answering
+ api
+ uh the test will still run stable so
+ it's very very powerful but sometimes
+ there is stuff like socket request you
+ don't want to wait for you will add them
+ here in ignore request url okay
+ priority item for data select is for
+ instance a cypress has a certain element
+ there's a few of these that recommend
+ you setting specific
+ attributes you can just add them here
+ and you can use wild cards for me i use
+ the data bset attribute so that will be
+ used by the dome picker and have a
+ priority in case you're using it for a
+ button etc
+ we also have ignore classes you very
+ rarely need to update this the typical
+ one is of course active uh that that or
+ has changed or checked that's very
+ typical ignore classes
+ i think if you have something specific
+ for your applications
+ especially if it's kind of in your local
+ language or something like that it's
+ good to add it here so you make sure
+ that we don't try to use this
+ in the domain policy and the element
+ selection policy
+ text attributes these are just useful
+ for instance your login often has
+ placeholders so it's good to use these
+ in the selection policy
+ so that's something you want to keep in
+ mind
+ clickable element usually these are a
+ and button you usually don't have to set
+ this but maybe you have something
+ special like a span or something that is
+ clickable then you can add it here and
+ it will help us when we do our different
+ policies for for the element selection
+ and last but not least this new one here
+ the loading element is a way to capture
+ um for instance here if i reload this
+ page
+ there will be a kind of a spinner or
+ something like that then you can capture
+ it here and then Boozang will
+ automatically wait for that element to
+ disappear uh also making your tests to
+ run
+ more stableTranscript for [Boozang Introduction: Implementing a data-driven Cucumber test](https://www.youtube.com/watch?v=lsWYywBs24M) by [Merlin](https://merlin.foyer.work/)
+
+ i'm now going to go ahead and create a
+ data driven test case in cucumber and to
+ do that i will go into
+ the lab
+ under form fill
+ where you have an example cucumber
+ specification that uses the scenario
+ outline keyword with the example data so
+ we're going to go ahead and copy this
+ and then paste this straight into
+ the new feature
+ what you have now is a feature pointed
+ to a single scenario and you can see the
+ data here under the data tab
+ we're going to go ahead and do what we
+ did before we're going to create a very
+ simple
+ new test for the first thing and here
+ we're going to create a new module
+ called form
+ after we created the form we're going to
+ say clear form but we won't do anything
+ complicated in this test okay
+ for this entry url we're going to look
+ at form fill what's the entry url it's
+ form fill
+ and we're going to use always reload for
+ the given condition
+ here we're not going to do anything we
+ leave it empty as is it's just going to
+ reload the page
+ then we're going to go ahead and create
+ a new test for entering the user so
+ we're going to use the form module and
+ simply do
+ uh
+ add user or fill the form doesn't matter
+ but we're going to call it add user in
+ this case and we're going to use the
+ form field url and the never reload
+ policy
+ after we've done that
+ instead of doing a validation
+ uh
+ we're just going to leave this empty as
+ well so i'm not going to create the
+ validation here so i'm just going to
+ create an empty validation test in the
+ form say
+ validate user added will save the
+ validation as an exercise for you to
+ work on
+ now for the data driven part
+ as you know Boozang is by default data
+ driven so what we're going to do is
+ we're just going to fill out the form
+ here
+ and i'm going to use the tab key while
+ filling out the form which is usually
+ very good when you switch between the
+ inputs when you do test automation
+ in order to avoid side effects
+ and then i'm going to hit the save to db
+ so i add the user to the database and as
+ you can see
+ the user has now been added here under
+ show users
+ as you can see under test setting you
+ see that we have the first name the last
+ name the email and the password
+ already broken out this data so what we
+ will do is we're going to use the back
+ key and now we're going to map this data
+ into the data we just filled
+ so what you want to do here is
+ you want to use the little magic wand
+ and then here you can see that we're
+ going to have if i enter any of these
+ i'm going to have a
+ suggestion for
+ we're going to do one thing we're just
+ going to reload this page
+ because sometimes if you don't get the
+ right behavior simply reload the page
+ what we're going to do here we're going
+ to see that we have
+ all these data
+ from this
+ data that we saw here before
+ to choose from right and what you want
+ to do is probably you want to map the
+ first column first name to first name
+ last name to last name email to email
+ and password to password and of course
+ you can do that
+ manually in the action setting here
+ very simply
+ or you can actually use the auto map
+ functionality so because we've used
+ similar wording we've actually managed
+ to map
+ the different things in our data and as
+ you can see
+ now you can see how
+ in
+ the call
+ we send the first name as the loop first
+ name the last name as the loop last name
+ which is basically every row of the csv
+ file
+ so if i play this now
+ it's going to ask if we want to run
+ which iteration we want to run or if we
+ want to run all of them i'm going to go
+ ahead and run all of them so what you're
+ going to see is how simple it is to have
+ a set of data create a test step in
+ Boozang
+ and basically create a data driven test
+ in Boozang so
+ what we do we really specialize in
+ making sure that you can create very
+ reusable tests and very easily send data
+ from upstream tests downstream so you
+ can see how easy and quick it is to
+ create a powerful test caseTranscript for [Boozang Introduction: Cucumber Features and Scenarios](https://www.youtube.com/watch?v=7jNc2kpdMEo) by [Merlin](https://merlin.foyer.work/)
+
+ as we've redone a lot of the cucumber
+ functionality i'm going to create a
+ couple of videos that shows you
+ how to work with cucumber now in Boozang
+ so what i've done is i've created an
+ empty project for us to demo on
+ and so what i'll do is
+ just like you would start
+ this is the same view that you would
+ have and remember as usual we're using
+ the lab
+ okay
+ and the good thing is that now in the
+ lab we've added cucumber feature
+ and scenario specifications so you have
+ something to get started with there will
+ be an upcoming udemy course where we go
+ into cucumber in more depth but right
+ now
+ here is a little taste of what you're
+ going to see
+ as usual
+ remember when you're in Boozang and you go
+ up to the main navigation will have
+ modules which is the code domain where
+ you test live and in cucumber that would
+ be the test step implementations and
+ then you have the features which is the
+ business domain where your cucumber
+ feature and scenario lives
+ of course you can use as usual the
+ import feature function
+ and here as usual you can also
+ add an integration point where you can
+ synchronize i can show you really
+ quickly under integration you can now
+ synchronize with a bunch of different
+ systems you can have features in gitlab
+ github bitbucket
+ x-ray and acer okay so you can
+ synchronize the features directly from
+ them where they would be the master
+ system and Boozang would be the slave so
+ all the test step implementations will
+ live in Boozang
+ and of course the execution engine and
+ then the actual cucumber files would
+ live in your version control system or
+ in x-ray
+ but right now we're going to do it keep
+ it simple no integration points and
+ remember now i'm just clicking new
+ feature
+ so
+ before we made it a little bit more
+ complex where you had to create the
+ scenarios individually but right now you
+ can actually import a feature straight
+ away so we're going to import the sorted
+ list feature so we're going to go into
+ sorted list cucumber specification and
+ we're going to copy all this so just
+ ctrl a
+ control c
+ and then instead of filling out the
+ feature name just click import features
+ and paste all of this straight into
+ Boozang and will auto generate the
+ features
+ and the scenarios inside that means that
+ in Boozang that would mean it's kind of a
+ you know a feature
+ you will create the future name sorted
+ list then you create a test suite sorted
+ list so you can run all the scenarios
+ inside the feature and then when you
+ click into it the feature will of course
+ show up as not implemented
+ so that's one way to get really quickly
+ started with Boozang so let me i mean
+ cucumber in Boozang and remember that all
+ of these are executable directly when
+ they're imported they will just show us
+ non not implemented in the report right
+ you see this little yellow not
+ implemented
+ and under report you will see them as
+ not implemented so that's what it would
+ look like before you start linking
+ test step implementations to them
+ an alternative way if you don't want to
+ synchronize if you want to create a
+ scenario manually
+ you can go into the feature
+ and just click new scenario
+ and of course you can now fill in
+ given
+ i
+ have an item
+ when
+ i give
+ it away
+ then
+ i shouldn't
+ have it
+ so now you can of course manually create
+ something and let's say this is the
+ item test right
+ or
+ keep it destructive give away
+ item scenario okay
+ and we go submit and as you can see
+ i have an item i give it away i
+ shouldn't have it so that's how simple
+ it is to get started with the cue camper
+ so the next
+ uh
+ video we're gonna look at how would you
+ implement these things in BoozangTranscript for [Boozang Introduction: Implementing Cucumber test steps](https://www.youtube.com/watch?v=504rY6KPBA8) by [Merlin](https://merlin.foyer.work/)
+
+ Now I'm going to show you how easy it is to implement cucumber test steps in BooSAN and we're going to start with a non-data-driven test which is perfect candidate here is add item to list it's basically given I have an empty list when I add an item the item should be shown in the list very straightforward so we used to kind of force you to create all the test steps implementation up front but now you can actually just
+ But now you can actually just click on this and just click new test and you can even create the module here directly from the menu. In this case I'm going to use the list module and I'm going to say I have an empty list. Remember the test step should be more declarative so it should be like clear list right. That's the same thing. If you have an empty list you want to run the test clear list and you want to use a test module. So I'm going to say I have an empty list and I'm going to say I have a test module. I'm going to say I have a test module and I'm going to say I have a test module. I'm going to say I have a test module. I'm going to say I have a test module. I'm going to say I have a test module. I'm going to say I have a test module. I'm going to say I have a test module. I'm going to say I have a test module. I'm going to say I have a test module. I'm going to say I have a test module. I'm going to say I have a test module. I'm going to say I have a test module. I'm going to say I have a test module.
+ and you want to use a good URL so let's look at sorted list it's the entry point is sorted list and as you can see the full URL here this default is reload page on URL mismatch that will it will work but we're going to use always reload page in this case and in this case we are not going to do anything we have a cleared list under normal circumstances of course we would add a clear use case
+ we would add a clear use case here. Then I'm going to go into I add an item so I'm going to go ahead and do new test and I'm going to go ahead and pick the list module and here I'm just going to do add item. Here I should also set the URL correctly but it's not so important because here we will never reload the page. Remember it's relying on the state of the application from the step before so do never reload page.
+ of the application from the step before so do never reload page and then I simply click into this test and I'll record a simple addition of an item which we will call test item here and I'll click add to do so now we have two simple actions one that sets the value and clicks the button okay and remember in general Boozang defaults to data-driven tests so you can set this to whatever you want and then we'll go back
+ driven tests. So you can set this to whatever you want. And then we'll go back and we'll make sure that we have a validation as well. So we will say in the list module validate item in list and use the same sorted list and again never reload. So again we need to do a validation and what you will do here is use a simple validation action validate exists is a good thing.
+ validation action validate exists is a good thing and then when you select you can use this little selector if you don't see the selector and you make sure to just either hover over the whole item or the little item depending on what works for you. So what we're going to do now is of course we're gonna go ahead and delete this and go back up and run our non data-driven cucumber test. So what you see is that the page is reloaded
+ cucumber test. So what you see is that the page is reloaded, you see an item is added and you also see that you have a validation. Of course this is a very very simple test right but what you can see is that the fundamentals you have a precondition where you make sure that the application is in a certain state. You'll have an action and you have a post condition and you see how you very very quickly could implement a simple cucumber test using BooSang.Transcript for [Boozang Introduction: Debugging a test-case](https://www.youtube.com/watch?v=IQx-a1KWkaA) by [Merlin](https://merlin.foyer.work/)
+
+ there are many ways to debug tests in
+ Boozang so let me show you a couple of
+ them
+ here we have a simple test that fills
+ out a form in Boozang
+ and now of course if you want to debug
+ this the way you want to do this is
+ probably by double clicking a single
+ action you can execute it and make sure
+ that
+ what's happening is what you expect here
+ it fills out the first name and here
+ i'll double click and it fills out the
+ last name
+ if you want to debug this with a
+ specific
+ set of data that is not something you've
+ defined in parameter you can override
+ that on a single action using debug
+ action so let's open this and let's try
+ another test value here we'll say test
+ value here and i'll hit the play button
+ and now you see now you've debugged this
+ with some custom value and this is
+ especially good to do with validations
+ there are also other ways to debug the
+ test if you're playing it you want to
+ stop at a certain point you can set a
+ break point so let me demonstrate that
+ this will play the test
+ until the break point
+ and as you see it's now stopped at the
+ break point so what do we do here
+ there's a few things we can do we can go
+ into the
+ console and let's delete this and delete
+ the filter
+ in the console we can now type
+ parameter
+ and we will get the current value
+ when this test is being executed at this
+ specific point and then if we want to
+ continue the execution we can simply
+ press play
+ there is also a way to go back and see
+ what data we had at a certain point
+ if you look at this um
+ console window you will see the log from
+ the test execution and what you've
+ logged but you can also see a snapshot
+ in time what the data was here
+ in the drop down on the data snapshot
+ there's also some more advanced
+ debugging capabilities that you can use
+ so let's remove this breakpoint by
+ clicking it again and let's go into the
+ action settings here
+ you see now i've added the script
+ function and now i want to log a
+ particular value so i added these
+ brackets dash dash dash you don't have
+ to do that but i'll show you why that
+ can be useful and i'm simply putting
+ javascript in here where i'm debugging
+ the
+ particular value of email here so let's
+ play this again
+ and as you can see
+ now
+ uh you can go into the console window
+ and now you remember i put dash dash
+ dash and you can see now i am testing
+ with email aa bb.com
+ and then the most powerful way to debug
+ which you don't usually need to use but
+ which can be very very powerful is that
+ you can add a breakpoint inside the
+ script and then you can use the
+ debugging capability
+ of
+ the
+ of the browser of the chrome browser
+ right so what i'm going to do now is
+ i'll keep the
+ inspect open the chrome development
+ console open and i play the test case
+ back
+ and now you can see the
+ the actual
+ log happening in the chrome console
+ but of course you can also now see you
+ see you have the debugger here and now
+ you can hover over the variables
+ see what value a variable have and you
+ can also use the step over function or
+ resume in the chrome console and this is
+ of course very very powerful for
+ debugging purposes so again
+ many ways to debug your test case in
+ Boozang especially with a powerful chrome
+ consoleTranscript for [Boozang Introduction: Elements selectors](https://www.youtube.com/watch?v=iBaT8qgHaR4) by [Merlin](https://merlin.foyer.work/)
+
+ now i'm going to show you how to
+ customize an individual element selector
+ in Boozang
+ Boozang uses natural language for element
+ selection so it's a proprietary way to
+ find elements in your user interface
+ and the reason why it uses a natural
+ language is that many modern frameworks
+ are of course using dynamic classes or
+ classes that vary or ids that are
+ completely random so we don't
+ rely on ids and classes you can of
+ course base your selector
+ by customizing them on classes and ids
+ but we try to base the selector or
+ what's being shown in the interface
+ so that aligns or test with the way a
+ manual tester would test it basically
+ fill out the first name that's why you
+ see here the element selector in this
+ example i'm going to close the execution
+ view you see it says fill the first name
+ with parameter first name fill lastname
+ with parameter lastname
+ if we want to customize this you will go
+ into the element selector box and hit
+ this edit pen and that's going to open
+ up the dome picker and this is a little
+ bit new it's very very powerful in Boozang
+ but for people who are used to selenium
+ and other languages this is going to be
+ a little bit novel the way you can do it
+ is that you will
+ click
+ on a certain element here and it's going
+ to take whatever you selected and go up
+ the tree
+ and you can see
+ what's being selected in the application
+ window
+ and then if you want to this to be added
+ to the path you'll hit the checkbox
+ inside
+ an individual
+ selector that you've selected you can
+ now use different method for instance
+ after before which is just
+ used to say
+ after this element or before this
+ element
+ you have contains
+ which is to say
+ look for this string inside this element
+ and then you also have the near selector
+ which is a custom selector that we use
+ to find
+ uh elements in a form or a checkbox to
+ match
+ labels with elements and the best way to
+ figure this out is to experiment
+ but one thing i can show you is that for
+ instance if we have an input box like
+ this we select it and we see that it's
+ good as you can see
+ it says it's unique and it's 90
+ milliseconds to find and then of course
+ if i would choose a different
+ method here like for instance an after
+ method i can see the speed is being
+ recalculated but i can still see it's
+ being unique so here you can play around
+ by customizing the the particular path
+ what you want to do often is that after
+ you customize the path you want to
+ double click and make sure that it's
+ still working that it still finds the
+ element and also you also want to make
+ sure that it says it's unique
+ another thing that could be interesting
+ to do is that when you change
+ a single thing here for instance if i
+ put in
+ last name here
+ i can actually try and automatically
+ match the method so i'm going to hit the
+ refresh for the method now
+ and you know what it tells me if it's
+ last name but it's this element i want
+ to get it will take tell me that's the
+ element before the before selector will
+ be the recommended selector to use
+ so this way if you want to basically
+ locate this element that you've selected
+ based on this label you can simply just
+ type it into text and click refresh to
+ how to generate the method
+ and the other way around if you want to
+ out to regenerate the string let's say i
+ will use after
+ i can out to generate the string i
+ should use first name as the selector so
+ try and play around with this
+ learn about the selectors it's very very
+ powerful selectors and also
+ if you want to use attributes like class
+ or id
+ you can simply click these check boxes
+ for any single like the input you will
+ see any classes or ids or other
+ attributes being shown here and you can
+ of course add them to your selector if
+ neededTranscript for [Boozang Feature: Execute as single action to speed up tests](https://www.youtube.com/watch?v=HRhM3dUovCQ) by [Merlin](https://merlin.foyer.work/)
+
+ the next feature i want to talk about is
+ execute as a single action
+ we've supported for about a year the
+ ability to execute a group of actions as
+ a single action that greatly speeds up
+ performance and this would be both when
+ you're debugging an ide
+ and when you're running it on your ci
+ server so this is a great performance
+ improvement but we wasn't 100 sure that
+ it would always work and we notice now
+ that very often this is very stable so
+ we're going to create and make this the
+ default behavior with a couple of in
+ changes to the interface so i'm just
+ going to demo this by recording on top
+ of the lab.Boozang.com
+ slash form fill
+ and i'm just going to
+ just simply
+ demo a very simple form fill
+ where where i'm recording it and also
+ using the default
+ data binding functionality that
+ automatically binds it into the
+ parameter
+ variable okay
+ so here we have a simple
+ form fill action right and
+ as you can see now we've added an icon
+ here with a little flash i'm just going
+ to start by disabling it and then
+ running the test so we see the kind of
+ default uh behavior here
+ pretty fast but not like super fast
+ right
+ this is typically what we do is we
+ basically execute these actions one by
+ one so if i would double click here it's
+ kind of this speed of course i can't
+ click as fast
+ but you see
+ how that works so now we're gonna go
+ ahead and enable this so what i'm doing
+ now is i'm clicking on the flash
+ and now you can look at how fast this
+ form is filled instead
+ so you see that now actually all of the
+ fields are sent
+ to the application and then executed on
+ the application so for really big forms
+ this is a huge improvement and we've
+ been seeing uh
+ uh
+ execution times going down to like for
+ whole tests
+ by 25 30 percent so this is a really a
+ strong improvement you might have cases
+ where you don't want to have this
+ behavior so what i'm going to do here
+ i'm just going to pick one action and
+ i'm just going to disable it for this
+ one so
+ under basic info next to switch flag
+ we're just going to click non-rapid
+ action and this is if you notice a
+ specific problem in a form or something
+ and we're going to see how this executes
+ as you can see the first name was done
+ as rapid but because it cannot
+ fill the second form in a rapid manner
+ it kind of becomes a single action a
+ single action and then email and
+ password are executed in bulk so it just
+ breaks the flow so that's one way of
+ doing it
+ and then of course you can also take
+ if i disable this this is no no
+ non-rapid action i can also go to my
+ settings and i can disable this
+ completely disable out the one action
+ execution here
+ and if i run this now you're going to
+ see that it's back to the normal default
+ behavior so we just changed the default
+ behavior to not execute a single action
+ because we are changing this default
+ behavior for your ci runs you should see
+ this different and it should be
+ hopefully
+ much faster executions if you're seeing
+ a problem go ahead and disable it or use
+ this if you have a specific problem with
+ a specific form you can do what i just
+ did and you go into basic info
+ and uh
+ for this thing
+ sorry action setting basic info
+ non-rapid action and you can disable it
+ for a specific field
+ but what we're going to see here much
+ faster execution times and we're looking
+ forward to bringing you even more
+ performance improvements in the future
+ when we discover these things
+ so let us know
+ what you think of this and how it's
+ working out for youTranscript for [Boozang Feature: Flag](https://www.youtube.com/watch?v=Gj9yAf6KG-w) by [Merlin](https://merlin.foyer.work/)
+
+ hello
+ today i'm just going to show you the
+ feature flag in Boozang
+ and flag is something that you use to
+ handle conditional situations in Boozang
+ and of course you can use if groups you
+ can use the n statement in Boozang
+ you can use loops there's many many
+ different ways to handle conditionals
+ but flag is one of the more flexible and
+ popular ones when it comes to complex
+ logic so let me just demonstrate that
+ now
+ so what i'm going to do here i'm just
+ going to call this i'm going to create
+ the test called flag demo
+ and then i'm just going to record a
+ couple of actions here in the lab the
+ lab.dusang.com so i'm clicking
+ introduction and then overview and i'm
+ just going to stop this and try and play
+ this back
+ so what you see is of course it clicks
+ introduction and overview
+ just as you would have expected from the
+ test
+ but of course here if i want to i can
+ now add flags to this so i'll add this
+ overview and you can see it showing up
+ in the
+ in the tool right
+ and i call this
+ intro and then if i want to now
+ i can add
+ a script action that would
+ go to these flags
+ so this is very simpler to the switch
+ statement in javascript where it will
+ jump over a number of actions until it
+ finds a match okay
+ so here i will use go to flag
+ and i will just use here
+ intro
+ or intro
+ now if i run this i'm going to expect
+ this to jump to the next action and
+ execute normally okay
+ okay cool
+ so now i'm just going to try and change
+ this and change it to overview
+ and as you can see it skipped the the
+ intro
+ uh click right and that means even if i
+ would record something inside of this
+ which doesn't have a flag it will also
+ skip that
+ so let's run this and see
+ as you can see it just jumps to
+ the condition the the flag that it
+ matches so remember this can be used as
+ a javascript very similar to the switch
+ statement so it's very good when you
+ have something which could have many
+ different outcomes but you want to
+ maybe
+ choose between
+ not just like if else but many different
+ outcomes so that's a good example of
+ when you want to use this and let me
+ just show you here also in the exit
+ conditions if you go to condition for an
+ action
+ depending on the outcome of an action
+ in the go to section here you can say
+ set
+ and here you have go to flag and it will
+ allow you to select from the different
+ exit conditions as well so you can use
+ this using script or exit conditions so
+ it's very very flexibleTranscript for [Boozang Feature: Generating an API test from the UI](https://www.youtube.com/watch?v=oKmGBlfnGAw) by [Merlin](https://merlin.foyer.work/)
+
+ one of the advantages in Boozang is that
+ as it supports both ui and api test
+ we've implemented a functionality where
+ you can auto generate
+ api tests from actions in the ui so let
+ me demonstrate that
+ what i'll start by doing is in a module
+ i'll go into i'll choose api test and
+ create a new api test
+ api actions you can also add into
+ regular tests but we recommend you using
+ the api test because it makes things a
+ little bit simpler
+ so i'm just going to call this form fill
+ in api
+ and i need to pick my api host in this
+ case
+ the api is hosted on api.Boozang.com
+ very cool
+ so of course now we can create start
+ creating manually filling out the query
+ the body the headers and create the api
+ test very similar to a tool like postman
+ or we can actually just go ahead and
+ delete this one
+ and use this little api capture right
+ here so what you want to start by doing
+ is you want to delete everything in this
+ dialog so it's empty
+ because it's always registering apis but
+ if you really want to generate an api
+ test it's important that you hit this
+ record button okay
+ now let me test here so again we're
+ using
+ form fill in the lab
+ and
+ while we're filling the form we don't
+ expect anything because in this case
+ it's not talking to the api
+ it waits to do the post until you click
+ save to db where the data is submitted
+ to the
+ to the backend right to the api
+ and then you're going to see the post
+ being generated here in the dialog
+ so now we could go ahead and save this
+ but what i'm going to do as you can see
+ here you can also see the data that it
+ used here on the hover which is very
+ good for troubleshooting and for making
+ sure that the right information was
+ captured
+ what i'm going to do is i'm actually
+ going to go ahead and click this button
+ which
+ executes the get
+ and also the delete
+ now you see all the api requests the
+ post get and delete and i'm going to
+ save all of these into my api test
+ generate api action okay and i'm hitting
+ save
+ now
+ in order to understand if this is
+ working or not of course i want to make
+ sure that we have no users we have no
+ users here on the database and i'm going
+ to go ahead and execute this post
+ request
+ as we see
+ it has now automatically
+ made the post
+ to the
+ to the backend api so we already have an
+ action that we can use to create the
+ user
+ but we also have the get request which
+ we can double click here and in order to
+ see the result here of course we can go
+ into
+ in the try tab in the result tab we can
+ go and see the outgoing request
+ and also we can see that i'm going to
+ move this over a little bit
+ we can also see the response here
+ so this is a something you can play
+ around with a lot
+ but it's very very
+ good to especially get started very fast
+ to create an api test of course what you
+ probably want to do
+ is go into for instance here for the
+ post you will have the data in the body
+ so you probably want to parameterize
+ this but i'm going to go into that more
+ how you would kind of edit these api
+ requests and make sure you can kind of
+ make them more versatile and data driven
+ in another video but this is
+ a quick overview on how you can use the
+ api recorder to capture api tests simply
+ in the browserTranscript for [Boozang: Introduction to model-based test automation](https://www.youtube.com/watch?v=FFcDXUPTrLs) by [Merlin](https://merlin.foyer.work/)
+
+ what if we could automate automation
+ what if we could scan your application
+ and build the automated test for you
+ in end-to-end test automation we spend
+ so much time on test creation just to
+ get a little bit of feature coverage and
+ as our project grows
+ your tests are flaky and you push new
+ code changes and your tests break
+ creating false negatives
+ we introduce a new way of doing test
+ automation
+ where we much like a search engine
+ crawler scan your application and build
+ a model of it virtually
+ then we can auto generate tests for you
+ that way you can
+ simply when you have code changes rescan
+ your application and the test will be
+ regenerated for you eliminating a lot of
+ the test creation and almost all of the
+ test maintenance
+ so go and sign up for the beta at
+ Boozangg.com
+ beta and join us in this exciting new
+ way of doing test automationTranscript for [Boozang: Introduction to modelling](https://www.youtube.com/watch?v=bzocfoIlyS4) by [Merlin](https://merlin.foyer.work/)
+
+ in Boozang we are super excited to
+ announce
+ a concept where we scan your application
+ to build test coverage
+ let me show you how that works
+ we introduce a new concept called the ai
+ module
+ in the ai module we will build a virtual
+ representation of your application
+ initially you get prompted what
+ operations do you want to have for your
+ module
+ the module should be what you have in
+ your data model for your application
+ in this case it's a project management
+ application so i'll say project
+ now it will build a structure that is
+ the outline of your application and now
+ you need to start linking them together
+ making sure you identify
+ the elements in your application
+ now this is complete but your work is
+ just getting started start by
+ identifying the different critical
+ elements in your application
+ here as you can see
+ it has guessed that my button should be
+ create project but let me update that
+ as we call it create
+ new project
+ now i can try clicking on the element
+ and as you can see it works
+ now
+ all the application forms in order to
+ build tests instead of doing record and
+ replay
+ you can automatically scan
+ all the forms to build tests for it
+ what's really interesting is of course
+ that all the dependencies inside the
+ forms are captured
+ now when you've done this for your
+ application for all your different
+ modules you can go into the data flow
+ and start building end-to-end tests
+ now with these data-driven test steps
+ you can build test coverage really fast
+ and maintenance is almost completely
+ removedTranscript for [Boozang Feature: Javascript action and util function](https://www.youtube.com/watch?v=8MTd0qLAudU) by [Merlin](https://merlin.foyer.work/)
+
+ i will now demo uh how you add
+ javascript uh and how you run javascript
+ actions
+ and of course this is something that
+ we've been doing from the beginning with
+ Boozang for several years now but i think
+ it would require i just want to show
+ with you till function that we added and
+ demonstrate the difference so
+ let's say i want to
+ run some javascript on this application
+ page right
+ here i have some simple jquery
+ javascript saying
+ you know add this uh a piece of
+ html into the dom tree on the document
+ body using a pen too
+ so if i run this of course what you can
+ see here is that it appended this little
+ demo into the application so what i want
+ to remind you to do is of course here
+ you play it on app right not on ide
+ so ide would be you want to run some
+ javascript in this window
+ and app would be you run it in your
+ application window so that's the
+ standard thing you want to do
+ and we can simply demonstrate this i'll
+ use location href i set the url of
+ course if i go and play this on the app
+ it will go to google and of course if i
+ would do it on ide i'm totally gonna
+ mess this up now because i'm gonna send
+ myself to google
+ so
+ well what you can see here is if i open
+ this and i run a piece of javascript
+ here of course it's not going to be
+ persistent in a reload
+ so we were fighting a really difficult
+ problem with a payment system that was
+ running a piece of the javascript that
+ would kind of oh yeah you're trying to
+ automate me oh i don't like this so it
+ was kind of failing out so what we did
+ was we added
+ a bit of persistent javascript that uses
+ the extension to inject javascript so
+ this is you know a little bit risky you
+ got to know what you're doing but i want
+ to tell you that this exists
+ so what we do is you you'll use util
+ extend
+ it says exception script here that's a
+ typo but don't mind that for now it's
+ going to be extend extension script so
+ you're going to use extend extension
+ script okay and i defined a bit of a
+ code here so if i run this
+ what it's going to do is it's the next
+ time you reload your page it's always
+ going to inject this data and i can
+ reload this as much as i want so you can
+ use this to kind of create a little bit
+ of a adapter or javascript hook that
+ always is present in your application
+ page you can use this to intercept
+ functions doing overrides pretty
+ powerful stuff so i
+ encourage you to check it out but now as
+ you can see it's stuck what do i do well
+ simply run extend again extension script
+ with no arguments
+ and next reload it will be removed so
+ you know reach out to us if you want to
+ know more about this function and how it
+ works but just be aware that there is
+ something you can use here and it can be
+ very very powerful for certain hairy
+ situations where you have maybe an
+ off-the-shelf application that doesn't
+ do what you want it to do
+ or is resistant to automation then we
+ can trick it a little bit using this
+ functionTranscript for [Extract data using JSON path](https://www.youtube.com/watch?v=o4w51Zd3Yj4) by [Merlin](https://merlin.foyer.work/)
+
+ hello uh now I'm going to talk about a
+ new feature that we've been working on
+ and there's two parts of this usually
+ when you have API tests with large
+ payloads
+ we need to have an expression to do two
+ different things one thing is to
+ validate payloads another thing is to
+ extract data from large Json payloads
+ and this also goes for XML testing where
+ we convert the XML to Json
+ and where you want to see these examples
+ to understand this you will go to
+ docs.Boozangg.com and you'll go into API
+ testing and I will talk about now the
+ Json path which is this new
+ functionality that we built and you have
+ usage examples here to understand this
+ the best thing is to look at examples
+ here I have the Boozang tool and I
+ prepared some example data here and a
+ number of
+ Expressions to extract parts of the Json
+ payload and of course what you need to
+ do is it's a utility function called
+ util extract data where you put the data
+ and the expression
+ with this we also created an editor View
+ and here you can choose do you want to
+ validate or you want to extract so now I
+ will demonstrate extract with a number
+ of examples and here it is very very
+ yeah the best thing is to use the
+ examples to try it I'll just show you
+ that some of the different examples from
+ the documentation
+ on the left hand side you'll put the the
+ Json path example and here as you can
+ see I look at the node data dot name and
+ you can now apply on any test data that
+ you have to see what the result is and
+ as you can see it's data
+ name
+ name two so as you can see it does
+ exactly that it looks for the node data
+ and extracts the name so that's to be
+ expected okay and here of course you can
+ just type in whatever you want I can do
+ name one here and I can refresh and I as
+ you can see there is no match but you
+ can also reselect a different variable
+ here we're using mixed data for the
+ different examples
+ when I use a data and use a parenthesis
+ I do the exact same thing I look for
+ name but I also rename the node so
+ parenthesis means rename
+ another thing you can do is that you can
+ look into the list name and as you can
+ see there is an array inside of here
+ and what you get is an array as the
+ result so this is of course really good
+ when you need to do really complex
+ operations
+ we have another example and of course in
+ the documentation you will find more
+ examples but here you see we just do the
+ name and of course it finds that name
+ node name one
+ we can also do a lot of more complex
+ stuff so for instance here we Define an
+ array with name and value and what it
+ does is it extracts the name node and
+ the value node and as you can see puts
+ it just like that side by side so that
+ of course you would put util extract
+ data and you'll be able to find this so
+ you would typically use this you'll use
+ that operation in the API test and then
+ you can of course do a bunch of things
+ with that
+ we can also kind of search through the
+ tree so so this one we kind of use a
+ wild chord for the key and as you can
+ see if I double click here
+ we will see that it both extract the
+ name node
+ and will the name things underneath here
+ so if I double click the list you can
+ see how that one ends up into an array
+ and also a list object which kind of
+ make sure that you can get and I'll show
+ you
+ you see now you get the first one the
+ object and the name value example like
+ this
+ last example
+ you can use a comma separated thing to
+ both look for the data node and the list
+ node so if I double click here and look
+ at the list it extracts both of them and
+ puts them side by side which is very
+ powerful so
+ for sure this is something you need to
+ experiment with but what we would like
+ you to see is to see if you can get this
+ to work for you and see if there are any
+ operations missing we think this is very
+ very powerful so go to
+ docs.Boozangg.com and look at Json path
+ for the different extra examples and
+ play with it yourself and see if there's
+ anything that you're missing here but we
+ think this is going to be super powerful
+ to be able to extract data and even
+ better to be able to do complex
+ validations on big Json payloads coming
+ from your API testsTranscript for [Boozang Feature: Loading Element](https://www.youtube.com/watch?v=ofUZX1QxOeA) by [Merlin](https://merlin.foyer.work/)
+
+ let me demonstrate this loading element
+ sometimes you have in your application a
+ spinner or something that shows you that
+ the application is not ready that it's
+ loading then it's good to automatically
+ have the test to globally wait for this
+ it could be a spinner or something like
+ that and you know it's not going to
+ continue the test execution so you don't
+ have to set those individual timeouts to
+ increase those in many places it's just
+ a global setting
+ but sometimes as you can see in this
+ application the load is very quick and
+ it's hard to capture so i'm just going
+ to show you a trick on how you capture
+ this okay and this is a little hard so
+ you're going to have to try a few times
+ to figure this out so you go to sources
+ in the google chrome console you hit
+ reload and then you try to be lightning
+ fast you hit that pause button right and
+ now i wasn't fast enough so i'll do it
+ again see if i can
+ you see now you pause the application so
+ you see the spinner now you can actually
+ go back
+ to the element and capture this one so
+ let me try capture this one i'll use the
+ selector and i'll hit this loading here
+ so the way i'll do it this this is a
+ little tricky
+ so let's see if i can do it
+ there
+ nope
+ okay maybe i can capture that
+ and then try capture this loading here
+ very tricky
+ okay i'll capture the image for now
+ and then
+ you see here there's the h5
+ the
+ typography root so you want to try and
+ capture this element so what i'll do is
+ i'll just i'll just copy this for now
+ and then i'll paste it into a loading
+ element and the way i'll do it instead
+ is
+ i'll take one of these
+ maybe the display block
+ and i'll just add here
+ i'll add the dot
+ because it's a class right
+ and then i'll just add our selector for
+ it and what i'll use here is contains
+ loading
+ and now when you set this the
+ id the test execution will automatically
+ wait
+ for this
+ to disappear until running the next
+ actions so this is a global setting to
+ make sure your tests are more stable in
+ case your application is slow to answerTranscript for [Boozang Feature: Log formatter](https://www.youtube.com/watch?v=YYi0thrp8Fc) by [Merlin](https://merlin.foyer.work/)
+
+ we've just introduced the log formatter
+ in Boozang and it's an addition to the
+ extension so make sure you're running
+ the latest extension
+ when we're recording this video that's
+ 380.
+ this modification will greatly improve
+ your troubleshooting capabilities as you
+ know we log a lot of things in Boozang so
+ when running it for instance from a ci
+ server sometimes it's hard to find the
+ root cause maybe you have a problem that
+ is only appearing when you're running it
+ in jenkins and maybe not when you're
+ running it in the ide
+ and i'm going to show you what kind of
+ game changer this is let's say you have
+ a long complex log like this
+ uh which is what we
+ have it's definitely possible using the
+ search to troubleshoot it but in the
+ extension now we have a log formatter
+ that will greatly improve that so let me
+ demonstrate
+ first of all talk a little bit about the
+ configuration you can automatically
+ activate this
+ by telling
+ basically which is the url you should
+ activate the log formatter for here i've
+ set it to match this url in jenkins and
+ also
+ you can
+ a very slightly complex functionality
+ but when you have several workers that i
+ have you can actually uh
+ kind of merge these logs together and
+ get all the information for all the jobs
+ so we're super excited about this
+ we have also have a couple of
+ performance thresholds that can help you
+ troubleshoot slow tests and slow
+ dispatching but i'm not going to go into
+ detail about that so let's go ahead and
+ hit format current page so what this
+ does is it automatically looks at the
+ log and renders this much more friendly
+ view that you see right now so this is
+ going to be a game changer for
+ troubleshooting so let me demonstrate
+ what we see
+ first of all we have a number of some
+ information around what's the root test
+ case what's the
+ docker runner version and what's your
+ ide version and the extension version
+ this is helpful but also helpful for us
+ if you happen to post these logs for us
+ we will know exactly what version you
+ are running
+ in here instead of giving you this
+ unfriendly log you can now see
+ all the different tests that were run in
+ this case it's cucumber and you can open
+ up
+ and drill into any
+ individual actions like this with the
+ accordions
+ what i really like here
+ is when you just in the overview you can
+ also
+ see directly what is green was
+ successful and what was read was
+ failures and you can very easily see the
+ failure screenshot by clicking on the
+ camera here where i can see the problem
+ not only that uh one thing that is
+ really good is that we've added a number
+ of sorting functions here where you can
+ sort by completion time which is the
+ normal one what
+ completed first second etc
+ but then of course what i really like
+ you can sort by result to get all the
+ failures on top
+ you can sort by performance which i like
+ to do to find my slow tests to see if
+ there's something i can do to improve
+ performance and you can also sort by
+ worker to get them in order
+ which worker executed what tests and
+ also to get an understanding if the
+ tests were kind of shared equally
+ between the workers or if one worker got
+ stuck
+ so there's a lot to explore here i
+ encourage you to check it out
+ there will be a separate video around
+ the root cause analysis here
+ that i will talk about because i find
+ that this is a topic on its own but
+ there's going to be a lot of
+ improvements being done in this view and
+ there's going to be a lot to talk about
+ so
+ i encourage you to check it out
+ and reach out to us if you can't get it
+ to workTranscript for [Boozang Feature: Loop data view](https://www.youtube.com/watch?v=zHDmcl2pIh0) by [Merlin](https://merlin.foyer.work/)
+
+ sometimes in Boozang
+ there is a need to do a little more
+ robot process automation and as you know
+ we have very good support for this you
+ know when you have stable tests you can
+ also provision data uh especially when
+ you have application where there might
+ be an api missing or something you can
+ solve this by doing the things using an
+ automation tool in directly in the
+ browser right
+ so because i've been doing this recently
+ a lot uh i've we decided to improve this
+ a little bit so before you saw that we
+ improved this already
+ by
+ improving the csv view so if i go into
+ data here and i click on this csv file
+ you can see the presentation of the csv
+ file is very very simple
+ we've also added beforehand right the
+ fact that you can select the interval of
+ the data start index and end index you
+ want to run
+ but one thing that we've added now in
+ this release here i'm working on one of
+ our clients here the pivoha platform
+ where we input
+ brewer data
+ or retailer data into a platform
+ what we've done here
+ is we've also changed added this report
+ here so if i make this a little bigger
+ you can see that we have a loop data
+ view
+ where i'm going to stop this for now
+ if you go to the loop data view it's
+ going to show you exactly the data that
+ was processed and you can also copy this
+ to a csv that becomes like a report what
+ was processed what wasn't processed
+ and remember
+ here you can actually add
+ a column of the loop data with for
+ instance a processing status or
+ something so like that so you can add an
+ unlimited number of columns with
+ statuses like was this process correctly
+ etc etc so this makes this ideal for
+ uh tasks like
+ that are more like robot process
+ automation so i think this is really
+ really cool and remember that you
+ make sure to copy this
+ the report after it's done so you get
+ your results backTranscript for [Boozang Feature: Loop over CSV data](https://www.youtube.com/watch?v=8i8ZykTqd1Y) by [Merlin](https://merlin.foyer.work/)
+
+ let me demonstrate the new csv data
+ editor in Boozang
+ often when you have a test case that
+ enters a set of data like this filling
+ out the form here you can see you can
+ fill out first name last name email and
+ password and save it to the db
+ and it will show up here inside the
+ database on the application side let's
+ say you have a spreadsheet of data that
+ you want to fill
+ into this
+ database you need to create a loop
+ over a set of data so now i'll show you
+ how to do that and show the new csv
+ editor that we just launched you'll go
+ into data here and you create new data
+ and instead of object here you choose
+ csv
+ so i'm going to call this users right
+ it's a set of users then it's going to
+ ask me do you want to enable loop data
+ you don't want to do this but you can go
+ ahead and just say yes i want to loop
+ this test case over the csv data
+ the way you do this here is of course
+ now under test setting you have the loop
+ data enabled here and it will tell you
+ the start and end index which is of
+ course zero to the end of the document
+ by default
+ so
+ in data now you can actually start by
+ entering the different data so you'll
+ start by
+ hitting the plus sign and i would
+ enter the different things here so let's
+ do first name
+ and then do plus again to add another
+ column
+ last name
+ and maybe that's enough for us right now
+ and then i will say
+ mats
+ youngren
+ and here of course i can use the tab and
+ enter keys
+ when shang
+ lee so now we have a set of data that we
+ can loop over okay
+ so instead of using parameter first name
+ here and parameter last name here
+ we can now use
+ the loop first name and loop last name
+ now remember
+ here you need to comply with what's
+ exactly in the columns here and you see
+ we're using camel case here so let's
+ make sure that we modify this
+ and as you can see we get autocomplete
+ so we get the first name here
+ and then on the loop side here we will
+ remove this
+ and just say
+ last name
+ so now
+ we've created a test case where we've
+ hard coded from parameter the email and
+ the password and we're now looping over
+ this so let's just make sure there is
+ nothing in the database and we'll run
+ this and it will you it's going to tell
+ us do you want to just run this for the
+ first entry in the
+ csv or the second entry or all of them
+ so let's run all of them
+ and let's go ahead and press play
+ so now we've created a very simple loop
+ and as you can see both wenching lee and
+ matt youngren is now been saved in the
+ application databaseTranscript for [Boozang Feature: Looping over test case data](https://www.youtube.com/watch?v=0C-mJGLBGb0) by [Merlin](https://merlin.foyer.work/)
+
+ we've also
+ launched a new feature to how to enable
+ loop data when using the keyword data so
+ i'm going to show that now on a simple
+ test case
+ what we were doing before of course is
+ we've already always supported you to be
+ able to loop over spreadsheet data or
+ vectors but we realized that when people
+ do this the ux wasn't that
+ simple to do
+ so now what we do is we
+ have reserved the keyword data that will
+ automatically
+ kind of assume that it's loop data so we
+ have this test case on the lab.Boozang.com
+ that just fills the form so i'm just
+ going to really simply create
+ a loop condition where we take
+ information from a csv file
+ and we fill out this form
+ so bear with me
+ if you go here instead of product you go
+ into the test case
+ and you'll add a csv data and you use
+ the keyword data
+ you will
+ automatically be prompted if you want to
+ use this as loop date on this test case
+ so here of course you would use
+ something like first name
+ maths
+ and here you would use tab
+ to separate these fields last name
+ let's say
+ youngren
+ but of course we want to have more data
+ so we'll also use wen shang lee's name
+ here so now of course we have
+ two rows of data that we can loop over
+ here what i would typically do
+ is i would just very simply
+ add a javascript action here
+ where
+ i would just kind of now i will override
+ the parameter first name and parameter
+ last name
+ using the keyword loop first name and
+ loop last name and as you can see both
+ on parameter and on loop you will have
+ the autocomplete to make it very simple
+ right so you don't make any mistakes
+ now we're going to go ahead and launch
+ this so when i press play we also
+ kind of specified for you
+ which
+ do you want to run all the csv lines or
+ do you want to pick one line
+ or do you want to pick
+ you know from zero to a one but in this
+ case
+ i think what we want to do is run
+ all the data so just go ahead and press
+ ok and you should see the loop over the
+ form over the data begin
+ mats young grin the same as before and
+ then wen cheng li
+ so this is of course very very good when
+ you're doing data provisioning or doing
+ kind of
+ things where you need to do
+ maybe you have to add a number of
+ persons to taste pagination or you need
+ to like delete the number of persons to
+ clean up some data or something like
+ that so this is very useful
+ of course this has been with Boozang from
+ the beginning the only news is that you
+ see here is that when you use
+ the data keyword we suggest for you to
+ use the loop data and what we do behind
+ the scenes is setting this under test
+ setting basic info
+ we have this enable loop data hereTranscript for [Boozang feature: Merge requests](https://www.youtube.com/watch?v=8r_QI1OC1ek) by [Merlin](https://merlin.foyer.work/)
+
+ now I'm going to demonstrate a slightly
+ more complex use case it's the so-called
+ merge request this is what you want to
+ use when you have maybe many people in
+ your team working on different features
+ and maybe you want to have a a couple of
+ maybe some centralized review process
+ maybe they're just one or a couple of
+ people in the team that were allowed to
+ merge in it to the main branch or maybe
+ you just want to make sure that you
+ enable code review so different test
+ developers check and validate the code
+ that the other members are
+ doing in order to enable merge request
+ the idea that we have is we've
+ introduced something called protected
+ branches so for instance in this case we
+ might want to say that the master branch
+ is protected so what we will do is we
+ will enable the protection here here and
+ then you can
+ enable uh which can approve the the
+ merge right the merge request so first
+ of all I'm actually going to unclick
+ this allow user to approve own merge
+ request um and I think this is useful as
+ an
+ illustration then after I've done this
+ I'm just going to do a change in a
+ feature Branch here it's feature one so
+ if we go into
+ let's say I am creating another test so
+ here I'm creating test two and I'm doing
+ some actions let's say I navigate to the
+ menu and I do something here
+ okay now in order to be able to merge
+ this as usual you will have to make a
+ commit so the first thing you want to do
+ is you see that this modified files this
+ is the get stat stus uh view you can see
+ that we've added this test number two
+ okay so what we're going to first uh do
+ is we're just going to create a regular
+ commit here so we're saying added test
+ two so if we do
+ this we don't see any uh problems right
+ now it's just been committed into my
+ feature Branch my feature branch is not
+ protected okay
+ so what happens is when we switch to the
+ master branch and we try to merge the
+ feature Branch this is when you're going
+ to see so what we're going to do is
+ we're going to try and merge it and as
+ usual we create a commit and again the
+ default commit message is going to be
+ merge from feature one to
+ master so what we get now is an extra
+ message it says the merge request sent
+ for review as the target branch is
+ protected and then it says please
+ approve it from uh merge request list
+ okay so what we can see now is because I
+ am now the same person you can see that
+ I now see that there is a one here there
+ is something to be done and then also
+ here under the merch request we can see
+ that this is now in my queue so if I go
+ to my master Branch as you can see we
+ don't see test number B here the mer has
+ not yet happened okay we'll go back in
+ here and now we're going to try to
+ approve this merge request
+ okay and as you can see here it says you
+ cannot approve your own commit but you
+ can enable self approval in the branch
+ protection for you so if we now go back
+ here you remember on the master setting
+ there was a a check box for allow user
+ to approve own merch
+ request so again I'm I'm going to enable
+ this because maybe that's not what I
+ want in a production setting but for
+ demo purposes here it's hard uh to demo
+ with many users now I'm going to go in
+ here and I'm going to approve and I'm
+ going to submit and as you can see we
+ got a successful merge happening and
+ that we can see in both views here we
+ can see the merge happening here from
+ feature one to master and now if we go
+ to module a we can see both test a and
+ test two and as you can see you'll have
+ the action
+ here another thing you can see with the
+ protected branches is we don't normally
+ by default allow you to do any
+ recordings or modifications in protected
+ branches but of course you can play the
+ test case here to validate that it's
+ working and you can of course also run
+ these of course from the CI server so I
+ hope uh you can play around with this
+ and figure out if there are additional
+ use cases we need but I think this is
+ the most important use case to be able
+ more controlled
+ collaborationTranscript for [Boozang Feature: Notes and Todos](https://www.youtube.com/watch?v=YmBce5D9nGM) by [Merlin](https://merlin.foyer.work/)
+
+ the next feature i'm going to show you
+ now is the way to
+ leave little notes in Boozang
+ uh
+ there's a few different ways to do this
+ and the key is as your project grows and
+ you work in a team it's good to be able
+ to mark a test for instance there is
+ still yet to be work to be done here or
+ the classical thing that you usually do
+ in programming which is to do
+ so let me show you this so first of all
+ if i create a new test let's say i'm
+ going to call this note
+ demo
+ i'm creating a test and i'm just going
+ to go ahead and record a couple of
+ actions here so let's say
+ i'm clicking introduction overview speed
+ gain weight game yellow or blue cat or
+ dog and again this site i'm using to
+ demo this is the lab.Boozang.com
+ you might have seen that before
+ so i'm just going to go ahead and stop
+ this and play this back nothing strange
+ it goes over all the different links
+ right
+ now let's say we know that a speedy game
+ here is going to change
+ its name okay
+ and we want to make a note here remember
+ this what i do is i'm going to go here
+ i'm going to go down into the action
+ panel here and i'm going to click on the
+ note
+ and i'm just going to add something
+ this will
+ change
+ name
+ to
+ um
+ let's call this this will be
+ the
+ the
+ speed
+ speeding game okay
+ and as you can see
+ i have now marked this as a note so now
+ when i'm you know out navigating and i'm
+ coming back
+ into the test here to note demo i can
+ directly see that there's something to
+ be done here or something to take note
+ of what i can also do is i can also do
+ it something a little bit stronger i'll
+ click on this note and i say
+ this is urgent
+ to be fixed and what i'm doing i'm
+ hitting the little to-do and now it
+ gives me a little to-do batch
+ for me to see very easily so these are a
+ few ways you can you know when you're
+ doing test and testing progress how you
+ can lead to those and notes
+ in your test and also remember if you
+ want to you can also leave a note on the
+ global test and the way you do it you'll
+ pick here and you say this test is
+ unfinished and then it will also were
+ finished
+ and then it will also leave a global
+ note on the test and as you can see as i
+ hover over this you can see that this
+ test is unfinished
+ and on the note uh you see
+ you can also read it from the title tag
+ so there's a few ways on how you can
+ leave notes
+ to other team members and also to
+ yourself
+ in busaTranscript for [Feature Highlight: Open API import](https://www.youtube.com/watch?v=FfzGLTWBiWM) by [Merlin](https://merlin.foyer.work/)
+
+ now i want to talk about a new feature
+ um that we actually launched in beta
+ about a month ago but we'll be doing
+ continuous improvements to this feature
+ uh and now of course i also know how to
+ use it well
+ and this is the open api import and what
+ it allows us to do
+ is to take so i'm just going to create a
+ new
+ project here in our staging environment
+ to
+ um
+ to illustrate this feature
+ what you want to do is always um
+ is that you want to set up
+ the
+ so i'm just going to use the url here
+ it's not so important but let's use the
+ lab
+ docBoozangg.com which is our usual
+ demo site i recommend checking out the
+ udemy course on that
+ here
+ as soon as we've done this of course i
+ would
+ set up
+ the login
+ basically the authorization basically
+ making sure that we can get both the
+ login working but also that you can get
+ a token for the api if the api requires
+ an authentication token so this is where
+ it's really good to mix
+ ui and api testing because oftentimes
+ in the application you'll have the token
+ available
+ in the web browser and you can then use
+ that to do the api requests and this is
+ typical when
+ like we do in Boozang often we mix
+ api and ui tests okay
+ so remember the first thing you want to
+ do is go through here and set up the ai
+ authorization
+ by clicking this button and making sure
+ that you have a test case for logging in
+ logging out and retrieving the token
+ when that's done
+ now we can go ahead
+ and import the api spec and what you
+ want to do is you want to be in the root
+ you want to click this and then we'll
+ have import open api specification
+ as an option here
+ and
+ if you have
+ an api spec
+ that we cannot import i really really
+ urge you to reach out to us at support
+ at Boozang.com because the open api spec
+ is pretty loose
+ and we've tried this maybe on 10 or 15
+ different specifications but your
+ specification can actually
+ a lot of developers the open api spec is
+ not so strict and it's different so we
+ love to learn and expand the capability
+ here still a little bit experimental and
+ a little bit cutting edge to make this
+ work
+ anyways i'm going to show you when you
+ have an example where it works pretty
+ well and this is uh i'm working with a
+ company a marketplace company for
+ micro
+ uh products like craft products
+ so in this case
+ i'm gonna import this and it's gonna be
+ here it's in
+ dock
+ and we're gonna find this
+ where is that let's see
+ okay there it is
+ so this is the open api specification
+ and of course what you typically would
+ like to do is you would add the
+ authorization module here and then you
+ would add the token by clicking this
+ checkbox so that would be the typical
+ way of doing this but what i'm going to
+ do go ahead is just to kind of build the
+ module structure so what it does is it
+ will create an api
+ module structure based on the open api
+ spec
+ so we're going to go ahead here and
+ import and of course this api is very
+ very big and as you can see
+ you see we have a lot of modules here
+ a lot of different things in a
+ marketplace you know you'll have
+ you know the the different users that
+ are tied to different companies
+ and in there you know you'll have a
+ company it's going to own a number of
+ products you'll have a number of formats
+ uh which would be the sub products and
+ then of course these are tied to
+ inventory settings and to prices and
+ then there are you have orders etc etc
+ so it's a really really complex setup uh
+ that's what where this becomes really
+ really powerful and as you can see you
+ can move around modules into each other
+ if you believe they should be sub
+ modules etc etc but right here i'm just
+ going to click continue and i'm actually
+ going to choose a prefix here you'll do
+ that if you want to but as you can see
+ now you have api prefix on all the
+ modules and maybe this is useful in case
+ you mix this with your
+ regular uh you know modules where you
+ might want to keep the api module and
+ the regular ui module separate so it
+ depends if you kind of want to keep them
+ separate or not
+ i go ahead and i click continue
+ and then you can see now it's going to
+ kind of tell you it's going to tell you
+ this is all i'm going gonna do and as
+ you can see there's a little warning
+ here
+ and
+ we see this a lot with open api spec
+ it's like they give the id the api can
+ actually take the id which is usually
+ something that's being generated
+ by the api so i usually remove the id
+ and i do that for all the end points
+ and just means that for instance
+ it doesn't i never would use the id when
+ i would retrieve
+ something in in the post like
+ when i want to create something right
+ and i wouldn't send the id in the post i
+ would create it and expect to get the id
+ back so that's all all that means and
+ that now comes to the the work you got
+ to do and this is a little bit of work
+ and you would go in here and you would
+ do the foreign key mapping and i'm going
+ to try and explain this
+ this is like an alias right so
+ very often you have a number of
+ aliases where in this case i'm going to
+ illustrate something for instance
+ a brewer id here
+ that's a company right
+ so for instance if you say create
+ company you want to know you want to tie
+ it together if it replies with the
+ company id if you're mapping something
+ later you kind of want to tell them a
+ brewer id as a company id and the way
+ you would do that is you would basically
+ select
+ company id
+ and then we use this thing that is
+ usually takes an existing company id and
+ this can automatically actually extract
+ the company id
+ from the temporary database which is
+ something super powerful
+ so now also a buyer id would also be a
+ company id and as you see it remembers
+ here so what you want to do is probably
+ you want to test drive this one time
+ and then play around with it and see
+ what it did and then you probably want
+ to do this properly you know
+ so that's what you do you'll go through
+ here and you'll do all these mappings
+ and maybe you would need some developer
+ help in case it wasn't you who've been
+ working and developing this api and
+ you'll go ahead and start this process
+ and as you can see
+ all the modules are being generated
+ and what we're trying to do here is of
+ course
+ we're trying to create the module for
+ each data type
+ then we want to create kind of crud
+ operations as specified in the open api
+ spec create edit delete right
+ and
+ then and also find right
+ which is usually the get request
+ and then
+ what you want to do is we also want to
+ try and capture the different
+ dependencies
+ and
+ do the mapping as well best as we can
+ and here you can actually see
+ what are the mappings that we've done
+ and if i would have done my work better
+ of course we would see much more things
+ that would be matched
+ a little note that
+ um
+ kind of
+ we're just going to let this finish
+ that relationship that we saw
+ can be found here in in the import we'll
+ have that review module
+ initial parameter mapping
+ so you can go back
+ and find that here
+ if you see what i mean so you can always
+ go back and of course also map here if
+ you need to
+ so
+ let's go into one of them for instance
+ companies
+ you would go in
+ and
+ here let's see it's a little bit of a
+ bug it looks like
+ let's do this
+ let's take
+ let's do a refresh just in case
+ so this is pretty novel functionality so
+ maybe when i didn't do all the mappings
+ we had some issue
+ but here you can see i think it just
+ needed a refresh
+ and as you can see we now see the kind
+ of api
+ module here which is also kind of part
+ of our ai functionality when you do
+ model based development your ui would
+ also be mapped
+ using this kind of thing but of course
+ you can also switch
+ between tests and the old classical view
+ where you have the api tests
+ and you have the the regular tests
+ we also try to generate a scenario which
+ is the create scenario where we have as
+ you can see
+ a number of steps
+ but of course this is a lot of guesswork
+ on our side so we're going to go back
+ to this view and what you can see here
+ what's very important to note this if
+ you hit the settings
+ you'll have all the fields available
+ here and there you can see exactly what
+ did we do and as you can see we made
+ some guesses on the data format but here
+ you can of course
+ modify this and this as you can see is a
+ regular expression so it will generate
+ some and you can also set dependencies
+ which can be very very useful
+ in this case let's look at find products
+ and how you want to look at this as you
+ can see it's created it'd be said skip
+ by default which means it will actually
+ skip this parameter
+ so if you want to for instance
+ find
+ a product or something you would just
+ want to make sure that when you go in
+ here as you can see you can select now
+ okay
+ use this regular expression to generate
+ this field
+ but you can also
+ find
+ if you have in the temporary database
+ already a company id available it will
+ show up here in the drop down
+ so this gives you a little bit of a
+ feeling of course this is
+ highly complex functionality uh we are
+ trying to kind of
+ do as much work and as much of the heavy
+ lifting as possible for you to get
+ started with your api tests from the
+ open api specification
+ a bit experimental but what i really
+ want you to take away is
+ if you have any problems here don't
+ hesitate to reach out because we love
+ if your open api specification isn't a
+ secret we love and see how different
+ companies are solving this kind of open
+ api
+ how they uh
+ you know design their api and then we
+ can also make our tool much better at
+ doing as much of the work for you as
+ possible
+ so
+ there'll be more
+ videos on this particular functionality
+ but here is an introduction of how you
+ want to think
+ when you get started with open apiTranscript for [Boozang Introduction: Overview of the tool](https://www.youtube.com/watch?v=04dgNzouE1w) by [Merlin](https://merlin.foyer.work/)
+
+ now i'm gonna go over the different
+ parts of the tool
+ and maybe give a few tips
+ on what to think about when you're doing
+ test automation
+ when you're in Boozang you see you have
+ this big sidebar with many different
+ things to choose from well
+ normally when you're creating tests you
+ want to make sure that you've selected
+ this topmost icon that's basically the
+ navigation tree the creation view where
+ you create test and playback test okay
+ so
+ if you
+ look here on the right hand side you
+ will see your list of modules
+ and on the right hand side you see the
+ sidebar with
+ you can choose between different views
+ for instance if you want the card
+ presentation you can press here but you
+ can also have a graphical presentation
+ of your testing tree
+ normally you will use this top one
+ as you can see there is also
+ tabs here between modules and features
+ well
+ this is one thing that can be a little
+ bit confusing at first in Boozang
+ inside modules you will have your test
+ automation code your tests basically
+ your test scripts
+ under features you will have your
+ cucumber code your business logic
+ basically
+ scenarios and features that
+ use the syntax given when then
+ if you're not using cucumber testing you
+ can completely ignore this feature
+ section but we do recommend you using
+ give and when then so you will be in the
+ business domain here creating the
+ features
+ or you know
+ having the features here being
+ synchronized from an external system and
+ then you'll tie it to test automation
+ code
+ in the module sections
+ inside
+ any module you will see that
+ you will have a list of tests
+ and if you go
+ of course first you'll see you'll have
+ different test types here you have tests
+ api tests
+ scenarios which you don't usually use
+ it's a special ai case that you won't
+ usually use but it allows you to put
+ crud test for given when done inside
+ your modules
+ you have your suite which is your test
+ suite that is used to drive tests and
+ you have sub modules to be able to break
+ down your application into smaller
+ modules
+ inside the existing modules
+ inside any test
+ you will find the test steps which are
+ the
+ actions here
+ so if you want to execute a single
+ action you can simply double click it
+ you will also find
+ a sidebar with a number of functions
+ and a number of sub tabs that
+ number of tabs that has
+ different
+ ways
+ to troubleshoot and to set data for your
+ test and also different sub
+ tabs that will describe the details of a
+ single action
+ so again you'll have a data tab that has
+ the test data you'll have a console tab
+ that will help you troubleshoot
+ you will have the test setting tab that
+ has the title of your test and also
+ parameters and you'll have the action
+ setting that is the detailed setting for
+ each and every action
+ and inside the action setting you will
+ have three sub-tabs the main tab that
+ has the element and the values being set
+ the
+ condition tab that allows you to
+ customize the outcome of an action and
+ also a more advanced scripting tab that
+ allows you to
+ apply specific javascript or individual
+ loops on a specific action
+ so that's a general overview of the tool
+ there's also of course much more actions
+ in the sidebar and things you can do
+ settings
+ ci server reports etc but we're not
+ going to go into that right now in order
+ to get started
+ simply create the module create a test
+ and start recording actionsTranscript for [Boozang Feature: Recording a test and customizing it](https://www.youtube.com/watch?v=V-h1296ydoM) by [Merlin](https://merlin.foyer.work/)
+
+ hello
+ today i'm just going to redo a simple
+ recording using the Boozangg tool let me
+ show you how you can customize the
+ different actions as we've changed the
+ user interface a little bit
+ uh hopefully for the better
+ so bear with me what we're using today
+ is we're using the lab.Boozang.com and
+ again i'm going to use form fill as i
+ usually do
+ and what i'm doing is i'm hitting this
+ address bar and it will bring up the
+ application and i'm going to start with
+ doing a simple recording so i'm going to
+ hit the record here
+ and then i'm going to fill here and
+ remember
+ in this particular form i'm using the
+ tab key
+ to separate the different entries as
+ enter submits the form
+ and i'm hitting enter at the end and as
+ you see i can use show users in db and i
+ see the user showing up and i can hide
+ them again
+ okay very good so i'll stop the
+ recording so now let's look at the
+ individual actions so if i take this
+ first action you see
+ it seems like it didn't register the
+ event no it automatically
+ converted this to a set event which is
+ just something that it would it's just
+ more adapted for filling these dialogues
+ in a stable way to be able to fill these
+ input boxes in a stable way
+ and if you want to debug it you can
+ simply double click and you can see it's
+ being filled properly
+ one of the new things is that in the
+ method here which is basically the event
+ we have the you can trigger the unchange
+ you can trigger on change and blur but
+ you can also trigger on change and enter
+ key
+ so normally when you record it will
+ capture your keys properly but you can
+ also of course take an individual one
+ and change it accordingly
+ so that's one of the things that are
+ really useful
+ the other thing is that we've also moved
+ this before we had a lot of details on
+ each event
+ now
+ all the more complex things can be found
+ in the kebab menu up here so if you look
+ at it here you now have things like
+ treat hidden elements as not found which
+ can be useful sometimes that we don't
+ try to click on things in the interface
+ there are hidden
+ one of the
+ places you want to do that often it's
+ totally fine
+ but sometimes it's good to do it because
+ you might want maybe it's waiting for
+ some process and then it's going to
+ become unhidden but this is for you to
+ play around with
+ the other thing is of course we
+ automatically retry when we can't find
+ an element sometimes you want to disable
+ this so use never retry on missing
+ element
+ and then we have some a kind of a
+ special one which is support set value
+ on read only and that's to be able to
+ enter into a read-only box which very
+ rarely should be used it's just some
+ very specific cases
+ and then we have some advanced features
+ i will probably cover this in a separate
+ video
+ one thing that can be worth noting is if
+ i now go
+ to the
+ the enter key i did when i clicked save
+ to db i didn't use the mouse there you
+ see here again
+ instead of method here you have a key
+ method and then of course you also have
+ more options you usually want to use
+ group this is the typical thing we
+ emulate the mouse down the press and the
+ mouse up which covers most cases but of
+ course you can also do something where
+ you want to
+ just do the key down key press or key up
+ event and then of course the character
+ key is 13 and if you want to emulate
+ some sort of holding into control alt or
+ shift you can set that here as well and
+ this is normally enough for most
+ applications
+ one thing
+ worth noticing is if you hit the dot dot
+ dot here you might have some different
+ options here so that's always worth
+ taking a look and it's not so often you
+ need to set these and we try to keep it
+ less complex here so
+ that's the change so i hope that
+ simplifies the ui a little bitTranscript for [Reporting dashboard](https://www.youtube.com/watch?v=_I2eZVIwSQ8) by [Merlin](https://merlin.foyer.work/)
+
+ okay let me talk about the feature
+ reporting dashboard so this is a very
+ big feature and the idea was before you
+ used to have
+ the Jenkins
+ cucumber reports in one place you'll
+ have the trend reports inside the IDE
+ you'll have the root cause analysis
+ maybe on your Jenkins but they're all
+ different reports why not consolidate
+ them improve them and give you a single
+ stop
+ to get all your reporting and draw
+ business insights like a better
+ management function and try and really
+ understand what are the underlying
+ issues in your application
+ so the way you would set this up is
+ you'll hit this little new uh reporting
+ icon on your project and then you will
+ add your main test Suite that you use on
+ your CI server and remember you can add
+ many here and then you can switch
+ between them let's say you have one with
+ regression test and one with full sanity
+ maybe but don't worry about that let me
+ just go into as soon as you set that up
+ I prepared a report here so this project
+ has a lot of data in it so then this
+ starts becoming really interesting so
+ you know you have one run two test runs
+ not so much value you start having 10 50
+ 100 then you can see Trends and patterns
+ and understand what's really going on
+ with your application
+ so the first thing you can see is at the
+ top you'll have a Time and you'll think
+ well for cucumbers that's really
+ important no it's not the Cucumber
+ report is just a snapshot but what it
+ does is let's say I do last six months
+ then
+ what what you can see is that this top
+ timeline where you can navigate becomes
+ very long and you can actually go back
+ to anywhere in time
+ and look at those reports but not only
+ that when you scroll down we recalculate
+ these things you know all the averages
+ where you compare and as you scroll down
+ not only are you getting your cucumber
+ overview where you have the feature
+ breakdown with failed steps scenarios
+ and features as you scroll down you also
+ get your root cause analysis and as you
+ can see I haven't defined these so these
+ are the real
+ problems that I'm getting from the
+ application logs and remember you can
+ now use this pen to match the error hash
+ here to
+ a real named
+ error that you have a root cause and
+ then you can say hey this might be an
+ automation issue an application issue or
+ this is unknown and then you can use
+ that to provide even more information by
+ clicking root courses here but I'll
+ probably make a separate video on this
+ because it's a quite elaborate on how to
+ use this in a good way but as you scroll
+ down now we have a long period of time
+ so you see there's a lot of test data
+ that I can see how the past percentage
+ is evolving over time
+ and I can also see the evolution of the
+ execution time so let's say you made a
+ database upgrade some refactoring you
+ can see how did that event affect the
+ execution time
+ and then of course more complex you can
+ see this aggregate result over the time
+ period compared to the last result so
+ here you can identify not only the
+ anomalies or this this failure normal
+ compared to the average run so you can
+ also see is this execution time normal
+ compared to the average time so the idea
+ is here you will have an understanding
+ of
+ as soon as you start accumulating data
+ over time instead of trying to go to
+ Jenkins go to your X-ray go and get your
+ root cause analysis and your Trend
+ reports we get you everything on that in
+ one place
+ we allow for you to you know find these
+ underlying root causes maybe some more I
+ know this is an automation issue this is
+ a real application issue you can link
+ them to your own ticketing system so
+ there's a lot in here to go over but
+ please look at this explore it and let
+ us know what you want to see hereTranscript for [Boozang Feature: Root-cause analysis](https://www.youtube.com/watch?v=GGPygfe3dpk) by [Merlin](https://merlin.foyer.work/)
+
+ i will now talk about root cause
+ analysis in Boozang something that's been
+ part of our product now for over a year
+ but we're finding it being more and more
+ useful especially when you have
+ complex test scenarios where you have
+ many test scenarios and you need to make
+ sure if there's an automation problem or
+ a real bug and kind of mapping it
+ between your systems
+ what we've done now is
+ we've introduced
+ a log formatter
+ so now directly when you're in the log
+ you can do root cause analysis on your
+ tests so what i like to do
+ is to sort it by a result and i get all
+ my failures in the top
+ and now as you can see if i have now
+ um
+ you see this is a new problem you see
+ you have this little root cause analysis
+ now you can click on this directly to
+ map this out on one of the issues so
+ we'll take the hash we make a hash of
+ the error and you'll put a name maybe
+ you'll say
+ known
+ bug
+ for
+ memory
+ memory issue or whatever it is right
+ that was a bad example so i encourage
+ you to use a better description
+ um and the cool thing here is you can
+ say is it an unknown issue or is it an
+ automation or an application issue what
+ i like to do is to keep separate what is
+ an application issue what is a real
+ issue that needs to be addressed in your
+ application here you can specify the
+ module and the test as the scope usually
+ the hash is enough but sometimes you
+ might want to do that to say when this
+ happens for this test this is the
+ problem and you can assign it so i'll
+ assign it to myself and i will say this
+ is a new issue and then i'll put a
+ description
+ uh this
+ issue occurs
+ when
+ too many
+ workers
+ are accessing
+ the
+ application which is an issue we've seen
+ when you have many workers
+ across the application i'm working on i
+ could get this memory issue for instance
+ the cool thing here is the url so what i
+ will do is i would map this
+ to you know
+ my your ticket system so
+ my ticket system dot com slash
+ uh issue id maybe right
+ and here you would put the real url for
+ instance into your jira
+ so
+ when you've done this
+ then of course next time you run this
+ test this is going to be mapped out as a
+ known bug and what you're going to see
+ here is they're going to be like this
+ little ladybug here you're going to show
+ this and the cool thing is that now
+ you can actually
+ click this one and it will take you
+ right to that url so in this case it's
+ going to be my jira url so now even when
+ the tests are running and you're running
+ the log formatter you can see when is a
+ new bug showing up you can do the
+ analysis and if you already have a known
+ issue you can click on that and see ha
+ this is the thing and you can either
+ show it in your ticket system if you map
+ it with the url or if you leave the url
+ blank if you click on it like this it
+ will just show with the issue and the
+ description in Boozang so you can choose
+ if you want to kind of
+ handle all your tickets as Boozang which i
+ don't think is very likely you'll
+ probably use an external ticket system
+ and you'll fill in the url here and then
+ you can simply link it directly when the
+ issue occurs here in the log so this is
+ one of the advantages of this log
+ formatter it makes the root cause
+ analysis much much more powerful
+ and as usual we will still give you
+ the
+ the root cause analysis log here
+ uh based on generate summary so for
+ instance you'll still get this overview
+ with your uh
+ failed scenarios or whatever
+ um where you can see the slowest test
+ steps the worker jobs and the issue
+ overview the advantage is now that now
+ with supercharging directly your system
+ log so this view you can use for like
+ the summary of the issues and then you
+ can kind of weaponize your uh
+ your log directly in jenkins and get
+ this information real timeTranscript for [Boozang Feature: Scenario Mapping](https://www.youtube.com/watch?v=btVAezCaMl8) by [Merlin](https://merlin.foyer.work/)
+
+ let's take a look at the scenario
+ mapping feature one thing we found was
+ that when you have a lot of scenarios
+ sometimes you can get in the hundreds
+ it can get a little messy to know
+ exactly what you mapped so as you see
+ here we have a lot of different given
+ conditions here and sometimes
+ you want to be able to first of all
+ understand what test steps you map to
+ which tests
+ and without having to kind of click into
+ going back and forth
+ trying to understand we instead decided
+ to allow you to view the full map and
+ update tests in bulk so let me
+ illustrate that what you want to do is
+ you want to go to the roof of the
+ project
+ and then you want to hit this kebab menu
+ here
+ and then here you have this review the
+ test mapping of scenario
+ so what you do here is that you see all
+ the terms that you've mapped and
+ remember
+ one unique string should map to one test
+ case but what's good here
+ with this new way is that now you can go
+ in and see i accept the order is mapped
+ to accept current order
+ but now of course i can update this like
+ this let's say i accept the order test
+ and now i have changed all the words to
+ be i accept the order test
+ to map these so if i close this now
+ and search
+ i accept the order you see they've all
+ been updated in bulk
+ another thing that is useful i'm gonna
+ of course change this back so first of
+ all
+ i accept the order i change this
+ you can also of course
+ uh take the word and see what is it
+ mapped to
+ and you can of course also
+ change what it's mapped to
+ we also added uh check boxes here and
+ what that allows you to do
+ is to for instance if you want to break
+ something off
+ you can
+ unclick a few of them
+ and then just update
+ the ones you need to update so like that
+ so if i do that you see there's two
+ different ones now
+ so you have i accept the order i accept
+ the order test
+ so what's useful about that would be for
+ instance if you're doing a transition to
+ doing like
+ maybe you want to do some of this over
+ the api you can now break this out and
+ do it on a per test basis so let's
+ change this back
+ but
+ all in all
+ i'll do yes and you see now we have
+ everything under i accept the order so i
+ changed it back
+ so the purpose here again is when you
+ have a lot of different strings mapped
+ to different tests
+ you can more get a feeling
+ for what is mapped where
+ and you'll be able to update it more
+ easilyTranscript for [Boozang Feature: Screenshots & Evidences](https://www.youtube.com/watch?v=eAZjlsj7908) by [Merlin](https://merlin.foyer.work/)
+
+ being able to know what's wrong and to
+ troubleshoot your test as one of the
+ most important things of course
+ so one of the things that we do is of
+ course when you have a test failing we
+ will give you
+ the piece of log
+ and the steps that led up to that
+ problem but usually it can be very
+ helpful to have a screenshot so i'm just
+ going to show you how we support the
+ error screenshots that we add by default
+ but also how we support reference
+ screenshots and additional evidence
+ so in order to do that i've created a
+ very simple test in Boozang
+ and it's a cucumber test
+ and it's simple it has a step a given i
+ am logged in it logs you in
+ and then it says i make a screenshot but
+ what we're actually doing here i'm going
+ to show you is we're going to make three
+ different screenshots and then this one
+ is just a dummy step
+ so and i make a screenshot i have one
+ a new javascript function util attach
+ screenshot to report so remember to keep
+ the brackets for that
+ this function takes the element path
+ that you can put inside of here if you
+ want to take a screenshot of a specific
+ element
+ otherwise leave it blank and it will
+ take the whole application window
+ so this will generate the screenshot but
+ then
+ in this path which is of course if i run
+ this test
+ and i run this action it's actually
+ going to fail so i set this up to fail
+ automatically
+ and what i've also done is i've used
+ this button here which is a screenshot
+ button to take
+ a picture of the element so that would
+ be a reference for this one for this
+ particular action you have a screenshot
+ reference
+ and then
+ if we look in
+ uh of course if you look at any cucumber
+ plugin in the cucumber report you would
+ actually see these three screenshots you
+ would see the evidence screenshot
+ you would see
+ the failing screenshot what the
+ what
+ sees
+ when it's failing this validation but
+ you will also put this reference
+ screenshot next to it so let me show you
+ if we go into um
+ the
+ x-ray here we're of course integrating
+ with x-ray
+ and i go i created a dashboard here with
+ my tests and i look at the latest test
+ failure or execution failure
+ in x-ray of course you will see
+ everything lined up and then you can
+ drill down into the individual test
+ executions and if i want to take a look
+ here i will go into
+ the step where i see of course what's
+ wrong with this step
+ i see the problem is i can't find this
+ new company
+ and the validation for that failed but
+ then i can also get more information
+ from the evidence log
+ and of course here we've overdone it a
+ little bit
+ i first added a reference screenshot
+ which you can also do
+ on successful steps and you can see it
+ has a blue shade to it
+ and then we have what we were seeing
+ when it was failing basically it was
+ seeing the wrong page the validation
+ failed so it made a full screenshot of
+ the page and then we can also see the
+ original element it was looking for so
+ don't you don't usually use these in
+ tandem but i've just shown you how you
+ can add
+ evidence screenshots into a test step
+ and also how you can add a reference
+ test step to a failed validation
+ so play around with this and
+ i think you will find it very helpful
+ and remember screenshots if you take it
+ with the whole screen takes a bit of
+ space so don't overuse these functionsnow i'm going to give you a quickoverview of the Boozang sidebarnormally you will have this top iconselected which is navigation and testcreation modemeaningyou'll select this icon you now haveaccess to the whole project treeyou will either either have access tothe features or the modules and then youcan navigate into a module and into atest and you can also navigateon thetop navigation bar herelike thishere you can recordand edit individual actionsso that's goodbut now you'll also have another set oficons on the sidebarone thing to note is this go backand go forward this is navigation verysimilar to the back and forward buttonsof the browserwe also have some advanced features herein the site navigationyou will find i have now an interferencewith my video capturing software youwill have the component view you seehere you can define components such asdate pickersand use them throughout your automationif needed you also have bug the bugsthis is used to record and annotatevisual bugs on the application sidehere you also have known issues knownissues is used to map out a specificbug or problem you come acrosswhen you do tests and this one you canflag as eitherlike an application issue an issue withyour application or an issue with yourautomation script and this will help youto map out root causes and seewhat are the big problems you havein your applications when you havefailures happeningsometimes a common root cause can createmany tests to failreports is a view where you'll have yourlatest test the reports that you havenot only from running inside the toolbut also if you're running from a ciserver you can can fetch the reports ifneededfrom here and you have a number ofdifferent reports to access right hereyou have your team where you can invitethe team members to collaborate with youon the project and you also have the ciview where you can see your workersworking currently on your ci server evenif you're running parallel workers youcan see a list of the workers and whatthey're working on and you can also getthe config tointegrate to any of the common ciserversin the settings view we have theenvironment view where you can set upyour environmentyou know development staging productionyou can also set up several applicationurls for your application interfacesthis is very good because this allowsyou to create a set of tests and thensimply switch environment you don't haveto record the same tests on differentenvironmentinside here you have sub tabs contentpolicy where you can definemany things around the project such asclickable classesback and request urls you should ignoreand also regular expressions to generateand validate dataelement definition that is not so muchused right now and integrations to setup integrations with servers for featurefiles like gitlab or jira x-rayalso you have this question markfunction that allows you to get helpwithin the tool by clicking inside thetool like that and to disable the helpyou'll simply hit the question markagainso that's it for the Boozang sidebarBoozang Introduction: Signing up & creating your first test
+
+
+hello i will now just briefly take youthrough the sign up process of the Boozangand just show you how you can getstarted creating your first testso when you're on the home page you willgo on and click sign up for freeand that will take you toai.Boozang.com the sign up page rememberyou have an alternative domain foreurope which iseu.Boozang.com so if you're in europe youwill pick the european domain and ifyou're in north america or south americayou'll use the ai.Boozang.comyou will fill out your details and youwill receive an email with theconfirming your signups you will clickthat linknow i'm just gonna go ahead and log inand seewhere that takes me and what that willdo is you will be greeted with anintroduction screen that heytells you to create a new project sorememberhere you're in the cloud this is not thetest tool being launched yet it's justthe management page that keeps yourproject you you're going to go aheadcreate a new project and the only thingyou want to fill up here is the projecttitle in this case i'm going to use thelab so i'm calling this project the labi'll go ahead and submit and then i'llhit launch toolthat's going to launch the testautomation tool in the browser windowright here and as you can see i got averification that i've created the labso here i'll enter the url of theapplication under test so i'll go aheadand clickenter here httpthe labdot Boozangdot com and that will openwill createthethe test projectwiththe application url the lab.Boozang.comin Boozang before going in to any moredetails you'll click this navigationlink up here and you'll start bycreating a moduleand the module should bebasically a functional part of yourapplication and in the lab i want tostart by testing maybe i want to startto test form fills so i will call themodule hereform fillinside the module you can now go aheadand create a test and here i'm going tocreate a test called filler form and i'mgoing to enter the url form filland then as you can see now the test urlthat is being suggested is http the labdot busong Boozangg.com slash form fillso what i'm doing is i'm hitting thisand as you can see it's loading the formfill so we're goodi'm going to go ahead and submit thisand i now have the test creation viewhere to do a simple recording i will nowclickrecordand then enterthe test steps and herei'm actually usingthe tabwhen i'm switchingbetweenthe differentactions and as you can seeactions are generatedas i typeand then i'll go aheadand save this and as you can see theclick is also registeredso when i'm done i'll go ahead and stopthe testand go backand i can now play back the testso that's how simple it is to recordyour first test in Boozang but rememberBoozang is module based and built to beable to do test automation on a largescale so it's very important that youfollow this function where you have amoduleand a test inside the moduleand this is just to get started there'smany things you can do to customize andhandle manyvery complex scenarios but this givesyou a good idea on how to get starteddoing test automation in BoozangTranscript for [Boozang feature: Stash and Stash Pop](https://www.youtube.com/watch?v=bXUsK1S4eRQ) by [Merlin](https://merlin.foyer.work/)
+
+ now in the Boozangg versioning control we
+ also support stash so let me illustrate
+ stash for you this is very similar to G
+ stash let's say I'm in my uh feature
+ Branch I'm going to switch to my feature
+ Branch here this could be any branch and
+ as you know when we go to modifications
+ here we see no changes here this would
+ be the similar view as the git ad so let
+ me do a change I'm now going into module
+ B and I'm creating a test called test B
+ okay inside module B when I have this
+ test we would be able to see it in the
+ change list here and normally you would
+ work on this and then you would maybe
+ commit this right but let's say you
+ don't want to do that let's say well I
+ was wondering how something I wanted to
+ go back to the head of the branch but I
+ don't want to revert my changes I just
+ want to compare to the branch original
+ state to see was this really working was
+ it not similar like you would do with
+ Git stash so go in here and go ahead and
+ stash the I uh the changes right and now
+ I'm going back to my module B and as you
+ can see where is my test B the test B
+ has been stashed so now I could test
+ certain things in the two let's say how
+ was it working before was my changes
+ good or not and then I can go back here
+ and now instead I click on the stash
+ list and I can now see my stash here in
+ the list so now what I can do is I can
+ simply pop this stash meaning bring this
+ change
+ back and here if you want to learn more
+ about stash and stash pop you can look
+ at also the documentation on git around
+ its very well documented feature now
+ when I go back into my module I will now
+ see my test B so stash is very useful
+ ful you're working on something you
+ think you want to commit your work but
+ maybe you want to go back to the top of
+ the branch before you did these changes
+ see what was going on there compare it
+ and then maybe just pop it before you do
+ the the commit so this is get stash for
+ you which I think is very useful not as
+ you don't do it as frequent as you
+ regular commit regular merges but useful
+ in some cases where you think you might
+ have made a mistakeas you have noticed we've taken manycues from visual studio codeand in order to work on a verycomplicated test projectimagine you have a lot of scenarios ormaybe just a lot of modules and tests werealized the navigation was difficult sowe created the tree navigationand then we realized we weren't reallyutilizing the tabs properly so now we'vetaken the cue from visual studio codeand create the dynamic versus statictabsif you are familiar with visual studiocode you might know this functionalityif you are using it but let medemonstrate it very quicklyin let's say i close a tab and i have atab open as you can see this is now initalics so that allows me to browsearound in my test and as you can seethe tabisyou know being changed it's changing thecurrent tabif i want this tab to stay i'll simplydouble click on it and it now becomespinnedand now when i browse over the differenttests it opens a new tabthat also means of course that if i goback to my static tab that's now beenpinned if i double click it and now ibrowse it will change that tab againanother change we did well let me alsonote that just like visual studio codeyou can double click on the tab toswitch between the pin tab which makesit stayand the italic tab that makes it changeand then alsoif you go and you go to settings forinstance that will always open a new tabso even if you have a tab it shouldnaturally change that oneanother change we did is the fact thatbefore when you were working onsomething we would kind of change whereyou were when you press play and we'vekind of changed the run mode and nowwhen you press play we just open up anew play tabwhich allows you when you close it to gostraight back to where you were so wethink this is a big improvement forusability but we're also trying toreally get this right so if you havesome feedback on how we can improve thiseven more we would love to hear itTranscript for [Feature Highlight: Temporary database](https://www.youtube.com/watch?v=H9mbyQASx1A) by [Merlin](https://merlin.foyer.work/)
+
+ now i would like to introduce the
+ temporary database
+ um
+ you can find that this icon here you see
+ it says temporary database
+ and this functionality which i think is
+ pretty novel i haven't seen this in any
+ other test tool is something we came up
+ with
+ working with api tests
+ and as we've developed the api testing
+ in Boozang
+ we've seen an increasingly need
+ increasing need that
+ when you have one api request you can
+ have a consecutive request that is
+ depending on
+ data from a former request
+ so
+ let's take an example with this would
+ typically happen
+ i have a lot of features here cucumber
+ features
+ where let's say we take
+ order management here for instance
+ where i have a number of given condition
+ that leads up kind of does the data seed
+ that creates the data that allows me to
+ run the scenario so in this case it's a
+ brewery platform so it's given i am a
+ brewer i add a product i set the
+ inventory which is the stock and i set
+ the price and then i can order the
+ product
+ in order to speed things up we wanted to
+ convert these given conditions to api
+ tests so they're not done in the ui so
+ let's see what that would look like we
+ will take one of the
+ modules here that i did convert
+ here inventory management i am a brewer
+ and i call them just api i add a product
+ dash api
+ what we noticed was that of course
+ given i am a brewer this contains the
+ login and that will give you a user the
+ user is tied to a company etc etc etc so
+ of course in my product request i'm
+ going to need data from a step before
+ so
+ i've just created some helper tests to
+ kind of illustrate this and of course
+ this is fairly complex functionality and
+ i think as you start playing around with
+ this it will make much more sense but
+ one way i illustrate this is basically
+ an api creation i want to make sure that
+ i can do find the company which is
+ basically the first condition and then i
+ want to create a new product
+ so let's see what this looks like
+ if i'm here i can actually delete all
+ this which is the temporary database
+ which is in the local storage in the
+ browser so now this is clear i don't see
+ anything
+ and now what i want to do here is i want
+ to play this step and we're going to see
+ what happens i'm just going to run
+ one iteration with this data
+ what's interesting here is really to be
+ able to
+ without kind of creating these
+ of course you could create a carrier
+ variable that says
+ project
+ user equals or project company equals
+ and then carry it onwards
+ but i'll show you this is a slightly
+ more elegant solution and it works
+ really well especially in combination
+ with the open api where we have ever all
+ the api requests really organized into
+ modules in a very very nice way so let's
+ open this as you can see we now have
+ the user
+ the company the container the product
+ the sub product the inventory and the
+ sellable which is all this stuff that i
+ set and i'm going to show you very soon
+ how i set these
+ but in the meantime let's look at this
+ right if i want to understand how this
+ data was set i can troubleshoot it
+ directly here we're going to do the
+ first thing as you can see we have an
+ authentication request and you can also
+ look at the response and
+ if you go down the list here you can see
+ how the the product is being called and
+ you can see the you can see the response
+ and remember you can always double click
+ here to open the tree
+ completely
+ so let's look how this looks in practice
+ well
+ well first of all okay the temporary
+ database is kind of
+ populated automatically and i'm going to
+ show you how this is done if i do look
+ at the company call and i go into the
+ api setting
+ and if i go to end script
+ you see this ai api ad data which is
+ part of the default setup
+ this is the one that adds it
+ into the temporary database
+ and then when i want to use it
+ i use something here in create product
+ i use this and i'm going to show you
+ here inside try
+ you're going to see that i'm using
+ something here of course it's just to
+ debug but what i would use is exist
+ company id and it will automatically
+ take
+ the latest company id and if you want to
+ know what was the latest company id that
+ was retrieved imagine you want to have
+ the latest one in case we store usually
+ 10
+ company ids so you want to if it was a
+ test before that called something that
+ got the company id in the response you
+ want to catch the latest one okay
+ so here you can see we open up the
+ company ids you see there is a little
+ star that indicates what would be used
+ in an exist call so we know here and we
+ can inspect in the data and we can see
+ here this is indeed Boozang brewer ar
+ which is the right
+ data that we should use in this case
+ so now you see a little bit on how you
+ can um
+ how you can store
+ the things in the temporary database and
+ then how you can kind of link this
+ together and the way you would do this
+ i'm just going to go very quickly into
+ it but
+ because of course this is pretty big
+ functionality
+ is that if you go into mapping pages and
+ you go into
+ one of these
+ fields so you press settings and you go
+ into fields you're gonna see that the
+ company id i set this exist company id
+ so i basically
+ map out all the modules and all the data
+ that go into these modules for the api
+ requests but of course this kind of ai
+ view for api testing is a separate
+ bigger topic to talk about but the new
+ feature that we added
+ specifically is this temporary data base
+ which is super useful when working with
+ more
+ advanced end-to-end api testsTranscript for [Boozang Feature: Trend Reports](https://www.youtube.com/watch?v=P77WuCKTXiA) by [Merlin](https://merlin.foyer.work/)
+
+ in this release we also wanted to
+ improve reporting
+ and even though we haven't finalized our
+ big
+ management ui upgrade that is happening
+ later on this year
+ we decided that
+ why not update the reports inside the
+ tool
+ so what we are now very very happy to
+ announce
+ is trend reports imagine you're running
+ tests over a long period of time and you
+ know especially in jenkins and with
+ cucumber report it's hard to get an
+ understanding what's happening over time
+ with your tests
+ now we've introduced a new tab here
+ called trend reports so if you click
+ into trend reports and let's say you
+ select i'm just going to select my main
+ suite that is all the regression tests
+ for this project
+ now we can actually get a view of
+ how
+ the tests have changed over time you see
+ here we have a spike of failures
+ and you can also see how the performance
+ was changing over time so you can see
+ performance trends and then of course
+ you can scroll down
+ and drill into particular tests for
+ instance i see my ad campaign test being
+ problematic i click into this and then i
+ get the view of
+ when was it failing
+ here right so now i'm getting a much
+ better way to do some data mining
+ with my tests and remember
+ the actual filter now is in the url so
+ now you can actually bookmark this and
+ share this with other team members to
+ point out certain trends another thing
+ that is cool is that you can also
+ download the report
+ so you could use that when
+ you know sharing it or putting it into
+ an email or something like that so super
+ excited about this i think you will find
+ it useful so let us know if there is
+ anything that can be improved or is
+ unclearTranscript for [Boozang Feature: Undo / Redo and Test revisions](https://www.youtube.com/watch?v=WwnujKLPah0) by [Merlin](https://merlin.foyer.work/)
+
+ i will now explain the undo redo
+ functionality in Boozang we've had that
+ now for a couple of years but we've
+ updated it to save everything
+ server-side in the database this will
+ give you
+ a revision history for each test so if
+ you make a mistake you can go back but
+ it also means that if someone else has
+ done an update to your test that you can
+ undo and get the revision history of
+ that test
+ so we also encourage you we maybe
+ haven't got the presentation down so
+ that might change a little bit but in
+ brief let's say i do a couple of changes
+ here to this test
+ instead of saving it in the local
+ storage it's server-side so what i will
+ see here if i use this drop down is i
+ will see all the updates so either i'll
+ just do the one update that you saw
+ there
+ or
+ of course the other one as well right
+ and you can do many in a row
+ if you look at the redo functionality
+ you can also see here that of course you
+ can redo the same things and as you can
+ see when you hover you also see what
+ change was being done it's a little
+ complex right now the presentation of
+ this so it requires a little bit of
+ patience but usually of course you know
+ what you just did
+ so
+ it one difference here is of course we
+ see who did that change so you can also
+ redo if there is someone else doing the
+ change one interesting thing if i choose
+ to undo this
+ and for instance i record a number of
+ key presses
+ it should be able to when you
+ undo this you should actually be able to
+ see
+ uh a number of things you could redo so
+ it actually kind of gives you the i the
+ option to branch out
+ and kind of pick your redo history so
+ this is kind of an advanced case but it
+ could be useful in some cases where you
+ basically did
+ maybe you've done that before you do an
+ action
+ on top of something and then you lose
+ your
+ undo histories you can't redo the
+ changes basically
+ so
+ a little bit about that i encourage you
+ to let us know i find that maybe this
+ presentation could be done a little bit
+ better so play around with it and let us
+ know what you think but i think this
+ will really help you when you make a
+ mistake to a certain test or you don't
+ know why a certain test stopped working
+ then you can usually go back to a
+ revision that was working so i think
+ this would be very helpfulTranscript for [Upstream test navigator](https://www.youtube.com/watch?v=MQt20L39EME) by [Merlin](https://merlin.foyer.work/)
+
+ let me show you the Upstream test
+ Navigator we've had the ability to view
+ Upstream tests for quite a while but we
+ realized that it would be nice to have a
+ navigator function for this to make it a
+ little clearer so remember usually
+ you'll have your cucumber tests right
+ here referencing a bunch of tests in
+ your um that you've recorded or created
+ in some way and sometimes it's easy that
+ it gets a little messy let's say here I
+ have the test ad product or I wonder
+ where this test step is being used so
+ what you used to do is you would be able
+ to navigate up in the tree hitting this
+ show Upstream tests and that would just
+ navigate up in the tree but instead now
+ we kind of created this Navigator which
+ shows you all your Upstream tests so I
+ can now see that my ADD product is used
+ in create product add other product etc
+ etc and also where it's used by by a
+ test that is being referenced you can
+ now see the full tree so I think this is
+ very helpful before you would have to
+ navigate several steps and let's say you
+ have a test that reference a test that
+ reference a test it can get complicated
+ but here you would see it as a tree and
+ you can expand and you can see exactly
+ how your test step is used so this is
+ really useful for navigation but also
+ useful if you want to refactor your code
+ us say I'm going to change this test
+ what am I going to affect and which
+ cucumber scenarios is going to be
+ affected by this so I think this is a a
+ nice modification and also here if you
+ use the icon you can easily just
+ navigate to the test let's say I'm on
+ another test and I go here I can easily
+ navigate to the test by clicking this
+ test case icon and as you can see I can
+ do many and I can switch between them
+ and when I no longer need to check them
+ I will just close them here so it's more
+ of a navigator concept for your test
+ case references your plug test case so I
+ hope this will be helpful for you
+ especially when you have a bit of a
+ bigger projectTranscript for [Boozang Feature: Using Comments](https://www.youtube.com/watch?v=ywuO4zPk3lk) by [Merlin](https://merlin.foyer.work/)
+
+ now i'm going to demonstrate the feature
+ the comment function in Boozang
+ uh this is something we have had live
+ for a long time and then it stopped
+ working for a little bit and now we
+ fixed it and reintroduced it okay
+ so
+ i'm gonna go ahead and create a new test
+ here and i'm gonna you use the
+ lava.Boozang.com as usual and what i'm
+ gonna do is now i'm just gonna say
+ annotate
+ bugs okay
+ we call it comment but some people call
+ it annotations it's basically the same
+ thing
+ and we're going to use the page visual
+ bugs and if you click on it here you can
+ find this at the lab dot Boozang dot com
+ slash visual bugs okay
+ the comment function is used to just
+ annotate bugs in the user interface and
+ it's kind of where
+ manual testing meets
+ automated testing you can still use
+ for as you know an automated machine
+ system is not good at
+ detecting some visual bugs like styling
+ bags so what we're going to do is we're
+ just going to show how you can point
+ that out and basically use that link
+ in a you know like in the bug report
+ you'll get
+ um instead of having like steps to
+ reproduce you'll have an executable test
+ that shows you the problem so what i'm
+ going to do here is i'm going to go
+ ahead and record and i'm going to use
+ this next link so here i see that the
+ image is a zebra and i see the label
+ zebra
+ and i see the image is a sheta and the
+ images the label is sheeta so that seems
+ good
+ also lion seems all right and then here
+ of course i come to a problem with a
+ mislabeled image of course this could be
+ this does not comply to style guide etc
+ etc so i'll just show you how you would
+ do this here instead of doing the
+ validation i would just use the comment
+ and i would maybe highlight here the
+ label and say
+ and i will write here in the description
+ fields
+ this should be and i think this is a
+ mere cat
+ maybe meerkat is with a k actually
+ anyways
+ and i will go ahead and just click next
+ and of course here says meerkats and
+ this should be
+ giraffe right so i'll do the same thing
+ here
+ this should
+ be
+ giraffe
+ okay that's good so what i'm going to go
+ ahead and do now is just run the test so
+ you can see how it looks
+ and if i run it now
+ you're going to see the annotation in
+ the ui so you could use this to just
+ point out the problems and you can go
+ through a list of tests
+ and here you see again this should be
+ giraffe and you can just step through
+ the test so it's a good way to use
+ automated testing
+ to
+ maybe help you when you need to kind of
+ show
+ problems in the application so that's
+ something we do a little note of course
+ this thing becomes now this is just a
+ link so you could share this in your bug
+ report and then you have an executable
+ you can just click on this and just have
+ the people play this directly in our
+ tool
+ another note we should do here is of
+ course we also have this
+ show selection for pass fail
+ and if i do hit this in both these cases
+ and i play the test you're going to see
+ that
+ you also get a way for the user to to
+ say
+ okay now i didn't reload this page
+ properly so again i'm just gonna
+ hit that visual bugs here and then run
+ the test again so it's on the right link
+ okay
+ and of course now you could create
+ a test sequence where you say
+ uh verify that this complies to the
+ style guide and i can for instance do
+ pass here i can click pass
+ and then i can of also kind of mark this
+ as fail and if i do that of course i
+ will have an error and i could see that
+ also in the report what failed and what
+ worked so this is something you can
+ experiment with
+ this is what we call hybrid testing
+ using automated test
+ tools to do
+ manual testingTranscript for [Boozang Introduction: Introduction to data](https://www.youtube.com/watch?v=eumv5m0rmOI) by [Merlin](https://merlin.foyer.work/)
+
+ in Boozang to create reusable tests you
+ often need to use data just like in
+ regular programming and Boozang supports
+ many different data types the way you
+ set data in Boozang is that when you're
+ inside the project navigation you know
+ you have selected this topmost icon you
+ will access the data tab
+ and remember this one is expandable so
+ you got to make sure
+ that you have it here
+ data can be defined on three different
+ level test level module level and
+ project level
+ project level means it's global to the
+ project module level means it can be
+ shared by the tests and accessed by the
+ test in that module and test level the
+ data is only for that test and it's
+ important that you use proper
+ encapsulation so you don't have a bad
+ side effects also if you define all data
+ as global data it's going to be messy
+ so let us try and add data we do that
+ with the plus sign here you see now we
+ have a set of different data types to
+ choose from
+ i could go into these in detail but the
+ easiest way to play around with them is
+ to to learn about these is to play
+ around with them and and test them out
+ object is json data which has name value
+ pairs which is like one level deep so
+ that's perfect for a form field like
+ this you'll have first name last name
+ email and password being stored in a
+ single object
+ the csv data is used for data similar to
+ an excel table when you would have
+ several sets of data and that's also a
+ loopable data type so for instance if
+ you want to enter several users in this
+ form you can use csv data
+ matrix data is very similar to csv data
+ except that you have the first column of
+ that data is the primary key so you
+ don't usually loop from index 0 to n you
+ usually say i want to get the user
+ mats and it would fetch my information
+ based on that primary key
+ the mixed data is to handle complex json
+ data
+ anything you can have object
+ arrays and mixed data here
+ and the request data is to fetch data
+ from external sources for instance you
+ can load data from dropbox or google
+ drive
+ the js is actually not really a data
+ type it's a piece of javascript a
+ function that allows you to generate
+ dynamic content
+ you know we have a content generator
+ based on regular expressions but here
+ you can write your own functions in
+ javascript
+ to generate data
+ property is for single named value pairs
+ so you use that for instance for a
+ single field
+ file data is to use to either store url
+ or to store some binary data the maximum
+ here i think is five kilobytes so try to
+ keep this data small it's only for test
+ purposes
+ and then we have the array that allows
+ you to generate
+ an array of data basically uh you know a
+ comma separated array and that's also a
+ loopable data type
+ so try and play around with this
+ and
+ let us know if anything is unclear but
+ this is something that is very powerful
+ in the Boozang tool and i think the key is
+ to get started using data and you can
+ get a hang of it pretty fastTranscript for [Boozang Feature: Validation data-bind](https://www.youtube.com/watch?v=6FMtt6EViyA) by [Merlin](https://merlin.foyer.work/)
+
+ okay let me demo the validation data
+ bind feature
+ this should be a pretty short demo
+ um as you know when we record a form
+ fill or any sort of data entry in Boozang
+ we by default
+ data bind it to the parameter space so
+ you can send parameters to test and of
+ course change
+ the test data to improve usability
+ so
+ in this case i'm also going to show how
+ we do this for validations okay
+ so what i'm going to do is i'm going to
+ use the lab so that's the lab.Boozang.com
+ and i'm going to go ahead and just uh
+ create the test that is called add
+ validate
+ to do
+ and
+ if you want to open up the lab here you
+ can see that this one is under sorted
+ list okay
+ so what we're gonna do here i'm gonna go
+ to the url sorted list and as you can
+ see you just click on the link and you
+ see that the page is being reloaded so
+ we're on the right page
+ let's say we have no
+ to do items and i'll just go ahead and
+ record here
+ and i'll add an item called for instance
+ feed the cat okay
+ and i'm going to use the tab here to
+ make sure that this is
+ recorded individually and then i click
+ add to do
+ that's good because now we will have a
+ separate set action and a separate click
+ action that's what we want to have here
+ and as you see here we also have this
+ validation here so i'm just going to go
+ ahead and validate that feed the cat was
+ added so i'm just going to click on the
+ validation and unfeed the cat
+ what's cool here is of course that as
+ you can see is the add new to do
+ data bounded into dollar parameter add
+ new to do and the validation
+ automatically uses dollar parameter ad
+ to do
+ so if i go ahead delete this and run
+ this test
+ it should execute successfully
+ and that's not so strange it would do it
+ otherwise as well but now of course i
+ have a fully reusable test so here
+ instead of feed the cat i can add feed
+ the dog under test setting
+ uh parameter
+ so i set feed the dog instead and i'll
+ run this
+ and as you can see
+ it also passes so it means that both the
+ add action
+ and the validation action is data bind
+ bonded
+ bounded into data
+ of course you could do this manually by
+ using inserting here the dollar double
+ bracket and parameter and the variable
+ name but it's kind of nice to have this
+ done automatically for you so you can
+ save you some timeAn end-to-end example
+
+in boozang we just launched a larger versioning control update where we support uh proper branching merging like we were before but also uh doing proper commits doing po request or merge request as we call them and I think it'sa much more professional way of working especially if you're doing teamwork so instead of the individual feature videosI thought I'd do a little longer videoexplain on how you can work with this uhin practice this is just an example ofcourse we're going to work with theproject here called unit test so let'suh launch ithere first of all this unit test stuffis very very simple um let's just startby creating uh a module here we're nowworking on the master Branch so I willcreate a a module called navigation hereand then I'm just going to do a verysimp simple navigationtest called click links and of coursethis is not to demonstrate the power ofthe Boozangg tool it is just to show youhow to work with versioning so of coursehere we're just going to record a verysimple test going through a couple oflinks here okay so what I'm doing isI'll take the two two links here stopthe test and maybe remove thisunnecessary click that I did okay verygood now we're working directly onmaster so I will go in here and click onto see my uh updates I'll see the m isred so I see I have updates I haveupdates to the navigation module so justlike git make a commit and I'll sayaddednavigationtest after the commit you will see ithere in the commit list okay but now isthis really professional let's say youhave a master running on the CI serverand many people working on it you couldhave a people doing appeti it couldbreak the test maybe you want to mergethis in a controlled manner so first ofall what I want to do is I want tocreate my own Branch maybe it's myfeature Branch right so this is myfeature Branch or for the current Sprintlet's say so now I have my own branchbut sometimes maybe I switch to masterand I work on it by mistake so let's notdo that let's protect this branch andmake it read only and here you have acouple of options we can see here that Ican control the permissions but I canalso allow users to approve their ownmerge requests which I want to be ableto do here because I'm demoing on onthis and I can't do a double compcomputer demo at this point so now whenthis branch is controlled what I'm goingto do is I'm going to uh as you can seeI'm switched to the master Branch but asyou can see here it's read only I cannotrecord I can only play the test toverify that it's working or not so nowwhat I would like to do is I want toswitch to the feature Branchokay and as you can see now I can recordagainand uh navigate and uh copy paste etcetc this is a write and read Branchright but when you are working so let mejust illustrate how that would looklet's say I just copy this link here andI wantto you can see now I can do anothercommit and Isay copied actionnow if I switch to the to the uhprotected Branch the master Branch rightif I want to I can now uh create a mergerequest and I'll show you how to do thatwhat you're going to do is you're justgoing to merge from feature here andthen what you're going to see is you'regoing to getmerge and then you're going to say it'suh it's been sent to the Target Branchbecause it's protected and you got toapprove it so I'm just going to show youhow you approve this uh merge request soif you go here now if I'm in master asyou can see here I only have those fouractions right but now I'm going toapprove this mergerequest and what you're going to see isthat now if I look at that test that wewere uh doing navigation click links youcan see that we we have those extraactionsthere but now we're going to look at aneven more complex uh case we're going tolook at uh doing a regular merge withouta merge request and then creating amerge request with a conflict okay sonow in reality I might not have just afeature Branch I might have alsomade um a specific kind of brand forinstance for a bug fix and maybe thisshould be merged in my own Branch beforeit should generate a merge requestso this all different teams Worksdifferently with bug fixes and all thesethings but let's um let's see whathappens here I'll just do one examplethat illustrates how you could work sofirst of all I'll create a new branchcalled Bug 123 right so this would beyour bug number maybein um a bug and then in a ticketsystem and then let's switch to firstLet's do an update in the featurebranch whichis maybe I'll record something okay tomake it a little moreinteresting but at the same timeuh and then we of course have to committhe changes sometimes I forget forgetthis because you didn't have to beforein buang and now they have to becommitted so what I'll do is I'll justgo ahead and create acommitaddedclicks now what I'm going to do is I'mgoing to try and merge this uh no I'mactually going to create the conflictlet's create a conflict that's more funso I'll go go to the feature Branch Iswitchhere uh I'm oh I'm in the feature BranchI'll go to the bugbranch and what I'll do is I'll take umthat navigation test that we had and I'mactually just going to create somethingin the beginning of the test hereinstead and that should generate aconflict so let me try toFirst go ahead and uhcommit thosechanges here added initialclicks now we should have a conflict ifI'm trying to merge the bug and thefeature Branch so let's try and do thatso what I'll do is I click on merge andI click on feature and I try to mergeit as you can see we have an unresolvedconflict here okay so what you want todo is now you can actually select andhere you can see uh that it has Autoselected for you but if you want you canremove those clicks there you see thiswould be the feature Branch this is thecurrent Branch I'm in and this is theresult that you want to commit but let'ssay we want to get both of these thingsso we'll scrolldown and as you can see it seemed tohave figured out from the conflictautomatically but of course I can changehere if I need to right there is alsosomething we can do if you see thatthere is an issue you can also uh pasteand create initial actions here and youcan also actually drag and drop for theorder of them so this is a prettypowerful view uh but usually that's notnecessary so it has me to go to the nextconflict there are no more conflicts sonow I can go ahead and Commit This andas you can see I have now managed tomerge this feature Branch uh to bug 123Branch now we're just going to do onemore complexscenario what we're going to do is we'regoing to try andmerge the feature branch into master andthen bug one two three into Master tosee if we can create aconflict so I'm going to start byswitching to the master Branch youalways want to be just like it in thebranch you want to mergeinto now I'm going to go and start bymerging the feature branch that doesn'thave those uh changes rightnow so I'm going to I'm going to mergethis into master I'm going to commit andit's going to create the mergerequest but now instead of acceptingthis which would of course be the normalcase I'm going to merge bug one two 3 increating kind of a a new where emergerequestright now if the user tries to approvethis old merge requestQuest H it's it can actually doit but if I approvethis and then I'm going to this mergerequest you can see that there will beconflicts right cu the Assumption waswhen we created the merch request it wasdone on a different Baseline for thistest so you can now look at theconflict but remember this is this is amerge request so you don't want toresolve this here so what you will do isyou would reject the merge requestsay remmer merge with Source Branch ormaster or whatever you you want to do orMaster Branch or depending on how youwork so in this case when the mergerequest has beendenied you want to make sure that youtake the brch you're working in andremerge those changes from the masterbranch and then try again to see if themerch request can be uhredone so this way in buang we thinkit's a more professional way of workingand allows you to have a stable masteror CI Branch while having several peopleuh on your team working on the sameproject and same tests at the same time
+
+Branching and merging
+
+hello H now I will demonstrate thebranching and Version Control feature ofthe Boozangg tool we've been supporting uhbranches and merges in the Boozangg toolfor many years now but we realized theway we were doing it wasn't optimal wekind of had a homecooked solution sowhat we did was we redid everything fromthe beginning and we mimicked git whereyou have handling branches and mergingjust like it so we also added uh supportfor commits and for uhstash so in this case let me justimplement the general Branch managementnow when you start up your project makesure you have Source control enabledhere and you can see the source controlicon on the left hand side of themenu here I can see my branches and if Iwant to create currently I have a CIbranch and a master branch and if I wantto to create a new Branch let's say afeature Branch let's call this featureone I can copy from either moner or Cior any of the existing branches and Ican go ahead and do thatokay now when I've created this Branch Ican simply switch to it here and as youcan see the branch gets highlighted uhin in the click path here so you can seein your tree uh you get reminded whatbranch you're on let's now go tothe module structure and just create anew module for instance let's call thismodule a and then inside module a let'screate a test testa and if we go back to the root we'llcreate for instance a moduleV now if we go back to the tree we canactually commit these things into thebranch so what we'll do is now we'regoing to go to this icon here which isthe commit history uh and as you can seewe have no commits currently on thisBranch so look at your modificationsyou'll see that we've added a module aand module B and as in get you only seethe topmost module so you don't see thetestinside and now I'm going to go ahead andcreate a commit I use this branch andI'll say added modulea and moduleB so now when I've created this committhey get committed and you will see itin the commit list added module a andmoduleB now just like in kit we can now try tolet's say switch back to the CI branchand let's see if we can merge thosechanges in let's say you've been workingon this feature you're happy with whatyou have we'll go to the merge viewwhich is this icon and then we're goingto say yeah let's merge from featureone I'll hit the play button here and asyou can see you'll have the module a andmodule B to be merged you will create anew commit but here the default commitmessages merge from feature one to C Iand I'm happy with that message you canchange it if you want to now you can goback to your commit list and you can seethese are my previous things I was doingin this Branch but you see the lastcommit messages merge from feature oneto CI and I can also show this in thetree view so I think play around withthis but this should be much morealigned how you would work on adevelopment project in git and also withthe side icon here similar to visualstudio code so I think this is going tobe if you're familiar with Git it'sgoing to be very familiar to you and ifnot there is plenty of resources on gitthat you can also look and it shouldlook very similar in uh this tool here
+
+Stash
+
+now I'm going to demonstrate a slightlymore complex use case it's the so-calledmerge request this is what you want touse when you have maybe many people inyour team working on different featuresand maybe you want to have a a couple ofmaybe some centralized review processmaybe they're just one or a couple ofpeople in the team that were allowed tomerge in it to the main branch or maybeyou just want to make sure that youenable code review so different testdevelopers check and validate the codethat the other members aredoing in order to enable merge requestthe idea that we have is we'veintroduced something called protectedbranches so for instance in this case wemight want to say that the master branchis protected so what we will do is wewill enable the protection here here andthen you canenable uh which can approve the themerge right the merge request so firstof all I'm actually going to unclickthis allow user to approve own mergerequest um and I think this is useful asanillustration then after I've done thisI'm just going to do a change in afeature Branch here it's feature one soif we go intolet's say I am creating another test sohere I'm creating test two and I'm doingsome actions let's say I navigate to themenu and I do something hereokay now in order to be able to mergethis as usual you will have to make acommit so the first thing you want to dois you see that this modified files thisis the get stat stus uh view you can seethat we've added this test number twookay so what we're going to first uh dois we're just going to create a regularcommit here so we're saying added testtwo so if we dothis we don't see any uh problems rightnow it's just been committed into myfeature Branch my feature branch is notprotected okayso what happens is when we switch to themaster branch and we try to merge thefeature Branch this is when you're goingto see so what we're going to do iswe're going to try and merge it and asusual we create a commit and again thedefault commit message is going to bemerge from feature one tomaster so what we get now is an extramessage it says the merge request sentfor review as the target branch isprotected and then it says pleaseapprove it from uh merge request listokay so what we can see now is because Iam now the same person you can see thatI now see that there is a one here thereis something to be done and then alsohere under the merch request we can seethat this is now in my queue so if I goto my master Branch as you can see wedon't see test number B here the mer hasnot yet happened okay we'll go back inhere and now we're going to try toapprove this merge requestokay and as you can see here it says youcannot approve your own commit but youcan enable self approval in the branchprotection for you so if we now go backhere you remember on the master settingthere was a a check box for allow userto approve own merchrequest so again I'm I'm going to enablethis because maybe that's not what Iwant in a production setting but fordemo purposes here it's hard uh to demowith many users now I'm going to go inhere and I'm going to approve and I'mgoing to submit and as you can see wegot a successful merge happening andthat we can see in both views here wecan see the merge happening here fromfeature one to master and now if we goto module a we can see both test a andtest two and as you can see you'll havethe actionhere another thing you can see with theprotected branches is we don't normallyby default allow you to do anyrecordings or modifications in protectedbranches but of course you can play thetest case here to validate that it'sworking and you can of course also runthese of course from the CI server so Ihope uh you can play around with thisand figure out if there are additionaluse cases we need but I think this isthe most important use case to be ablemore controlledcollaboration
+
+Merge requests and protected branches
+
+now I'm going to demonstrate a slightlymore complex use case it's the so-calledmerge request this is what you want touse when you have maybe many people inyour team working on different featuresand maybe you want to have a a couple ofmaybe some centralized review processmaybe they're just one or a couple ofpeople in the team that were allowed tomerge in it to the main branch or maybeyou just want to make sure that youenable code review so different testdevelopers check and validate the codethat the other members aredoing in order to enable merge requestthe idea that we have is we'veintroduced something called protectedbranches so for instance in this case wemight want to say that the master branchis protected so what we will do is wewill enable the protection here here andthen you canenable uh which can approve the themerge right the merge request so firstof all I'm actually going to unclickthis allow user to approve own mergerequest um and I think this is useful asanillustration then after I've done thisI'm just going to do a change in afeature Branch here it's feature one soif we go intolet's say I am creating another test sohere I'm creating test two and I'm doingsome actions let's say I navigate to themenu and I do something hereokay now in order to be able to mergethis as usual you will have to make acommit so the first thing you want to dois you see that this modified files thisis the get stat stus uh view you can seethat we've added this test number twookay so what we're going to first uh dois we're just going to create a regularcommit here so we're saying added testtwo so if we dothis we don't see any uh problems rightnow it's just been committed into myfeature Branch my feature branch is notprotected okayso what happens is when we switch to themaster branch and we try to merge thefeature Branch this is when you're goingto see so what we're going to do iswe're going to try and merge it and asusual we create a commit and again thedefault commit message is going to bemerge from feature one tomaster so what we get now is an extramessage it says the merge request sentfor review as the target branch isprotected and then it says pleaseapprove it from uh merge request listokay so what we can see now is because Iam now the same person you can see thatI now see that there is a one here thereis something to be done and then alsohere under the merch request we can seethat this is now in my queue so if I goto my master Branch as you can see wedon't see test number B here the mer hasnot yet happened okay we'll go back inhere and now we're going to try toapprove this merge requestokay and as you can see here it says youcannot approve your own commit but youcan enable self approval in the branchprotection for you so if we now go backhere you remember on the master settingthere was a a check box for allow userto approve own merchrequest so again I'm I'm going to enablethis because maybe that's not what Iwant in a production setting but fordemo purposes here it's hard uh to demowith many users now I'm going to go inhere and I'm going to approve and I'mgoing to submit and as you can see wegot a successful merge happening andthat we can see in both views here wecan see the merge happening here fromfeature one to master and now if we goto module a we can see both test a andtest two and as you can see you'll havethe actionhere another thing you can see with theprotected branches is we don't normallyby default allow you to do anyrecordings or modifications in protectedbranches but of course you can play thetest case here to validate that it'sworking and you can of course also runthese of course from the CI server so Ihope uh you can play around with thisand figure out if there are additionaluse cases we need but I think this isthe most important use case to be ablemore controlledcollaboration
+
+
+now i want to talk about the workspacefunctionality that we added in Boozang andthis is something that don't exist invisual studio code and it kind ofreplaces the bookmarks that we don'tfeel or being used so much imagine thati'm working oni'mexcited about my api test add user andlist usersand then now you can use thisin the the dot menu add to workspaceand you see this extra link showing upin the sidebari can also do that with listusers add to workspace you see the pinshowing up and then you can find yourtests here and why this is really usefulis of course if you're working withcucumber then you can have your scenarioand you can also add that to theworkspace and that allows you to veryeasily switch between your codeand your cucumber testand it's very easy to remove them fromthis list or remove them all at once andof course you can also add them here addto workspace and then remove them fromthe list so we think this is going to bereally helpful to keep your testorganized and kind of keep of this iswhat i'm working on right now so we hopethiswill be helpful for youTranscript for [Boozang Feature: Xray integration](https://www.youtube.com/watch?v=V3Ia2dh-9EQ) by [Merlin](https://merlin.foyer.work/)
+
+ as you might know we integrate with the
+ test management software x-ray
+ which is an extension into jira that we
+ like a lot
+ we've had that integration in play for
+ more than two years now and it's been
+ working really really well
+ but we thought what can we do to
+ supercharge this
+ so maybe you remember before we could
+ already uh you know get the execution
+ results back in x-ray see all the
+ reports and see the evidences in there
+ so this is really really cool and this
+ kind of allows you to do manual testing
+ and automated testing and view them the
+ same way in x-ray
+ one thing that we did though now
+ we've
+ extended the x-ray integration
+ uh using our extension so here in
+ extension if you add your x-ray host
+ here which is actually the api you're
+ supposed to put here
+ and you can also put your jenkins host
+ here
+ where you have the Boozang tests
+ now all of a sudden you get two new
+ icons in x-ray one thing that runs the
+ tests in jenkins and another one that
+ opens the scenario in Boozang
+ so
+ as usual we use the api to synchronize
+ Boozang with x-ray and this is working
+ well but of course now if you see a
+ problem you can relaunch it
+ from your ci server and we could put it
+ in place for any ci server here it's a
+ very simple integration so you can
+ execute any x-ray test here and also you
+ can open the test directly in Boozang
+ which helps with an even tighter
+ mapping so we're super excited about
+ this
+ and i hope i will be able to show you
+ more after we have this in production a
+ little while
