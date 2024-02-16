@@ -125,7 +125,7 @@ module.exports = {
         'api-testing/api-json',
         'api-testing/temporary-database',
         'api-testing/tree-view',
-        'api-testing/json-path',
+        // 'api-testing/json-path',
         'api-testing/json-compare',
         'api-testing/load-test',
       ],
