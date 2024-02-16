@@ -1,6 +1,6 @@
 Transcript for [Boozang Feature: Loop data view](https://www.youtube.com/watch?v=zHDmcl2pIh0) by [Merlin](https://merlin.foyer.work/)
 
- sometimes in busan
+ sometimes in Boozang
  there is a need to do a little more
  robot process automation and as you know
  we have very good support for this you

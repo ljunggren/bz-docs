@@ -2,11 +2,11 @@ Transcript for [Boozang Feature: Flag](https://www.youtube.com/watch?v=Gj9yAf6KG
 
  hello
  today i'm just going to show you the
- feature flag in busan
+ feature flag in Boozang
  and flag is something that you use to
- handle conditional situations in busan
+ handle conditional situations in Boozang
  and of course you can use if groups you
- can use the n statement in busan
+ can use the n statement in Boozang
  you can use loops there's many many
  different ways to handle conditionals
  but flag is one of the more flexible and

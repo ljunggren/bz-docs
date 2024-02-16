@@ -2,8 +2,8 @@ Transcript for [Boozang Introduction: Elements selectors](https://www.youtube.co
 
  now i'm going to show you how to
  customize an individual element selector
- in busan
- busan uses natural language for element
+ in Boozang
+ Boozang uses natural language for element
  selection so it's a proprietary way to
  find elements in your user interface
  and the reason why it uses a natural
@@ -28,7 +28,7 @@ Transcript for [Boozang Introduction: Elements selectors](https://www.youtube.co
  into the element selector box and hit
  this edit pen and that's going to open
  up the dome picker and this is a little
- bit new it's very very powerful in busan
+ bit new it's very very powerful in Boozang
  but for people who are used to selenium
  and other languages this is going to be
  a little bit novel the way you can do it

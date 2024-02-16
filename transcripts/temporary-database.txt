@@ -11,7 +11,7 @@ Transcript for [Feature Highlight: Temporary database](https://www.youtube.com/w
  with
  working with api tests
  and as we've developed the api testing
- in busan
+ in Boozang
  we've seen an increasingly need
  increasing need that
  when you have one api request you can
@@ -140,7 +140,7 @@ Transcript for [Feature Highlight: Temporary database](https://www.youtube.com/w
  star that indicates what would be used
  in an exist call so we know here and we
  can inspect in the data and we can see
- here this is indeed busan brewer ar
+ here this is indeed Boozang brewer ar
  which is the right
  data that we should use in this case
  so now you see a little bit on how you

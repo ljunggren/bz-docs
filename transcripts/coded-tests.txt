@@ -1,12 +1,12 @@
 Transcript for [Boozang Feature: Coded tests](https://www.youtube.com/watch?v=YnAPWQPtP3Y) by [Merlin](https://merlin.foyer.work/)
 
  now i'm going to talk about coded tests
- in busan and
+ in Boozang and
  what we've seen here i have a very
  simple
  straightforward test that i actually
  recorded and now there is a new coded
- view in busan
+ view in Boozang
  where if you switch over you get the
  actual code for the test and as you can
  see because the selectors are so simple

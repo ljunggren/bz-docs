@@ -1,7 +1,7 @@
 Transcript for [Boozang Feature: API load test](https://www.youtube.com/watch?v=Vzp5W-AoVJM) by [Merlin](https://merlin.foyer.work/)
 
  one additional feature that we recently
- changed in busan is the api loading test
+ changed in Boozang is the api loading test
  so we supported this before but right
  now we've changed it so it's a new
  action type so the way it works is that

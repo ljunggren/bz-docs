@@ -1,7 +1,7 @@
 Transcript for [Boozang Feature: Root-cause analysis](https://www.youtube.com/watch?v=GGPygfe3dpk) by [Merlin](https://merlin.foyer.work/)
 
  i will now talk about root cause
- analysis in busan something that's been
+ analysis in Boozang something that's been
  part of our product now for over a year
  but we're finding it being more and more
  useful especially when you have
@@ -90,9 +90,9 @@ Transcript for [Boozang Feature: Root-cause analysis](https://www.youtube.com/wa
  it with the url or if you leave the url
  blank if you click on it like this it
  will just show with the issue and the
- description in busan so you can choose
+ description in Boozang so you can choose
  if you want to kind of
- handle all your tickets as busan which i
+ handle all your tickets as Boozang which i
  don't think is very likely you'll
  probably use an external ticket system
  and you'll fill in the url here and then

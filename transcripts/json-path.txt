@@ -13,13 +13,13 @@ Transcript for [Extract data using JSON path](https://www.youtube.com/watch?v=o4
  we convert the XML to Json
  and where you want to see these examples
  to understand this you will go to
- docs.busang.com and you'll go into API
+ docs.Boozangg.com and you'll go into API
  testing and I will talk about now the
  Json path which is this new
  functionality that we built and you have
  usage examples here to understand this
  the best thing is to look at examples
- here I have the Busan tool and I
+ here I have the Boozang tool and I
  prepared some example data here and a
  number of
  Expressions to extract parts of the Json
@@ -109,7 +109,7 @@ Transcript for [Extract data using JSON path](https://www.youtube.com/watch?v=o4
  to work for you and see if there are any
  operations missing we think this is very
  very powerful so go to
- docs.busang.com and look at Json path
+ docs.Boozangg.com and look at Json path
  for the different extra examples and
  play with it yourself and see if there's
  anything that you're missing here but we

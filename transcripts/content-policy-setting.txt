@@ -21,7 +21,7 @@ Transcript for [Boozang Feature: Content Policy tab](https://www.youtube.com/wat
  working with you to make this
  really good
  something that is very very useful is
- ignore request url as you know busan
+ ignore request url as you know Boozang
  always listens to
  all the requests that goes out from the
  browser and waits for it to make sure
@@ -75,7 +75,7 @@ Transcript for [Boozang Feature: Content Policy tab](https://www.youtube.com/wat
  page
  there will be a kind of a spinner or
  something like that then you can capture
- it here and then busan will
+ it here and then Boozang will
  automatically wait for that element to
  disappear uh also making your tests to
  run

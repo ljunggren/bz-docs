@@ -2,7 +2,7 @@ Transcript for [Boozang Feature: Adaptive screen sizes](https://www.youtube.com/
 
  before we had some issues
  with lining up the
- ide busan window and the application
+ ide Boozang window and the application
  window side by side
  and we were trying to be too smart
  now instead we have allowed you to

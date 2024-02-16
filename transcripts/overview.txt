@@ -5,7 +5,7 @@ Transcript for [Boozang Introduction: Overview of the tool](https://www.youtube.
  and maybe give a few tips
  on what to think about when you're doing
  test automation
- when you're in busan you see you have
+ when you're in Boozang you see you have
  this big sidebar with many different
  things to choose from well
  normally when you're creating tests you
@@ -29,7 +29,7 @@ Transcript for [Boozang Introduction: Overview of the tool](https://www.youtube.
  tabs here between modules and features
  well
  this is one thing that can be a little
- bit confusing at first in busan
+ bit confusing at first in Boozang
  inside modules you will have your test
  automation code your tests basically
  your test scripts

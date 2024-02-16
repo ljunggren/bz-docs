@@ -1,7 +1,7 @@
 Transcript for [Boozang Feature: Undo / Redo and Test revisions](https://www.youtube.com/watch?v=WwnujKLPah0) by [Merlin](https://merlin.foyer.work/)
 
  i will now explain the undo redo
- functionality in busan we've had that
+ functionality in Boozang we've had that
  now for a couple of years but we've
  updated it to save everything
  server-side in the database this will

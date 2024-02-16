@@ -2,13 +2,13 @@ Transcript for [Boozang Feature: Recording a test and customizing it](https://ww
 
  hello
  today i'm just going to redo a simple
- recording using the busang tool let me
+ recording using the Boozangg tool let me
  show you how you can customize the
  different actions as we've changed the
  user interface a little bit
  uh hopefully for the better
  so bear with me what we're using today
- is we're using the lab.busan.com and
+ is we're using the lab.Boozang.com and
  again i'm going to use form fill as i
  usually do
  and what i'm doing is i'm hitting this

@@ -1,10 +1,10 @@
 Transcript for [Boozang Introduction: Debugging a test-case](https://www.youtube.com/watch?v=IQx-a1KWkaA) by [Merlin](https://merlin.foyer.work/)
 
  there are many ways to debug tests in
- busan so let me show you a couple of
+ Boozang so let me show you a couple of
  them
  here we have a simple test that fills
- out a form in busan
+ out a form in Boozang
  and now of course if you want to debug
  this the way you want to do this is
  probably by double clicking a single
@@ -99,5 +99,5 @@ Transcript for [Boozang Introduction: Debugging a test-case](https://www.youtube
  of course very very powerful for
  debugging purposes so again
  many ways to debug your test case in
- busan especially with a powerful chrome
+ Boozang especially with a powerful chrome
  console

@@ -1,6 +1,6 @@
 Transcript for [Boozang Feature: Generating an API test from the UI](https://www.youtube.com/watch?v=oKmGBlfnGAw) by [Merlin](https://merlin.foyer.work/)
 
- one of the advantages in busan is that
+ one of the advantages in Boozang is that
  as it supports both ui and api test
  we've implemented a functionality where
  you can auto generate
@@ -17,7 +17,7 @@ Transcript for [Boozang Feature: Generating an API test from the UI](https://www
  in api
  and i need to pick my api host in this
  case
- the api is hosted on api.busan.com
+ the api is hosted on api.Boozang.com
  very cool
  so of course now we can create start
  creating manually filling out the query

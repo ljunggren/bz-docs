@@ -16,7 +16,7 @@ Transcript for [Boozang Feature: Execute as single action to speed up tests](htt
  default behavior with a couple of in
  changes to the interface so i'm just
  going to demo this by recording on top
- of the lab.busan.com
+ of the lab.Boozang.com
  slash form fill
  and i'm just going to
  just simply

@@ -20,7 +20,7 @@ Transcript for [Feature Highlight: Open API import](https://www.youtube.com/watc
  so i'm just going to use the url here
  it's not so important but let's use the
  lab
- docbusang.com which is our usual
+ docBoozangg.com which is our usual
  demo site i recommend checking out the
  udemy course on that
  here
@@ -40,7 +40,7 @@ Transcript for [Feature Highlight: Open API import](https://www.youtube.com/watc
  in the web browser and you can then use
  that to do the api requests and this is
  typical when
- like we do in busan often we mix
+ like we do in Boozang often we mix
  api and ui tests okay
  so remember the first thing you want to
  do is go through here and set up the ai
@@ -60,7 +60,7 @@ Transcript for [Feature Highlight: Open API import](https://www.youtube.com/watc
  an api spec
  that we cannot import i really really
  urge you to reach out to us at support
- at busan.com because the open api spec
+ at Boozang.com because the open api spec
  is pretty loose
  and we've tried this maybe on 10 or 15
  different specifications but your

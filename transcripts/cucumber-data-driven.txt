@@ -53,7 +53,7 @@ Transcript for [Boozang Introduction: Implementing a data-driven Cucumber test](
  validation as an exercise for you to
  work on
  now for the data driven part
- as you know busan is by default data
+ as you know Boozang is by default data
  driven so what we're going to do is
  we're just going to fill out the form
  here
@@ -117,9 +117,9 @@ Transcript for [Boozang Introduction: Implementing a data-driven Cucumber test](
  ahead and run all of them so what you're
  going to see is how simple it is to have
  a set of data create a test step in
- busan
+ Boozang
  and basically create a data driven test
- in busan so
+ in Boozang so
  what we do we really specialize in
  making sure that you can create very
  reusable tests and very easily send data

@@ -15,7 +15,7 @@ Transcript for [Boozang Feature: Looping over test case data](https://www.youtub
  have reserved the keyword data that will
  automatically
  kind of assume that it's loop data so we
- have this test case on the lab.busan.com
+ have this test case on the lab.Boozang.com
  that just fills the form so i'm just
  going to really simply create
  a loop condition where we take
@@ -76,7 +76,7 @@ Transcript for [Boozang Feature: Looping over test case data](https://www.youtub
  to like delete the number of persons to
  clean up some data or something like
  that so this is very useful
- of course this has been with busan from
+ of course this has been with Boozang from
  the beginning the only news is that you
  see here is that when you use
  the data keyword we suggest for you to

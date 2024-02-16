@@ -1,10 +1,10 @@
 Transcript for [Boozang Introduction: Introduction to data](https://www.youtube.com/watch?v=eumv5m0rmOI) by [Merlin](https://merlin.foyer.work/)
 
- in busan to create reusable tests you
+ in Boozang to create reusable tests you
  often need to use data just like in
- regular programming and busan supports
+ regular programming and Boozang supports
  many different data types the way you
- set data in busan is that when you're
+ set data in Boozang is that when you're
  inside the project navigation you know
  you have selected this topmost icon you
  will access the data tab
@@ -84,6 +84,6 @@ Transcript for [Boozang Introduction: Introduction to data](https://www.youtube.
  and
  let us know if anything is unclear but
  this is something that is very powerful
- in the busan tool and i think the key is
+ in the Boozang tool and i think the key is
  to get started using data and you can
  get a hang of it pretty fast

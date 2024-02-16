@@ -5,7 +5,7 @@ Transcript for [Boozang Feature: Javascript action and util function](https://ww
  actions
  and of course this is something that
  we've been doing from the beginning with
- busan for several years now but i think
+ Boozang for several years now but i think
  it would require i just want to show
  with you till function that we added and
  demonstrate the difference so

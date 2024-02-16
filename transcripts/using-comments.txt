@@ -1,7 +1,7 @@
 Transcript for [Boozang Feature: Using Comments](https://www.youtube.com/watch?v=ywuO4zPk3lk) by [Merlin](https://merlin.foyer.work/)
 
  now i'm going to demonstrate the feature
- the comment function in busan
+ the comment function in Boozang
  uh this is something we have had live
  for a long time and then it stopped
  working for a little bit and now we
@@ -9,7 +9,7 @@ Transcript for [Boozang Feature: Using Comments](https://www.youtube.com/watch?v
  so
  i'm gonna go ahead and create a new test
  here and i'm gonna you use the
- lava.busan.com as usual and what i'm
+ lava.Boozang.com as usual and what i'm
  gonna do is now i'm just gonna say
  annotate
  bugs okay
@@ -18,7 +18,7 @@ Transcript for [Boozang Feature: Using Comments](https://www.youtube.com/watch?v
  thing
  and we're going to use the page visual
  bugs and if you click on it here you can
- find this at the lab dot busan dot com
+ find this at the lab dot Boozang dot com
  slash visual bugs okay
  the comment function is used to just
  annotate bugs in the user interface and

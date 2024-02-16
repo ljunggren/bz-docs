@@ -26,21 +26,21 @@ Transcript for [Boozang Feature: Xray integration](https://www.youtube.com/watch
  supposed to put here
  and you can also put your jenkins host
  here
- where you have the busan tests
+ where you have the Boozang tests
  now all of a sudden you get two new
  icons in x-ray one thing that runs the
  tests in jenkins and another one that
- opens the scenario in busan
+ opens the scenario in Boozang
  so
  as usual we use the api to synchronize
- busan with x-ray and this is working
+ Boozang with x-ray and this is working
  well but of course now if you see a
  problem you can relaunch it
  from your ci server and we could put it
  in place for any ci server here it's a
  very simple integration so you can
  execute any x-ray test here and also you
- can open the test directly in busan
+ can open the test directly in Boozang
  which helps with an even tighter
  mapping so we're super excited about
  this

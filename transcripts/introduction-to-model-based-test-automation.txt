@@ -23,6 +23,6 @@ Transcript for [Boozang: Introduction to model-based test automation](https://ww
  the test creation and almost all of the
  test maintenance
  so go and sign up for the beta at
- busang.com
+ Boozangg.com
  beta and join us in this exciting new
  way of doing test automation

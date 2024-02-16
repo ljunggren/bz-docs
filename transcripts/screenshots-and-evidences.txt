@@ -15,7 +15,7 @@ Transcript for [Boozang Feature: Screenshots & Evidences](https://www.youtube.co
  but also how we support reference
  screenshots and additional evidence
  so in order to do that i've created a
- very simple test in busan
+ very simple test in Boozang
  and it's a cucumber test
  and it's simple it has a step a given i
  am logged in it logs you in

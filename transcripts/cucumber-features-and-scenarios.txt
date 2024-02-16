@@ -3,7 +3,7 @@ Transcript for [Boozang Introduction: Cucumber Features and Scenarios](https://w
  as we've redone a lot of the cucumber
  functionality i'm going to create a
  couple of videos that shows you
- how to work with cucumber now in busan
+ how to work with cucumber now in Boozang
  so what i've done is i've created an
  empty project for us to demo on
  and so what i'll do is
@@ -22,7 +22,7 @@ Transcript for [Boozang Introduction: Cucumber Features and Scenarios](https://w
  here is a little taste of what you're
  going to see
  as usual
- remember when you're in busan and you go
+ remember when you're in Boozang and you go
  up to the main navigation will have
  modules which is the code domain where
  you test live and in cucumber that would
@@ -42,9 +42,9 @@ Transcript for [Boozang Introduction: Cucumber Features and Scenarios](https://w
  x-ray and acer okay so you can
  synchronize the features directly from
  them where they would be the master
- system and busan would be the slave so
+ system and Boozang would be the slave so
  all the test step implementations will
- live in busan
+ live in Boozang
  and of course the execution engine and
  then the actual cucumber files would
  live in your version control system or
@@ -67,10 +67,10 @@ Transcript for [Boozang Introduction: Cucumber Features and Scenarios](https://w
  and then instead of filling out the
  feature name just click import features
  and paste all of this straight into
- busan and will auto generate the
+ Boozang and will auto generate the
  features
  and the scenarios inside that means that
- in busan that would mean it's kind of a
+ in Boozang that would mean it's kind of a
  you know a feature
  you will create the future name sorted
  list then you create a test suite sorted
@@ -79,8 +79,8 @@ Transcript for [Boozang Introduction: Cucumber Features and Scenarios](https://w
  click into it the feature will of course
  show up as not implemented
  so that's one way to get really quickly
- started with busan so let me i mean
- cucumber in busan and remember that all
+ started with Boozang so let me i mean
+ cucumber in Boozang and remember that all
  of these are executable directly when
  they're imported they will just show us
  non not implemented in the report right
@@ -118,4 +118,4 @@ Transcript for [Boozang Introduction: Cucumber Features and Scenarios](https://w
  so the next
  uh
  video we're gonna look at how would you
- implement these things in busan
+ implement these things in Boozang

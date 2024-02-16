@@ -24,7 +24,7 @@ Transcript for [Boozang Introduction: Branches, merging, and merge requests](htt
  simp simple navigation
  test called click links and of course
  this is not to demonstrate the power of
- the busang tool it is just to show you
+ the Boozangg tool it is just to show you
  how to work with versioning so of course
  here we're just going to record a very
  simple test going through a couple of

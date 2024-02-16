@@ -1,6 +1,6 @@
 Transcript for [Boozang: Introduction to modelling](https://www.youtube.com/watch?v=bzocfoIlyS4) by [Merlin](https://merlin.foyer.work/)
 
- in busan we are super excited to
+ in Boozang we are super excited to
  announce
  a concept where we scan your application
  to build test coverage

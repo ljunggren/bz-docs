@@ -1,14 +1,14 @@
 Transcript for [Boozang Feature: Log formatter](https://www.youtube.com/watch?v=YYi0thrp8Fc) by [Merlin](https://merlin.foyer.work/)
 
  we've just introduced the log formatter
- in busan and it's an addition to the
+ in Boozang and it's an addition to the
  extension so make sure you're running
  the latest extension
  when we're recording this video that's
  380.
  this modification will greatly improve
  your troubleshooting capabilities as you
- know we log a lot of things in busan so
+ know we log a lot of things in Boozang so
  when running it for instance from a ci
  server sometimes it's hard to find the
  root cause maybe you have a problem that

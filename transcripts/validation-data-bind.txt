@@ -4,7 +4,7 @@ Transcript for [Boozang Feature: Validation data-bind](https://www.youtube.com/w
  bind feature
  this should be a pretty short demo
  um as you know when we record a form
- fill or any sort of data entry in busan
+ fill or any sort of data entry in Boozang
  we by default
  data bind it to the parameter space so
  you can send parameters to test and of
@@ -14,7 +14,7 @@ Transcript for [Boozang Feature: Validation data-bind](https://www.youtube.com/w
  in this case i'm also going to show how
  we do this for validations okay
  so what i'm going to do is i'm going to
- use the lab so that's the lab.busan.com
+ use the lab so that's the lab.Boozang.com
  and i'm going to go ahead and just uh
  create the test that is called add
  validate

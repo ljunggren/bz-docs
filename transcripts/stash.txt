@@ -1,6 +1,6 @@
 Transcript for [Boozang feature: Stash and Stash Pop](https://www.youtube.com/watch?v=bXUsK1S4eRQ) by [Merlin](https://merlin.foyer.work/)
 
- now in the busang versioning control we
+ now in the Boozangg versioning control we
  also support stash so let me illustrate
  stash for you this is very similar to G
  stash let's say I'm in my uh feature

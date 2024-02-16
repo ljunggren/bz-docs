@@ -1,7 +1,7 @@
 Transcript for [Boozang Feature: Loop over CSV data](https://www.youtube.com/watch?v=8i8ZykTqd1Y) by [Merlin](https://merlin.foyer.work/)
 
  let me demonstrate the new csv data
- editor in busan
+ editor in Boozang
  often when you have a test case that
  enters a set of data like this filling
  out the form here you can see you can

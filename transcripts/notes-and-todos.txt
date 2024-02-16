@@ -2,7 +2,7 @@ Transcript for [Boozang Feature: Notes and Todos](https://www.youtube.com/watch?
 
  the next feature i'm going to show you
  now is the way to
- leave little notes in busan
+ leave little notes in Boozang
  uh
  there's a few different ways to do this
  and the key is as your project grows and
@@ -21,7 +21,7 @@ Transcript for [Boozang Feature: Notes and Todos](https://www.youtube.com/watch?
  i'm clicking introduction overview speed
  gain weight game yellow or blue cat or
  dog and again this site i'm using to
- demo this is the lab.busan.com
+ demo this is the lab.Boozang.com
  you might have seen that before
  so i'm just going to go ahead and stop
  this and play this back nothing strange
