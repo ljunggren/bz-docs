@@ -1,0 +1,87 @@
+Transcript for [Boozang Feature: Javascript action and util function](https://www.youtube.com/watch?v=8MTd0qLAudU) by [Merlin](https://merlin.foyer.work/)
+
+ i will now demo uh how you add
+ javascript uh and how you run javascript
+ actions
+ and of course this is something that
+ we've been doing from the beginning with
+ busan for several years now but i think
+ it would require i just want to show
+ with you till function that we added and
+ demonstrate the difference so
+ let's say i want to
+ run some javascript on this application
+ page right
+ here i have some simple jquery
+ javascript saying
+ you know add this uh a piece of
+ html into the dom tree on the document
+ body using a pen too
+ so if i run this of course what you can
+ see here is that it appended this little
+ demo into the application so what i want
+ to remind you to do is of course here
+ you play it on app right not on ide
+ so ide would be you want to run some
+ javascript in this window
+ and app would be you run it in your
+ application window so that's the
+ standard thing you want to do
+ and we can simply demonstrate this i'll
+ use location href i set the url of
+ course if i go and play this on the app
+ it will go to google and of course if i
+ would do it on ide i'm totally gonna
+ mess this up now because i'm gonna send
+ myself to google
+ so
+ well what you can see here is if i open
+ this and i run a piece of javascript
+ here of course it's not going to be
+ persistent in a reload
+ so we were fighting a really difficult
+ problem with a payment system that was
+ running a piece of the javascript that
+ would kind of oh yeah you're trying to
+ automate me oh i don't like this so it
+ was kind of failing out so what we did
+ was we added
+ a bit of persistent javascript that uses
+ the extension to inject javascript so
+ this is you know a little bit risky you
+ got to know what you're doing but i want
+ to tell you that this exists
+ so what we do is you you'll use util
+ extend
+ it says exception script here that's a
+ typo but don't mind that for now it's
+ going to be extend extension script so
+ you're going to use extend extension
+ script okay and i defined a bit of a
+ code here so if i run this
+ what it's going to do is it's the next
+ time you reload your page it's always
+ going to inject this data and i can
+ reload this as much as i want so you can
+ use this to kind of create a little bit
+ of a adapter or javascript hook that
+ always is present in your application
+ page you can use this to intercept
+ functions doing overrides pretty
+ powerful stuff so i
+ encourage you to check it out but now as
+ you can see it's stuck what do i do well
+ simply run extend again extension script
+ with no arguments
+ and next reload it will be removed so
+ you know reach out to us if you want to
+ know more about this function and how it
+ works but just be aware that there is
+ something you can use here and it can be
+ very very powerful for certain hairy
+ situations where you have maybe an
+ off-the-shelf application that doesn't
+ do what you want it to do
+ or is resistant to automation then we
+ can trick it a little bit using this
+ function

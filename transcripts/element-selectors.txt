@@ -1,0 +1,114 @@
+Transcript for [Boozang Introduction: Elements selectors](https://www.youtube.com/watch?v=iBaT8qgHaR4) by [Merlin](https://merlin.foyer.work/)
+
+ now i'm going to show you how to
+ customize an individual element selector
+ in busan
+ busan uses natural language for element
+ selection so it's a proprietary way to
+ find elements in your user interface
+ and the reason why it uses a natural
+ language is that many modern frameworks
+ are of course using dynamic classes or
+ classes that vary or ids that are
+ completely random so we don't
+ rely on ids and classes you can of
+ course base your selector
+ by customizing them on classes and ids
+ but we try to base the selector or
+ what's being shown in the interface
+ so that aligns or test with the way a
+ manual tester would test it basically
+ fill out the first name that's why you
+ see here the element selector in this
+ example i'm going to close the execution
+ view you see it says fill the first name
+ with parameter first name fill lastname
+ with parameter lastname
+ if we want to customize this you will go
+ into the element selector box and hit
+ this edit pen and that's going to open
+ up the dome picker and this is a little
+ bit new it's very very powerful in busan
+ but for people who are used to selenium
+ and other languages this is going to be
+ a little bit novel the way you can do it
+ is that you will
+ click
+ on a certain element here and it's going
+ to take whatever you selected and go up
+ the tree
+ and you can see
+ what's being selected in the application
+ window
+ and then if you want to this to be added
+ to the path you'll hit the checkbox
+ inside
+ an individual
+ selector that you've selected you can
+ now use different method for instance
+ after before which is just
+ used to say
+ after this element or before this
+ element
+ you have contains
+ which is to say
+ look for this string inside this element
+ and then you also have the near selector
+ which is a custom selector that we use
+ to find
+ uh elements in a form or a checkbox to
+ match
+ labels with elements and the best way to
+ figure this out is to experiment
+ but one thing i can show you is that for
+ instance if we have an input box like
+ this we select it and we see that it's
+ good as you can see
+ it says it's unique and it's 90
+ milliseconds to find and then of course
+ if i would choose a different
+ method here like for instance an after
+ method i can see the speed is being
+ recalculated but i can still see it's
+ being unique so here you can play around
+ by customizing the the particular path
+ what you want to do often is that after
+ you customize the path you want to
+ double click and make sure that it's
+ still working that it still finds the
+ element and also you also want to make
+ sure that it says it's unique
+ another thing that could be interesting
+ to do is that when you change
+ a single thing here for instance if i
+ put in
+ last name here
+ i can actually try and automatically
+ match the method so i'm going to hit the
+ refresh for the method now
+ and you know what it tells me if it's
+ last name but it's this element i want
+ to get it will take tell me that's the
+ element before the before selector will
+ be the recommended selector to use
+ so this way if you want to basically
+ locate this element that you've selected
+ based on this label you can simply just
+ type it into text and click refresh to
+ how to generate the method
+ and the other way around if you want to
+ out to regenerate the string let's say i
+ will use after
+ i can out to generate the string i
+ should use first name as the selector so
+ try and play around with this
+ learn about the selectors it's very very
+ powerful selectors and also
+ if you want to use attributes like class
+ or id
+ you can simply click these check boxes
+ for any single like the input you will
+ see any classes or ids or other
+ attributes being shown here and you can
+ of course add them to your selector if
+ needed

@@ -1,0 +1,103 @@
+Transcript for [Boozang Introduction: Debugging a test-case](https://www.youtube.com/watch?v=IQx-a1KWkaA) by [Merlin](https://merlin.foyer.work/)
+
+ there are many ways to debug tests in
+ busan so let me show you a couple of
+ them
+ here we have a simple test that fills
+ out a form in busan
+ and now of course if you want to debug
+ this the way you want to do this is
+ probably by double clicking a single
+ action you can execute it and make sure
+ that
+ what's happening is what you expect here
+ it fills out the first name and here
+ i'll double click and it fills out the
+ last name
+ if you want to debug this with a
+ specific
+ set of data that is not something you've
+ defined in parameter you can override
+ that on a single action using debug
+ action so let's open this and let's try
+ another test value here we'll say test
+ value here and i'll hit the play button
+ and now you see now you've debugged this
+ with some custom value and this is
+ especially good to do with validations
+ there are also other ways to debug the
+ test if you're playing it you want to
+ stop at a certain point you can set a
+ break point so let me demonstrate that
+ this will play the test
+ until the break point
+ and as you see it's now stopped at the
+ break point so what do we do here
+ there's a few things we can do we can go
+ into the
+ console and let's delete this and delete
+ the filter
+ in the console we can now type
+ parameter
+ and we will get the current value
+ when this test is being executed at this
+ specific point and then if we want to
+ continue the execution we can simply
+ press play
+ there is also a way to go back and see
+ what data we had at a certain point
+ if you look at this um
+ console window you will see the log from
+ the test execution and what you've
+ logged but you can also see a snapshot
+ in time what the data was here
+ in the drop down on the data snapshot
+ there's also some more advanced
+ debugging capabilities that you can use
+ so let's remove this breakpoint by
+ clicking it again and let's go into the
+ action settings here
+ you see now i've added the script
+ function and now i want to log a
+ particular value so i added these
+ brackets dash dash dash you don't have
+ to do that but i'll show you why that
+ can be useful and i'm simply putting
+ javascript in here where i'm debugging
+ the
+ particular value of email here so let's
+ play this again
+ and as you can see
+ now
+ uh you can go into the console window
+ and now you remember i put dash dash
+ dash and you can see now i am testing
+ with email aa bb.com
+ and then the most powerful way to debug
+ which you don't usually need to use but
+ which can be very very powerful is that
+ you can add a breakpoint inside the
+ script and then you can use the
+ debugging capability
+ of
+ the
+ of the browser of the chrome browser
+ right so what i'm going to do now is
+ i'll keep the
+ inspect open the chrome development
+ console open and i play the test case
+ back
+ and now you can see the
+ the actual
+ log happening in the chrome console
+ but of course you can also now see you
+ see you have the debugger here and now
+ you can hover over the variables
+ see what value a variable have and you
+ can also use the step over function or
+ resume in the chrome console and this is
+ of course very very powerful for
+ debugging purposes so again
+ many ways to debug your test case in
+ busan especially with a powerful chrome
+ console

@@ -1,0 +1,113 @@
+Transcript for [Boozang Introduction: Overview of the tool](https://www.youtube.com/watch?v=04dgNzouE1w) by [Merlin](https://merlin.foyer.work/)
+
+ now i'm gonna go over the different
+ parts of the tool
+ and maybe give a few tips
+ on what to think about when you're doing
+ test automation
+ when you're in busan you see you have
+ this big sidebar with many different
+ things to choose from well
+ normally when you're creating tests you
+ want to make sure that you've selected
+ this topmost icon that's basically the
+ navigation tree the creation view where
+ you create test and playback test okay
+ so
+ if you
+ look here on the right hand side you
+ will see your list of modules
+ and on the right hand side you see the
+ sidebar with
+ you can choose between different views
+ for instance if you want the card
+ presentation you can press here but you
+ can also have a graphical presentation
+ of your testing tree
+ normally you will use this top one
+ as you can see there is also
+ tabs here between modules and features
+ well
+ this is one thing that can be a little
+ bit confusing at first in busan
+ inside modules you will have your test
+ automation code your tests basically
+ your test scripts
+ under features you will have your
+ cucumber code your business logic
+ basically
+ scenarios and features that
+ use the syntax given when then
+ if you're not using cucumber testing you
+ can completely ignore this feature
+ section but we do recommend you using
+ give and when then so you will be in the
+ business domain here creating the
+ features
+ or you know
+ having the features here being
+ synchronized from an external system and
+ then you'll tie it to test automation
+ code
+ in the module sections
+ inside
+ any module you will see that
+ you will have a list of tests
+ and if you go
+ of course first you'll see you'll have
+ different test types here you have tests
+ api tests
+ scenarios which you don't usually use
+ it's a special ai case that you won't
+ usually use but it allows you to put
+ crud test for given when done inside
+ your modules
+ you have your suite which is your test
+ suite that is used to drive tests and
+ you have sub modules to be able to break
+ down your application into smaller
+ modules
+ inside the existing modules
+ inside any test
+ you will find the test steps which are
+ the
+ actions here
+ so if you want to execute a single
+ action you can simply double click it
+ you will also find
+ a sidebar with a number of functions
+ and a number of sub tabs that
+ number of tabs that has
+ different
+ ways
+ to troubleshoot and to set data for your
+ test and also different sub
+ tabs that will describe the details of a
+ single action
+ so again you'll have a data tab that has
+ the test data you'll have a console tab
+ that will help you troubleshoot
+ you will have the test setting tab that
+ has the title of your test and also
+ parameters and you'll have the action
+ setting that is the detailed setting for
+ each and every action
+ and inside the action setting you will
+ have three sub-tabs the main tab that
+ has the element and the values being set
+ the
+ condition tab that allows you to
+ customize the outcome of an action and
+ also a more advanced scripting tab that
+ allows you to
+ apply specific javascript or individual
+ loops on a specific action
+ so that's a general overview of the tool
+ there's also of course much more actions
+ in the sidebar and things you can do
+ settings
+ ci server reports etc but we're not
+ going to go into that right now in order
+ to get started
+ simply create the module create a test
+ and start recording actions

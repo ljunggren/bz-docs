@@ -1,0 +1,83 @@
+Transcript for [Boozang Feature: Notes and Todos](https://www.youtube.com/watch?v=YmBce5D9nGM) by [Merlin](https://merlin.foyer.work/)
+
+ the next feature i'm going to show you
+ now is the way to
+ leave little notes in busan
+ uh
+ there's a few different ways to do this
+ and the key is as your project grows and
+ you work in a team it's good to be able
+ to mark a test for instance there is
+ still yet to be work to be done here or
+ the classical thing that you usually do
+ in programming which is to do
+ so let me show you this so first of all
+ if i create a new test let's say i'm
+ going to call this note
+ demo
+ i'm creating a test and i'm just going
+ to go ahead and record a couple of
+ actions here so let's say
+ i'm clicking introduction overview speed
+ gain weight game yellow or blue cat or
+ dog and again this site i'm using to
+ demo this is the lab.busan.com
+ you might have seen that before
+ so i'm just going to go ahead and stop
+ this and play this back nothing strange
+ it goes over all the different links
+ right
+ now let's say we know that a speedy game
+ here is going to change
+ its name okay
+ and we want to make a note here remember
+ this what i do is i'm going to go here
+ i'm going to go down into the action
+ panel here and i'm going to click on the
+ note
+ and i'm just going to add something
+ this will
+ change
+ name
+ to
+ um
+ let's call this this will be
+ the
+ the
+ speed
+ speeding game okay
+ and as you can see
+ i have now marked this as a note so now
+ when i'm you know out navigating and i'm
+ coming back
+ into the test here to note demo i can
+ directly see that there's something to
+ be done here or something to take note
+ of what i can also do is i can also do
+ it something a little bit stronger i'll
+ click on this note and i say
+ this is urgent
+ to be fixed and what i'm doing i'm
+ hitting the little to-do and now it
+ gives me a little to-do batch
+ for me to see very easily so these are a
+ few ways you can you know when you're
+ doing test and testing progress how you
+ can lead to those and notes
+ in your test and also remember if you
+ want to you can also leave a note on the
+ global test and the way you do it you'll
+ pick here and you say this test is
+ unfinished and then it will also were
+ finished
+ and then it will also leave a global
+ note on the test and as you can see as i
+ hover over this you can see that this
+ test is unfinished
+ and on the note uh you see
+ you can also read it from the title tag
+ so there's a few ways on how you can
+ leave notes
+ to other team members and also to
+ yourself
+ in busa

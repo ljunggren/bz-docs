@@ -1,0 +1,120 @@
+Transcript for [Extract data using JSON path](https://www.youtube.com/watch?v=o4w51Zd3Yj4) by [Merlin](https://merlin.foyer.work/)
+
+ hello uh now I'm going to talk about a
+ new feature that we've been working on
+ and there's two parts of this usually
+ when you have API tests with large
+ payloads
+ we need to have an expression to do two
+ different things one thing is to
+ validate payloads another thing is to
+ extract data from large Json payloads
+ and this also goes for XML testing where
+ we convert the XML to Json
+ and where you want to see these examples
+ to understand this you will go to
+ docs.busang.com and you'll go into API
+ testing and I will talk about now the
+ Json path which is this new
+ functionality that we built and you have
+ usage examples here to understand this
+ the best thing is to look at examples
+ here I have the Busan tool and I
+ prepared some example data here and a
+ number of
+ Expressions to extract parts of the Json
+ payload and of course what you need to
+ do is it's a utility function called
+ util extract data where you put the data
+ and the expression
+ with this we also created an editor View
+ and here you can choose do you want to
+ validate or you want to extract so now I
+ will demonstrate extract with a number
+ of examples and here it is very very
+ yeah the best thing is to use the
+ examples to try it I'll just show you
+ that some of the different examples from
+ the documentation
+ on the left hand side you'll put the the
+ Json path example and here as you can
+ see I look at the node data dot name and
+ you can now apply on any test data that
+ you have to see what the result is and
+ as you can see it's data
+ name
+ name two so as you can see it does
+ exactly that it looks for the node data
+ and extracts the name so that's to be
+ expected okay and here of course you can
+ just type in whatever you want I can do
+ name one here and I can refresh and I as
+ you can see there is no match but you
+ can also reselect a different variable
+ here we're using mixed data for the
+ different examples
+ when I use a data and use a parenthesis
+ I do the exact same thing I look for
+ name but I also rename the node so
+ parenthesis means rename
+ another thing you can do is that you can
+ look into the list name and as you can
+ see there is an array inside of here
+ and what you get is an array as the
+ result so this is of course really good
+ when you need to do really complex
+ operations
+ we have another example and of course in
+ the documentation you will find more
+ examples but here you see we just do the
+ name and of course it finds that name
+ node name one
+ we can also do a lot of more complex
+ stuff so for instance here we Define an
+ array with name and value and what it
+ does is it extracts the name node and
+ the value node and as you can see puts
+ it just like that side by side so that
+ of course you would put util extract
+ data and you'll be able to find this so
+ you would typically use this you'll use
+ that operation in the API test and then
+ you can of course do a bunch of things
+ with that
+ we can also kind of search through the
+ tree so so this one we kind of use a
+ wild chord for the key and as you can
+ see if I double click here
+ we will see that it both extract the
+ name node
+ and will the name things underneath here
+ so if I double click the list you can
+ see how that one ends up into an array
+ and also a list object which kind of
+ make sure that you can get and I'll show
+ you
+ you see now you get the first one the
+ object and the name value example like
+ this
+ last example
+ you can use a comma separated thing to
+ both look for the data node and the list
+ node so if I double click here and look
+ at the list it extracts both of them and
+ puts them side by side which is very
+ powerful so
+ for sure this is something you need to
+ experiment with but what we would like
+ you to see is to see if you can get this
+ to work for you and see if there are any
+ operations missing we think this is very
+ very powerful so go to
+ docs.busang.com and look at Json path
+ for the different extra examples and
+ play with it yourself and see if there's
+ anything that you're missing here but we
+ think this is going to be super powerful
+ to be able to extract data and even
+ better to be able to do complex
+ validations on big Json payloads coming
+ from your API tests

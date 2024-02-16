@@ -1,0 +1,315 @@
+Transcript for [Feature Highlight: Open API import](https://www.youtube.com/watch?v=FfzGLTWBiWM) by [Merlin](https://merlin.foyer.work/)
+
+ now i want to talk about a new feature
+ um that we actually launched in beta
+ about a month ago but we'll be doing
+ continuous improvements to this feature
+ uh and now of course i also know how to
+ use it well
+ and this is the open api import and what
+ it allows us to do
+ is to take so i'm just going to create a
+ new
+ project here in our staging environment
+ to
+ um
+ to illustrate this feature
+ what you want to do is always um
+ is that you want to set up
+ the
+ so i'm just going to use the url here
+ it's not so important but let's use the
+ lab
+ docbusang.com which is our usual
+ demo site i recommend checking out the
+ udemy course on that
+ here
+ as soon as we've done this of course i
+ would
+ set up
+ the login
+ basically the authorization basically
+ making sure that we can get both the
+ login working but also that you can get
+ a token for the api if the api requires
+ an authentication token so this is where
+ it's really good to mix
+ ui and api testing because oftentimes
+ in the application you'll have the token
+ available
+ in the web browser and you can then use
+ that to do the api requests and this is
+ typical when
+ like we do in busan often we mix
+ api and ui tests okay
+ so remember the first thing you want to
+ do is go through here and set up the ai
+ authorization
+ by clicking this button and making sure
+ that you have a test case for logging in
+ logging out and retrieving the token
+ when that's done
+ now we can go ahead
+ and import the api spec and what you
+ want to do is you want to be in the root
+ you want to click this and then we'll
+ have import open api specification
+ as an option here
+ and
+ if you have
+ an api spec
+ that we cannot import i really really
+ urge you to reach out to us at support
+ at busan.com because the open api spec
+ is pretty loose
+ and we've tried this maybe on 10 or 15
+ different specifications but your
+ specification can actually
+ a lot of developers the open api spec is
+ not so strict and it's different so we
+ love to learn and expand the capability
+ here still a little bit experimental and
+ a little bit cutting edge to make this
+ work
+ anyways i'm going to show you when you
+ have an example where it works pretty
+ well and this is uh i'm working with a
+ company a marketplace company for
+ micro
+ uh products like craft products
+ so in this case
+ i'm gonna import this and it's gonna be
+ here it's in
+ dock
+ and we're gonna find this
+ where is that let's see
+ okay there it is
+ so this is the open api specification
+ and of course what you typically would
+ like to do is you would add the
+ authorization module here and then you
+ would add the token by clicking this
+ checkbox so that would be the typical
+ way of doing this but what i'm going to
+ do go ahead is just to kind of build the
+ module structure so what it does is it
+ will create an api
+ module structure based on the open api
+ spec
+ so we're going to go ahead here and
+ import and of course this api is very
+ very big and as you can see
+ you see we have a lot of modules here
+ a lot of different things in a
+ marketplace you know you'll have
+ you know the the different users that
+ are tied to different companies
+ and in there you know you'll have a
+ company it's going to own a number of
+ products you'll have a number of formats
+ uh which would be the sub products and
+ then of course these are tied to
+ inventory settings and to prices and
+ then there are you have orders etc etc
+ so it's a really really complex setup uh
+ that's what where this becomes really
+ really powerful and as you can see you
+ can move around modules into each other
+ if you believe they should be sub
+ modules etc etc but right here i'm just
+ going to click continue and i'm actually
+ going to choose a prefix here you'll do
+ that if you want to but as you can see
+ now you have api prefix on all the
+ modules and maybe this is useful in case
+ you mix this with your
+ regular uh you know modules where you
+ might want to keep the api module and
+ the regular ui module separate so it
+ depends if you kind of want to keep them
+ separate or not
+ i go ahead and i click continue
+ and then you can see now it's going to
+ kind of tell you it's going to tell you
+ this is all i'm going gonna do and as
+ you can see there's a little warning
+ here
+ and
+ we see this a lot with open api spec
+ it's like they give the id the api can
+ actually take the id which is usually
+ something that's being generated
+ by the api so i usually remove the id
+ and i do that for all the end points
+ and just means that for instance
+ it doesn't i never would use the id when
+ i would retrieve
+ something in in the post like
+ when i want to create something right
+ and i wouldn't send the id in the post i
+ would create it and expect to get the id
+ back so that's all all that means and
+ that now comes to the the work you got
+ to do and this is a little bit of work
+ and you would go in here and you would
+ do the foreign key mapping and i'm going
+ to try and explain this
+ this is like an alias right so
+ very often you have a number of
+ aliases where in this case i'm going to
+ illustrate something for instance
+ a brewer id here
+ that's a company right
+ so for instance if you say create
+ company you want to know you want to tie
+ it together if it replies with the
+ company id if you're mapping something
+ later you kind of want to tell them a
+ brewer id as a company id and the way
+ you would do that is you would basically
+ select
+ company id
+ and then we use this thing that is
+ usually takes an existing company id and
+ this can automatically actually extract
+ the company id
+ from the temporary database which is
+ something super powerful
+ so now also a buyer id would also be a
+ company id and as you see it remembers
+ here so what you want to do is probably
+ you want to test drive this one time
+ and then play around with it and see
+ what it did and then you probably want
+ to do this properly you know
+ so that's what you do you'll go through
+ here and you'll do all these mappings
+ and maybe you would need some developer
+ help in case it wasn't you who've been
+ working and developing this api and
+ you'll go ahead and start this process
+ and as you can see
+ all the modules are being generated
+ and what we're trying to do here is of
+ course
+ we're trying to create the module for
+ each data type
+ then we want to create kind of crud
+ operations as specified in the open api
+ spec create edit delete right
+ and
+ then and also find right
+ which is usually the get request
+ and then
+ what you want to do is we also want to
+ try and capture the different
+ dependencies
+ and
+ do the mapping as well best as we can
+ and here you can actually see
+ what are the mappings that we've done
+ and if i would have done my work better
+ of course we would see much more things
+ that would be matched
+ a little note that
+ um
+ kind of
+ we're just going to let this finish
+ that relationship that we saw
+ can be found here in in the import we'll
+ have that review module
+ initial parameter mapping
+ so you can go back
+ and find that here
+ if you see what i mean so you can always
+ go back and of course also map here if
+ you need to
+ so
+ let's go into one of them for instance
+ companies
+ you would go in
+ and
+ here let's see it's a little bit of a
+ bug it looks like
+ let's do this
+ let's take
+ let's do a refresh just in case
+ so this is pretty novel functionality so
+ maybe when i didn't do all the mappings
+ we had some issue
+ but here you can see i think it just
+ needed a refresh
+ and as you can see we now see the kind
+ of api
+ module here which is also kind of part
+ of our ai functionality when you do
+ model based development your ui would
+ also be mapped
+ using this kind of thing but of course
+ you can also switch
+ between tests and the old classical view
+ where you have the api tests
+ and you have the the regular tests
+ we also try to generate a scenario which
+ is the create scenario where we have as
+ you can see
+ a number of steps
+ but of course this is a lot of guesswork
+ on our side so we're going to go back
+ to this view and what you can see here
+ what's very important to note this if
+ you hit the settings
+ you'll have all the fields available
+ here and there you can see exactly what
+ did we do and as you can see we made
+ some guesses on the data format but here
+ you can of course
+ modify this and this as you can see is a
+ regular expression so it will generate
+ some and you can also set dependencies
+ which can be very very useful
+ in this case let's look at find products
+ and how you want to look at this as you
+ can see it's created it'd be said skip
+ by default which means it will actually
+ skip this parameter
+ so if you want to for instance
+ find
+ a product or something you would just
+ want to make sure that when you go in
+ here as you can see you can select now
+ okay
+ use this regular expression to generate
+ this field
+ but you can also
+ find
+ if you have in the temporary database
+ already a company id available it will
+ show up here in the drop down
+ so this gives you a little bit of a
+ feeling of course this is
+ highly complex functionality uh we are
+ trying to kind of
+ do as much work and as much of the heavy
+ lifting as possible for you to get
+ started with your api tests from the
+ open api specification
+ a bit experimental but what i really
+ want you to take away is
+ if you have any problems here don't
+ hesitate to reach out because we love
+ if your open api specification isn't a
+ secret we love and see how different
+ companies are solving this kind of open
+ api
+ how they uh
+ you know design their api and then we
+ can also make our tool much better at
+ doing as much of the work for you as
+ possible
+ so
+ there'll be more
+ videos on this particular functionality
+ but here is an introduction of how you
+ want to think
+ when you get started with open api

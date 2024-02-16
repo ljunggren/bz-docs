@@ -1,0 +1,89 @@
+Transcript for [Boozang Introduction: Introduction to data](https://www.youtube.com/watch?v=eumv5m0rmOI) by [Merlin](https://merlin.foyer.work/)
+
+ in busan to create reusable tests you
+ often need to use data just like in
+ regular programming and busan supports
+ many different data types the way you
+ set data in busan is that when you're
+ inside the project navigation you know
+ you have selected this topmost icon you
+ will access the data tab
+ and remember this one is expandable so
+ you got to make sure
+ that you have it here
+ data can be defined on three different
+ level test level module level and
+ project level
+ project level means it's global to the
+ project module level means it can be
+ shared by the tests and accessed by the
+ test in that module and test level the
+ data is only for that test and it's
+ important that you use proper
+ encapsulation so you don't have a bad
+ side effects also if you define all data
+ as global data it's going to be messy
+ so let us try and add data we do that
+ with the plus sign here you see now we
+ have a set of different data types to
+ choose from
+ i could go into these in detail but the
+ easiest way to play around with them is
+ to to learn about these is to play
+ around with them and and test them out
+ object is json data which has name value
+ pairs which is like one level deep so
+ that's perfect for a form field like
+ this you'll have first name last name
+ email and password being stored in a
+ single object
+ the csv data is used for data similar to
+ an excel table when you would have
+ several sets of data and that's also a
+ loopable data type so for instance if
+ you want to enter several users in this
+ form you can use csv data
+ matrix data is very similar to csv data
+ except that you have the first column of
+ that data is the primary key so you
+ don't usually loop from index 0 to n you
+ usually say i want to get the user
+ mats and it would fetch my information
+ based on that primary key
+ the mixed data is to handle complex json
+ data
+ anything you can have object
+ arrays and mixed data here
+ and the request data is to fetch data
+ from external sources for instance you
+ can load data from dropbox or google
+ drive
+ the js is actually not really a data
+ type it's a piece of javascript a
+ function that allows you to generate
+ dynamic content
+ you know we have a content generator
+ based on regular expressions but here
+ you can write your own functions in
+ javascript
+ to generate data
+ property is for single named value pairs
+ so you use that for instance for a
+ single field
+ file data is to use to either store url
+ or to store some binary data the maximum
+ here i think is five kilobytes so try to
+ keep this data small it's only for test
+ purposes
+ and then we have the array that allows
+ you to generate
+ an array of data basically uh you know a
+ comma separated array and that's also a
+ loopable data type
+ so try and play around with this
+ and
+ let us know if anything is unclear but
+ this is something that is very powerful
+ in the busan tool and i think the key is
+ to get started using data and you can
+ get a hang of it pretty fast

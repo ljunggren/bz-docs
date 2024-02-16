@@ -1,0 +1,110 @@
+Transcript for [Boozang Feature: Log formatter](https://www.youtube.com/watch?v=YYi0thrp8Fc) by [Merlin](https://merlin.foyer.work/)
+
+ we've just introduced the log formatter
+ in busan and it's an addition to the
+ extension so make sure you're running
+ the latest extension
+ when we're recording this video that's
+ 380.
+ this modification will greatly improve
+ your troubleshooting capabilities as you
+ know we log a lot of things in busan so
+ when running it for instance from a ci
+ server sometimes it's hard to find the
+ root cause maybe you have a problem that
+ is only appearing when you're running it
+ in jenkins and maybe not when you're
+ running it in the ide
+ and i'm going to show you what kind of
+ game changer this is let's say you have
+ a long complex log like this
+ uh which is what we
+ have it's definitely possible using the
+ search to troubleshoot it but in the
+ extension now we have a log formatter
+ that will greatly improve that so let me
+ demonstrate
+ first of all talk a little bit about the
+ configuration you can automatically
+ activate this
+ by telling
+ basically which is the url you should
+ activate the log formatter for here i've
+ set it to match this url in jenkins and
+ also
+ you can
+ a very slightly complex functionality
+ but when you have several workers that i
+ have you can actually uh
+ kind of merge these logs together and
+ get all the information for all the jobs
+ so we're super excited about this
+ we have also have a couple of
+ performance thresholds that can help you
+ troubleshoot slow tests and slow
+ dispatching but i'm not going to go into
+ detail about that so let's go ahead and
+ hit format current page so what this
+ does is it automatically looks at the
+ log and renders this much more friendly
+ view that you see right now so this is
+ going to be a game changer for
+ troubleshooting so let me demonstrate
+ what we see
+ first of all we have a number of some
+ information around what's the root test
+ case what's the
+ docker runner version and what's your
+ ide version and the extension version
+ this is helpful but also helpful for us
+ if you happen to post these logs for us
+ we will know exactly what version you
+ are running
+ in here instead of giving you this
+ unfriendly log you can now see
+ all the different tests that were run in
+ this case it's cucumber and you can open
+ up
+ and drill into any
+ individual actions like this with the
+ accordions
+ what i really like here
+ is when you just in the overview you can
+ also
+ see directly what is green was
+ successful and what was read was
+ failures and you can very easily see the
+ failure screenshot by clicking on the
+ camera here where i can see the problem
+ not only that uh one thing that is
+ really good is that we've added a number
+ of sorting functions here where you can
+ sort by completion time which is the
+ normal one what
+ completed first second etc
+ but then of course what i really like
+ you can sort by result to get all the
+ failures on top
+ you can sort by performance which i like
+ to do to find my slow tests to see if
+ there's something i can do to improve
+ performance and you can also sort by
+ worker to get them in order
+ which worker executed what tests and
+ also to get an understanding if the
+ tests were kind of shared equally
+ between the workers or if one worker got
+ stuck
+ so there's a lot to explore here i
+ encourage you to check it out
+ there will be a separate video around
+ the root cause analysis here
+ that i will talk about because i find
+ that this is a topic on its own but
+ there's going to be a lot of
+ improvements being done in this view and
+ there's going to be a lot to talk about
+ so
+ i encourage you to check it out
+ and reach out to us if you can't get it
+ to work

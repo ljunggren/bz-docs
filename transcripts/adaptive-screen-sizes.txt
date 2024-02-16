@@ -1,0 +1,47 @@
+Transcript for [Boozang Feature: Adaptive screen sizes](https://www.youtube.com/watch?v=QXFt52AvwUs) by [Merlin](https://merlin.foyer.work/)
+
+ before we had some issues
+ with lining up the
+ ide busan window and the application
+ window side by side
+ and we were trying to be too smart
+ now instead we have allowed you to
+ easily specify
+ what
+ window size of the application that you
+ want
+ you can do the adapter window size which
+ is of course what we were doing before
+ where we adapt the application window
+ but then you can now also of course set
+ to use 100 of the screen size
+ or
+ simply
+ take a set resolution usually on the
+ with
+ or
+ one of the predetermined devices like an
+ iphone
+ and of course if you need to add
+ devices to your list you'll go into more
+ options and you can simply
+ unselect what's not interesting for you
+ and add any devices that you might need
+ like this
+ so now of course i have my galaxy for
+ instance
+ so i think this is going to improve a
+ lot for you to experiment with different
+ screen sizes and emulate a lot of the
+ kind of simple
+ device testing
+ for the web in the web browser that you
+ need to do so i think this is a good
+ step for us to just improve the way that
+ you can adapt for different screen sizes
+ and do simple mobile testing so let us
+ know what you think about this
+ functionality i think it's a pretty good
+ improvement that we have in order to do
+ simple quick
+ tests on top on different screen sizes

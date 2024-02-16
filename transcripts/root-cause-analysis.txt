@@ -1,0 +1,119 @@
+Transcript for [Boozang Feature: Root-cause analysis](https://www.youtube.com/watch?v=GGPygfe3dpk) by [Merlin](https://merlin.foyer.work/)
+
+ i will now talk about root cause
+ analysis in busan something that's been
+ part of our product now for over a year
+ but we're finding it being more and more
+ useful especially when you have
+ complex test scenarios where you have
+ many test scenarios and you need to make
+ sure if there's an automation problem or
+ a real bug and kind of mapping it
+ between your systems
+ what we've done now is
+ we've introduced
+ a log formatter
+ so now directly when you're in the log
+ you can do root cause analysis on your
+ tests so what i like to do
+ is to sort it by a result and i get all
+ my failures in the top
+ and now as you can see if i have now
+ um
+ you see this is a new problem you see
+ you have this little root cause analysis
+ now you can click on this directly to
+ map this out on one of the issues so
+ we'll take the hash we make a hash of
+ the error and you'll put a name maybe
+ you'll say
+ known
+ bug
+ for
+ memory
+ memory issue or whatever it is right
+ that was a bad example so i encourage
+ you to use a better description
+ um and the cool thing here is you can
+ say is it an unknown issue or is it an
+ automation or an application issue what
+ i like to do is to keep separate what is
+ an application issue what is a real
+ issue that needs to be addressed in your
+ application here you can specify the
+ module and the test as the scope usually
+ the hash is enough but sometimes you
+ might want to do that to say when this
+ happens for this test this is the
+ problem and you can assign it so i'll
+ assign it to myself and i will say this
+ is a new issue and then i'll put a
+ description
+ uh this
+ issue occurs
+ when
+ too many
+ workers
+ are accessing
+ the
+ application which is an issue we've seen
+ when you have many workers
+ across the application i'm working on i
+ could get this memory issue for instance
+ the cool thing here is the url so what i
+ will do is i would map this
+ to you know
+ my your ticket system so
+ my ticket system dot com slash
+ uh issue id maybe right
+ and here you would put the real url for
+ instance into your jira
+ so
+ when you've done this
+ then of course next time you run this
+ test this is going to be mapped out as a
+ known bug and what you're going to see
+ here is they're going to be like this
+ little ladybug here you're going to show
+ this and the cool thing is that now
+ you can actually
+ click this one and it will take you
+ right to that url so in this case it's
+ going to be my jira url so now even when
+ the tests are running and you're running
+ the log formatter you can see when is a
+ new bug showing up you can do the
+ analysis and if you already have a known
+ issue you can click on that and see ha
+ this is the thing and you can either
+ show it in your ticket system if you map
+ it with the url or if you leave the url
+ blank if you click on it like this it
+ will just show with the issue and the
+ description in busan so you can choose
+ if you want to kind of
+ handle all your tickets as busan which i
+ don't think is very likely you'll
+ probably use an external ticket system
+ and you'll fill in the url here and then
+ you can simply link it directly when the
+ issue occurs here in the log so this is
+ one of the advantages of this log
+ formatter it makes the root cause
+ analysis much much more powerful
+ and as usual we will still give you
+ the
+ the root cause analysis log here
+ uh based on generate summary so for
+ instance you'll still get this overview
+ with your uh
+ failed scenarios or whatever
+ um where you can see the slowest test
+ steps the worker jobs and the issue
+ overview the advantage is now that now
+ with supercharging directly your system
+ log so this view you can use for like
+ the summary of the issues and then you
+ can kind of weaponize your uh
+ your log directly in jenkins and get
+ this information real time

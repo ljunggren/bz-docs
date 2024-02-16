@@ -1,0 +1,72 @@
+---
+id: protected
+title: Protected branches and merge requests
+---
+
+import YouTubeEmbed from "@site/src/components/YouTubeEmbed";
+
+<YouTubeEmbed embedId="8r_QI1OC1ek">Protected branches</YouTubeEmbed>
+
+[00:03](https://www.youtube.com/watch?v=8r_QI1OC1ek&t=3) Boozang feature: Merge requests allows for centralized code review and controlled merging to the main branch.
+
+[00:43](https://www.youtube.com/watch?v=8r_QI1OC1ek&t=43) Enabling protected branches for merge requests
+
+[01:24](https://www.youtube.com/watch?v=8r_QI1OC1ek&t=84) Merging feature branches in Boozang
+
+[02:08](https://www.youtube.com/watch?v=8r_QI1OC1ek&t=128) Unprotected feature branch can cause issues during merge requests
+
+[02:50](https://www.youtube.com/watch?v=8r_QI1OC1ek&t=170) Default merge request message and approval process
+
+[03:27](https://www.youtube.com/watch?v=8r_QI1OC1ek&t=207) Enabling self-approval in branch protection
+
+[04:02](https://www.youtube.com/watch?v=8r_QI1OC1ek&t=242) Demonstrate successful merge request in Boozang feature
+
+[04:40](https://www.youtube.com/watch?v=8r_QI1OC1ek&t=280) Protected branches restrict modifications by default
+
+---
+## Protected Branches and Merge Requests in Boozang
+
+### Introduction
+Protected branches in Boozang ensure that critical branches like `master` or `main` are safeguarded against direct changes. Merge requests are a way to review, discuss, and safely integrate new changes from different branches into these protected branches.
+
+### Setting Up Protected Branches
+
+#### Protecting a Branch
+1. **Identify Critical Branches**: Commonly, branches like `master` or `release` are protected.
+2. **Enable Protection**: In the branch settings, enable protection to prevent direct changes to these branches.
+
+#### Configuring Protection Rules
+- **Restrict Who Can Merge**: Specify which users or roles have the authority to merge changes into the protected branch.
+- **Require Code Reviews**: Set up rules where merge requests must be reviewed and approved before merging.
+
+### Working with Merge Requests
+
+#### Creating a Merge Request
+1. **Complete Your Work**: Finish the work in your feature or bug-fix branch.
+2. **Commit Your Changes**: Ensure all changes are committed.
+3. **Create Merge Request**: From your branch, create a merge request to the protected branch (e.g., `master`).
+
+#### Review Process
+- **Assign Reviewers**: Select team members to review the merge request.
+- **Discuss Changes**: Use the merge request interface to discuss changes, request modifications, or give approvals.
+- **Approve Merge**: Once the merge request meets all criteria, it can be approved by authorized personnel.
+
+### Applying the Merge
+
+#### Merging Changes
+1. **Merge the Changes**: After approval, merge the changes from the feature or bug-fix branch into the protected branch.
+2. **Resolve Conflicts if Any**: If there are merge conflicts, resolve them before completing the merge.
+
+#### Post-Merge Steps
+- **Verify Changes**: Ensure the merged changes work as expected in the protected branch.
+- **Close the Merge Request**: After a successful merge, close the merge request to signify completion.
+
+### Best Practices
+
+- **Regular Updates**: Keep your feature or bug-fix branches regularly updated with the latest changes from the protected branch to minimize merge conflicts.
+- **Clear Communication**: Use the merge request platform for clear communication regarding changes, reviews, and approvals.
+
+### Conclusion
+Protected branches and merge requests in Boozang are crucial for maintaining the integrity of critical branches and ensuring a collaborative and controlled approach to integrating new changes.
+
+

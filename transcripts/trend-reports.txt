@@ -1,0 +1,54 @@
+Transcript for [Boozang Feature: Trend Reports](https://www.youtube.com/watch?v=P77WuCKTXiA) by [Merlin](https://merlin.foyer.work/)
+
+ in this release we also wanted to
+ improve reporting
+ and even though we haven't finalized our
+ big
+ management ui upgrade that is happening
+ later on this year
+ we decided that
+ why not update the reports inside the
+ tool
+ so what we are now very very happy to
+ announce
+ is trend reports imagine you're running
+ tests over a long period of time and you
+ know especially in jenkins and with
+ cucumber report it's hard to get an
+ understanding what's happening over time
+ with your tests
+ now we've introduced a new tab here
+ called trend reports so if you click
+ into trend reports and let's say you
+ select i'm just going to select my main
+ suite that is all the regression tests
+ for this project
+ now we can actually get a view of
+ how
+ the tests have changed over time you see
+ here we have a spike of failures
+ and you can also see how the performance
+ was changing over time so you can see
+ performance trends and then of course
+ you can scroll down
+ and drill into particular tests for
+ instance i see my ad campaign test being
+ problematic i click into this and then i
+ get the view of
+ when was it failing
+ here right so now i'm getting a much
+ better way to do some data mining
+ with my tests and remember
+ the actual filter now is in the url so
+ now you can actually bookmark this and
+ share this with other team members to
+ point out certain trends another thing
+ that is cool is that you can also
+ download the report
+ so you could use that when
+ you know sharing it or putting it into
+ an email or something like that so super
+ excited about this i think you will find
+ it useful so let us know if there is
+ anything that can be improved or is
+ unclear

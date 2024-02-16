@@ -1,0 +1,56 @@
+Transcript for [Boozang feature: Stash and Stash Pop](https://www.youtube.com/watch?v=bXUsK1S4eRQ) by [Merlin](https://merlin.foyer.work/)
+
+ now in the busang versioning control we
+ also support stash so let me illustrate
+ stash for you this is very similar to G
+ stash let's say I'm in my uh feature
+ Branch I'm going to switch to my feature
+ Branch here this could be any branch and
+ as you know when we go to modifications
+ here we see no changes here this would
+ be the similar view as the git ad so let
+ me do a change I'm now going into module
+ B and I'm creating a test called test B
+ okay inside module B when I have this
+ test we would be able to see it in the
+ change list here and normally you would
+ work on this and then you would maybe
+ commit this right but let's say you
+ don't want to do that let's say well I
+ was wondering how something I wanted to
+ go back to the head of the branch but I
+ don't want to revert my changes I just
+ want to compare to the branch original
+ state to see was this really working was
+ it not similar like you would do with
+ Git stash so go in here and go ahead and
+ stash the I uh the changes right and now
+ I'm going back to my module B and as you
+ can see where is my test B the test B
+ has been stashed so now I could test
+ certain things in the two let's say how
+ was it working before was my changes
+ good or not and then I can go back here
+ and now instead I click on the stash
+ list and I can now see my stash here in
+ the list so now what I can do is I can
+ simply pop this stash meaning bring this
+ change
+ back and here if you want to learn more
+ about stash and stash pop you can look
+ at also the documentation on git around
+ its very well documented feature now
+ when I go back into my module I will now
+ see my test B so stash is very useful
+ ful you're working on something you
+ think you want to commit your work but
+ maybe you want to go back to the top of
+ the branch before you did these changes
+ see what was going on there compare it
+ and then maybe just pop it before you do
+ the the commit so this is get stash for
+ you which I think is very useful not as
+ you don't do it as frequent as you
+ regular commit regular merges but useful
+ in some cases where you think you might
+ have made a mistake

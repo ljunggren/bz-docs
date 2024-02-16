@@ -1,0 +1,24 @@
+---
+id: predefined
+title: Predefined regexp
+---
+There are also pre-programmed regular expressions in Boozang that can be used. Here is a list of the current ones.
+
+### Data formatters for date and time
+
+For data and time date, the default data format is `YYYY-MM-DD`, meaning that for 26th of November 2019, `/{today}/`will output `2019-10-26`. You can also input a data format string, separated by a pipe `|`character. Here are some examples,
+
+- No format string: `/{today}/`outputs `2019-10-26`.
+- With minutes and seconds dot-colon-notation: `/{today|YYYY.MM.DD:mm.ss}/` will output `2019.10.26:30.29`
+- Only month and day:  `/{tomorrow|MM-DD}/`outputs `10-27`
+
+### Date and time
+
+The following pre-defined expressions are available. All examples are based on today being Saturday, October 26th, 2019. 
+
+-   `/{today}/`outputs `2019-10-26`
+- `/{yesterday}/` and  `/{tomorrow}/`and outputs `2019-10-25` and `2019-10-27`
+- `/{today-7}/`outputs `2019-10-19`(last week)
+- `/{last-mon}/` and `/{last-tue}/` outputs `2019-10-14` and `2019-10-15`
+- `/{last-month}/` outputs `2019-09-26`(this date previous month)
+- `/{last-year}/` outputs `2018-10-26`(this date previous year)

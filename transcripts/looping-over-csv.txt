@@ -1,0 +1,83 @@
+Transcript for [Boozang Feature: Loop over CSV data](https://www.youtube.com/watch?v=8i8ZykTqd1Y) by [Merlin](https://merlin.foyer.work/)
+
+ let me demonstrate the new csv data
+ editor in busan
+ often when you have a test case that
+ enters a set of data like this filling
+ out the form here you can see you can
+ fill out first name last name email and
+ password and save it to the db
+ and it will show up here inside the
+ database on the application side let's
+ say you have a spreadsheet of data that
+ you want to fill
+ into this
+ database you need to create a loop
+ over a set of data so now i'll show you
+ how to do that and show the new csv
+ editor that we just launched you'll go
+ into data here and you create new data
+ and instead of object here you choose
+ csv
+ so i'm going to call this users right
+ it's a set of users then it's going to
+ ask me do you want to enable loop data
+ you don't want to do this but you can go
+ ahead and just say yes i want to loop
+ this test case over the csv data
+ the way you do this here is of course
+ now under test setting you have the loop
+ data enabled here and it will tell you
+ the start and end index which is of
+ course zero to the end of the document
+ by default
+ so
+ in data now you can actually start by
+ entering the different data so you'll
+ start by
+ hitting the plus sign and i would
+ enter the different things here so let's
+ do first name
+ and then do plus again to add another
+ column
+ last name
+ and maybe that's enough for us right now
+ and then i will say
+ mats
+ youngren
+ and here of course i can use the tab and
+ enter keys
+ when shang
+ lee so now we have a set of data that we
+ can loop over okay
+ so instead of using parameter first name
+ here and parameter last name here
+ we can now use
+ the loop first name and loop last name
+ now remember
+ here you need to comply with what's
+ exactly in the columns here and you see
+ we're using camel case here so let's
+ make sure that we modify this
+ and as you can see we get autocomplete
+ so we get the first name here
+ and then on the loop side here we will
+ remove this
+ and just say
+ last name
+ so now
+ we've created a test case where we've
+ hard coded from parameter the email and
+ the password and we're now looping over
+ this so let's just make sure there is
+ nothing in the database and we'll run
+ this and it will you it's going to tell
+ us do you want to just run this for the
+ first entry in the
+ csv or the second entry or all of them
+ so let's run all of them
+ and let's go ahead and press play
+ so now we've created a very simple loop
+ and as you can see both wenching lee and
+ matt youngren is now been saved in the
+ application database

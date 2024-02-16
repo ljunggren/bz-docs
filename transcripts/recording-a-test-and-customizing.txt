@@ -1,0 +1,117 @@
+Transcript for [Boozang Feature: Recording a test and customizing it](https://www.youtube.com/watch?v=V-h1296ydoM) by [Merlin](https://merlin.foyer.work/)
+
+ hello
+ today i'm just going to redo a simple
+ recording using the busang tool let me
+ show you how you can customize the
+ different actions as we've changed the
+ user interface a little bit
+ uh hopefully for the better
+ so bear with me what we're using today
+ is we're using the lab.busan.com and
+ again i'm going to use form fill as i
+ usually do
+ and what i'm doing is i'm hitting this
+ address bar and it will bring up the
+ application and i'm going to start with
+ doing a simple recording so i'm going to
+ hit the record here
+ and then i'm going to fill here and
+ remember
+ in this particular form i'm using the
+ tab key
+ to separate the different entries as
+ enter submits the form
+ and i'm hitting enter at the end and as
+ you see i can use show users in db and i
+ see the user showing up and i can hide
+ them again
+ okay very good so i'll stop the
+ recording so now let's look at the
+ individual actions so if i take this
+ first action you see
+ it seems like it didn't register the
+ event no it automatically
+ converted this to a set event which is
+ just something that it would it's just
+ more adapted for filling these dialogues
+ in a stable way to be able to fill these
+ input boxes in a stable way
+ and if you want to debug it you can
+ simply double click and you can see it's
+ being filled properly
+ one of the new things is that in the
+ method here which is basically the event
+ we have the you can trigger the unchange
+ you can trigger on change and blur but
+ you can also trigger on change and enter
+ key
+ so normally when you record it will
+ capture your keys properly but you can
+ also of course take an individual one
+ and change it accordingly
+ so that's one of the things that are
+ really useful
+ the other thing is that we've also moved
+ this before we had a lot of details on
+ each event
+ now
+ all the more complex things can be found
+ in the kebab menu up here so if you look
+ at it here you now have things like
+ treat hidden elements as not found which
+ can be useful sometimes that we don't
+ try to click on things in the interface
+ there are hidden
+ one of the
+ places you want to do that often it's
+ totally fine
+ but sometimes it's good to do it because
+ you might want maybe it's waiting for
+ some process and then it's going to
+ become unhidden but this is for you to
+ play around with
+ the other thing is of course we
+ automatically retry when we can't find
+ an element sometimes you want to disable
+ this so use never retry on missing
+ element
+ and then we have some a kind of a
+ special one which is support set value
+ on read only and that's to be able to
+ enter into a read-only box which very
+ rarely should be used it's just some
+ very specific cases
+ and then we have some advanced features
+ i will probably cover this in a separate
+ video
+ one thing that can be worth noting is if
+ i now go
+ to the
+ the enter key i did when i clicked save
+ to db i didn't use the mouse there you
+ see here again
+ instead of method here you have a key
+ method and then of course you also have
+ more options you usually want to use
+ group this is the typical thing we
+ emulate the mouse down the press and the
+ mouse up which covers most cases but of
+ course you can also do something where
+ you want to
+ just do the key down key press or key up
+ event and then of course the character
+ key is 13 and if you want to emulate
+ some sort of holding into control alt or
+ shift you can set that here as well and
+ this is normally enough for most
+ applications
+ one thing
+ worth noticing is if you hit the dot dot
+ dot here you might have some different
+ options here so that's always worth
+ taking a look and it's not so often you
+ need to set these and we try to keep it
+ less complex here so
+ that's the change so i hope that
+ simplifies the ui a little bit

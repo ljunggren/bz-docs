@@ -1,0 +1,39 @@
+Transcript for [Boozang Feature: API logs (JSON tree view)](https://www.youtube.com/watch?v=DNjjG7SeGbY) by [Merlin](https://merlin.foyer.work/)
+
+ now i want to talk about a new feature
+ or more of an ux update that we did to
+ just really simplify
+ um
+ the presentation of
+ json data especially for troubleshooting
+ api request
+ so let's see here let me open one of
+ these and do an api request to create a
+ product
+ what we've done now is in the result
+ here you see that you have these very
+ easy to navigate here is the request
+ this is the data that's going out
+ you can see the company and you can see
+ the response and you can open and close
+ this json structure
+ so one of the tricks here
+ that are really useful is that you can
+ double click the request and it will
+ open up the whole tree
+ so it's really nice when you want to
+ expand the whole tree and you can do
+ this on on any level of course
+ so this is a small thing as you can see
+ it's very useful when you have a lot of
+ request and response for instance
+ when i'm looking at temporary database
+ sometimes i have
+ many of these requests and response and
+ it's pretty good to be able to open this
+ up and for instance
+ just open up the whole response to
+ troubleshoot what's going on and as you
+ can see we also have the syntax
+ highlighting here to make it easy to
+ troubleshoot and find any problems

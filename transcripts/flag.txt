@@ -1,0 +1,82 @@
+Transcript for [Boozang Feature: Flag](https://www.youtube.com/watch?v=Gj9yAf6KG-w) by [Merlin](https://merlin.foyer.work/)
+
+ hello
+ today i'm just going to show you the
+ feature flag in busan
+ and flag is something that you use to
+ handle conditional situations in busan
+ and of course you can use if groups you
+ can use the n statement in busan
+ you can use loops there's many many
+ different ways to handle conditionals
+ but flag is one of the more flexible and
+ popular ones when it comes to complex
+ logic so let me just demonstrate that
+ now
+ so what i'm going to do here i'm just
+ going to call this i'm going to create
+ the test called flag demo
+ and then i'm just going to record a
+ couple of actions here in the lab the
+ lab.dusang.com so i'm clicking
+ introduction and then overview and i'm
+ just going to stop this and try and play
+ this back
+ so what you see is of course it clicks
+ introduction and overview
+ just as you would have expected from the
+ test
+ but of course here if i want to i can
+ now add flags to this so i'll add this
+ overview and you can see it showing up
+ in the
+ in the tool right
+ and i call this
+ intro and then if i want to now
+ i can add
+ a script action that would
+ go to these flags
+ so this is very simpler to the switch
+ statement in javascript where it will
+ jump over a number of actions until it
+ finds a match okay
+ so here i will use go to flag
+ and i will just use here
+ intro
+ or intro
+ now if i run this i'm going to expect
+ this to jump to the next action and
+ execute normally okay
+ okay cool
+ so now i'm just going to try and change
+ this and change it to overview
+ and as you can see it skipped the the
+ intro
+ uh click right and that means even if i
+ would record something inside of this
+ which doesn't have a flag it will also
+ skip that
+ so let's run this and see
+ as you can see it just jumps to
+ the condition the the flag that it
+ matches so remember this can be used as
+ a javascript very similar to the switch
+ statement so it's very good when you
+ have something which could have many
+ different outcomes but you want to
+ maybe
+ choose between
+ not just like if else but many different
+ outcomes so that's a good example of
+ when you want to use this and let me
+ just show you here also in the exit
+ conditions if you go to condition for an
+ action
+ depending on the outcome of an action
+ in the go to section here you can say
+ set
+ and here you have go to flag and it will
+ allow you to select from the different
+ exit conditions as well so you can use
+ this using script or exit conditions so
+ it's very very flexible

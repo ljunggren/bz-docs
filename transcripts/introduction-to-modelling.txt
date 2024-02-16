@@ -1,0 +1,51 @@
+Transcript for [Boozang: Introduction to modelling](https://www.youtube.com/watch?v=bzocfoIlyS4) by [Merlin](https://merlin.foyer.work/)
+
+ in busan we are super excited to
+ announce
+ a concept where we scan your application
+ to build test coverage
+ let me show you how that works
+ we introduce a new concept called the ai
+ module
+ in the ai module we will build a virtual
+ representation of your application
+ initially you get prompted what
+ operations do you want to have for your
+ module
+ the module should be what you have in
+ your data model for your application
+ in this case it's a project management
+ application so i'll say project
+ now it will build a structure that is
+ the outline of your application and now
+ you need to start linking them together
+ making sure you identify
+ the elements in your application
+ now this is complete but your work is
+ just getting started start by
+ identifying the different critical
+ elements in your application
+ here as you can see
+ it has guessed that my button should be
+ create project but let me update that
+ as we call it create
+ new project
+ now i can try clicking on the element
+ and as you can see it works
+ now
+ all the application forms in order to
+ build tests instead of doing record and
+ replay
+ you can automatically scan
+ all the forms to build tests for it
+ what's really interesting is of course
+ that all the dependencies inside the
+ forms are captured
+ now when you've done this for your
+ application for all your different
+ modules you can go into the data flow
+ and start building end-to-end tests
+ now with these data-driven test steps
+ you can build test coverage really fast
+ and maintenance is almost completely
+ removed

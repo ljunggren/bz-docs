@@ -1,0 +1,28 @@
+Transcript for [Boozang: Introduction to model-based test automation](https://www.youtube.com/watch?v=FFcDXUPTrLs) by [Merlin](https://merlin.foyer.work/)
+
+ what if we could automate automation
+ what if we could scan your application
+ and build the automated test for you
+ in end-to-end test automation we spend
+ so much time on test creation just to
+ get a little bit of feature coverage and
+ as our project grows
+ your tests are flaky and you push new
+ code changes and your tests break
+ creating false negatives
+ we introduce a new way of doing test
+ automation
+ where we much like a search engine
+ crawler scan your application and build
+ a model of it virtually
+ then we can auto generate tests for you
+ that way you can
+ simply when you have code changes rescan
+ your application and the test will be
+ regenerated for you eliminating a lot of
+ the test creation and almost all of the
+ test maintenance
+ so go and sign up for the beta at
+ busang.com
+ beta and join us in this exciting new
+ way of doing test automation

@@ -1,0 +1,86 @@
+Transcript for [Boozang Feature: Looping over test case data](https://www.youtube.com/watch?v=0C-mJGLBGb0) by [Merlin](https://merlin.foyer.work/)
+
+ we've also
+ launched a new feature to how to enable
+ loop data when using the keyword data so
+ i'm going to show that now on a simple
+ test case
+ what we were doing before of course is
+ we've already always supported you to be
+ able to loop over spreadsheet data or
+ vectors but we realized that when people
+ do this the ux wasn't that
+ simple to do
+ so now what we do is we
+ have reserved the keyword data that will
+ automatically
+ kind of assume that it's loop data so we
+ have this test case on the lab.busan.com
+ that just fills the form so i'm just
+ going to really simply create
+ a loop condition where we take
+ information from a csv file
+ and we fill out this form
+ so bear with me
+ if you go here instead of product you go
+ into the test case
+ and you'll add a csv data and you use
+ the keyword data
+ you will
+ automatically be prompted if you want to
+ use this as loop date on this test case
+ so here of course you would use
+ something like first name
+ maths
+ and here you would use tab
+ to separate these fields last name
+ let's say
+ youngren
+ but of course we want to have more data
+ so we'll also use wen shang lee's name
+ here so now of course we have
+ two rows of data that we can loop over
+ here what i would typically do
+ is i would just very simply
+ add a javascript action here
+ where
+ i would just kind of now i will override
+ the parameter first name and parameter
+ last name
+ using the keyword loop first name and
+ loop last name and as you can see both
+ on parameter and on loop you will have
+ the autocomplete to make it very simple
+ right so you don't make any mistakes
+ now we're going to go ahead and launch
+ this so when i press play we also
+ kind of specified for you
+ which
+ do you want to run all the csv lines or
+ do you want to pick one line
+ or do you want to pick
+ you know from zero to a one but in this
+ case
+ i think what we want to do is run
+ all the data so just go ahead and press
+ ok and you should see the loop over the
+ form over the data begin
+ mats young grin the same as before and
+ then wen cheng li
+ so this is of course very very good when
+ you're doing data provisioning or doing
+ kind of
+ things where you need to do
+ maybe you have to add a number of
+ persons to taste pagination or you need
+ to like delete the number of persons to
+ clean up some data or something like
+ that so this is very useful
+ of course this has been with busan from
+ the beginning the only news is that you
+ see here is that when you use
+ the data keyword we suggest for you to
+ use the loop data and what we do behind
+ the scenes is setting this under test
+ setting basic info
+ we have this enable loop data here

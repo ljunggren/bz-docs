@@ -1,0 +1,105 @@
+Transcript for [Boozang Feature: Generating an API test from the UI](https://www.youtube.com/watch?v=oKmGBlfnGAw) by [Merlin](https://merlin.foyer.work/)
+
+ one of the advantages in busan is that
+ as it supports both ui and api test
+ we've implemented a functionality where
+ you can auto generate
+ api tests from actions in the ui so let
+ me demonstrate that
+ what i'll start by doing is in a module
+ i'll go into i'll choose api test and
+ create a new api test
+ api actions you can also add into
+ regular tests but we recommend you using
+ the api test because it makes things a
+ little bit simpler
+ so i'm just going to call this form fill
+ in api
+ and i need to pick my api host in this
+ case
+ the api is hosted on api.busan.com
+ very cool
+ so of course now we can create start
+ creating manually filling out the query
+ the body the headers and create the api
+ test very similar to a tool like postman
+ or we can actually just go ahead and
+ delete this one
+ and use this little api capture right
+ here so what you want to start by doing
+ is you want to delete everything in this
+ dialog so it's empty
+ because it's always registering apis but
+ if you really want to generate an api
+ test it's important that you hit this
+ record button okay
+ now let me test here so again we're
+ using
+ form fill in the lab
+ and
+ while we're filling the form we don't
+ expect anything because in this case
+ it's not talking to the api
+ it waits to do the post until you click
+ save to db where the data is submitted
+ to the
+ to the backend right to the api
+ and then you're going to see the post
+ being generated here in the dialog
+ so now we could go ahead and save this
+ but what i'm going to do as you can see
+ here you can also see the data that it
+ used here on the hover which is very
+ good for troubleshooting and for making
+ sure that the right information was
+ captured
+ what i'm going to do is i'm actually
+ going to go ahead and click this button
+ which
+ executes the get
+ and also the delete
+ now you see all the api requests the
+ post get and delete and i'm going to
+ save all of these into my api test
+ generate api action okay and i'm hitting
+ save
+ now
+ in order to understand if this is
+ working or not of course i want to make
+ sure that we have no users we have no
+ users here on the database and i'm going
+ to go ahead and execute this post
+ request
+ as we see
+ it has now automatically
+ made the post
+ to the
+ to the backend api so we already have an
+ action that we can use to create the
+ user
+ but we also have the get request which
+ we can double click here and in order to
+ see the result here of course we can go
+ into
+ in the try tab in the result tab we can
+ go and see the outgoing request
+ and also we can see that i'm going to
+ move this over a little bit
+ we can also see the response here
+ so this is a something you can play
+ around with a lot
+ but it's very very
+ good to especially get started very fast
+ to create an api test of course what you
+ probably want to do
+ is go into for instance here for the
+ post you will have the data in the body
+ so you probably want to parameterize
+ this but i'm going to go into that more
+ how you would kind of edit these api
+ requests and make sure you can kind of
+ make them more versatile and data driven
+ in another video but this is
+ a quick overview on how you can use the
+ api recorder to capture api tests simply
+ in the browser

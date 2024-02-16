@@ -1,0 +1,82 @@
+Transcript for [Boozang Feature: Content Policy tab](https://www.youtube.com/watch?v=g5WifRqufwY) by [Merlin](https://merlin.foyer.work/)
+
+ let me demonstrate
+ um
+ the setting here which is loading
+ element
+ which we just released for the 680
+ feature release
+ before i do that i just want to do a
+ little recap and explain the content
+ policy window all the stuff you can set
+ here
+ this
+ app dictionary is a little bit
+ experimental a way to support
+ multi-language um
+ we don't have any users
+ right now using this functionality since
+ we launched it so i think
+ this would require a little bit with us
+ working with you to make this
+ really good
+ something that is very very useful is
+ ignore request url as you know busan
+ always listens to
+ all the requests that goes out from the
+ browser and waits for it to make sure
+ that all the api requests are completed
+ that way if you have a slow uh answering
+ api
+ uh the test will still run stable so
+ it's very very powerful but sometimes
+ there is stuff like socket request you
+ don't want to wait for you will add them
+ here in ignore request url okay
+ priority item for data select is for
+ instance a cypress has a certain element
+ there's a few of these that recommend
+ you setting specific
+ attributes you can just add them here
+ and you can use wild cards for me i use
+ the data bset attribute so that will be
+ used by the dome picker and have a
+ priority in case you're using it for a
+ button etc
+ we also have ignore classes you very
+ rarely need to update this the typical
+ one is of course active uh that that or
+ has changed or checked that's very
+ typical ignore classes
+ i think if you have something specific
+ for your applications
+ especially if it's kind of in your local
+ language or something like that it's
+ good to add it here so you make sure
+ that we don't try to use this
+ in the domain policy and the element
+ selection policy
+ text attributes these are just useful
+ for instance your login often has
+ placeholders so it's good to use these
+ in the selection policy
+ so that's something you want to keep in
+ mind
+ clickable element usually these are a
+ and button you usually don't have to set
+ this but maybe you have something
+ special like a span or something that is
+ clickable then you can add it here and
+ it will help us when we do our different
+ policies for for the element selection
+ and last but not least this new one here
+ the loading element is a way to capture
+ um for instance here if i reload this
+ page
+ there will be a kind of a spinner or
+ something like that then you can capture
+ it here and then busan will
+ automatically wait for that element to
+ disappear uh also making your tests to
+ run
+ more stable

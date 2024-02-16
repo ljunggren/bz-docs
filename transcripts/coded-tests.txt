@@ -1,0 +1,60 @@
+Transcript for [Boozang Feature: Coded tests](https://www.youtube.com/watch?v=YnAPWQPtP3Y) by [Merlin](https://merlin.foyer.work/)
+
+ now i'm going to talk about coded tests
+ in busan and
+ what we've seen here i have a very
+ simple
+ straightforward test that i actually
+ recorded and now there is a new coded
+ view in busan
+ where if you switch over you get the
+ actual code for the test and as you can
+ see because the selectors are so simple
+ you see that it simply is
+ script set first name script set and a
+ number of set actions followed by two
+ click actions and this is where you can
+ do like a lot now in code so you can
+ choose if you want to work in code or if
+ you want to work more with the recorder
+ replay standard approach
+ and
+ we think that in certain cases it's best
+ to work in code in other cases better to
+ record your journey so from what i
+ usually do is i start by making the test
+ using the record function
+ and then maybe i'll edit or fix it using
+ the code function but you can play
+ around with that
+ another very good thing is of course we
+ have a very powerful tool a lot of
+ features are hidden
+ but here of course when i write script i
+ get out to complete so that way i can
+ also explore what functionality we have
+ in the tool
+ using code
+ another really cool thing is of course
+ if you are
+ and copying this test
+ of course i can basically just take the
+ code
+ take and create a new test let's say
+ fill the form
+ and here it's
+ form fill
+ and now if i just paste this back here
+ and i can also make modifications let's
+ say i'll
+ i'll just copy this now i can go back
+ into action view and the test is
+ automatically updated so now you can go
+ back and forth between code
+ and
+ recording action view and that way you
+ can also learn the code language very
+ easily by just recording a test and then
+ switching over
+ so let us know what you think about this
+ new functionality

@@ -1,0 +1,106 @@
+Transcript for [Reporting dashboard](https://www.youtube.com/watch?v=_I2eZVIwSQ8) by [Merlin](https://merlin.foyer.work/)
+
+ okay let me talk about the feature
+ reporting dashboard so this is a very
+ big feature and the idea was before you
+ used to have
+ the Jenkins
+ cucumber reports in one place you'll
+ have the trend reports inside the IDE
+ you'll have the root cause analysis
+ maybe on your Jenkins but they're all
+ different reports why not consolidate
+ them improve them and give you a single
+ stop
+ to get all your reporting and draw
+ business insights like a better
+ management function and try and really
+ understand what are the underlying
+ issues in your application
+ so the way you would set this up is
+ you'll hit this little new uh reporting
+ icon on your project and then you will
+ add your main test Suite that you use on
+ your CI server and remember you can add
+ many here and then you can switch
+ between them let's say you have one with
+ regression test and one with full sanity
+ maybe but don't worry about that let me
+ just go into as soon as you set that up
+ I prepared a report here so this project
+ has a lot of data in it so then this
+ starts becoming really interesting so
+ you know you have one run two test runs
+ not so much value you start having 10 50
+ 100 then you can see Trends and patterns
+ and understand what's really going on
+ with your application
+ so the first thing you can see is at the
+ top you'll have a Time and you'll think
+ well for cucumbers that's really
+ important no it's not the Cucumber
+ report is just a snapshot but what it
+ does is let's say I do last six months
+ then
+ what what you can see is that this top
+ timeline where you can navigate becomes
+ very long and you can actually go back
+ to anywhere in time
+ and look at those reports but not only
+ that when you scroll down we recalculate
+ these things you know all the averages
+ where you compare and as you scroll down
+ not only are you getting your cucumber
+ overview where you have the feature
+ breakdown with failed steps scenarios
+ and features as you scroll down you also
+ get your root cause analysis and as you
+ can see I haven't defined these so these
+ are the real
+ problems that I'm getting from the
+ application logs and remember you can
+ now use this pen to match the error hash
+ here to
+ a real named
+ error that you have a root cause and
+ then you can say hey this might be an
+ automation issue an application issue or
+ this is unknown and then you can use
+ that to provide even more information by
+ clicking root courses here but I'll
+ probably make a separate video on this
+ because it's a quite elaborate on how to
+ use this in a good way but as you scroll
+ down now we have a long period of time
+ so you see there's a lot of test data
+ that I can see how the past percentage
+ is evolving over time
+ and I can also see the evolution of the
+ execution time so let's say you made a
+ database upgrade some refactoring you
+ can see how did that event affect the
+ execution time
+ and then of course more complex you can
+ see this aggregate result over the time
+ period compared to the last result so
+ here you can identify not only the
+ anomalies or this this failure normal
+ compared to the average run so you can
+ also see is this execution time normal
+ compared to the average time so the idea
+ is here you will have an understanding
+ of
+ as soon as you start accumulating data
+ over time instead of trying to go to
+ Jenkins go to your X-ray go and get your
+ root cause analysis and your Trend
+ reports we get you everything on that in
+ one place
+ we allow for you to you know find these
+ underlying root causes maybe some more I
+ know this is an automation issue this is
+ a real application issue you can link
+ them to your own ticketing system so
+ there's a lot in here to go over but
+ please look at this explore it and let
+ us know what you want to see here

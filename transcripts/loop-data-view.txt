@@ -1,0 +1,58 @@
+Transcript for [Boozang Feature: Loop data view](https://www.youtube.com/watch?v=zHDmcl2pIh0) by [Merlin](https://merlin.foyer.work/)
+
+ sometimes in busan
+ there is a need to do a little more
+ robot process automation and as you know
+ we have very good support for this you
+ know when you have stable tests you can
+ also provision data uh especially when
+ you have application where there might
+ be an api missing or something you can
+ solve this by doing the things using an
+ automation tool in directly in the
+ browser right
+ so because i've been doing this recently
+ a lot uh i've we decided to improve this
+ a little bit so before you saw that we
+ improved this already
+ by
+ improving the csv view so if i go into
+ data here and i click on this csv file
+ you can see the presentation of the csv
+ file is very very simple
+ we've also added beforehand right the
+ fact that you can select the interval of
+ the data start index and end index you
+ want to run
+ but one thing that we've added now in
+ this release here i'm working on one of
+ our clients here the pivoha platform
+ where we input
+ brewer data
+ or retailer data into a platform
+ what we've done here
+ is we've also changed added this report
+ here so if i make this a little bigger
+ you can see that we have a loop data
+ view
+ where i'm going to stop this for now
+ if you go to the loop data view it's
+ going to show you exactly the data that
+ was processed and you can also copy this
+ to a csv that becomes like a report what
+ was processed what wasn't processed
+ and remember
+ here you can actually add
+ a column of the loop data with for
+ instance a processing status or
+ something so like that so you can add an
+ unlimited number of columns with
+ statuses like was this process correctly
+ etc etc so this makes this ideal for
+ uh tasks like
+ that are more like robot process
+ automation so i think this is really
+ really cool and remember that you
+ make sure to copy this
+ the report after it's done so you get
+ your results back

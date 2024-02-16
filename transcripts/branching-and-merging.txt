@@ -1,0 +1,241 @@
+Transcript for [Boozang Introduction: Branches, merging, and merge requests](https://www.youtube.com/watch?v=ja7ETXsjKGI) by [Merlin](https://merlin.foyer.work/)
+
+ in buang we just launched a larger
+ versioning control update where we
+ support uh proper branching merging like
+ we were before but also uh doing proper
+ commits doing po request or merge
+ request as we call them and I think it's
+ a much more professional way of working
+ especially if you're doing teamwork so
+ instead of the individual feature videos
+ I thought I'd do a little longer video
+ explain on how you can work with this uh
+ in practice this is just an example of
+ course we're going to work with the
+ project here called unit test so let's
+ uh launch it
+ here first of all this unit test stuff
+ is very very simple um let's just start
+ by creating uh a module here we're now
+ working on the master Branch so I will
+ create a a module called navigation here
+ and then I'm just going to do a very
+ simp simple navigation
+ test called click links and of course
+ this is not to demonstrate the power of
+ the busang tool it is just to show you
+ how to work with versioning so of course
+ here we're just going to record a very
+ simple test going through a couple of
+ links here okay so what I'm doing is
+ I'll take the two two links here stop
+ the test and maybe remove this
+ unnecessary click that I did okay very
+ good now we're working directly on
+ master so I will go in here and click on
+ to see my uh updates I'll see the m is
+ red so I see I have updates I have
+ updates to the navigation module so just
+ like git make a commit and I'll say
+ added
+ navigation
+ test after the commit you will see it
+ here in the commit list okay but now is
+ this really professional let's say you
+ have a master running on the CI server
+ and many people working on it you could
+ have a people doing appeti it could
+ break the test maybe you want to merge
+ this in a controlled manner so first of
+ all what I want to do is I want to
+ create my own Branch maybe it's my
+ feature Branch right so this is my
+ feature Branch or for the current Sprint
+ let's say so now I have my own branch
+ but sometimes maybe I switch to master
+ and I work on it by mistake so let's not
+ do that let's protect this branch and
+ make it read only and here you have a
+ couple of options we can see here that I
+ can control the permissions but I can
+ also allow users to approve their own
+ merge requests which I want to be able
+ to do here because I'm demoing on on
+ this and I can't do a double comp
+ computer demo at this point so now when
+ this branch is controlled what I'm going
+ to do is I'm going to uh as you can see
+ I'm switched to the master Branch but as
+ you can see here it's read only I cannot
+ record I can only play the test to
+ verify that it's working or not so now
+ what I would like to do is I want to
+ switch to the feature Branch
+ okay and as you can see now I can record
+ again
+ and uh navigate and uh copy paste etc
+ etc this is a write and read Branch
+ right but when you are working so let me
+ just illustrate how that would look
+ let's say I just copy this link here and
+ I want
+ to you can see now I can do another
+ commit and I
+ say copied action
+ now if I switch to the to the uh
+ protected Branch the master Branch right
+ if I want to I can now uh create a merge
+ request and I'll show you how to do that
+ what you're going to do is you're just
+ going to merge from feature here and
+ then what you're going to see is you're
+ going to get
+ merge and then you're going to say it's
+ uh it's been sent to the Target Branch
+ because it's protected and you got to
+ approve it so I'm just going to show you
+ how you approve this uh merge request so
+ if you go here now if I'm in master as
+ you can see here I only have those four
+ actions right but now I'm going to
+ approve this merge
+ request and what you're going to see is
+ that now if I look at that test that we
+ were uh doing navigation click links you
+ can see that we we have those extra
+ actions
+ there but now we're going to look at an
+ even more complex uh case we're going to
+ look at uh doing a regular merge without
+ a merge request and then creating a
+ merge request with a conflict okay so
+ now in reality I might not have just a
+ feature Branch I might have also
+ made um a specific kind of brand for
+ instance for a bug fix and maybe this
+ should be merged in my own Branch before
+ it should generate a merge request
+ so this all different teams Works
+ differently with bug fixes and all these
+ things but let's um let's see what
+ happens here I'll just do one example
+ that illustrates how you could work so
+ first of all I'll create a new branch
+ called Bug 123 right so this would be
+ your bug number maybe
+ in um a bug and then in a ticket
+ system and then let's switch to first
+ Let's do an update in the feature
+ branch which
+ is maybe I'll record something okay to
+ make it a little more
+ interesting but at the same time
+ uh and then we of course have to commit
+ the changes sometimes I forget forget
+ this because you didn't have to before
+ in buang and now they have to be
+ committed so what I'll do is I'll just
+ go ahead and create a
+ commit
+ added
+ clicks now what I'm going to do is I'm
+ going to try and merge this uh no I'm
+ actually going to create the conflict
+ let's create a conflict that's more fun
+ so I'll go go to the feature Branch I
+ switch
+ here uh I'm oh I'm in the feature Branch
+ I'll go to the bug
+ branch and what I'll do is I'll take um
+ that navigation test that we had and I'm
+ actually just going to create something
+ in the beginning of the test here
+ instead and that should generate a
+ conflict so let me try to
+ First go ahead and uh
+ commit those
+ changes here added initial
+ clicks now we should have a conflict if
+ I'm trying to merge the bug and the
+ feature Branch so let's try and do that
+ so what I'll do is I click on merge and
+ I click on feature and I try to merge
+ it as you can see we have an unresolved
+ conflict here okay so what you want to
+ do is now you can actually select and
+ here you can see uh that it has Auto
+ selected for you but if you want you can
+ remove those clicks there you see this
+ would be the feature Branch this is the
+ current Branch I'm in and this is the
+ result that you want to commit but let's
+ say we want to get both of these things
+ so we'll scroll
+ down and as you can see it seemed to
+ have figured out from the conflict
+ automatically but of course I can change
+ here if I need to right there is also
+ something we can do if you see that
+ there is an issue you can also uh paste
+ and create initial actions here and you
+ can also actually drag and drop for the
+ order of them so this is a pretty
+ powerful view uh but usually that's not
+ necessary so it has me to go to the next
+ conflict there are no more conflicts so
+ now I can go ahead and Commit This and
+ as you can see I have now managed to
+ merge this feature Branch uh to bug 123
+ Branch now we're just going to do one
+ more complex
+ scenario what we're going to do is we're
+ going to try and
+ merge the feature branch into master and
+ then bug one two three into Master to
+ see if we can create a
+ conflict so I'm going to start by
+ switching to the master Branch you
+ always want to be just like it in the
+ branch you want to merge
+ into now I'm going to go and start by
+ merging the feature branch that doesn't
+ have those uh changes right
+ now so I'm going to I'm going to merge
+ this into master I'm going to commit and
+ it's going to create the merge
+ request but now instead of accepting
+ this which would of course be the normal
+ case I'm going to merge bug one two 3 in
+ creating kind of a a new where emerge
+ request
+ right now if the user tries to approve
+ this old merge request
+ Quest H it's it can actually do
+ it but if I approve
+ this and then I'm going to this merge
+ request you can see that there will be
+ conflicts right cu the Assumption was
+ when we created the merch request it was
+ done on a different Baseline for this
+ test so you can now look at the
+ conflict but remember this is this is a
+ merge request so you don't want to
+ resolve this here so what you will do is
+ you would reject the merge request
+ say remmer merge with Source Branch or
+ master or whatever you you want to do or
+ Master Branch or depending on how you
+ work so in this case when the merge
+ request has been
+ denied you want to make sure that you
+ take the brch you're working in and
+ remerge those changes from the master
+ branch and then try again to see if the
+ merch request can be uh
+ redone so this way in buang we think
+ it's a more professional way of working
+ and allows you to have a stable master
+ or CI Branch while having several people
+ uh on your team working on the same
+ project and same tests at the same time

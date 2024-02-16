@@ -1,0 +1,110 @@
+Transcript for [Boozang Feature: Execute as single action to speed up tests](https://www.youtube.com/watch?v=HRhM3dUovCQ) by [Merlin](https://merlin.foyer.work/)
+
+ the next feature i want to talk about is
+ execute as a single action
+ we've supported for about a year the
+ ability to execute a group of actions as
+ a single action that greatly speeds up
+ performance and this would be both when
+ you're debugging an ide
+ and when you're running it on your ci
+ server so this is a great performance
+ improvement but we wasn't 100 sure that
+ it would always work and we notice now
+ that very often this is very stable so
+ we're going to create and make this the
+ default behavior with a couple of in
+ changes to the interface so i'm just
+ going to demo this by recording on top
+ of the lab.busan.com
+ slash form fill
+ and i'm just going to
+ just simply
+ demo a very simple form fill
+ where where i'm recording it and also
+ using the default
+ data binding functionality that
+ automatically binds it into the
+ parameter
+ variable okay
+ so here we have a simple
+ form fill action right and
+ as you can see now we've added an icon
+ here with a little flash i'm just going
+ to start by disabling it and then
+ running the test so we see the kind of
+ default uh behavior here
+ pretty fast but not like super fast
+ right
+ this is typically what we do is we
+ basically execute these actions one by
+ one so if i would double click here it's
+ kind of this speed of course i can't
+ click as fast
+ but you see
+ how that works so now we're gonna go
+ ahead and enable this so what i'm doing
+ now is i'm clicking on the flash
+ and now you can look at how fast this
+ form is filled instead
+ so you see that now actually all of the
+ fields are sent
+ to the application and then executed on
+ the application so for really big forms
+ this is a huge improvement and we've
+ been seeing uh
+ uh
+ execution times going down to like for
+ whole tests
+ by 25 30 percent so this is a really a
+ strong improvement you might have cases
+ where you don't want to have this
+ behavior so what i'm going to do here
+ i'm just going to pick one action and
+ i'm just going to disable it for this
+ one so
+ under basic info next to switch flag
+ we're just going to click non-rapid
+ action and this is if you notice a
+ specific problem in a form or something
+ and we're going to see how this executes
+ as you can see the first name was done
+ as rapid but because it cannot
+ fill the second form in a rapid manner
+ it kind of becomes a single action a
+ single action and then email and
+ password are executed in bulk so it just
+ breaks the flow so that's one way of
+ doing it
+ and then of course you can also take
+ if i disable this this is no no
+ non-rapid action i can also go to my
+ settings and i can disable this
+ completely disable out the one action
+ execution here
+ and if i run this now you're going to
+ see that it's back to the normal default
+ behavior so we just changed the default
+ behavior to not execute a single action
+ because we are changing this default
+ behavior for your ci runs you should see
+ this different and it should be
+ hopefully
+ much faster executions if you're seeing
+ a problem go ahead and disable it or use
+ this if you have a specific problem with
+ a specific form you can do what i just
+ did and you go into basic info
+ and uh
+ for this thing
+ sorry action setting basic info
+ non-rapid action and you can disable it
+ for a specific field
+ but what we're going to see here much
+ faster execution times and we're looking
+ forward to bringing you even more
+ performance improvements in the future
+ when we discover these things
+ so let us know
+ what you think of this and how it's
+ working out for you

@@ -1,0 +1,172 @@
+Transcript for [Feature Highlight: Temporary database](https://www.youtube.com/watch?v=H9mbyQASx1A) by [Merlin](https://merlin.foyer.work/)
+
+ now i would like to introduce the
+ temporary database
+ um
+ you can find that this icon here you see
+ it says temporary database
+ and this functionality which i think is
+ pretty novel i haven't seen this in any
+ other test tool is something we came up
+ with
+ working with api tests
+ and as we've developed the api testing
+ in busan
+ we've seen an increasingly need
+ increasing need that
+ when you have one api request you can
+ have a consecutive request that is
+ depending on
+ data from a former request
+ so
+ let's take an example with this would
+ typically happen
+ i have a lot of features here cucumber
+ features
+ where let's say we take
+ order management here for instance
+ where i have a number of given condition
+ that leads up kind of does the data seed
+ that creates the data that allows me to
+ run the scenario so in this case it's a
+ brewery platform so it's given i am a
+ brewer i add a product i set the
+ inventory which is the stock and i set
+ the price and then i can order the
+ product
+ in order to speed things up we wanted to
+ convert these given conditions to api
+ tests so they're not done in the ui so
+ let's see what that would look like we
+ will take one of the
+ modules here that i did convert
+ here inventory management i am a brewer
+ and i call them just api i add a product
+ dash api
+ what we noticed was that of course
+ given i am a brewer this contains the
+ login and that will give you a user the
+ user is tied to a company etc etc etc so
+ of course in my product request i'm
+ going to need data from a step before
+ so
+ i've just created some helper tests to
+ kind of illustrate this and of course
+ this is fairly complex functionality and
+ i think as you start playing around with
+ this it will make much more sense but
+ one way i illustrate this is basically
+ an api creation i want to make sure that
+ i can do find the company which is
+ basically the first condition and then i
+ want to create a new product
+ so let's see what this looks like
+ if i'm here i can actually delete all
+ this which is the temporary database
+ which is in the local storage in the
+ browser so now this is clear i don't see
+ anything
+ and now what i want to do here is i want
+ to play this step and we're going to see
+ what happens i'm just going to run
+ one iteration with this data
+ what's interesting here is really to be
+ able to
+ without kind of creating these
+ of course you could create a carrier
+ variable that says
+ project
+ user equals or project company equals
+ and then carry it onwards
+ but i'll show you this is a slightly
+ more elegant solution and it works
+ really well especially in combination
+ with the open api where we have ever all
+ the api requests really organized into
+ modules in a very very nice way so let's
+ open this as you can see we now have
+ the user
+ the company the container the product
+ the sub product the inventory and the
+ sellable which is all this stuff that i
+ set and i'm going to show you very soon
+ how i set these
+ but in the meantime let's look at this
+ right if i want to understand how this
+ data was set i can troubleshoot it
+ directly here we're going to do the
+ first thing as you can see we have an
+ authentication request and you can also
+ look at the response and
+ if you go down the list here you can see
+ how the the product is being called and
+ you can see the you can see the response
+ and remember you can always double click
+ here to open the tree
+ completely
+ so let's look how this looks in practice
+ well
+ well first of all okay the temporary
+ database is kind of
+ populated automatically and i'm going to
+ show you how this is done if i do look
+ at the company call and i go into the
+ api setting
+ and if i go to end script
+ you see this ai api ad data which is
+ part of the default setup
+ this is the one that adds it
+ into the temporary database
+ and then when i want to use it
+ i use something here in create product
+ i use this and i'm going to show you
+ here inside try
+ you're going to see that i'm using
+ something here of course it's just to
+ debug but what i would use is exist
+ company id and it will automatically
+ take
+ the latest company id and if you want to
+ know what was the latest company id that
+ was retrieved imagine you want to have
+ the latest one in case we store usually
+ 10
+ company ids so you want to if it was a
+ test before that called something that
+ got the company id in the response you
+ want to catch the latest one okay
+ so here you can see we open up the
+ company ids you see there is a little
+ star that indicates what would be used
+ in an exist call so we know here and we
+ can inspect in the data and we can see
+ here this is indeed busan brewer ar
+ which is the right
+ data that we should use in this case
+ so now you see a little bit on how you
+ can um
+ how you can store
+ the things in the temporary database and
+ then how you can kind of link this
+ together and the way you would do this
+ i'm just going to go very quickly into
+ it but
+ because of course this is pretty big
+ functionality
+ is that if you go into mapping pages and
+ you go into
+ one of these
+ fields so you press settings and you go
+ into fields you're gonna see that the
+ company id i set this exist company id
+ so i basically
+ map out all the modules and all the data
+ that go into these modules for the api
+ requests but of course this kind of ai
+ view for api testing is a separate
+ bigger topic to talk about but the new
+ feature that we added
+ specifically is this temporary data base
+ which is super useful when working with
+ more
+ advanced end-to-end api tests

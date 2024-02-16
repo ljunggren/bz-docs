@@ -1,0 +1,81 @@
+Transcript for [Boozang Feature: Scenario Mapping](https://www.youtube.com/watch?v=btVAezCaMl8) by [Merlin](https://merlin.foyer.work/)
+
+ let's take a look at the scenario
+ mapping feature one thing we found was
+ that when you have a lot of scenarios
+ sometimes you can get in the hundreds
+ it can get a little messy to know
+ exactly what you mapped so as you see
+ here we have a lot of different given
+ conditions here and sometimes
+ you want to be able to first of all
+ understand what test steps you map to
+ which tests
+ and without having to kind of click into
+ going back and forth
+ trying to understand we instead decided
+ to allow you to view the full map and
+ update tests in bulk so let me
+ illustrate that what you want to do is
+ you want to go to the roof of the
+ project
+ and then you want to hit this kebab menu
+ here
+ and then here you have this review the
+ test mapping of scenario
+ so what you do here is that you see all
+ the terms that you've mapped and
+ remember
+ one unique string should map to one test
+ case but what's good here
+ with this new way is that now you can go
+ in and see i accept the order is mapped
+ to accept current order
+ but now of course i can update this like
+ this let's say i accept the order test
+ and now i have changed all the words to
+ be i accept the order test
+ to map these so if i close this now
+ and search
+ i accept the order you see they've all
+ been updated in bulk
+ another thing that is useful i'm gonna
+ of course change this back so first of
+ all
+ i accept the order i change this
+ you can also of course
+ uh take the word and see what is it
+ mapped to
+ and you can of course also
+ change what it's mapped to
+ we also added uh check boxes here and
+ what that allows you to do
+ is to for instance if you want to break
+ something off
+ you can
+ unclick a few of them
+ and then just update
+ the ones you need to update so like that
+ so if i do that you see there's two
+ different ones now
+ so you have i accept the order i accept
+ the order test
+ so what's useful about that would be for
+ instance if you're doing a transition to
+ doing like
+ maybe you want to do some of this over
+ the api you can now break this out and
+ do it on a per test basis so let's
+ change this back
+ but
+ all in all
+ i'll do yes and you see now we have
+ everything under i accept the order so i
+ changed it back
+ so the purpose here again is when you
+ have a lot of different strings mapped
+ to different tests
+ you can more get a feeling
+ for what is mapped where
+ and you'll be able to update it more
+ easily

@@ -1,0 +1,68 @@
+---
+id: testing-types
+title: Testing Types
+---
+
+Boozang supports a number of different test types. 
+
+    - Tests
+    - API tests
+    - Test Suites
+    - Scenarios
+
+Test are unique as they are a super-set of all the other test types.  
+
+
+
+## Tests
+
+Tests is the base of doiong testing in Boozang, and they support the following action types
+
+    - Validation actions (all types)
+    - Mouse actions
+    - Keyboard events
+    - Set component
+    - Extract actions
+    - Script actions
+    - Plug-in test
+    - Group
+    - Refresh
+    - Take screenshot
+    - Comment
+    - API action
+    - Visit links
+    - Validate form fields
+
+## API tests
+
+API tests are build to perform requests and validate responses towards an API. Except for API load tests, tests support all the action types. 
+
+We recommend using API test type for "pure" API tests for house-keeping purposes. 
+
+    - API actions
+    - Script actions
+    - Script validations 
+    - Plug-in test
+    - Group
+    - Refresh
+    - Load test action
+
+## Test suites
+
+Use test suites to run a list of tests. Regular tests support the same action type (plug-in tests), but we recommend that you use test suites for house-keeping purposes. 
+
+    - Plug-in test
+
+## Scenarios
+
+Scenarios are used to mapped Gherkin syntax to plug-in test action. The following action-types are supported:
+
+    - Plug-in test
+
+This connects a certain Gherkin phrase to a test, such as 
+
+```
+As an Admin -> Login as Admin
+```
+
+As soon as a link has been established, any scenarios containing the line "As an Admin" will automically be linked to the test "Login as Admin".

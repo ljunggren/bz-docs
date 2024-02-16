@@ -8,8 +8,8 @@ module.exports = {
         // "introduction/onboarding",
         // "introduction/glance",
         "overview/why-boozang",
-        // "overview/getting-started",
         "overview/boozang-from-the-trenches",
+        "overview/chat-gpt",
       ],
     },
     {

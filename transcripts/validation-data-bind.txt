@@ -1,0 +1,76 @@
+Transcript for [Boozang Feature: Validation data-bind](https://www.youtube.com/watch?v=6FMtt6EViyA) by [Merlin](https://merlin.foyer.work/)
+
+ okay let me demo the validation data
+ bind feature
+ this should be a pretty short demo
+ um as you know when we record a form
+ fill or any sort of data entry in busan
+ we by default
+ data bind it to the parameter space so
+ you can send parameters to test and of
+ course change
+ the test data to improve usability
+ so
+ in this case i'm also going to show how
+ we do this for validations okay
+ so what i'm going to do is i'm going to
+ use the lab so that's the lab.busan.com
+ and i'm going to go ahead and just uh
+ create the test that is called add
+ validate
+ to do
+ and
+ if you want to open up the lab here you
+ can see that this one is under sorted
+ list okay
+ so what we're gonna do here i'm gonna go
+ to the url sorted list and as you can
+ see you just click on the link and you
+ see that the page is being reloaded so
+ we're on the right page
+ let's say we have no
+ to do items and i'll just go ahead and
+ record here
+ and i'll add an item called for instance
+ feed the cat okay
+ and i'm going to use the tab here to
+ make sure that this is
+ recorded individually and then i click
+ add to do
+ that's good because now we will have a
+ separate set action and a separate click
+ action that's what we want to have here
+ and as you see here we also have this
+ validation here so i'm just going to go
+ ahead and validate that feed the cat was
+ added so i'm just going to click on the
+ validation and unfeed the cat
+ what's cool here is of course that as
+ you can see is the add new to do
+ data bounded into dollar parameter add
+ new to do and the validation
+ automatically uses dollar parameter ad
+ to do
+ so if i go ahead delete this and run
+ this test
+ it should execute successfully
+ and that's not so strange it would do it
+ otherwise as well but now of course i
+ have a fully reusable test so here
+ instead of feed the cat i can add feed
+ the dog under test setting
+ uh parameter
+ so i set feed the dog instead and i'll
+ run this
+ and as you can see
+ it also passes so it means that both the
+ add action
+ and the validation action is data bind
+ bonded
+ bounded into data
+ of course you could do this manually by
+ using inserting here the dollar double
+ bracket and parameter and the variable
+ name but it's kind of nice to have this
+ done automatically for you so you can
+ save you some time

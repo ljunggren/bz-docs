@@ -1,0 +1,66 @@
+Transcript for [Boozang Feature: Loading Element](https://www.youtube.com/watch?v=ofUZX1QxOeA) by [Merlin](https://merlin.foyer.work/)
+
+ let me demonstrate this loading element
+ sometimes you have in your application a
+ spinner or something that shows you that
+ the application is not ready that it's
+ loading then it's good to automatically
+ have the test to globally wait for this
+ it could be a spinner or something like
+ that and you know it's not going to
+ continue the test execution so you don't
+ have to set those individual timeouts to
+ increase those in many places it's just
+ a global setting
+ but sometimes as you can see in this
+ application the load is very quick and
+ it's hard to capture so i'm just going
+ to show you a trick on how you capture
+ this okay and this is a little hard so
+ you're going to have to try a few times
+ to figure this out so you go to sources
+ in the google chrome console you hit
+ reload and then you try to be lightning
+ fast you hit that pause button right and
+ now i wasn't fast enough so i'll do it
+ again see if i can
+ you see now you pause the application so
+ you see the spinner now you can actually
+ go back
+ to the element and capture this one so
+ let me try capture this one i'll use the
+ selector and i'll hit this loading here
+ so the way i'll do it this this is a
+ little tricky
+ so let's see if i can do it
+ there
+ nope
+ okay maybe i can capture that
+ and then try capture this loading here
+ very tricky
+ okay i'll capture the image for now
+ and then
+ you see here there's the h5
+ the
+ typography root so you want to try and
+ capture this element so what i'll do is
+ i'll just i'll just copy this for now
+ and then i'll paste it into a loading
+ element and the way i'll do it instead
+ is
+ i'll take one of these
+ maybe the display block
+ and i'll just add here
+ i'll add the dot
+ because it's a class right
+ and then i'll just add our selector for
+ it and what i'll use here is contains
+ loading
+ and now when you set this the
+ id the test execution will automatically
+ wait
+ for this
+ to disappear until running the next
+ actions so this is a global setting to
+ make sure your tests are more stable in
+ case your application is slow to answer

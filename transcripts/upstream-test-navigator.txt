@@ -1,0 +1,53 @@
+Transcript for [Upstream test navigator](https://www.youtube.com/watch?v=MQt20L39EME) by [Merlin](https://merlin.foyer.work/)
+
+ let me show you the Upstream test
+ Navigator we've had the ability to view
+ Upstream tests for quite a while but we
+ realized that it would be nice to have a
+ navigator function for this to make it a
+ little clearer so remember usually
+ you'll have your cucumber tests right
+ here referencing a bunch of tests in
+ your um that you've recorded or created
+ in some way and sometimes it's easy that
+ it gets a little messy let's say here I
+ have the test ad product or I wonder
+ where this test step is being used so
+ what you used to do is you would be able
+ to navigate up in the tree hitting this
+ show Upstream tests and that would just
+ navigate up in the tree but instead now
+ we kind of created this Navigator which
+ shows you all your Upstream tests so I
+ can now see that my ADD product is used
+ in create product add other product etc
+ etc and also where it's used by by a
+ test that is being referenced you can
+ now see the full tree so I think this is
+ very helpful before you would have to
+ navigate several steps and let's say you
+ have a test that reference a test that
+ reference a test it can get complicated
+ but here you would see it as a tree and
+ you can expand and you can see exactly
+ how your test step is used so this is
+ really useful for navigation but also
+ useful if you want to refactor your code
+ us say I'm going to change this test
+ what am I going to affect and which
+ cucumber scenarios is going to be
+ affected by this so I think this is a a
+ nice modification and also here if you
+ use the icon you can easily just
+ navigate to the test let's say I'm on
+ another test and I go here I can easily
+ navigate to the test by clicking this
+ test case icon and as you can see I can
+ do many and I can switch between them
+ and when I no longer need to check them
+ I will just close them here so it's more
+ of a navigator concept for your test
+ case references your plug test case so I
+ hope this will be helpful for you
+ especially when you have a bit of a
+ bigger project

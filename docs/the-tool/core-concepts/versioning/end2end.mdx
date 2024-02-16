@@ -1,0 +1,83 @@
+---
+id: end2end
+title: An end-to-end example
+---
+
+import YouTubeEmbed from "@site/src/components/YouTubeEmbed";
+
+<YouTubeEmbed embedId="ja7ETXsjKGI">An end-to-end example</YouTubeEmbed>
+
+[00:02](https://www.youtube.com/watch?v=ja7ETXsjKGI&t=2) Boozang now supports proper branching and merging with merge requests
+
+[01:28](https://www.youtube.com/watch?v=ja7ETXsjKGI&t=88) Creating and managing feature branches
+
+[02:54](https://www.youtube.com/watch?v=ja7ETXsjKGI&t=174) Creating and managing merge requests
+
+[04:23](https://www.youtube.com/watch?v=ja7ETXsjKGI&t=263) Approving merge requests and creating merge requests with conflicts
+
+[05:48](https://www.youtube.com/watch?v=ja7ETXsjKGI&t=348) Creating and merging branches in Boozang
+
+[07:19](https://www.youtube.com/watch?v=ja7ETXsjKGI&t=439) Merging conflict resolution process
+
+[08:52](https://www.youtube.com/watch?v=ja7ETXsjKGI&t=532) Merging feature branches and conflict resolution
+
+[10:28](https://www.youtube.com/watch?v=ja7ETXsjKGI&t=628) Handling conflicts in a merge request
+
+---
+## An end-to-end example
+
+### Introduction
+This guide provides a detailed example of using branches, commits, and merge requests in Boozang, with an emphasis on working with a protected master branch. This ensures a stable and controlled integration of changes.
+
+### Step 1: Initial Setup
+
+#### Setting Up a Protected Master Branch
+- **Protect the Master**: In Boozang, configure the master branch as protected, restricting direct commits and merges to authorized personnel only.
+
+#### Creating a Feature Branch
+1. **Create a New Branch**: From the master branch, create a new branch for your feature, e.g., `feature-enhancement`.
+2. **Switch to Your Branch**: Move to the `feature-enhancement` branch to begin development.
+
+### Step 2: Developing Your Feature
+
+#### Implementing Changes
+1. **Develop the Feature**: Work on your feature in the `feature-enhancement` branch, making sure to save and test your progress.
+2. **Commit Changes**: Commit your changes with clear, descriptive commit messages, e.g., `Added new UI test cases`.
+
+### Step 3: Preparing for Integration
+
+#### Syncing with Master
+1. **Pull Latest Changes**: Regularly pull and merge the latest changes from the protected master branch to your feature branch.
+2. **Resolve Any Conflicts**: If conflicts arise during the merge, resolve them promptly.
+
+#### Finalizing Your Work
+- **Last Commit**: Once you are satisfied with your feature and it's fully tested, commit any final changes.
+
+### Step 4: Merge Request Process
+
+#### Initiating a Merge Request
+1. **Create a Merge Request**: From your `feature-enhancement` branch, initiate a merge request towards the master branch.
+2. **Document Your Request**: Clearly describe the purpose and scope of your changes in the merge request.
+
+#### Review and Discussion
+- **Engage with Reviewers**: Collaborate with assigned reviewers, responding to comments and making any necessary revisions.
+
+### Step 5: Completing the Merge
+
+#### Final Approval and Merge
+1. **Approval from Authorized Personnel**: Wait for the approval from those authorized to merge into the master branch.
+2. **Merge Your Changes**: Once approved, the authorized person will merge your changes into the master branch.
+
+#### Post-Merge Steps
+- **Verify in Master**: After the merge, test the changes in the master branch to ensure everything works as expected.
+- **Close the Merge Request**: Mark the merge request as completed.
+
+### Step 6: Post-Merge Clean-up
+
+#### Cleaning Up Branches
+- **Optional Branch Deletion**: Consider deleting the `feature-enhancement` branch if it's no longer needed to keep the repository clean.
+
+### Conclusion
+This workflow demonstrates how to effectively use branches, commits, and merge requests in Boozang, particularly with a protected master branch, to ensure high-quality and controlled updates to your project.
+
+

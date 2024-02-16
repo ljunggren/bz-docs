@@ -1,0 +1,128 @@
+Transcript for [Boozang Introduction: Implementing a data-driven Cucumber test](https://www.youtube.com/watch?v=lsWYywBs24M) by [Merlin](https://merlin.foyer.work/)
+
+ i'm now going to go ahead and create a
+ data driven test case in cucumber and to
+ do that i will go into
+ the lab
+ under form fill
+ where you have an example cucumber
+ specification that uses the scenario
+ outline keyword with the example data so
+ we're going to go ahead and copy this
+ and then paste this straight into
+ the new feature
+ what you have now is a feature pointed
+ to a single scenario and you can see the
+ data here under the data tab
+ we're going to go ahead and do what we
+ did before we're going to create a very
+ simple
+ new test for the first thing and here
+ we're going to create a new module
+ called form
+ after we created the form we're going to
+ say clear form but we won't do anything
+ complicated in this test okay
+ for this entry url we're going to look
+ at form fill what's the entry url it's
+ form fill
+ and we're going to use always reload for
+ the given condition
+ here we're not going to do anything we
+ leave it empty as is it's just going to
+ reload the page
+ then we're going to go ahead and create
+ a new test for entering the user so
+ we're going to use the form module and
+ simply do
+ uh
+ add user or fill the form doesn't matter
+ but we're going to call it add user in
+ this case and we're going to use the
+ form field url and the never reload
+ policy
+ after we've done that
+ instead of doing a validation
+ uh
+ we're just going to leave this empty as
+ well so i'm not going to create the
+ validation here so i'm just going to
+ create an empty validation test in the
+ form say
+ validate user added will save the
+ validation as an exercise for you to
+ work on
+ now for the data driven part
+ as you know busan is by default data
+ driven so what we're going to do is
+ we're just going to fill out the form
+ here
+ and i'm going to use the tab key while
+ filling out the form which is usually
+ very good when you switch between the
+ inputs when you do test automation
+ in order to avoid side effects
+ and then i'm going to hit the save to db
+ so i add the user to the database and as
+ you can see
+ the user has now been added here under
+ show users
+ as you can see under test setting you
+ see that we have the first name the last
+ name the email and the password
+ already broken out this data so what we
+ will do is we're going to use the back
+ key and now we're going to map this data
+ into the data we just filled
+ so what you want to do here is
+ you want to use the little magic wand
+ and then here you can see that we're
+ going to have if i enter any of these
+ i'm going to have a
+ suggestion for
+ we're going to do one thing we're just
+ going to reload this page
+ because sometimes if you don't get the
+ right behavior simply reload the page
+ what we're going to do here we're going
+ to see that we have
+ all these data
+ from this
+ data that we saw here before
+ to choose from right and what you want
+ to do is probably you want to map the
+ first column first name to first name
+ last name to last name email to email
+ and password to password and of course
+ you can do that
+ manually in the action setting here
+ very simply
+ or you can actually use the auto map
+ functionality so because we've used
+ similar wording we've actually managed
+ to map
+ the different things in our data and as
+ you can see
+ now you can see how
+ in
+ the call
+ we send the first name as the loop first
+ name the last name as the loop last name
+ which is basically every row of the csv
+ file
+ so if i play this now
+ it's going to ask if we want to run
+ which iteration we want to run or if we
+ want to run all of them i'm going to go
+ ahead and run all of them so what you're
+ going to see is how simple it is to have
+ a set of data create a test step in
+ busan
+ and basically create a data driven test
+ in busan so
+ what we do we really specialize in
+ making sure that you can create very
+ reusable tests and very easily send data
+ from upstream tests downstream so you
+ can see how easy and quick it is to
+ create a powerful test case

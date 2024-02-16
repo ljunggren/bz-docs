@@ -1,0 +1,121 @@
+Transcript for [Boozang Introduction: Cucumber Features and Scenarios](https://www.youtube.com/watch?v=7jNc2kpdMEo) by [Merlin](https://merlin.foyer.work/)
+
+ as we've redone a lot of the cucumber
+ functionality i'm going to create a
+ couple of videos that shows you
+ how to work with cucumber now in busan
+ so what i've done is i've created an
+ empty project for us to demo on
+ and so what i'll do is
+ just like you would start
+ this is the same view that you would
+ have and remember as usual we're using
+ the lab
+ okay
+ and the good thing is that now in the
+ lab we've added cucumber feature
+ and scenario specifications so you have
+ something to get started with there will
+ be an upcoming udemy course where we go
+ into cucumber in more depth but right
+ now
+ here is a little taste of what you're
+ going to see
+ as usual
+ remember when you're in busan and you go
+ up to the main navigation will have
+ modules which is the code domain where
+ you test live and in cucumber that would
+ be the test step implementations and
+ then you have the features which is the
+ business domain where your cucumber
+ feature and scenario lives
+ of course you can use as usual the
+ import feature function
+ and here as usual you can also
+ add an integration point where you can
+ synchronize i can show you really
+ quickly under integration you can now
+ synchronize with a bunch of different
+ systems you can have features in gitlab
+ github bitbucket
+ x-ray and acer okay so you can
+ synchronize the features directly from
+ them where they would be the master
+ system and busan would be the slave so
+ all the test step implementations will
+ live in busan
+ and of course the execution engine and
+ then the actual cucumber files would
+ live in your version control system or
+ in x-ray
+ but right now we're going to do it keep
+ it simple no integration points and
+ remember now i'm just clicking new
+ feature
+ so
+ before we made it a little bit more
+ complex where you had to create the
+ scenarios individually but right now you
+ can actually import a feature straight
+ away so we're going to import the sorted
+ list feature so we're going to go into
+ sorted list cucumber specification and
+ we're going to copy all this so just
+ ctrl a
+ control c
+ and then instead of filling out the
+ feature name just click import features
+ and paste all of this straight into
+ busan and will auto generate the
+ features
+ and the scenarios inside that means that
+ in busan that would mean it's kind of a
+ you know a feature
+ you will create the future name sorted
+ list then you create a test suite sorted
+ list so you can run all the scenarios
+ inside the feature and then when you
+ click into it the feature will of course
+ show up as not implemented
+ so that's one way to get really quickly
+ started with busan so let me i mean
+ cucumber in busan and remember that all
+ of these are executable directly when
+ they're imported they will just show us
+ non not implemented in the report right
+ you see this little yellow not
+ implemented
+ and under report you will see them as
+ not implemented so that's what it would
+ look like before you start linking
+ test step implementations to them
+ an alternative way if you don't want to
+ synchronize if you want to create a
+ scenario manually
+ you can go into the feature
+ and just click new scenario
+ and of course you can now fill in
+ given
+ i
+ have an item
+ when
+ i give
+ it away
+ then
+ i shouldn't
+ have it
+ so now you can of course manually create
+ something and let's say this is the
+ item test right
+ or
+ keep it destructive give away
+ item scenario okay
+ and we go submit and as you can see
+ i have an item i give it away i
+ shouldn't have it so that's how simple
+ it is to get started with the cue camper
+ so the next
+ uh
+ video we're gonna look at how would you
+ implement these things in busan

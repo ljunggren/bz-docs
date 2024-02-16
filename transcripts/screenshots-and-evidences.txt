@@ -1,0 +1,105 @@
+Transcript for [Boozang Feature: Screenshots & Evidences](https://www.youtube.com/watch?v=eAZjlsj7908) by [Merlin](https://merlin.foyer.work/)
+
+ being able to know what's wrong and to
+ troubleshoot your test as one of the
+ most important things of course
+ so one of the things that we do is of
+ course when you have a test failing we
+ will give you
+ the piece of log
+ and the steps that led up to that
+ problem but usually it can be very
+ helpful to have a screenshot so i'm just
+ going to show you how we support the
+ error screenshots that we add by default
+ but also how we support reference
+ screenshots and additional evidence
+ so in order to do that i've created a
+ very simple test in busan
+ and it's a cucumber test
+ and it's simple it has a step a given i
+ am logged in it logs you in
+ and then it says i make a screenshot but
+ what we're actually doing here i'm going
+ to show you is we're going to make three
+ different screenshots and then this one
+ is just a dummy step
+ so and i make a screenshot i have one
+ a new javascript function util attach
+ screenshot to report so remember to keep
+ the brackets for that
+ this function takes the element path
+ that you can put inside of here if you
+ want to take a screenshot of a specific
+ element
+ otherwise leave it blank and it will
+ take the whole application window
+ so this will generate the screenshot but
+ then
+ in this path which is of course if i run
+ this test
+ and i run this action it's actually
+ going to fail so i set this up to fail
+ automatically
+ and what i've also done is i've used
+ this button here which is a screenshot
+ button to take
+ a picture of the element so that would
+ be a reference for this one for this
+ particular action you have a screenshot
+ reference
+ and then
+ if we look in
+ uh of course if you look at any cucumber
+ plugin in the cucumber report you would
+ actually see these three screenshots you
+ would see the evidence screenshot
+ you would see
+ the failing screenshot what the
+ what
+ sees
+ when it's failing this validation but
+ you will also put this reference
+ screenshot next to it so let me show you
+ if we go into um
+ the
+ x-ray here we're of course integrating
+ with x-ray
+ and i go i created a dashboard here with
+ my tests and i look at the latest test
+ failure or execution failure
+ in x-ray of course you will see
+ everything lined up and then you can
+ drill down into the individual test
+ executions and if i want to take a look
+ here i will go into
+ the step where i see of course what's
+ wrong with this step
+ i see the problem is i can't find this
+ new company
+ and the validation for that failed but
+ then i can also get more information
+ from the evidence log
+ and of course here we've overdone it a
+ little bit
+ i first added a reference screenshot
+ which you can also do
+ on successful steps and you can see it
+ has a blue shade to it
+ and then we have what we were seeing
+ when it was failing basically it was
+ seeing the wrong page the validation
+ failed so it made a full screenshot of
+ the page and then we can also see the
+ original element it was looking for so
+ don't you don't usually use these in
+ tandem but i've just shown you how you
+ can add
+ evidence screenshots into a test step
+ and also how you can add a reference
+ test step to a failed validation
+ so play around with this and
+ i think you will find it very helpful
+ and remember screenshots if you take it
+ with the whole screen takes a bit of
+ space so don't overuse these functions

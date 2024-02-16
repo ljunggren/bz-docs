@@ -1,0 +1,49 @@
+Transcript for [Boozang Feature: Xray integration](https://www.youtube.com/watch?v=V3Ia2dh-9EQ) by [Merlin](https://merlin.foyer.work/)
+
+ as you might know we integrate with the
+ test management software x-ray
+ which is an extension into jira that we
+ like a lot
+ we've had that integration in play for
+ more than two years now and it's been
+ working really really well
+ but we thought what can we do to
+ supercharge this
+ so maybe you remember before we could
+ already uh you know get the execution
+ results back in x-ray see all the
+ reports and see the evidences in there
+ so this is really really cool and this
+ kind of allows you to do manual testing
+ and automated testing and view them the
+ same way in x-ray
+ one thing that we did though now
+ we've
+ extended the x-ray integration
+ uh using our extension so here in
+ extension if you add your x-ray host
+ here which is actually the api you're
+ supposed to put here
+ and you can also put your jenkins host
+ here
+ where you have the busan tests
+ now all of a sudden you get two new
+ icons in x-ray one thing that runs the
+ tests in jenkins and another one that
+ opens the scenario in busan
+ so
+ as usual we use the api to synchronize
+ busan with x-ray and this is working
+ well but of course now if you see a
+ problem you can relaunch it
+ from your ci server and we could put it
+ in place for any ci server here it's a
+ very simple integration so you can
+ execute any x-ray test here and also you
+ can open the test directly in busan
+ which helps with an even tighter
+ mapping so we're super excited about
+ this
+ and i hope i will be able to show you
+ more after we have this in production a
+ little while

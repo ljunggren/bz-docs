@@ -1,0 +1,133 @@
+Transcript for [Boozang Feature: API load test](https://www.youtube.com/watch?v=Vzp5W-AoVJM) by [Merlin](https://merlin.foyer.work/)
+
+ one additional feature that we recently
+ changed in busan is the api loading test
+ so we supported this before but right
+ now we've changed it so it's a new
+ action type so the way it works is that
+ you will create
+ a new test and what we do here
+ is that
+ i don't know if you looked at the video
+ previously but we have now for instance
+ a post
+ a get and a delete and these are done uh
+ against by recording
+ this
+ ui right so
+ in the lab we have this
+ form fill functionality that post data
+ to an api
+ so what we've done now we have a post we
+ also have a get when you do show users
+ in db
+ and we also have a delete so that's what
+ you're seeing so what we're going to do
+ is we're going to create a new api test
+ and we're just going to call this load
+ test
+ and then we're going to choose the api
+ host
+ and what you want to do is
+ what we support
+ is the fact that
+ let's go back there
+ what we support here is that you can now
+ use existing api actions
+ that you've either recorded
+ or created in your load test so let's
+ start by that
+ so what we're doing here i'm doing
+ new and i do load test here
+ and when i do that as you see we have a
+ list of api tests and what we allow you
+ to do is not just doing like a thousand
+ post requests or a thousand
+ uh get requests it's you can do like a
+ group of things so what we're gonna do
+ is we're gonna post some data then we're
+ gonna try and load the data and then
+ we're going to delete it afterwards
+ which is usually a pretty good group
+ because you won't get tons of data build
+ up so we're going to try that now so i'm
+ going to use the plus and it's still
+ going to find this i'm going to do first
+ i'm going to select from the form the
+ post request
+ and then i'm going to add again i'm
+ going to do the get request
+ and then again i'm going to make sure we
+ have the delete
+ and then what you want to do is of
+ course you want to make sure that when
+ you post
+ you want to make sure that the variable
+ for the id is carried over
+ and actually here
+ we're lucky normally you needed to do
+ some manual work here but what you
+ basically want to do is you want to make
+ sure that what's being returned from one
+ of the scripts
+ is being set when you try to retrieve
+ the entry which is actually correct here
+ you see how it says parameter id here
+ right
+ and then you want to make sure that
+ that's also carried forward to the
+ delete function so we will open the
+ delete function
+ and as you see there is also the id
+ function there right
+ so so now of course
+ here you would normally need to do
+ a little bit of work but we're just
+ going to try and see how this works and
+ we're not going to do something crazy
+ we'll use
+ 30 we use 30 seconds 10 users and a ramp
+ up time of 10 seconds okay and we'll
+ play this
+ to see what we have in the end and in
+ the meantime you can actually kind of
+ play around with this and see what's
+ happening well it looks like
+ a bunch of things are being created
+ let's hope they're being deleted as well
+ so maybe there was a mistake i did but
+ we'll see very soon
+ if that's the case we will see as soon
+ as this completes
+ uh if it's managed to kind of clean up
+ the users because what's happening now
+ is you'll have a lot of concurrent users
+ doing the
+ requests and then in the end we're
+ hoping as you can see it cleaned up
+ afterwards so now what you want to do is
+ you want to hit this report icon
+ and now you can see here you can see
+ okay
+ we have the load test being executed
+ that's great but that's not what we want
+ to do you want to look at this ramp up
+ report because we did a ramp up load
+ test
+ and what you can see here is
+ as we ramp up and as the requests are
+ hanging the request time goes up a
+ little bit
+ hitting almost here around 1.5 seconds
+ but as you can see it managed to process
+ over 3 000 requests in 30 seconds so at
+ least that's uh
+ about 100 requests per second which is
+ about what you would expect so this is
+ the kind of simple api test you can do
+ you can simply group for instance a
+ creation api request a deletion
+ and you can play around with this and of
+ course
+ specify how you carry forward
+ the data

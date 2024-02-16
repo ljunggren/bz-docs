@@ -1,0 +1,120 @@
+Transcript for [Boozang Feature: Using Comments](https://www.youtube.com/watch?v=ywuO4zPk3lk) by [Merlin](https://merlin.foyer.work/)
+
+ now i'm going to demonstrate the feature
+ the comment function in busan
+ uh this is something we have had live
+ for a long time and then it stopped
+ working for a little bit and now we
+ fixed it and reintroduced it okay
+ so
+ i'm gonna go ahead and create a new test
+ here and i'm gonna you use the
+ lava.busan.com as usual and what i'm
+ gonna do is now i'm just gonna say
+ annotate
+ bugs okay
+ we call it comment but some people call
+ it annotations it's basically the same
+ thing
+ and we're going to use the page visual
+ bugs and if you click on it here you can
+ find this at the lab dot busan dot com
+ slash visual bugs okay
+ the comment function is used to just
+ annotate bugs in the user interface and
+ it's kind of where
+ manual testing meets
+ automated testing you can still use
+ for as you know an automated machine
+ system is not good at
+ detecting some visual bugs like styling
+ bags so what we're going to do is we're
+ just going to show how you can point
+ that out and basically use that link
+ in a you know like in the bug report
+ you'll get
+ um instead of having like steps to
+ reproduce you'll have an executable test
+ that shows you the problem so what i'm
+ going to do here is i'm going to go
+ ahead and record and i'm going to use
+ this next link so here i see that the
+ image is a zebra and i see the label
+ zebra
+ and i see the image is a sheta and the
+ images the label is sheeta so that seems
+ good
+ also lion seems all right and then here
+ of course i come to a problem with a
+ mislabeled image of course this could be
+ this does not comply to style guide etc
+ etc so i'll just show you how you would
+ do this here instead of doing the
+ validation i would just use the comment
+ and i would maybe highlight here the
+ label and say
+ and i will write here in the description
+ fields
+ this should be and i think this is a
+ mere cat
+ maybe meerkat is with a k actually
+ anyways
+ and i will go ahead and just click next
+ and of course here says meerkats and
+ this should be
+ giraffe right so i'll do the same thing
+ here
+ this should
+ be
+ giraffe
+ okay that's good so what i'm going to go
+ ahead and do now is just run the test so
+ you can see how it looks
+ and if i run it now
+ you're going to see the annotation in
+ the ui so you could use this to just
+ point out the problems and you can go
+ through a list of tests
+ and here you see again this should be
+ giraffe and you can just step through
+ the test so it's a good way to use
+ automated testing
+ to
+ maybe help you when you need to kind of
+ show
+ problems in the application so that's
+ something we do a little note of course
+ this thing becomes now this is just a
+ link so you could share this in your bug
+ report and then you have an executable
+ you can just click on this and just have
+ the people play this directly in our
+ tool
+ another note we should do here is of
+ course we also have this
+ show selection for pass fail
+ and if i do hit this in both these cases
+ and i play the test you're going to see
+ that
+ you also get a way for the user to to
+ say
+ okay now i didn't reload this page
+ properly so again i'm just gonna
+ hit that visual bugs here and then run
+ the test again so it's on the right link
+ okay
+ and of course now you could create
+ a test sequence where you say
+ uh verify that this complies to the
+ style guide and i can for instance do
+ pass here i can click pass
+ and then i can of also kind of mark this
+ as fail and if i do that of course i
+ will have an error and i could see that
+ also in the report what failed and what
+ worked so this is something you can
+ experiment with
+ this is what we call hybrid testing
+ using automated test
+ tools to do
+ manual testing

@@ -1,0 +1,73 @@
+Transcript for [Boozang Feature: Undo / Redo and Test revisions](https://www.youtube.com/watch?v=WwnujKLPah0) by [Merlin](https://merlin.foyer.work/)
+
+ i will now explain the undo redo
+ functionality in busan we've had that
+ now for a couple of years but we've
+ updated it to save everything
+ server-side in the database this will
+ give you
+ a revision history for each test so if
+ you make a mistake you can go back but
+ it also means that if someone else has
+ done an update to your test that you can
+ undo and get the revision history of
+ that test
+ so we also encourage you we maybe
+ haven't got the presentation down so
+ that might change a little bit but in
+ brief let's say i do a couple of changes
+ here to this test
+ instead of saving it in the local
+ storage it's server-side so what i will
+ see here if i use this drop down is i
+ will see all the updates so either i'll
+ just do the one update that you saw
+ there
+ or
+ of course the other one as well right
+ and you can do many in a row
+ if you look at the redo functionality
+ you can also see here that of course you
+ can redo the same things and as you can
+ see when you hover you also see what
+ change was being done it's a little
+ complex right now the presentation of
+ this so it requires a little bit of
+ patience but usually of course you know
+ what you just did
+ so
+ it one difference here is of course we
+ see who did that change so you can also
+ redo if there is someone else doing the
+ change one interesting thing if i choose
+ to undo this
+ and for instance i record a number of
+ key presses
+ it should be able to when you
+ undo this you should actually be able to
+ see
+ uh a number of things you could redo so
+ it actually kind of gives you the i the
+ option to branch out
+ and kind of pick your redo history so
+ this is kind of an advanced case but it
+ could be useful in some cases where you
+ basically did
+ maybe you've done that before you do an
+ action
+ on top of something and then you lose
+ your
+ undo histories you can't redo the
+ changes basically
+ so
+ a little bit about that i encourage you
+ to let us know i find that maybe this
+ presentation could be done a little bit
+ better so play around with it and let us
+ know what you think but i think this
+ will really help you when you make a
+ mistake to a certain test or you don't
+ know why a certain test stopped working
+ then you can usually go back to a
+ revision that was working so i think
+ this would be very helpful

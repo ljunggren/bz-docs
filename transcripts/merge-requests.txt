@@ -1,0 +1,111 @@
+Transcript for [Boozang feature: Merge requests](https://www.youtube.com/watch?v=8r_QI1OC1ek) by [Merlin](https://merlin.foyer.work/)
+
+ now I'm going to demonstrate a slightly
+ more complex use case it's the so-called
+ merge request this is what you want to
+ use when you have maybe many people in
+ your team working on different features
+ and maybe you want to have a a couple of
+ maybe some centralized review process
+ maybe they're just one or a couple of
+ people in the team that were allowed to
+ merge in it to the main branch or maybe
+ you just want to make sure that you
+ enable code review so different test
+ developers check and validate the code
+ that the other members are
+ doing in order to enable merge request
+ the idea that we have is we've
+ introduced something called protected
+ branches so for instance in this case we
+ might want to say that the master branch
+ is protected so what we will do is we
+ will enable the protection here here and
+ then you can
+ enable uh which can approve the the
+ merge right the merge request so first
+ of all I'm actually going to unclick
+ this allow user to approve own merge
+ request um and I think this is useful as
+ an
+ illustration then after I've done this
+ I'm just going to do a change in a
+ feature Branch here it's feature one so
+ if we go into
+ let's say I am creating another test so
+ here I'm creating test two and I'm doing
+ some actions let's say I navigate to the
+ menu and I do something here
+ okay now in order to be able to merge
+ this as usual you will have to make a
+ commit so the first thing you want to do
+ is you see that this modified files this
+ is the get stat stus uh view you can see
+ that we've added this test number two
+ okay so what we're going to first uh do
+ is we're just going to create a regular
+ commit here so we're saying added test
+ two so if we do
+ this we don't see any uh problems right
+ now it's just been committed into my
+ feature Branch my feature branch is not
+ protected okay
+ so what happens is when we switch to the
+ master branch and we try to merge the
+ feature Branch this is when you're going
+ to see so what we're going to do is
+ we're going to try and merge it and as
+ usual we create a commit and again the
+ default commit message is going to be
+ merge from feature one to
+ master so what we get now is an extra
+ message it says the merge request sent
+ for review as the target branch is
+ protected and then it says please
+ approve it from uh merge request list
+ okay so what we can see now is because I
+ am now the same person you can see that
+ I now see that there is a one here there
+ is something to be done and then also
+ here under the merch request we can see
+ that this is now in my queue so if I go
+ to my master Branch as you can see we
+ don't see test number B here the mer has
+ not yet happened okay we'll go back in
+ here and now we're going to try to
+ approve this merge request
+ okay and as you can see here it says you
+ cannot approve your own commit but you
+ can enable self approval in the branch
+ protection for you so if we now go back
+ here you remember on the master setting
+ there was a a check box for allow user
+ to approve own merch
+ request so again I'm I'm going to enable
+ this because maybe that's not what I
+ want in a production setting but for
+ demo purposes here it's hard uh to demo
+ with many users now I'm going to go in
+ here and I'm going to approve and I'm
+ going to submit and as you can see we
+ got a successful merge happening and
+ that we can see in both views here we
+ can see the merge happening here from
+ feature one to master and now if we go
+ to module a we can see both test a and
+ test two and as you can see you'll have
+ the action
+ here another thing you can see with the
+ protected branches is we don't normally
+ by default allow you to do any
+ recordings or modifications in protected
+ branches but of course you can play the
+ test case here to validate that it's
+ working and you can of course also run
+ these of course from the CI server so I
+ hope uh you can play around with this
+ and figure out if there are additional
+ use cases we need but I think this is
+ the most important use case to be able
+ more controlled
+ collaboration
