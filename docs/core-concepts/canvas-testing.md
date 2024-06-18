@@ -3,6 +3,30 @@ id: canvas-testing
 title: Canvas Testing
 ---
 
+## Introduction to Canvas testing
+
+import YouTubeEmbed from "@site/src/components/YouTubeEmbed";
+
+<YouTubeEmbed embedId="JhZ6QrVL3BU">Canvas testing in Boozang</YouTubeEmbed>
+
+
+[00:02](https://www.youtube.com/watch?v=JhZ6QrVL3BU&t=2) Canvas testing for test automation is incredibly challenging.
+
+[00:26](https://www.youtube.com/watch?v=JhZ6QrVL3BU&t=26) Challenges in automated testing for Canvas elements
+
+[00:43](https://www.youtube.com/watch?v=JhZ6QrVL3BU&t=43) Using XY coordinates for drag and drop testing
+
+[00:59](https://www.youtube.com/watch?v=JhZ6QrVL3BU&t=59) Using the canvas game for automated testing
+
+[01:18](https://www.youtube.com/watch?v=JhZ6QrVL3BU&t=78) Resetting the position of a ball for emulation success.
+
+[01:42](https://www.youtube.com/watch?v=JhZ6QrVL3BU&t=102) Testing feature including record, reset button, and drag-drop event
+
+[02:00](https://www.youtube.com/watch?v=JhZ6QrVL3BU&t=120) Boozang enables drag-and-drop testing with stable selectors.
+
+[02:15](https://www.youtube.com/watch?v=JhZ6QrVL3BU&t=135) Achieve test automation on canvas with reduced flakiness
+
+
 ## The HTML Canvas 
 
 Create tests on top of graphical elements in your application using canvas testing. Unlike other methods, Boozang allows us to record clicks and do validations inside the canvas, just like we do on elements in the DOM tree.

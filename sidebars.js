@@ -143,6 +143,7 @@ module.exports = {
       label: 'Model-based testing',
       collapsed: true,
       items: [
+        'model-based-testing/introduction',
         'model-based-testing/advantages',
         'model-based-testing/how-to',
       ],
