@@ -150,6 +150,15 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Coded tests',
+      collapsed: true,
+      items: [
+        'coded/introduction',
+        'coded/migration',      
+      ],
+    },
+    {
+      type: 'category',
       label: 'Other',
       collapsed: true,
       items: [
