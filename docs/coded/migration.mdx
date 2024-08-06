@@ -1,16 +1,18 @@
 ---
 id: migration
-title: Comparison with Playwright and Cypress
+title: Comparison with Cypress and Playwright
 ---
-# Cypress to Playwright Command Mapping (with Boozang Placeholder)
+# Comparison with Cypress and Playwright
 
 ## Navigation and Page Actions
 
+Coded tests in Boozang are in Beta, so there are rapid changes happening. If any of these functions are missing or not working as expected, drop us an email at: [support@boozang.com](support@boozang.com). 
+
 | Boozang Command                          | Cypress Command                          | Playwright Command                              | Description                                     |
 |------------------------------------------|------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-| `$script.visit(url)`                     | `cy.visit(url)`                          | `await page.goto(url)`                          | Navigates to a URL.                             |
+| `$script.visitPage(url)`                 | `cy.visit(url)`                          | `await page.goto(url)`                          | Navigates to a URL.                             |
 | `$script.go(direction)`                  | `cy.go(direction)`                       | `await page.goBack()` / `await page.goForward()`| Navigates back or forward in browser history.   |
-| `$script.reload()`                       | `cy.reload()`                            | `await page.reload()`                           | Reloads the current page.                       |
+| `$script.visitPage(url)`                 | `cy.reload()`                            | `await page.reload()`                           | Reloads the current page.                       |
 | `$script.viewport(width, height)`        | `cy.viewport(width, height)`             | `await page.setViewportSize({ width, height })` | Sets the browser viewport size.                 |
 
 ## Element Selection
@@ -28,13 +30,13 @@ title: Comparison with Playwright and Cypress
 | `$script.click(selector)`                | `cy.click()`                             | `await page.click(selector)`                    | Clicks on a DOM element.                        |
 | `$script.type(selector, text)`           | `cy.type(text)`                          | `await page.type(selector, text)`               | Types into a DOM element.                       |
 | `$script.clear(selector)`                | `cy.clear()`                             | `await page.fill(selector, '')`                 | Clears the value of an input or textarea.       |
-| `$script.select(value)`                  | `cy.select(value)`                       | `await page.selectOption(selector, value)`      | Selects an option in a `<select>` element.      |
+| `$script.set(value)`                     | `cy.select(value)`                       | `await page.selectOption(selector, value)`      | Selects an option in a `<select>` element.      |
 
 ## Assertions
 
 | Boozang Command                          | Cypress Command                          | Playwright Command                              | Description                                     |
 |------------------------------------------|------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-| `$script.should(assertion)`              | `cy.should(assertion)`                   | `expect(locator).toHaveProperty('property', value)` | Asserts that the element satisfies the given condition. |
+| `$script.hasData(locator, value)`        | `cy.should(assertion)`                   | `expect(locator).toHaveProperty('property', value)` | Asserts that the element satisfies the given condition. |
 | `$script.expect(subject)`                | `cy.expect(subject)`                     | `expect(subject).toBe(value)`                   | Asserts that the subject satisfies the condition.|
 | `$script.and(assertion)`                 | `cy.and(assertion)`                      | `expect(locator).toHaveProperty('property', value)` | Adds additional assertions.                    |
 
