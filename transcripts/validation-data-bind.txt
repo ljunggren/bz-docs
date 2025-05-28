@@ -14,7 +14,7 @@ Transcript for [Boozang Feature: Validation data-bind](https://www.youtube.com/w
  in this case i'm also going to show how
  we do this for validations okay
  so what i'm going to do is i'm going to
- use the lab so that's the lab.Boozang.com
+ use the lab so that's the thelab.boozang.com
  and i'm going to go ahead and just uh
  create the test that is called add
  validate

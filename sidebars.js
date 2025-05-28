@@ -10,6 +10,7 @@ module.exports = {
         "overview/why-boozang",
         "overview/boozang-from-the-trenches",
         "overview/chat-gpt",
+        "overview/all-resources",
       ],
     },
     {

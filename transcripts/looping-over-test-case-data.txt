@@ -15,7 +15,7 @@ Transcript for [Boozang Feature: Looping over test case data](https://www.youtub
  have reserved the keyword data that will
  automatically
  kind of assume that it's loop data so we
- have this test case on the lab.Boozang.com
+ have this test case on the thelab.boozang.com
  that just fills the form so i'm just
  going to really simply create
  a loop condition where we take
