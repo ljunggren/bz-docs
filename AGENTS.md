@@ -1,0 +1,31 @@
+# Agent Instructions
+
+## Documentation Agent
+
+When editing documentation:
+- Keep language clear and concise
+- Use consistent terminology (see chatgpt/boozang_dictionary.csv)
+- Preserve existing formatting and structure
+- Test links work correctly
+
+## Content Processing
+
+When working with the chatgpt/ folder:
+- Run `node chatgpt/clean-en.mjs` after changes to regenerate cleaned content
+- Output goes to `chatgpt/pages/`
+- `all-crawled.md` contains combined content
+
+## Build & Deploy
+
+1. Test locally: `npm run start`
+2. Build: `npm run build`
+3. Verify: `npm run serve`
+
+## File Conventions
+
+| Path | Purpose |
+|------|---------|
+| `docs/**/*.md` | Source documentation |
+| `chatgpt/pages/*.md` | Processed LLM content |
+| `sidebars.js` | Navigation structure |
+| `docusaurus.config.js` | Site configuration |
