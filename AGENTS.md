@@ -1,5 +1,20 @@
 # Agent Instructions
 
+> **For AI Agents**: Read `.agent/instructions.md` for complete guidelines.
+
+## Quick Reference
+
+```bash
+npm run start   # Dev server
+npm run build   # Production build
+```
+
+## Key Guidelines
+
+- Use consistent terminology (see `chatgpt/boozang_dictionary.csv`)
+- Test changes locally before committing
+- Update LLM content after significant changes
+
 ## Documentation Agent
 
 When editing documentation:

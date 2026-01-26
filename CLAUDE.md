@@ -1,6 +1,34 @@
 # Boozang Documentation
 
-This is the documentation site for Boozang, a codeless test automation platform.
+Documentation site for Boozang test automation platform (Docusaurus).
+
+## Quick Commands
+
+```bash
+npm run start   # Dev server at localhost:3000
+npm run build   # Production build
+npm run serve   # Serve production build
+```
+
+## Key Paths
+
+| Path | Purpose |
+|------|---------|
+| `docs/` | Main documentation (Markdown/MDX) |
+| `sidebars.js` | Navigation structure |
+| `docusaurus.config.js` | Site configuration |
+| `chatgpt/` | LLM content processing |
+
+## Session Commands
+
+| Command | Action |
+|---------|--------|
+| `start session` | Read instructions, check journal |
+| `end session` | Summarize work, update journal |
+
+## Detailed Instructions
+
+See `.agent/instructions.md` for comprehensive documentation.
 
 ## Project Structure
 
