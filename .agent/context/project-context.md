@@ -17,6 +17,7 @@ Boozang is a **codeless test automation platform** for web applications. Key cha
 | EU Server | https://eu.boozang.com |
 | Sandbox | https://thelab.boozang.com |
 | Documentation | https://docs.boozang.com |
+| **AI Agent Docs** | https://ai.boozang.com/agent/AGENT.md |
 | Old Docs | http://docs-old.boozang.com |
 
 ## Core Concepts

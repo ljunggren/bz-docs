@@ -30,6 +30,14 @@ npm run serve   # Serve production build
 
 See `.agent/instructions.md` for comprehensive documentation.
 
+## Public AI Agent Docs
+
+User-facing AI documentation is served from the main app:
+- **URL**: https://ai.boozang.com/agent/AGENT.md
+- **Source**: `bz/public/agent/` in main repository
+
+This allows users' AI assistants to learn Boozang by reading the agent docs.
+
 ## Project Structure
 
 ```
