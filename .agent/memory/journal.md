@@ -2,6 +2,29 @@
 
 ## 2026-01-25
 
+### Session: Public Agent Docs Setup
+
+**Work Completed:**
+- Created `static/agent/` directory for public AI agent documentation
+- Copied agent docs from main `bz/public/agent/` repository:
+  - `AGENT.md` - Entry point for AI assistants
+  - `concepts.md` - Core terminology
+  - `workflows.md` - Common patterns
+  - `best-practices.md` - Recommendations
+  - `mcp-api.md` - API reference
+  - `README.md`
+- Docs now accessible at `https://docs.boozang.com/agent/AGENT.md`
+
+**Key Decisions:**
+- Mirrored content from main app (not docs-specific version)
+- Keeps both sites in sync for AI agent consumption
+
+**Open Items:**
+- Consider if docs site needs docs-specific agent content
+- Keep `static/agent/` synced with `bz/public/agent/` on updates
+
+---
+
 ### Session: Agent Structure Setup
 
 **Work Completed:**

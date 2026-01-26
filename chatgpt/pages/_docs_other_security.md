@@ -13,6 +13,7 @@
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -66,7 +67,7 @@ In our Cloud, we host the data you enter into our system and the tests, includin
 
 Previous
 
-Comparison with Playwright and Cypress
+Comparison with Cypress and Playwright
 
 ](/docs/coded/migration)[
 
@@ -96,4 +97,4 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.

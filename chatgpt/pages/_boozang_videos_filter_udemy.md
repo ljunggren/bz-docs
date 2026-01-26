@@ -497,6 +497,8 @@ Couldn't find what you were looking for?
 
 Request your desired video tutorial!
 
+[hello@boozang.com](mailto:%20hello@boozang.com)
+
 [Boozang Reviews](https://sourceforge.net/software/product/Boozang/)
 
 [Boozang Reviews](https://slashdot.org/software/p/Boozang/)

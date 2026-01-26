@@ -13,6 +13,7 @@
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -62,7 +63,7 @@ You can add notes to a test step, by clicking "Set notes / Todos" in the _Action
 
 [00:25](https://www.youtube.com/watch?v=YmBce5D9nGM&t=25) Creating and recording a test in Boozang for programming
 
-[00:50](https://www.youtube.com/watch?v=YmBce5D9nGM&t=50) Boozang Feature: Notes and Todos demo on lab.boozang.com
+[00:50](https://www.youtube.com/watch?v=YmBce5D9nGM&t=50) Boozang Feature: Notes and Todos demo on thelab.boozang.com
 
 [01:12](https://www.youtube.com/watch?v=YmBce5D9nGM&t=72) Adding notes in Boozang
 
@@ -194,4 +195,4 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.

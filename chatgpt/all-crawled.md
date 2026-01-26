@@ -375,6 +375,8 @@ Couldn't find what you were looking for?
 
 Request your desired video tutorial!
 
+[hello@boozang.com](mailto:%20hello@boozang.com)
+
 [Boozang Reviews](https://sourceforge.net/software/product/Boozang/)
 
 [Boozang Reviews](https://slashdot.org/software/p/Boozang/)
@@ -601,6 +603,8 @@ Couldn't find what you were looking for?
 ----------------------------------------
 
 Request your desired video tutorial!
+
+[hello@boozang.com](mailto:%20hello@boozang.com)
 
 [Boozang Reviews](https://sourceforge.net/software/product/Boozang/)
 
@@ -1078,6 +1082,8 @@ Couldn't find what you were looking for?
 ----------------------------------------
 
 Request your desired video tutorial!
+
+[hello@boozang.com](mailto:%20hello@boozang.com)
 
 [Boozang Reviews](https://sourceforge.net/software/product/Boozang/)
 
@@ -1668,6 +1674,8 @@ Couldn't find what you were looking for?
 
 Request your desired video tutorial!
 
+[hello@boozang.com](mailto:%20hello@boozang.com)
+
 [Boozang Reviews](https://sourceforge.net/software/product/Boozang/)
 
 [Boozang Reviews](https://slashdot.org/software/p/Boozang/)
@@ -1935,6 +1943,7 @@ Enable All Save Settings!function(){function t(t){document.documentElement.setAt
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -2212,7 +2221,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -2227,6 +2236,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -2535,7 +2545,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -2550,6 +2560,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -2639,7 +2650,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -2654,6 +2665,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -2736,7 +2748,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -2751,6 +2763,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -2833,7 +2846,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -2848,6 +2861,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -2930,7 +2944,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -2945,6 +2959,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -2962,7 +2977,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
 *   [Coded tests](/docs/coded/introduction)
     
     *   [Coded tests in Boozang](/docs/coded/introduction)
-    *   [Comparison with Playwright and Cypress](/docs/coded/migration)
+    *   [Comparison with Cypress and Playwright](/docs/coded/migration)
 *   [Other](/docs/other/security)
     
 
@@ -3008,6 +3023,74 @@ Conclusion[​](#conclusion "Direct link to Conclusion")
 
 Boozang's support for coded tests bridges the gap between visual test automation and traditional scripting. Whether you're a beginner or an experienced user, this feature enables you to create robust, flexible, and maintainable tests. Start by recording your tests visually, refine them in the coded view, and enjoy the best of both approaches in your test automation journey with Boozang.
 
+### Potential Target Companies for Boozang[​](#potential-target-companies-for-boozang "Direct link to Potential Target Companies for Boozang")
+
+Given the nature of Boozang as a no-code automated testing tool, it is well-suited for companies that prioritize ease of use, integration with CI/CD pipelines, and have a significant focus on web applications. Here’s an analysis of each listed company to determine their suitability as potential targets for Boozang:
+
+1.  **Calendly**
+    
+    *   **Business Type:** Scheduling software for meetings.
+    *   **Potential Fit:** High. Calendly relies heavily on its web application for scheduling and integrating with various platforms. Automated testing can ensure the reliability and functionality of their web interfaces, making Boozang a valuable tool for their QA processes.
+2.  **Navattic**
+    
+    *   **Business Type:** Interactive product demo software.
+    *   **Potential Fit:** Medium. Navattic's platform involves creating and embedding interactive demos, which require consistent functionality and performance. Boozang could be beneficial in automating the testing of these interactive elements and ensuring smooth user experiences.
+3.  **UserEvidence**
+    
+    *   **Business Type:** Customer evidence and advocacy platform.
+    *   **Potential Fit:** Low. UserEvidence may have less complex web application needs compared to others on this list. While automated testing is useful, their need for such a tool may not be as critical.
+4.  **Apollo.io**
+    
+    *   **Business Type:** Sales engagement and intelligence platform.
+    *   **Potential Fit:** High. Apollo.io handles large amounts of data and user interactions through its web application. Ensuring the reliability and functionality of their web app is crucial, making Boozang a suitable tool for their testing needs.
+5.  **Paramark**
+    
+    *   **Business Type:** Marketing technology.
+    *   **Potential Fit:** Medium. Paramark’s need for automated testing depends on the complexity of their web applications. If their platform involves intricate user interactions and integrations, Boozang could be beneficial.
+6.  **COPYAI**
+    
+    *   **Business Type:** AI-powered copywriting tool.
+    *   **Potential Fit:** Medium. COPYAI’s web application needs to perform reliably to provide real-time copy generation. Automated testing can help ensure that the platform works seamlessly, making Boozang potentially useful.
+7.  **Authorityplug**
+    
+    *   **Business Type:** PR and media outreach platform.
+    *   **Potential Fit:** Low. Similar to UserEvidence, Authorityplug might not have as complex web application requirements, making their need for an automated testing tool less critical.
+8.  **Bitly**
+    
+    *   **Business Type:** URL shortening service.
+    *   **Potential Fit:** High. Bitly's service involves significant user interaction through their web platform. Ensuring that the shortening, tracking, and analytics functions work flawlessly is crucial, making Boozang an excellent fit for their QA processes.
+9.  **GoTo (formerly LogMeIn)**
+    
+    *   **Business Type:** Collaboration and communication tools.
+    *   **Potential Fit:** High. GoTo provides complex web applications for meetings, webinars, and remote support. Automated testing can ensure these applications work reliably across various environments, making Boozang a valuable addition to their QA toolkit.
+10.  **ClickUp**
+    
+    *   **Business Type:** Project management and productivity tool.
+    *   **Potential Fit:** High. ClickUp’s comprehensive platform includes numerous features and integrations that need rigorous testing to ensure reliability and performance. Boozang’s no-code approach can simplify this process and improve efficiency.
+
+### Summary[​](#summary "Direct link to Summary")
+
+**High Potential Fit:**
+
+*   Calendly
+*   Apollo.io
+*   Bitly
+*   GoTo
+*   ClickUp
+
+**Medium Potential Fit:**
+
+*   Navattic
+*   Paramark
+*   COPYAI
+
+**Low Potential Fit:**
+
+*   UserEvidence
+*   Authorityplug
+
+The companies with the highest potential fit for Boozang are those with complex web applications requiring extensive testing to maintain functionality and performance, such as Calendly, Apollo.io, Bitly, GoTo, and ClickUp. These companies can significantly benefit from Boozang’s automated testing capabilities, especially given their need for reliable, user-friendly interfaces and seamless integrations.
+
 [Edit this page](https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/coded/introduction.mdx)
 
 [
@@ -3020,7 +3103,7 @@ How to do model-based testing
 
 Next
 
-Comparison with Playwright and Cypress
+Comparison with Cypress and Playwright
 
 ](/docs/coded/migration)
 
@@ -3028,6 +3111,8 @@ Comparison with Playwright and Cypress
 *   [Getting Started with Coded Tests](#getting-started-with-coded-tests)
 *   [Benefits of Using Coded Tests](#benefits-of-using-coded-tests)
 *   [Conclusion](#conclusion)
+    *   [Potential Target Companies for Boozang](#potential-target-companies-for-boozang)
+    *   [Summary](#summary)
 
 Docs
 
@@ -3045,7 +3130,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -3060,6 +3145,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -3077,21 +3163,23 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
 *   [Coded tests](/docs/coded/introduction)
     
     *   [Coded tests in Boozang](/docs/coded/introduction)
-    *   [Comparison with Playwright and Cypress](/docs/coded/migration)
+    *   [Comparison with Cypress and Playwright](/docs/coded/migration)
 *   [Other](/docs/other/security)
     
 
 *   [](/)
 *   Coded tests
-*   Comparison with Playwright and Cypress
+*   Comparison with Cypress and Playwright
 
 On this page
 
-Cypress to Playwright Command Mapping (with Boozang Placeholder)
-================================================================
+Comparison with Cypress and Playwright
+======================================
 
 Navigation and Page Actions[​](#navigation-and-page-actions "Direct link to Navigation and Page Actions")
 ---------------------------------------------------------------------------------------------------------
+
+Coded tests in Boozang are in Beta, so there are rapid changes happening. If any of these functions are missing or not working as expected, drop us an email at: [support@boozang.com](mailto:support@boozang.com).
 
 Boozang Command
 
@@ -3101,7 +3189,7 @@ Playwright Command
 
 Description
 
-`$script.visit(url)`
+`$script.visitPage(url)`
 
 `cy.visit(url)`
 
@@ -3117,7 +3205,7 @@ Navigates to a URL.
 
 Navigates back or forward in browser history.
 
-`$script.reload()`
+`$script.visitPage(url)`
 
 `cy.reload()`
 
@@ -3203,7 +3291,7 @@ Types into a DOM element.
 
 Clears the value of an input or textarea.
 
-`$script.select(value)`
+`$script.set(value)`
 
 `cy.select(value)`
 
@@ -3222,7 +3310,7 @@ Playwright Command
 
 Description
 
-`$script.should(assertion)`
+`$script.hasData(locator, value)`
 
 `cy.should(assertion)`
 
@@ -3535,7 +3623,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -3550,6 +3638,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -3633,7 +3722,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -3648,6 +3737,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -3728,7 +3818,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -3743,6 +3833,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -3828,7 +3919,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -3843,6 +3934,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -3924,7 +4016,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -3939,6 +4031,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -4240,7 +4333,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -4255,6 +4348,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -4440,7 +4534,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -4455,6 +4549,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -4773,7 +4868,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -4788,6 +4883,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -4936,7 +5032,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -4951,6 +5047,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -5051,7 +5148,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -5066,6 +5163,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -5207,7 +5305,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -5222,6 +5320,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -5319,7 +5418,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -5334,6 +5433,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -5383,7 +5483,7 @@ You can add notes to a test step, by clicking "Set notes / Todos" in the _Action
 
 [00:25](https://www.youtube.com/watch?v=YmBce5D9nGM&t=25) Creating and recording a test in Boozang for programming
 
-[00:50](https://www.youtube.com/watch?v=YmBce5D9nGM&t=50) Boozang Feature: Notes and Todos demo on lab.boozang.com
+[00:50](https://www.youtube.com/watch?v=YmBce5D9nGM&t=50) Boozang Feature: Notes and Todos demo on thelab.boozang.com
 
 [01:12](https://www.youtube.com/watch?v=YmBce5D9nGM&t=72) Adding notes in Boozang
 
@@ -5515,7 +5615,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -5530,6 +5630,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -5680,7 +5781,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -5695,6 +5796,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -5869,7 +5971,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -5884,6 +5986,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
     *   [Installing Boozang](/docs/getting-started/installing-boozang)
@@ -6069,7 +6172,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -6084,6 +6187,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
     *   [Installing Boozang](/docs/getting-started/installing-boozang)
@@ -6192,9 +6296,9 @@ In the help text, you will find an explanation of the function you selected. You
 
 Previous
 
-Boozang Buddy
+Resource summary
 
-](/docs/overview/chat-gpt)[
+](/docs/overview/all-resources)[
 
 Next
 
@@ -6225,7 +6329,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -6240,6 +6344,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
     *   [Installing Boozang](/docs/getting-started/installing-boozang)
@@ -6832,7 +6937,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -6847,6 +6952,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -6939,7 +7045,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -6954,6 +7060,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -7043,7 +7150,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -7058,6 +7165,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -7141,7 +7249,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -7156,6 +7264,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -7496,7 +7605,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -7511,6 +7620,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -7588,7 +7698,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -7603,6 +7713,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -7684,7 +7795,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -7699,6 +7810,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -7776,7 +7888,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -7791,6 +7903,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -7844,7 +7957,7 @@ In our Cloud, we host the data you enter into our system and the tests, includin
 
 Previous
 
-Comparison with Playwright and Cypress
+Comparison with Cypress and Playwright
 
 ](/docs/coded/migration)[
 
@@ -7874,7 +7987,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -7889,6 +8002,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -7976,7 +8090,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -7991,6 +8105,151 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
+*   [Getting Started](/docs/getting-started/installing-boozang)
+    
+*   [Core Concepts](/docs/core-concepts/modules)
+    
+*   [Reporting](/docs/reporting/overview)
+    
+*   [Continuous Integration](/docs/continuous-integration/introduction)
+    
+*   [Integrations](/docs/integrations/feature)
+    
+*   [API testing](/docs/api-testing/api-overview)
+    
+*   [Model-based testing](/docs/model-based-testing/introduction)
+    
+*   [Coded tests](/docs/coded/introduction)
+    
+*   [Other](/docs/other/security)
+    
+
+*   [](/)
+*   Overview
+*   Resource summary
+
+On this page
+
+🌍 Resource summary
+===================
+
+Welcome to your one-stop reference guide for all key Boozang environments and learning resources. Whether you're setting up automated testing in production, exploring Boozang in a sandbox, or brushing up your skills—this guide has you covered.
+
+* * *
+
+🧭 Boozang Server URLs[​](#-boozang-server-urls "Direct link to 🧭 Boozang Server URLs")
+----------------------------------------------------------------------------------------
+
+**Purpose**
+
+**URL**
+
+**Region / Notes**
+
+**Main Production Server**
+
+[https://ai.boozang.com](https://ai.boozang.com)
+
+Global access – default for test automation projects.
+
+**European Server (EU)**
+
+[https://eu.boozang.com](https://eu.boozang.com)
+
+Hosted in Frankfurt – ideal for GDPR/EU compliance.
+
+**Sandbox / Demo Environment**
+
+[https://thelab.boozang.com](https://thelab.boozang.com)
+
+Public demo space. Great for practice and experimentation.
+
+**Official Documentation**
+
+[https://docs.boozang.com](https://docs.boozang.com)
+
+Core developer and user docs.
+
+**Video Tutorials**
+
+[https://boozang.com/videos](https://boozang.com/videos)
+
+Filterable by topic: Getting started, Features, etc.
+
+**Marketing Website**
+
+[https://boozang.com](https://boozang.com)
+
+Product overview, pricing, blog, and more.
+
+* * *
+
+📚 Additional Resources[​](#-additional-resources "Direct link to 📚 Additional Resources")
+-------------------------------------------------------------------------------------------
+
+*   📘 **Book**: _Boozang from the Trenches_ – Practical insights into test automation  
+    👉 [Available on Amazon](https://www.amazon.ca/Boozang-Trenches-Automation-Enterprise-Environment/dp/1484290097)
+    
+*   🤖 **Chatbot**: [**Boozang Buddy**](https://chat.openai.com/g/g-Z4R7ATj6D-boozang-buddy)  
+    Your friendly assistant for all things Boozang – tutorials, troubleshooting, and best practices.
+    
+
+* * *
+
+> 💡 Tip: Bookmark this page or keep it in your internal wiki for quick access to all Boozang tools and learning materials.
+
+[Edit this page](https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/overview/all-resources.mdx)
+
+[
+
+Previous
+
+Boozang Buddy
+
+](/docs/overview/chat-gpt)[
+
+Next
+
+Installing Boozang
+
+](/docs/getting-started/installing-boozang)
+
+*   [🧭 Boozang Server URLs](#-boozang-server-urls)
+*   [📚 Additional Resources](#-additional-resources)
+
+Docs
+
+*   [Start page](http://docs.boozang.com/docs/overview/why-boozang)
+*   [Previous version](http://docs-old.boozang.com)
+
+Community
+
+*   [Udemy Course](https://www.udemy.com/course/advanced-test-automation-using-boozang/)
+*   [Videos](https://boozang.com/videos)
+*   [LinkedIn](https://linkedin.com/company/10640313)
+
+More
+
+*   [Blog](https://boozang.com/blog)
+*   [GitHub](https://github.com/ljunggren)
+
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+
+[Skip to main content](#__docusaurus_skipToContent_fallback)
+
+[
+
+![Boozang Logo](/img/bz-square-padded.png)![Boozang Logo](/img/bz-square-padded.png)
+
+](/)[Documentation](/docs/overview/why-boozang)
+
+*   [Overview](/docs/overview/why-boozang)
+    
+    *   [Why Boozang?](/docs/overview/why-boozang)
+    *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
+    *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -8108,7 +8367,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -8123,6 +8382,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -8187,9 +8447,9 @@ Boozang from the trenches
 
 Next
 
-Installing Boozang
+Resource summary
 
-](/docs/getting-started/installing-boozang)
+](/docs/overview/all-resources)
 
 *   [Features](#features)
 *   [How Can Boozang Buddy Help You?](#how-can-boozang-buddy-help-you)
@@ -8211,7 +8471,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -8226,6 +8486,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -8387,7 +8648,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -8402,6 +8663,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -8496,7 +8758,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -8511,6 +8773,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -8639,7 +8902,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var\[t,e\]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()
 
 [Skip to main content](#__docusaurus_skipToContent_fallback)
 
@@ -8654,6 +8917,7 @@ Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.!function(){f
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -8821,7 +9085,7 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.[![Boozang home page](https://boozang.com/wp-content/themes/boozang-fifth/assets/images/boozang_logo_reverse.png)](https://boozang.com/)
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.[![Boozang home page](https://boozang.com/wp-content/themes/boozang-fifth/assets/images/boozang_logo_reverse.png)](https://boozang.com/)
 
 *   [Product](https://boozang.com/feature-overview/)
 *   [Docs](http://docs.boozang.com)
@@ -8957,6 +9221,8 @@ Couldn't find what you were looking for?
 ----------------------------------------
 
 Request your desired video tutorial!
+
+[hello@boozang.com](mailto:%20hello@boozang.com)
 
 [Boozang Reviews](https://sourceforge.net/software/product/Boozang/)
 
@@ -9169,9 +9435,13 @@ Pricing tiers to fit your needs
     
     Cucumber support, model-based testing and CI integration for small teams.
     
+    [Get in touch](mailto:sales@boozang.com)
+    
 *   ### Scale up
     
     Unlimited parallel test runs and AI test generation for larger teams.
+    
+    [Get in touch](mailto:sales@boozang.com)
     
 
 Boozang is democratizing testing
@@ -9179,7 +9449,7 @@ Boozang is democratizing testing
 
 At Boozang we believe that testing is needed more than ever. Boozang will provide best in class test automation tools for a wider audience, not just developers. Our vision is that everyone plays a part in the testing eco-system.
 
-[Read more about our vision](https://boozang.com/about-us/) [Or just say hello!](mailto: hello@boozang.com)
+[Read more about our vision](https://boozang.com/about-us/)
 
 ![](https://boozang.com/wp-content/uploads/2025/05/Robot.png)
 

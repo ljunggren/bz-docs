@@ -13,6 +13,7 @@
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -30,7 +31,7 @@
 *   [Coded tests](/docs/coded/introduction)
     
     *   [Coded tests in Boozang](/docs/coded/introduction)
-    *   [Comparison with Playwright and Cypress](/docs/coded/migration)
+    *   [Comparison with Cypress and Playwright](/docs/coded/migration)
 *   [Other](/docs/other/security)
     
 
@@ -76,6 +77,74 @@ Conclusion[​](#conclusion "Direct link to Conclusion")
 
 Boozang's support for coded tests bridges the gap between visual test automation and traditional scripting. Whether you're a beginner or an experienced user, this feature enables you to create robust, flexible, and maintainable tests. Start by recording your tests visually, refine them in the coded view, and enjoy the best of both approaches in your test automation journey with Boozang.
 
+### Potential Target Companies for Boozang[​](#potential-target-companies-for-boozang "Direct link to Potential Target Companies for Boozang")
+
+Given the nature of Boozang as a no-code automated testing tool, it is well-suited for companies that prioritize ease of use, integration with CI/CD pipelines, and have a significant focus on web applications. Here’s an analysis of each listed company to determine their suitability as potential targets for Boozang:
+
+1.  **Calendly**
+    
+    *   **Business Type:** Scheduling software for meetings.
+    *   **Potential Fit:** High. Calendly relies heavily on its web application for scheduling and integrating with various platforms. Automated testing can ensure the reliability and functionality of their web interfaces, making Boozang a valuable tool for their QA processes.
+2.  **Navattic**
+    
+    *   **Business Type:** Interactive product demo software.
+    *   **Potential Fit:** Medium. Navattic's platform involves creating and embedding interactive demos, which require consistent functionality and performance. Boozang could be beneficial in automating the testing of these interactive elements and ensuring smooth user experiences.
+3.  **UserEvidence**
+    
+    *   **Business Type:** Customer evidence and advocacy platform.
+    *   **Potential Fit:** Low. UserEvidence may have less complex web application needs compared to others on this list. While automated testing is useful, their need for such a tool may not be as critical.
+4.  **Apollo.io**
+    
+    *   **Business Type:** Sales engagement and intelligence platform.
+    *   **Potential Fit:** High. Apollo.io handles large amounts of data and user interactions through its web application. Ensuring the reliability and functionality of their web app is crucial, making Boozang a suitable tool for their testing needs.
+5.  **Paramark**
+    
+    *   **Business Type:** Marketing technology.
+    *   **Potential Fit:** Medium. Paramark’s need for automated testing depends on the complexity of their web applications. If their platform involves intricate user interactions and integrations, Boozang could be beneficial.
+6.  **COPYAI**
+    
+    *   **Business Type:** AI-powered copywriting tool.
+    *   **Potential Fit:** Medium. COPYAI’s web application needs to perform reliably to provide real-time copy generation. Automated testing can help ensure that the platform works seamlessly, making Boozang potentially useful.
+7.  **Authorityplug**
+    
+    *   **Business Type:** PR and media outreach platform.
+    *   **Potential Fit:** Low. Similar to UserEvidence, Authorityplug might not have as complex web application requirements, making their need for an automated testing tool less critical.
+8.  **Bitly**
+    
+    *   **Business Type:** URL shortening service.
+    *   **Potential Fit:** High. Bitly's service involves significant user interaction through their web platform. Ensuring that the shortening, tracking, and analytics functions work flawlessly is crucial, making Boozang an excellent fit for their QA processes.
+9.  **GoTo (formerly LogMeIn)**
+    
+    *   **Business Type:** Collaboration and communication tools.
+    *   **Potential Fit:** High. GoTo provides complex web applications for meetings, webinars, and remote support. Automated testing can ensure these applications work reliably across various environments, making Boozang a valuable addition to their QA toolkit.
+10.  **ClickUp**
+    
+    *   **Business Type:** Project management and productivity tool.
+    *   **Potential Fit:** High. ClickUp’s comprehensive platform includes numerous features and integrations that need rigorous testing to ensure reliability and performance. Boozang’s no-code approach can simplify this process and improve efficiency.
+
+### Summary[​](#summary "Direct link to Summary")
+
+**High Potential Fit:**
+
+*   Calendly
+*   Apollo.io
+*   Bitly
+*   GoTo
+*   ClickUp
+
+**Medium Potential Fit:**
+
+*   Navattic
+*   Paramark
+*   COPYAI
+
+**Low Potential Fit:**
+
+*   UserEvidence
+*   Authorityplug
+
+The companies with the highest potential fit for Boozang are those with complex web applications requiring extensive testing to maintain functionality and performance, such as Calendly, Apollo.io, Bitly, GoTo, and ClickUp. These companies can significantly benefit from Boozang’s automated testing capabilities, especially given their need for reliable, user-friendly interfaces and seamless integrations.
+
 [Edit this page](https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/coded/introduction.mdx)
 
 [
@@ -88,7 +157,7 @@ How to do model-based testing
 
 Next
 
-Comparison with Playwright and Cypress
+Comparison with Cypress and Playwright
 
 ](/docs/coded/migration)
 
@@ -96,6 +165,8 @@ Comparison with Playwright and Cypress
 *   [Getting Started with Coded Tests](#getting-started-with-coded-tests)
 *   [Benefits of Using Coded Tests](#benefits-of-using-coded-tests)
 *   [Conclusion](#conclusion)
+    *   [Potential Target Companies for Boozang](#potential-target-companies-for-boozang)
+    *   [Summary](#summary)
 
 Docs
 
@@ -113,4 +184,4 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.

@@ -13,6 +13,7 @@
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
     *   [Installing Boozang](/docs/getting-started/installing-boozang)
@@ -121,9 +122,9 @@ In the help text, you will find an explanation of the function you selected. You
 
 Previous
 
-Boozang Buddy
+Resource summary
 
-](/docs/overview/chat-gpt)[
+](/docs/overview/all-resources)[
 
 Next
 
@@ -154,4 +155,4 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.

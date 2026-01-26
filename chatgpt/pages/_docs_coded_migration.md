@@ -13,6 +13,7 @@
     *   [Why Boozang?](/docs/overview/why-boozang)
     *   [Boozang from the trenches](/docs/overview/boozang-from-the-trenches)
     *   [Boozang Buddy](/docs/overview/chat-gpt)
+    *   [Resource summary](/docs/overview/all-resources)
 *   [Getting Started](/docs/getting-started/installing-boozang)
     
 *   [Core Concepts](/docs/core-concepts/modules)
@@ -30,21 +31,23 @@
 *   [Coded tests](/docs/coded/introduction)
     
     *   [Coded tests in Boozang](/docs/coded/introduction)
-    *   [Comparison with Playwright and Cypress](/docs/coded/migration)
+    *   [Comparison with Cypress and Playwright](/docs/coded/migration)
 *   [Other](/docs/other/security)
     
 
 *   [](/)
 *   Coded tests
-*   Comparison with Playwright and Cypress
+*   Comparison with Cypress and Playwright
 
 On this page
 
-Cypress to Playwright Command Mapping (with Boozang Placeholder)
-================================================================
+Comparison with Cypress and Playwright
+======================================
 
 Navigation and Page Actions[​](#navigation-and-page-actions "Direct link to Navigation and Page Actions")
 ---------------------------------------------------------------------------------------------------------
+
+Coded tests in Boozang are in Beta, so there are rapid changes happening. If any of these functions are missing or not working as expected, drop us an email at: [support@boozang.com](mailto:support@boozang.com).
 
 Boozang Command
 
@@ -54,7 +57,7 @@ Playwright Command
 
 Description
 
-`$script.visit(url)`
+`$script.visitPage(url)`
 
 `cy.visit(url)`
 
@@ -70,7 +73,7 @@ Navigates to a URL.
 
 Navigates back or forward in browser history.
 
-`$script.reload()`
+`$script.visitPage(url)`
 
 `cy.reload()`
 
@@ -156,7 +159,7 @@ Types into a DOM element.
 
 Clears the value of an input or textarea.
 
-`$script.select(value)`
+`$script.set(value)`
 
 `cy.select(value)`
 
@@ -175,7 +178,7 @@ Playwright Command
 
 Description
 
-`$script.should(assertion)`
+`$script.hasData(locator, value)`
 
 `cy.should(assertion)`
 
@@ -488,4 +491,4 @@ More
 *   [Blog](https://boozang.com/blog)
 *   [GitHub](https://github.com/ljunggren)
 
-Copyright © 2024 Boozang Technologies, Inc. Built with Docusaurus.
+Copyright © 2025 Boozang Technologies, Inc. Built with Docusaurus.

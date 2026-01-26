@@ -119,9 +119,13 @@ Pricing tiers to fit your needs
     
     Cucumber support, model-based testing and CI integration for small teams.
     
+    [Get in touch](mailto:sales@boozang.com)
+    
 *   ### Scale up
     
     Unlimited parallel test runs and AI test generation for larger teams.
+    
+    [Get in touch](mailto:sales@boozang.com)
     
 
 Boozang is democratizing testing
@@ -129,7 +133,7 @@ Boozang is democratizing testing
 
 At Boozang we believe that testing is needed more than ever. Boozang will provide best in class test automation tools for a wider audience, not just developers. Our vision is that everyone plays a part in the testing eco-system.
 
-[Read more about our vision](https://boozang.com/about-us/) [Or just say hello!](mailto: hello@boozang.com)
+[Read more about our vision](https://boozang.com/about-us/)
 
 ![](https://boozang.com/wp-content/uploads/2025/05/Robot.png)
 

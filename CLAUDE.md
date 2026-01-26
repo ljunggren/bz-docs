@@ -15,6 +15,7 @@ npm run serve   # Serve production build
 | Path | Purpose |
 |------|---------|
 | `docs/` | Main documentation (Markdown/MDX) |
+| `static/agent/` | Public AI agent docs (sync with bz repo) |
 | `sidebars.js` | Navigation structure |
 | `docusaurus.config.js` | Site configuration |
 | `chatgpt/` | LLM content processing |
@@ -32,11 +33,11 @@ See `.agent/instructions.md` for comprehensive documentation.
 
 ## Public AI Agent Docs
 
-User-facing AI documentation is served from the main app:
-- **URL**: https://ai.boozang.com/agent/AGENT.md
-- **Source**: `bz/public/agent/` in main repository
+User-facing AI documentation served from both sites:
+- **Docs site**: https://docs.boozang.com/agent/AGENT.md (source: `static/agent/`)
+- **Main app**: https://ai.boozang.com/agent/AGENT.md (source: `bz/public/agent/`)
 
-This allows users' AI assistants to learn Boozang by reading the agent docs.
+Content is mirrored from main `bz` repository. Keep in sync when updating.
 
 ## Project Structure
 
@@ -45,6 +46,7 @@ docs/           - Main documentation (Markdown/MDX)
 chatgpt/        - Processed content for ChatGPT/LLM training
   pages/        - Cleaned markdown pages
 static/         - Static assets (images, etc.)
+  agent/        - Public AI agent docs (mirrored from bz/public/agent/)
 src/            - React components and CSS
 blog/           - Blog posts
 transcripts/    - Video transcripts
