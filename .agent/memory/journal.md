@@ -2,6 +2,22 @@
 
 ## 2026-01-25
 
+### Session: Agentic Programming Docs Section
+
+**Work Completed:**
+- Created new `docs/agentic-programming/` section with human-focused documentation:
+  - `introduction.md` - Overview of agentic programming concepts
+  - `ai-integration.md` - How AI assistants work with Boozang
+  - `mcp-api.md` - API reference for programmatic access
+- Updated `sidebars.js` to add "Agentic Programming" category
+- Links to public agent files at `/agent/*.md` for machine-readable references
+
+**Key Decisions:**
+- Used wrapper approach: human-readable docs that reference static agent files
+- Avoids content duplication between docs and static agent files
+
+---
+
 ### Session: Public Agent Docs Setup
 
 **Work Completed:**
@@ -14,6 +30,8 @@
   - `mcp-api.md` - API reference
   - `README.md`
 - Docs now accessible at `https://docs.boozang.com/agent/AGENT.md`
+- Updated `CLAUDE.md` with new paths and structure
+- Committed and pushed all changes including chatgpt/ updates (commit 9d17b30)
 
 **Key Decisions:**
 - Mirrored content from main app (not docs-specific version)

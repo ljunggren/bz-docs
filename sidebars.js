@@ -155,7 +155,17 @@ module.exports = {
       collapsed: true,
       items: [
         'coded/introduction',
-        'coded/migration',      
+        'coded/migration',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Agentic Programming',
+      collapsed: true,
+      items: [
+        'agentic-programming/introduction',
+        'agentic-programming/ai-integration',
+        'agentic-programming/mcp-api',
       ],
     },
     {
