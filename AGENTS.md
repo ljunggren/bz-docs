@@ -1,5 +1,11 @@
 # Agent Instructions
 
+## Core Philosophy
+
+**Every web application is a state machine.**
+
+Boozang users model application behavior - modules, operations, interdependencies. Not click sequences. All documentation must reflect this paradigm. See `.agent/context/testing-philosophy.md`.
+
 > **For AI Agents**: Read `.agent/instructions.md` for complete guidelines.
 
 ## Quick Reference

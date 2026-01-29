@@ -1,6 +1,16 @@
 # Boozang Documentation
 
-Documentation site for Boozang test automation platform (Docusaurus).
+## Core Philosophy
+
+**Every web application is a state machine.** This is the foundational insight behind Boozang.
+
+Users don't script click sequences. They **model their application's behavior** - defining modules, operations, and interdependencies. Tests become explorations of state space, not blind click sequences.
+
+All documentation should reflect this paradigm. See `.agent/context/testing-philosophy.md` for details.
+
+---
+
+Documentation site for Boozang (Docusaurus).
 
 ## Quick Commands
 
