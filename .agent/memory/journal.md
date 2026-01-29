@@ -1,6 +1,58 @@
 # Documentation Journal
 
+## 2026-01-28
+
+### Session: Core Philosophy & Positioning Overhaul
+
+**The Breakthrough:**
+Boozang's core philosophy was buried. The foundational insight - "every web application is a state machine" - wasn't front and center. Documentation described features instead of the paradigm.
+
+**Work Completed:**
+- Created `testing-philosophy.md` in `.agent/context/`
+- Updated `CLAUDE.md` and `AGENTS.md` to lead with philosophy
+- Updated `project-context.md` (reframed around state machines)
+- Updated `terminology.md` with foundational state machine concepts
+- Updated `instructions.md` to prioritize philosophy doc
+- Added GitHub push identity preference to `general.md`
+
+**Key Documentation Guidance:**
+- Never describe Boozang as "record and playback"
+- Emphasize modeling over scripting
+- Use state machine language: states, operations, transitions, interdependencies
+- Avoid: "click here, click there", "test steps", "automated clicking"
+
+**Commits Pushed:**
+- 8072e58: Testing philosophy documentation
+- f4ad4cd: State machine paradigm in CLAUDE/AGENTS
+- 3be9cb3: Git identity preference
+
+---
+
 ## 2026-01-25
+ 
+### Session: Agentic Setup Evaluation
+ 
+**Work Completed:**
+- Performed detailed review of the `.agent/` structure and instructions.
+- Created evaluation report [AGENT_SETUP_EVAL.md](file:///Users/matsljunggren/.gemini/antigravity/brain/c27334df-d561-4775-94d6-9ccab566a00d/AGENT_SETUP_EVAL.md) (Rating: 9/10).
+- Provided feedback on modular instructions, session management, and terminology discipline.
+ 
+**Key Decisions:**
+- Formalized the evaluation into an artifact for long-term reference.
+ 
+---
+
+### Session: Cleanup .DS_Store Files
+ 
+**Work Completed:**
+- Added `.DS_Store` to `.gitignore`.
+- Deleted all `.DS_Store` files in the repository.
+- Verified cleanup via `git status`.
+ 
+**Key Decisions:**
+- Permanently ignore OS-specific metadata files to maintain a clean workspace.
+ 
+---
 
 ### Session: Agentic Programming Docs Section
 
