@@ -1,5 +1,9 @@
 # General Instructions
 
+## Git & GitHub
+
+- **Push identity**: Use `mljunggren@gmail.com` for GitHub pushes, not the concord.design email.
+
 ## Tone & Style
 
 - Write in clear, concise language
