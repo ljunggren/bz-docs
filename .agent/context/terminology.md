@@ -2,6 +2,18 @@
 
 Quick reference for consistent language. Full dictionary in `chatgpt/boozang_dictionary.csv`.
 
+## Foundational Concepts
+
+These terms reflect Boozang's core philosophy (see [Testing Philosophy](./testing-philosophy.md)):
+
+| Term | Description |
+|------|-------------|
+| State machine | The mental model - every web app is a state machine |
+| State | A configuration of data/UI in the application |
+| Operation | A transition between states (Create, Edit, Delete, etc.) |
+| Interdependency | How operations in one module affect states in another |
+| Model | The mapped representation of application behavior |
+
 ## Core Terms
 
 | Term | Use | Don't Use |
@@ -49,3 +61,7 @@ Quick reference for consistent language. Full dictionary in `chatgpt/boozang_dic
 | Record and playback | Record and refine |
 | Selenium | (Don't compare unless specifically discussing) |
 | Script | Test or action (unless referring to JavaScript) |
+| Click here, click there | Define operations, map behavior |
+| Test steps | Operations, transitions |
+| Automated clicking | State machine modeling |
+| Write tests | Model application behavior |

@@ -1,12 +1,23 @@
 # Boozang Project Context
 
+> **Important:** Before reading this file, read [Testing Philosophy](./testing-philosophy.md) to understand the foundational ideas behind Boozang.
+
 ## What is Boozang?
 
-Boozang is a **codeless test automation platform** for web applications. Key characteristics:
+Boozang is a **model-based test automation platform** built on a core insight: **every web application is a state machine**.
+
+Rather than scripting click sequences ("click here, click there"), users model their application's behavior:
+- Define modules and their operations
+- Map interdependencies between modules
+- Let Boozang understand the graph of states and transitions
+
+This enables testing that validates **behavior**, not just paths.
+
+### Platform Characteristics
 
 - **Browser-based IDE** - No installation required
 - **Natural language selectors** - Identifies elements without DOM selectors
-- **AI-powered** - Uses AI for element identification and test generation
+- **State machine modeling** - Map operations and interdependencies
 - **Real-time collaboration** - Multiple users can work simultaneously
 
 ## Platform URLs

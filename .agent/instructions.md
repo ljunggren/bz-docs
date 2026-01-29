@@ -12,6 +12,7 @@ Main entry point for AI agents working on Boozang documentation.
 
 ## Context
 
+- [Testing Philosophy](./context/testing-philosophy.md): **Read this first** - Core philosophy behind Boozang
 - [Project Context](./context/project-context.md): Boozang platform overview
 - [Terminology](./context/terminology.md): Key terms and definitions
 
