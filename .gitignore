@@ -1,3 +1,26 @@
-node_modules
-build
+# Agent session files (local only, not shared via git)
+.agent/session/
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Dependencies
+node_modules/
+
+# Build artifacts
+build/
 .docusaurus/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Test artifacts
+coverage/
+playwright-report/
+test-results/

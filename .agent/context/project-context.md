@@ -26,7 +26,7 @@ This enables testing that validates **behavior**, not just paths.
 |-------------|-----|
 | Primary (AI) | https://ai.boozang.com |
 | EU Server | https://eu.boozang.com |
-| Sandbox | https://thelab.boozang.com |
+| Sandbox (legacy) | https://thelab.boozang.com |
 | Documentation | https://docs.boozang.com |
 | **AI Agent Docs** | https://ai.boozang.com/agent/AGENT.md |
 | Old Docs | http://docs-old.boozang.com |
@@ -51,16 +51,24 @@ Company → Project → Version → Module → Test → Action
 
 ### Test Types
 
-- Standard tests
-- API tests
-- Model-based tests
-- Coded tests (JavaScript)
+| Code | Type | Description |
+|------|------|-------------|
+| `cell` | Standard | Standard test case |
+| `unit` | Unit | Component-level test |
+| `int` | Integration | Integration test |
+| `api` | API | Backend API test |
+| `scenario` | Scenario | Model-based / scenario test |
+| `bug` | Bug | Bug reproduction test |
+| `com` | Component | Component test |
+
+Test subtypes: `ctrl` (Control), `operation` (Operation), `validation` (Validation)
 
 ## Related Repositories
 
 | Repo | Purpose |
 |------|---------|
 | `bz` | Main application (server + IDE) |
+| `bz-agent` | CLI tool for AI agent integration (`npx bz-agent init`) |
 | `bz-docs` | This documentation site |
 | `bz-deploy` | Deployment infrastructure |
 | `bz-dist` | Distribution packages |

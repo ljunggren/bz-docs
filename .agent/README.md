@@ -1,14 +1,19 @@
-# Agent Instructions
+# .agent/
 
-This directory contains operational instructions for AI agents working on Boozang documentation.
+AI agent configuration and memory for Boozang Documentation.
+
+## Purpose
+
+This directory provides structured context, rules, and memory for AI coding agents (Claude Code, Cursor, etc.) working on this project.
 
 ## Structure
 
-- `instructions.md` - Main index linking to all instruction files
-- `instructions/` - Modular instruction files
-- `context/` - Project context and domain knowledge
-- `memory/` - Session logs and learnings
+- **instructions/** — Rules and conventions the agent must follow
+- **flows/** — Mermaid decision diagrams for common workflows
+- **context/** — Project overview, domain knowledge, testing philosophy
+- **memory/** — Journal, anti-patterns, worklog (grows over time)
+- **session/** — Cross-session handoff scratchpad (gitignored)
 
-## Usage
+## Entry Point
 
-AI agents should read `instructions.md` first to understand documentation conventions and guidelines.
+Start with [`instructions.md`](./instructions.md) — it links to everything.

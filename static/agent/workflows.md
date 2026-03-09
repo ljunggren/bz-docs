@@ -142,14 +142,14 @@ Reference data using `$` prefix:
 ### Running Tests from Command Line
 
 ```bash
-# Run all tests in a project
-npx boozang run --project=myproject --token=TOKEN
+# Run all tests (project is derived from token)
+npx boozang run --token=TOKEN
 
 # Run specific module
-npx boozang run --project=myproject --module=m1 --token=TOKEN
+npx boozang run --module=m1 --token=TOKEN
 
 # Run with environment
-npx boozang run --project=myproject --env=staging --token=TOKEN
+npx boozang run --env=staging --token=TOKEN
 ```
 
 ### GitHub Actions Example
@@ -164,7 +164,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run Boozang Tests
-        run: npx boozang run --project=${{ secrets.BZ_PROJECT }} --token=${{ secrets.BZ_TOKEN }}
+        run: npx boozang run --token=${{ secrets.BZ_TOKEN }}
 ```
 
 ---

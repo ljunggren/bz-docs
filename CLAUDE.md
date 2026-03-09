@@ -34,8 +34,12 @@ npm run serve   # Serve production build
 
 | Command | Action |
 |---------|--------|
-| `start session` | Read instructions, check journal |
-| `end session` | Summarize work, update journal |
+| `start session` | Read sync file + instructions, check journal, remind context |
+| `end session` | Commit, update sync + journal, log hours, summarize |
+| `push` | Commit to current branch and push to origin |
+| `pull` | Pull latest changes from origin |
+| `journal` | Update work log and instructions |
+| `scout <area>` | Analyze a codebase area and produce a structured report |
 
 ## Detailed Instructions
 
@@ -84,3 +88,16 @@ The `chatgpt/` folder contains scripts to crawl and clean documentation for LLM 
 - `crawler.js` - Crawls the docs site
 - `clean-en.mjs` - Cleans and processes content
 - `pages/` - Output cleaned markdown files
+
+## GitHub
+
+- **Required gh user:** `ljunggren`
+- Before any `git push`, verify the active gh account: `gh auth status 2>&1 | grep 'Active account: true' -B3 | head -1`
+- If the active account is not `ljunggren`, run `gh auth switch --user ljunggren` before pushing.
+
+## Escalation Levels
+
+- **L0 — Autonomous:** Fixing typos, formatting, updating screenshots. Just do it.
+- **L1 — Proceed, tell me:** Editing existing doc pages, improving explanations, updating examples. Do it, but explain what changed.
+- **L2 — Propose first:** Creating new doc sections, restructuring navigation, changing the sidebar. Show the plan first.
+- **L3 — Full stop:** Modifying Docusaurus config, changing deployment settings, altering the ChatGPT content pipeline. Stop and wait for approval.
