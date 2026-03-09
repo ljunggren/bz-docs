@@ -7,7 +7,7 @@
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Boozang',
-  tagline: 'Codeless test automation',
+  tagline: 'Model-based test automation',
   url: 'https://boozang.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -58,11 +58,11 @@ const config = {
             items: [
               {
                 label: 'Start page',
-                to: 'http://docs.boozang.com/docs/overview/why-boozang',
+                to: 'https://docs.boozang.com/docs/overview/why-boozang',
               },
               {
                 label: 'Previous version',
-                to: 'http://docs-old.boozang.com',
+                to: 'https://docs-old.boozang.com',
               },
             ],
           },

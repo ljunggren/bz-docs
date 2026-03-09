@@ -49,20 +49,45 @@ The Model Context Protocol (MCP) API enables AI agents to:
 
 ## Getting Started
 
-1. **Use AI assistants** - Tools like Claude, ChatGPT, or Cursor can help you work with Boozang
-2. **Describe your tests** - Tell the AI what user journey you want to automate
-3. **Review and refine** - The AI generates tests; you validate and adjust
+The fastest way to set up AI integration is with `bz-agent`:
+
+```bash
+npx bz-agent init
+```
+
+This creates a `.bz/` directory in your project with everything an AI assistant needs:
+- Connection configuration and authentication
+- AI-readable documentation (concepts, workflows, best practices)
+- Full MCP API reference (40+ tools)
+
+Once initialized, any AI assistant (Claude, Cursor, ChatGPT) can read the `.bz/AGENT.md` file and start working with your Boozang project.
+
+### Quick Setup
+
+1. **Generate an MCP token** in Boozang: **Settings -> API Tokens**
+2. **Run `npx bz-agent init`** — enter your server URL and token
+3. **Point your AI assistant** to `.bz/AGENT.md`
+4. **Describe your tests** — the AI creates and manages them via the MCP API
+
+### Additional Commands
+
+```bash
+npx bz-agent status     # Test connection and show config
+npx bz-agent snapshot   # Cache project structure locally
+npx bz-agent update     # Re-render docs from latest templates
+npx bz-agent parse <log> # Parse Boozang runner logs for failures
+```
 
 ## Public Agent Documentation
 
-For AI assistants helping you with Boozang, we provide machine-readable documentation:
+For AI assistants helping you with Boozang, we also provide machine-readable documentation served publicly:
 
 - [Agent Entry Point](pathname:///agent/AGENT.md) - Starting point for AI assistants
 - [Core Concepts](pathname:///agent/concepts.md) - Terminology and data model
 - [Workflows](pathname:///agent/workflows.md) - Common test automation patterns
 - [Best Practices](pathname:///agent/best-practices.md) - Recommendations for effective testing
 
-These documents are designed to be consumed by AI systems to provide better assistance.
+These documents are designed to be consumed by AI systems to provide better assistance. The `bz-agent init` command generates project-specific versions of these files.
 
 ## Next Steps
 

@@ -26,14 +26,20 @@ These terms reflect Boozang's core philosophy (see [Testing Philosophy](./testin
 
 ## Action Types
 
-| Term | Description |
-|------|-------------|
-| Click | Click an element |
-| Set | Enter text into a field |
-| Validate | Assert a condition |
-| Script | Execute JavaScript |
-| Call | Invoke another test |
-| Extract | Get data from page |
+Internal numeric codes used in the codebase:
+
+| Code | Type | Description |
+|------|------|-------------|
+| 0 | Validation | Assert a condition |
+| 1 | Trigger | Interact with elements (click, set text, etc.) |
+| 2 | Extract | Get data from page |
+| 3 | Script | Execute JavaScript |
+| 4 | Ref | Call/invoke another test |
+| 5 | Comment | Add a comment/annotation |
+| 6 | Navigate | Navigate to a URL |
+| 7 | Group | Group actions together |
+
+In user-facing documentation, use friendly names: Validate, Click/Set (subtypes of Trigger), Extract, Script, Call (for Ref), Navigate, Group.
 
 ## Testing Terms
 

@@ -12,18 +12,26 @@ The **Model Context Protocol (MCP) API** enables AI agents to programmatically i
 MCP is a standard protocol for AI agents to interact with external tools. Boozang implements MCP to allow AI assistants to:
 
 - Browse and search test projects
-- Create and modify modules and tests
+- Create and modify modules, tests, and actions
+- Manage environments
+- Control the IDE (navigate, run tests, get state)
 - Execute tests and retrieve results
-- Manage test data
 
 ## Authentication
 
 ### Getting an API Token
 
 1. Log into Boozang at https://ai.boozang.com
-2. Navigate to **Settings → API Tokens**
+2. Navigate to **Settings -> API Tokens**
 3. Generate a new token with appropriate permissions
 4. Store securely (tokens cannot be retrieved after creation)
+
+Tokens are prefixed with `bzmcp_` and scoped to a project. Two permission scopes are available:
+
+| Scope | Access |
+|-------|--------|
+| `read` | Read-only tools (getModules, getTests, getActions, getEnvironments, getIDEState, etc.) |
+| `write` | All tools including create, edit, and delete operations |
 
 ### Using the Token
 
@@ -75,56 +83,77 @@ The MCP API uses **JSON-RPC 2.0** over HTTPS.
 
 ## Available Tools
 
-### listModules
+### Module Tools
 
-List all modules in a project/version.
+| Tool | Description |
+|------|-------------|
+| `getModules` | List all modules in a project/version |
+| `createModule` | Create a new module |
+| `editModule` | Update an existing module |
+| `deleteModule` | Delete a module and all its tests |
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| projectId | string | No | Project ID (uses current if omitted) |
-| versionId | string | No | Version ID (uses current if omitted) |
-| includeTests | boolean | No | Include test details (default: false) |
+### Test Tools
 
-### getModule
+| Tool | Description |
+|------|-------------|
+| `getTests` | List tests in a module |
+| `createTest` | Create a new test |
+| `editTest` | Update an existing test |
+| `deleteTest` | Delete a test |
 
-Get details of a specific module.
+### Action Tools
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| moduleId | string | Yes | Module ID or path (e.g., "m1" or "1.2") |
+| Tool | Description |
+|------|-------------|
+| `getActions` | List actions in a test |
+| `createAction` | Create a new action |
+| `editAction` | Update an existing action |
+| `deleteAction` | Delete an action |
 
-### createModule
+### Environment Tools
 
-Create a new module.
+| Tool | Description |
+|------|-------------|
+| `getEnvironments` | List all environments |
+| `createEnvironment` | Create a new environment |
+| `editEnvironment` | Update an environment |
+| `deleteEnvironment` | Delete an environment |
+| `provisionEnvironments` | Provision multiple environments from config |
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| name | string | Yes | Module name |
-| code | string | No | Module code (auto-generated if omitted) |
-| parentPath | string | No | Parent module path for nesting |
-| description | string | No | Module description |
+### IDE Control Tools
 
-### editModule
+These tools control the Boozang IDE browser window. They require the IDE to be open and logged into a project.
 
-Update an existing module.
+| Tool | Description |
+|------|-------------|
+| `getIDEState` | Get current IDE state (project, module, test) |
+| `navigateTo` | Navigate to a specific module or test |
+| `runTest` | Run a test and return results |
+| `stopTest` | Stop a running test |
+| `pauseTest` | Pause a running test |
+| `resumeTest` | Resume a paused test |
+| `getTestStatus` | Get status of a running test |
+| `getTestResults` | Get results of the last test run |
+| `getPageInfo` | Get info about the current page |
+| `getPageElements` | Get elements on the current page |
+| `getScreenshot` | Capture a screenshot |
+| `getConsoleLog` | Get browser console output |
+| `setBreakpoint` | Set a breakpoint on an action |
+| `getBreakpoints` | List current breakpoints |
+| `clearBreakpoints` | Remove all breakpoints |
+| `getAppUrl` | Get the application under test URL |
+| `navigateUrl` | Navigate the AUT to a URL |
+| `refreshPage` | Refresh the AUT page |
+| `waitForPageReady` | Wait for the page to be ready |
+| `getIDEUrl` | Get the IDE URL |
+| `setIDEUrl` | Set the IDE URL |
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| moduleId | string | Yes | Module ID to update |
-| name | string | No | New name |
-| description | string | No | New description |
+### Auth Config Tools
 
-### deleteModule
-
-Delete a module and all its tests.
-
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| moduleId | string | Yes | Module ID to delete |
-
-:::warning
-This permanently deletes the module and all its tests.
-:::
+| Tool | Description |
+|------|-------------|
+| `getAuthConfig` | Get authentication configuration |
+| `configureAuth` | Configure authentication settings |
 
 ## Error Handling
 
@@ -151,17 +180,7 @@ This permanently deletes the module and all its tests.
 | -32601 | Method not found | Check tool name |
 | -32602 | Invalid params | Verify parameters |
 | -32603 | Internal error | Contact support |
-| 401 | Unauthorized | Check token validity |
-| 403 | Forbidden | Check project permissions |
-| 404 | Not found | Verify resource exists |
-
-## Rate Limits
-
-| Tier | Requests/minute | Requests/day |
-|------|-----------------|--------------|
-| Free | 60 | 1,000 |
-| Pro | 300 | 10,000 |
-| Enterprise | Unlimited | Unlimited |
+| -32000 | Auth/execution error | Check token and permissions |
 
 ## Code Examples
 
@@ -190,7 +209,11 @@ def call_mcp_tool(tool_name, arguments, token):
     return response.json()
 
 # List modules
-result = call_mcp_tool("listModules", {"includeTests": True}, "your_token")
+result = call_mcp_tool("getModules", {
+    "projectId": "p123",
+    "versionId": "master",
+    "includeTests": True
+}, "your_token")
 ```
 
 ### JavaScript
@@ -215,11 +238,13 @@ async function callMcpTool(toolName, args, token) {
 
 // Create a module
 const result = await callMcpTool('createModule', {
+  projectId: 'p123',
+  versionId: 'master',
   name: 'New Module',
-  description: 'Created via API'
+  comment: 'Created via API'
 }, 'your_token');
 ```
 
 ## Full API Reference
 
-For the complete API specification including all tools and detailed examples, see the [public agent API documentation](pathname:///agent/mcp-api.md).
+For the complete API specification including detailed parameters, examples, retry policies, and concurrency guidelines, see the [public agent API documentation](pathname:///agent/mcp-api.md).

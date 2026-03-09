@@ -55,6 +55,34 @@ AI can help configure:
 - GitLab CI configurations
 - Docker-based test execution
 
+## Setup with bz-agent
+
+The `bz-agent` CLI tool handles setup and configuration:
+
+```bash
+npx bz-agent init
+```
+
+This creates a `.bz/` directory with:
+- **`config.json`** — Server URL, API endpoint, version
+- **`.env`** — Auth token (gitignored)
+- **`AGENT.md`** — Entry point for AI assistants
+- **`mcp-api.md`** — Full API reference (40+ tools)
+- **`concepts.md`**, **`workflows.md`**, **`best-practices.md`** — AI-readable guides
+
+You can also cache your project structure locally so AI agents don't need to re-fetch it:
+
+```bash
+npx bz-agent snapshot   # Creates .bz/project-map.md and modules-cache.json
+```
+
+And parse Boozang runner logs for test results and failures:
+
+```bash
+npx bz-agent parse worker1.log --pretty
+npx bz-agent parse ./logs/ --build=1866
+```
+
 ## MCP API Integration
 
 The Model Context Protocol (MCP) API enables programmatic AI integration:
@@ -63,12 +91,15 @@ The Model Context Protocol (MCP) API enables programmatic AI integration:
 AI Assistant ←→ MCP API ←→ Boozang Platform
 ```
 
-This allows AI agents to:
+Authentication uses project-scoped tokens (prefixed `bzmcp_`) with two scopes:
+- **`read`** — Browse projects, modules, tests, environments, IDE state
+- **`write`** — All read operations plus create, edit, delete, and IDE control
 
-1. **Read** - Browse projects, modules, and tests
-2. **Create** - Generate new tests and modules
-3. **Update** - Modify existing test structures
-4. **Execute** - Trigger test runs and monitor results
+The API provides 40+ tools across six categories:
+- **Module/Test/Action CRUD** — Full lifecycle management
+- **Environment management** — Create, edit, provision environments
+- **IDE control** — Navigate, run tests, get screenshots, set breakpoints
+- **Auth configuration** — Manage authentication settings
 
 See the [MCP API Reference](./mcp-api.md) for details.
 
@@ -109,15 +140,11 @@ AI accelerates test creation but doesn't replace judgment:
 
 ## Supported AI Assistants
 
-Boozang works with any AI assistant that can:
-
-- Read and understand our [public agent documentation](pathname:///agent/AGENT.md)
-- Make HTTP requests to the MCP API
-- Process JSON responses
+Boozang works with any AI assistant that can read the `.bz/AGENT.md` guide and make HTTP requests to the MCP API. The `bz-agent init` command optionally creates a `CLAUDE.md` pointer file for Claude Code.
 
 Popular options include:
 
-- **Claude** - Anthropic's AI assistant
-- **ChatGPT** - OpenAI's conversational AI
+- **Claude Code** - Anthropic's CLI agent (reads CLAUDE.md automatically)
 - **Cursor** - AI-powered code editor
+- **ChatGPT** - OpenAI's conversational AI
 - **GitHub Copilot** - AI pair programmer
