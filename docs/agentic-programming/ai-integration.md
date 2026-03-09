@@ -5,7 +5,39 @@ title: AI Integration
 
 # AI Integration
 
+:::info For AI assistants reading this page
+The complete machine-readable reference is at **https://docs.boozang.com/agent/AGENT.md** — start there for concepts, workflows, and the full MCP API with parameters.
+:::
+
 Boozang provides multiple ways for AI assistants to help with test automation.
+
+## Setup with bz-agent
+
+The `bz-agent` CLI tool is the recommended way to connect AI assistants to your Boozang project:
+
+```bash
+npx bz-agent init
+```
+
+This creates a `.bz/` directory with:
+- **`AGENT.md`** — Entry point for AI assistants (give them this file)
+- **`config.json`** — Server URL, API endpoint, version
+- **`.env`** — Auth token (gitignored)
+- **`mcp-api.md`** — Full API reference with parameters for all 40+ tools
+- **`concepts.md`**, **`workflows.md`**, **`best-practices.md`** — AI-readable guides
+
+Cache your project structure so AI agents don't need to re-fetch it:
+
+```bash
+npx bz-agent snapshot   # Creates .bz/project-map.md and modules-cache.json
+```
+
+Parse Boozang runner logs for test results and failures:
+
+```bash
+npx bz-agent parse worker1.log --pretty
+npx bz-agent parse ./logs/ --build=1866
+```
 
 ## Conversation-Based Assistance
 
@@ -55,34 +87,6 @@ AI can help configure:
 - GitLab CI configurations
 - Docker-based test execution
 
-## Setup with bz-agent
-
-The `bz-agent` CLI tool handles setup and configuration:
-
-```bash
-npx bz-agent init
-```
-
-This creates a `.bz/` directory with:
-- **`config.json`** — Server URL, API endpoint, version
-- **`.env`** — Auth token (gitignored)
-- **`AGENT.md`** — Entry point for AI assistants
-- **`mcp-api.md`** — Full API reference (40+ tools)
-- **`concepts.md`**, **`workflows.md`**, **`best-practices.md`** — AI-readable guides
-
-You can also cache your project structure locally so AI agents don't need to re-fetch it:
-
-```bash
-npx bz-agent snapshot   # Creates .bz/project-map.md and modules-cache.json
-```
-
-And parse Boozang runner logs for test results and failures:
-
-```bash
-npx bz-agent parse worker1.log --pretty
-npx bz-agent parse ./logs/ --build=1866
-```
-
 ## MCP API Integration
 
 The Model Context Protocol (MCP) API enables programmatic AI integration:
@@ -101,7 +105,7 @@ The API provides 40+ tools across six categories:
 - **IDE control** — Navigate, run tests, get screenshots, set breakpoints
 - **Auth configuration** — Manage authentication settings
 
-See the [MCP API Reference](./mcp-api.md) for details.
+See the [MCP API Reference](./mcp-api.md) for an overview, or the [full specification with parameters](pathname:///agent/mcp-api.md) for complete details.
 
 ## Best Practices for AI-Assisted Testing
 

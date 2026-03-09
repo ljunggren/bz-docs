@@ -5,17 +5,13 @@ title: MCP API Reference
 
 # MCP API Reference
 
+:::tip Full specification with all parameters
+This page is an overview. For the **complete API reference** with parameters, request/response examples, retry policies, and concurrency guidelines, see the **[full MCP API specification](pathname:///agent/mcp-api.md)**.
+
+Or run `npx bz-agent init` to generate it locally in your project.
+:::
+
 The **Model Context Protocol (MCP) API** enables AI agents to programmatically interact with Boozang for automated test management.
-
-## Overview
-
-MCP is a standard protocol for AI agents to interact with external tools. Boozang implements MCP to allow AI assistants to:
-
-- Browse and search test projects
-- Create and modify modules, tests, and actions
-- Manage environments
-- Control the IDE (navigate, run tests, get state)
-- Execute tests and retrieve results
 
 ## Authentication
 
@@ -81,72 +77,66 @@ The MCP API uses **JSON-RPC 2.0** over HTTPS.
 }
 ```
 
-## Available Tools
+## Available Tools (40+)
 
 ### Module Tools
 
-| Tool | Description |
-|------|-------------|
-| `getModules` | List all modules in a project/version |
-| `createModule` | Create a new module |
-| `editModule` | Update an existing module |
-| `deleteModule` | Delete a module and all its tests |
+| Tool | Description | Key Parameters |
+|------|-------------|----------------|
+| `getModules` | List all modules | `projectId`, `versionId`, `includeTests` |
+| `createModule` | Create a new module | `name`, `projectId`, `versionId`, `parentModule`, `comment` |
+| `editModule` | Update a module | `moduleCode`, `projectId`, `versionId`, `name`, `comment` |
+| `deleteModule` | Delete a module and its tests | `moduleCode`, `projectId`, `versionId` |
 
 ### Test Tools
 
-| Tool | Description |
-|------|-------------|
-| `getTests` | List tests in a module |
-| `createTest` | Create a new test |
-| `editTest` | Update an existing test |
-| `deleteTest` | Delete a test |
+| Tool | Description | Key Parameters |
+|------|-------------|----------------|
+| `getTests` | List tests in a module | `projectId`, `versionId`, `moduleCode` |
+| `createTest` | Create a new test | `name`, `projectId`, `versionId`, `moduleCode`, `type` |
+| `editTest` | Update a test | `testCode`, `projectId`, `versionId`, `moduleCode` |
+| `deleteTest` | Delete a test | `testCode`, `projectId`, `versionId`, `moduleCode` |
 
 ### Action Tools
 
-| Tool | Description |
-|------|-------------|
-| `getActions` | List actions in a test |
-| `createAction` | Create a new action |
-| `editAction` | Update an existing action |
-| `deleteAction` | Delete an action |
+| Tool | Description | Key Parameters |
+|------|-------------|----------------|
+| `getActions` | List actions in a test | `projectId`, `versionId`, `moduleCode`, `testCode` |
+| `createAction` | Create a new action | `type`, `projectId`, `versionId`, `moduleCode`, `testCode` |
+| `editAction` | Update an action | `actionIndex`, `projectId`, `versionId`, `moduleCode`, `testCode` |
+| `deleteAction` | Delete an action | `actionIndex`, `projectId`, `versionId`, `moduleCode`, `testCode` |
 
 ### Environment Tools
 
-| Tool | Description |
-|------|-------------|
-| `getEnvironments` | List all environments |
-| `createEnvironment` | Create a new environment |
-| `editEnvironment` | Update an environment |
-| `deleteEnvironment` | Delete an environment |
-| `provisionEnvironments` | Provision multiple environments from config |
+| Tool | Description | Key Parameters |
+|------|-------------|----------------|
+| `getEnvironments` | List all environments | `projectId`, `versionId` |
+| `createEnvironment` | Create an environment | `name`, `projectId`, `versionId`, `items` |
+| `editEnvironment` | Update an environment | `environmentCode`, `projectId`, `versionId` |
+| `deleteEnvironment` | Delete an environment | `environmentCode`, `projectId`, `versionId` |
+| `provisionEnvironments` | Provision multiple environments | `projectId`, `versionId`, `environments` |
 
 ### IDE Control Tools
 
 These tools control the Boozang IDE browser window. They require the IDE to be open and logged into a project.
 
-| Tool | Description |
-|------|-------------|
-| `getIDEState` | Get current IDE state (project, module, test) |
-| `navigateTo` | Navigate to a specific module or test |
-| `runTest` | Run a test and return results |
-| `stopTest` | Stop a running test |
-| `pauseTest` | Pause a running test |
-| `resumeTest` | Resume a paused test |
-| `getTestStatus` | Get status of a running test |
-| `getTestResults` | Get results of the last test run |
-| `getPageInfo` | Get info about the current page |
-| `getPageElements` | Get elements on the current page |
-| `getScreenshot` | Capture a screenshot |
-| `getConsoleLog` | Get browser console output |
-| `setBreakpoint` | Set a breakpoint on an action |
-| `getBreakpoints` | List current breakpoints |
-| `clearBreakpoints` | Remove all breakpoints |
-| `getAppUrl` | Get the application under test URL |
-| `navigateUrl` | Navigate the AUT to a URL |
-| `refreshPage` | Refresh the AUT page |
-| `waitForPageReady` | Wait for the page to be ready |
-| `getIDEUrl` | Get the IDE URL |
-| `setIDEUrl` | Set the IDE URL |
+| Tool | Description | Key Parameters |
+|------|-------------|----------------|
+| `getIDEState` | Get current IDE state | *(none)* |
+| `navigateTo` | Navigate to module/test | `moduleId`, `testId` |
+| `runTest` | Run a test | `moduleId`, `testId` |
+| `stopTest` | Stop a running test | |
+| `pauseTest` / `resumeTest` | Pause/resume test | |
+| `getTestStatus` | Get running test status | |
+| `getTestResults` | Get last test results | |
+| `getPageInfo` | Get current page info | |
+| `getPageElements` | Get page elements | |
+| `getScreenshot` | Capture screenshot | |
+| `getConsoleLog` | Get browser console | |
+| `setBreakpoint` / `getBreakpoints` / `clearBreakpoints` | Manage breakpoints | |
+| `getAppUrl` / `navigateUrl` / `refreshPage` | Control AUT browser | |
+| `waitForPageReady` | Wait for page load | |
+| `getIDEUrl` / `setIDEUrl` | Get/set IDE URL | |
 
 ### Auth Config Tools
 
@@ -155,36 +145,7 @@ These tools control the Boozang IDE browser window. They require the IDE to be o
 | `getAuthConfig` | Get authentication configuration |
 | `configureAuth` | Configure authentication settings |
 
-## Error Handling
-
-### Error Response Format
-
-```json
-{
-  "jsonrpc": "2.0",
-  "id": 1,
-  "error": {
-    "code": -32600,
-    "message": "Invalid Request",
-    "data": "Additional error details"
-  }
-}
-```
-
-### Common Error Codes
-
-| Code | Meaning | Resolution |
-|------|---------|------------|
-| -32700 | Parse error | Check JSON syntax |
-| -32600 | Invalid request | Verify request format |
-| -32601 | Method not found | Check tool name |
-| -32602 | Invalid params | Verify parameters |
-| -32603 | Internal error | Contact support |
-| -32000 | Auth/execution error | Check token and permissions |
-
-## Code Examples
-
-### Python
+## Quick Example
 
 ```python
 import requests
@@ -208,43 +169,31 @@ def call_mcp_tool(tool_name, arguments, token):
     )
     return response.json()
 
-# List modules
+# List all modules with tests
 result = call_mcp_tool("getModules", {
     "projectId": "p123",
     "versionId": "master",
     "includeTests": True
-}, "your_token")
+}, "bzmcp_your_token_here")
 ```
 
-### JavaScript
+## Error Handling
 
-```javascript
-async function callMcpTool(toolName, args, token) {
-  const response = await fetch('https://ai.boozang.com/api/mcp', {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${token}`,
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      jsonrpc: '2.0',
-      id: 1,
-      method: 'tools/call',
-      params: { name: toolName, arguments: args }
-    })
-  });
-  return response.json();
-}
+| Code | Meaning | Resolution |
+|------|---------|------------|
+| -32700 | Parse error | Check JSON syntax |
+| -32600 | Invalid request | Verify request format |
+| -32601 | Method not found | Check tool name |
+| -32602 | Invalid params | Verify parameters |
+| -32603 | Internal error | Contact support |
+| -32000 | Auth/execution error | Check token and permissions |
 
-// Create a module
-const result = await callMcpTool('createModule', {
-  projectId: 'p123',
-  versionId: 'master',
-  name: 'New Module',
-  comment: 'Created via API'
-}, 'your_token');
-```
+## Full Specification
 
-## Full API Reference
+For complete details including:
+- All parameter types and descriptions
+- Request/response examples for every tool
+- Retry policies and exponential backoff
+- Concurrency guidelines
 
-For the complete API specification including detailed parameters, examples, retry policies, and concurrency guidelines, see the [public agent API documentation](pathname:///agent/mcp-api.md).
+See the **[full MCP API specification](pathname:///agent/mcp-api.md)** or run `npx bz-agent init` to generate it locally.
