@@ -33,7 +33,7 @@ That's it. This generates a `.bz/` directory with everything your AI assistant n
    - Under **API Tokens**, enter a token name and select the access level (**Read** or **Write**)
    - Click **Generate** and copy the token
 
-   ![Generating an MCP API token](./images/mcp-token.png)
+   ![Generating an MCP API token](../images/mcp-token.png)
 
 2. **Run `npx bz-agent init`** — enter your server URL and token
 3. **Point your AI assistant** to `.bz/AGENT.md`
