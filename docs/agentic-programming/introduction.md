@@ -11,6 +11,12 @@ title: Introduction to Agentic Programming
 
 **Agentic programming** refers to using AI assistants to help create, manage, and maintain automated tests. Boozang is designed from the ground up to support this paradigm.
 
+## Prerequisites
+
+- **Node.js** (latest LTS version recommended) — download from [nodejs.org](https://nodejs.org/)
+- **npm** (included with Node.js)
+- A **Boozang account** with access to a project
+
 ## Quick Start
 
 ```bash
