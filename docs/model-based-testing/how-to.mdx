@@ -5,26 +5,55 @@ title: How to do model-based testing
 
 import YouTubeEmbed from "@site/src/components/YouTubeEmbed";
 
-We also support model-based testing in Boozang. This allows you to builod a model of the application,
-and Boozang will automatically generate the tests. It's usually harder to get started with model-based testing, but after the user manages to create his first workable model, a user can significantly reduce test maintanence effort,
-and scale up automation coverage faster.
- 
+Model-based testing in Boozang lets you build a virtual representation of your application, and Boozang automatically generates tests from that model. It takes more upfront effort than recording, but once the model is in place you can significantly reduce test maintenance and scale automation coverage faster.
+
 <YouTubeEmbed embedId="bzocfoIlyS4">Model-based testing</YouTubeEmbed>
 
-[00:03](https://www.youtube.com/watch?v=bzocfoIlyS4&t=3) Boozang introduces a concept for scanning applications to build test coverage.
+## Step-by-step guide
 
-[00:19](https://www.youtube.com/watch?v=bzocfoIlyS4&t=19) Building a virtual representation of the application in the AI module
+### 1. Identify the application structure
 
-[00:31](https://www.youtube.com/watch?v=bzocfoIlyS4&t=31) Building a data model for a project management application
+Start by mapping out the key areas of your application — the pages, views, or screens that users interact with. Think of these as **states** in a state machine. For a project management app, this might be:
 
-[00:49](https://www.youtube.com/watch?v=bzocfoIlyS4&t=49) Identify critical elements in your application
+- Dashboard
+- Project list
+- Project detail
+- Create project form
+- Settings
 
-[01:05](https://www.youtube.com/watch?v=bzocfoIlyS4&t=65) The Boozang tool suggests 'create project' as the button, but it should be called 'create new project'.
+### 2. Create the AI module
 
-[01:21](https://www.youtube.com/watch?v=bzocfoIlyS4&t=81) Boozang allows for building tests without manual record and replay
+In Boozang, create a dedicated module for your model. This is where you'll define the states and transitions that represent your application's behavior.
 
-[01:38](https://www.youtube.com/watch?v=bzocfoIlyS4&t=98) Capturing all dependencies inside forms
+### 3. Define states and elements
 
-[01:54](https://www.youtube.com/watch?v=bzocfoIlyS4&t=114) Boozang enables fast and efficient end-to-end test building
+For each state (page/view), identify the critical interactive elements:
 
--------------------
+- **Navigation elements** — links and menus that move between states
+- **Action elements** — buttons that trigger operations (create, delete, edit)
+- **Form elements** — inputs that accept data
+- **Validation elements** — content that confirms an operation succeeded
+
+Use Boozang's element picker to capture these elements. Give them clear, descriptive names — the model is only as good as its labels.
+
+### 4. Define transitions
+
+Transitions describe how users move between states. Each transition connects:
+
+- A **source state** (where the user starts)
+- An **action** (what the user does — click a button, submit a form)
+- A **target state** (where the user ends up)
+
+For example: *Project list* → *Click "Create new project"* → *Create project form*
+
+### 5. Add data dependencies
+
+Forms and actions often require data. Capture these dependencies inside your model so that generated tests include realistic data. Boozang can bind test data to form fields automatically when the data keys match the form labels.
+
+### 6. Generate and run tests
+
+Once the model is complete, Boozang can generate test paths that traverse your application's states. These paths cover different combinations of transitions, giving you broad coverage without manually scripting each scenario.
+
+### 7. Maintain the model
+
+When your application changes, update the model rather than fixing individual tests. Change a state or transition in one place, and all generated tests reflect the update. This is where model-based testing pays off — maintenance effort scales with the model, not with the number of tests.
