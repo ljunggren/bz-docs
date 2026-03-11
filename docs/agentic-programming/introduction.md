@@ -1,6 +1,6 @@
 ---
 id: introduction
-title: Introduction to Agentic Programming
+title: Getting started
 ---
 
 # Agentic Programming with Boozang
