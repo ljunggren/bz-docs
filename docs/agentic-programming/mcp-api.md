@@ -18,9 +18,10 @@ The **Model Context Protocol (MCP) API** enables AI agents to programmatically i
 ### Getting an API Token
 
 1. Log into Boozang at https://ai.boozang.com
-2. Navigate to **Settings -> API Tokens**
-3. Generate a new token with appropriate permissions
-4. Store securely (tokens cannot be retrieved after creation)
+2. Open your project and go to **Edit Project**
+3. Check **Enable MCP API (LLM access)**
+4. Under **API Tokens**, enter a token name and select the access level (**Read** or **Write**)
+5. Click **Generate** and copy the token (tokens cannot be retrieved after creation)
 
 Tokens are prefixed with `bzmcp_` and scoped to a project. Two permission scopes are available:
 

@@ -1,53 +1,63 @@
 ---
 id: github-actions
-title: GitHub actions
+title: GitHub Actions
 ---
 
-Boozang supports integration to GitHub actions. This particular implementation uses the  GabrielBB/xvfb-action@v1 package to enable headless browseer runs. It utilizes Multiple Cucumber HTML Reporter (https://www.npmjs.com/package/multiple-cucumber-html-reporter) to generate HTML Cucumber report dashboards, and publishes the test results as GitHub pages. 
+Boozang supports integration with GitHub Actions using the Docker test runner for headless browser execution.
 
-*Note: This implementation can probably be improved, and we invite you to share any updates with us, either via email or on our [forum](https://boozang.com/forum). *
+*Note: This implementation can be adapted to your needs. We invite you to share any updates with us, either via email or on our [forum](https://boozang.com/forum).*
 
 ###### Implementation steps
 
-1. Add a directory .github in your project root
-2. Create the directory .github/workflows
-3. Add the below code into the file .github/workflows/my-test-flow.yml
-4. Enable GitHub pages for your repo
+1. Add a directory `.github` in your project root
+2. Create the directory `.github/workflows`
+3. Add the below code into the file `.github/workflows/boozang-tests.yml`
+4. Add your Boozang token as a repository secret (`BZ_TOKEN`)
 5. Push the code
-6. The test results will be published on the GitHub pages of your repo
+6. The job will be triggered automatically
 
-###### Sample code
+###### Docker runner approach (recommended)
 
-Below is a sample of code generated. Note that most of these settings will vary depending on your particular project settings and selected test to run.  
-
-```
-name: my-test-flow
+```yaml
+name: Boozang Tests
 on: [push]
+
 jobs:
   run-boozang-tests:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-      - run: npm install -g boozang
-      
-      - name: Run headless test with Boozang
-        uses: GabrielBB/xvfb-action@v1
-        with:
-          working-directory: ./ #optional
-          run: boozang --file="json/report" "http://staging-be.boozang.com/extension?parameter=&token=my-secret-token5e3f275e64f84941a326d4d8&group=&scope=&env=4&key=1&self=0#5e3f275e64f84941a326d4d8/jira61/m72/t10"    
-      
-      - run: npm install multiple-cucumber-html-reporter --save-dev && node reporter.js
-        if: always()
-  
-      - name: Deploy report page
-        if: always()
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+      - uses: actions/checkout@v4
 
+      - name: Run Boozang tests
+        run: |
+          docker run --rm --shm-size=1g \
+            -v "$(pwd):/var/boozang/" \
+            styrman/boozang-playwright \
+            --file="report" \
+            "https://ai.boozang.com/extension?token=${{ secrets.BZ_TOKEN }}#PROJECT_ID/master/MODULE/TEST/run"
+
+      - name: Upload test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: boozang-reports
+          path: "*.json"
 ```
 
+Replace `PROJECT_ID`, `MODULE`, and `TEST` with your project settings, or parameterize them using GitHub Actions variables.
+
+###### Docker runner options
+
+The `styrman/boozang-playwright` image supports additional options:
+
+| Option | Description |
+|--------|-------------|
+| `--file=name` | Report filename (default: "report") |
+| `--screenshot` | Capture screenshot after test |
+| `--video=on` | Enable video recording |
+| `--keepalive` | Keep browser alive after completion |
+| `--loglevel=LEVEL` | Set log level (error/warning/info/debug/log) |
+| `--device=NAME` | Emulate a specific device |
+| `--timeout=SEC` | Command timeout in seconds |
+| `--width=1280` | Browser viewport width |
+| `--height=1024` | Browser viewport height |

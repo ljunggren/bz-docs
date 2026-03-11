@@ -3,8 +3,7 @@ id: gitlab
 title: GitLab
 ---
 
-
-*Note: This implementation can probably be improved, and we invite you to share any updates with us, either via email or on our [forum](https://boozang.com/forum). *
+*Note: This implementation can be adapted to your needs. We invite you to share any updates with us, either via email or on our [forum](https://boozang.com/forum).*
 
 ###### Implementation steps
 
@@ -16,43 +15,41 @@ title: GitLab
 
 ###### Sample code
 
-Below is a sample of code generated. Note that most of these settings will vary depending on your particular project settings and selected test to run.  
+Below is a sample of code generated. Note that most of these settings will vary depending on your particular project settings and selected test to run.
 
-```
+```yaml
 stages:
-  - build
   - test
   - package
-  - deploy
 
 default:
-    image: docker:18.09.7-dind
+    image: docker:latest
     interruptible: true
     timeout: 30m
 
 services:
-    - docker:18.09.7-dind
+    - docker:dind
 
 variables:
   DOCKER_HOST: tcp://docker:2375/
   DOCKER_DRIVER: overlay2
-  BASE: http://staging-be.boozang.com
+  BASE: https://ai.boozang.com
   TOKEN: my-secret-token
   ENV: 4
   PROJECT: 5e3f275e64f84941a326d4d8
-  BRANCH: jira61
+  BRANCH: master
   SELF: 0
   TEST: m72/t10
   WORKERS: 1
 
-slave-workers:
+worker-setup:
   stage: test
   artifacts:
     untracked: true
   script:
     - >
       for i in $(seq 2 ${WORKERS}); do
-        nohup docker run --rm -v "$(pwd):/var/boozang/" --name bzworker${i} styrman/boozang-runner "${BASE}/extension?&token=${TOKEN}${PROJECT}&env=${ENV}&key=${i}&self=${SELF}#${PROJECT}/${BRANCH}" > nohup${i}.out
+        nohup docker run --rm --shm-size=1g -v "$(pwd):/var/boozang/" --name bzworker${i} styrman/boozang-playwright "${BASE}/extension?&token=${TOKEN}${PROJECT}&env=${ENV}&key=${i}&self=${SELF}#${PROJECT}/${BRANCH}" > nohup${i}.out
       done
 
 master-worker:
@@ -60,14 +57,5 @@ master-worker:
   artifacts:
     untracked: true
   script:
-    - docker run --rm -v "$(pwd):/var/boozang/" --name bzworker1 styrman/boozang-runner "${BASE}/extension?token=${TOKEN}${PROJECT}&env=${ENV}&key=1&self=${SELF}#${PROJECT}/${BRANCH}/${TEST}"
-
-report:
-  stage: package
-  dependencies: 
-    - master-worker
-  artifacts:
-    untracked: true
-  script:
-    - docker run --rm -v "$(pwd):/var/boozang/" --name reporter styrman/bz-cucumber
+    - docker run --rm --shm-size=1g -v "$(pwd):/var/boozang/" --name bzworker1 styrman/boozang-playwright "${BASE}/extension?token=${TOKEN}${PROJECT}&env=${ENV}&key=1&self=${SELF}#${PROJECT}/${BRANCH}/${TEST}"
 ```

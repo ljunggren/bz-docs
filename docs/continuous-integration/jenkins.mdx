@@ -3,7 +3,7 @@ id: jenkins
 title: Jenkins
 ---
 
-Jenkins Ci integration is fairly straightforward, and we recommend using the Docker Xvfb runner. That way we avoid setting up Xvfb for headless runs, which can be quite complex. 
+Jenkins CI integration is fairly straightforward, and we recommend using the Docker Xvfb runner. That way we avoid setting up Xvfb for headless runs, which can be quite complex.
 
 Start by copying the boilerplate script and create a free-style job according to the instructions given
 
@@ -11,17 +11,17 @@ Start by copying the boilerplate script and create a free-style job according to
 2. Choose "Freestyle project"
 3. Add build step -> Execute Shell
 4. Copy the below code into the shell
-5.  Add a Post-build action -> Add Cucumber reports
+5. Add a Post-build action -> Add Cucumber reports
 6. The job is ready to run!
 
-Below is a sample of code generated. Note that most of these settings will vary depending on your particular project settings and selected test to run.  
+Below is a sample of code generated. Note that most of these settings will vary depending on your particular project settings and selected test to run.
 
-```
-BASE=http://staging-be.boozang.com
+```bash
+BASE=https://ai.boozang.com
 TOKEN=my-secret-token
 ENV=4
 PROJECT=5e3f275e64f84941a326d4d8
-BRANCH=jira61
+BRANCH=master
 SELF=0
 TEST=m72/t10
 GROUP=
@@ -29,21 +29,21 @@ SCOPE=
 PARAMETER=
 WORKERS=1
 
-echo Running $workers processes for test: $test
+echo Running $WORKERS processes for test: $TEST
 
-echo Setting up slaves
+echo Setting up workers
 counter=1
 while [ $counter -lt ${WORKERS} ]
 do
   ((counter++))
   WORKER_URL="${BASE}/extension?parameter=${PARAMETER}&token=${TOKEN}${PROJECT}group=${GROUP}&scope=${SCOPE}&env=${ENV}&key=${counter}&self=${SELF}#${PROJECT}/${BRANCH}"
-  nohup docker run --rm -v "$(pwd):/var/boozang/" --name=bzworker${counter} styrman/boozang-runner "${WORKER_URL}" > out_${counter}.log &
+  nohup docker run --rm --shm-size=1g -v "$(pwd):/var/boozang/" --name=bzworker${counter} styrman/boozang-playwright "${WORKER_URL}" > out_${counter}.log &
 done
 
-echo All slaves done. Starting master job. 
+echo All workers done. Starting master job.
 
 MASTER_URL="${BASE}/extension?parameter=${PARAMETER}&token=${TOKEN}${PROJECT}&group=${GROUP}&scope=${SCOPE}&env=${ENV}&key=1&self=${SELF}#${PROJECT}/${BRANCH}/${TEST}/run"
-docker run --rm -v "$(pwd):/var/boozang/" --name=bzworker1 styrman/boozang-runner "${MASTER_URL}"
+docker run --rm --shm-size=1g -v "$(pwd):/var/boozang/" --name=bzworker1 styrman/boozang-playwright "${MASTER_URL}"
 ```
 
 It's often a good idea to add parameters to the job, for instance "module_id/test_id" and "number_of_workers".
