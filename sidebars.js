@@ -166,6 +166,7 @@ module.exports = {
         'agentic-programming/introduction',
         'agentic-programming/ai-integration',
         'agentic-programming/mcp-api',
+        'agentic-programming/authoring-actions',
       ],
     },
     {

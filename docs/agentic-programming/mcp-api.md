@@ -107,6 +107,9 @@ The MCP API uses **JSON-RPC 2.0** over HTTPS.
 | `editAction` | Update an action | `actionIndex`, `projectId`, `versionId`, `moduleCode`, `testCode` |
 | `deleteAction` | Delete an action | `actionIndex`, `projectId`, `versionId`, `moduleCode`, `testCode` |
 
+For the end-to-end recipe on building a test with these tools — ground,
+validate, persist, run — see [Authoring Actions over MCP](./authoring-actions.md).
+
 ### Environment Tools
 
 | Tool | Description | Key Parameters |
