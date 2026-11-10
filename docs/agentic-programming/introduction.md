@@ -23,7 +23,7 @@ title: Getting started
 npx bz-agent init
 ```
 
-That's it. This generates a `.bz/` directory with everything your AI assistant needs — configuration, authentication, and complete documentation (concepts, workflows, best practices, and the full MCP API reference with 40+ tools).
+That's it. This generates a `.bz/` directory with everything your AI assistant needs — configuration, authentication, and complete documentation (concepts, workflows, best practices, and the full MCP API reference).
 
 ### Setup Steps
 
@@ -46,7 +46,7 @@ That's it. This generates a `.bz/` directory with everything your AI assistant n
 ├── AGENT.md          # Entry point — give this to your AI
 ├── config.json       # Server URL, API endpoint, version
 ├── .env              # Auth token (gitignored)
-├── mcp-api.md        # Full API reference (40+ tools with parameters)
+├── mcp-api.md        # Full API reference (every tool, with parameters)
 ├── concepts.md       # Data model and terminology
 ├── workflows.md      # Common automation patterns
 └── best-practices.md # Test design recommendations
@@ -83,13 +83,16 @@ Tests follow a clear hierarchy that AI can navigate programmatically:
 Company → Project → Version → Module → Test → Action
 ```
 
-### MCP API (40+ Tools)
+### MCP API
 
 The Model Context Protocol API gives AI agents full control:
 
 - **Module/Test/Action CRUD** — create, read, update, delete at every level
 - **Environment management** — create, provision, configure test environments
 - **IDE control** — navigate, run tests, get screenshots, set breakpoints
+- **Models** — read and edit data-model fields, forms, templates and scenarios
+- **Page inspection and authoring** — resolve selectors, scan the page, click, fill and evaluate in the application
+- **Reports** — read CI run reports and failure screenshots
 - **Auth configuration** — manage authentication settings
 
 ## Two Ways to Get Started
