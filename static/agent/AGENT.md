@@ -18,8 +18,7 @@ Boozang is a **web-based test automation platform** that enables teams to create
 | [concepts.md](./concepts.md) | Core terminology and data model |
 | [workflows.md](./workflows.md) | Common test automation patterns |
 | [best-practices.md](./best-practices.md) | Recommendations for effective testing |
-
-| [mcp-api.md](./mcp-api.md) | Full MCP API reference (40+ tools) |
+| [mcp-api.md](./mcp-api.md) | Full MCP API reference: every tool with its parameters |
 
 ## How to Help Users
 

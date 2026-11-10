@@ -3,6 +3,8 @@ id: mcp-api
 title: MCP API Reference
 ---
 
+import McpTools from './_mcp-tools.md';
+
 # MCP API Reference
 
 :::tip Full specification with all parameters
@@ -23,12 +25,12 @@ The **Model Context Protocol (MCP) API** enables AI agents to programmatically i
 4. Under **API Tokens**, enter a token name and select the access level (**Read** or **Write**)
 5. Click **Generate** and copy the token (tokens cannot be retrieved after creation)
 
-Tokens are prefixed with `bzmcp_` and scoped to a project. Two permission scopes are available:
+Tokens are prefixed with `bzmcp_` and scoped to a project, so `projectId` can be left out of every call. Two permission scopes are available:
 
 | Scope | Access |
 |-------|--------|
-| `read` | Read-only tools (getModules, getTests, getActions, getEnvironments, getIDEState, etc.) |
-| `write` | All tools including create, edit, and delete operations |
+| `read` | The tools marked `read` in the tables below |
+| `write` | All tools, including create, edit and delete operations, running tests and controlling the IDE |
 
 ### Using the Token
 
@@ -78,76 +80,13 @@ The MCP API uses **JSON-RPC 2.0** over HTTPS.
 }
 ```
 
-## Available Tools (40+)
+## Available Tools
 
-### Module Tools
+The IDE control and page tools work through the Boozang IDE, so they need it open in a browser and logged into the project. Most of them also need the application window open; `openAppWindow` opens it.
 
-| Tool | Description | Key Parameters |
-|------|-------------|----------------|
-| `getModules` | List all modules | `projectId`, `versionId`, `includeTests` |
-| `createModule` | Create a new module | `name`, `projectId`, `versionId`, `parentModule`, `comment` |
-| `editModule` | Update a module | `moduleCode`, `projectId`, `versionId`, `name`, `comment` |
-| `deleteModule` | Delete a module and its tests | `moduleCode`, `projectId`, `versionId` |
+For the end-to-end recipe on building a test with these tools (ground, validate, persist, run), see [Authoring Actions over MCP](./authoring-actions.md).
 
-### Test Tools
-
-| Tool | Description | Key Parameters |
-|------|-------------|----------------|
-| `getTests` | List tests in a module | `projectId`, `versionId`, `moduleCode` |
-| `createTest` | Create a new test | `name`, `projectId`, `versionId`, `moduleCode`, `type` |
-| `editTest` | Update a test | `testCode`, `projectId`, `versionId`, `moduleCode` |
-| `deleteTest` | Delete a test | `testCode`, `projectId`, `versionId`, `moduleCode` |
-
-### Action Tools
-
-| Tool | Description | Key Parameters |
-|------|-------------|----------------|
-| `getActions` | List actions in a test | `projectId`, `versionId`, `moduleCode`, `testCode` |
-| `createAction` | Create a new action | `type`, `projectId`, `versionId`, `moduleCode`, `testCode` |
-| `editAction` | Update an action | `actionIndex`, `projectId`, `versionId`, `moduleCode`, `testCode` |
-| `deleteAction` | Delete an action | `actionIndex`, `projectId`, `versionId`, `moduleCode`, `testCode` |
-
-For the end-to-end recipe on building a test with these tools — ground,
-validate, persist, run — see [Authoring Actions over MCP](./authoring-actions.md).
-
-### Environment Tools
-
-| Tool | Description | Key Parameters |
-|------|-------------|----------------|
-| `getEnvironments` | List all environments | `projectId`, `versionId` |
-| `createEnvironment` | Create an environment | `name`, `projectId`, `versionId`, `items` |
-| `editEnvironment` | Update an environment | `environmentCode`, `projectId`, `versionId` |
-| `deleteEnvironment` | Delete an environment | `environmentCode`, `projectId`, `versionId` |
-| `provisionEnvironments` | Provision multiple environments | `projectId`, `versionId`, `environments` |
-
-### IDE Control Tools
-
-These tools control the Boozang IDE browser window. They require the IDE to be open and logged into a project.
-
-| Tool | Description | Key Parameters |
-|------|-------------|----------------|
-| `getIDEState` | Get current IDE state | *(none)* |
-| `navigateTo` | Navigate to module/test | `moduleId`, `testId` |
-| `runTest` | Run a test | `moduleId`, `testId` |
-| `stopTest` | Stop a running test | |
-| `pauseTest` / `resumeTest` | Pause/resume test | |
-| `getTestStatus` | Get running test status | |
-| `getTestResults` | Get last test results | |
-| `getPageInfo` | Get current page info | |
-| `getPageElements` | Get page elements | |
-| `getScreenshot` | Capture screenshot | |
-| `getConsoleLog` | Get browser console | |
-| `setBreakpoint` / `getBreakpoints` / `clearBreakpoints` | Manage breakpoints | |
-| `getAppUrl` / `navigateUrl` / `refreshPage` | Control AUT browser | |
-| `waitForPageReady` | Wait for page load | |
-| `getIDEUrl` / `setIDEUrl` | Get/set IDE URL | |
-
-### Auth Config Tools
-
-| Tool | Description |
-|------|-------------|
-| `getAuthConfig` | Get authentication configuration |
-| `configureAuth` | Configure authentication settings |
+<McpTools />
 
 ## Quick Example
 

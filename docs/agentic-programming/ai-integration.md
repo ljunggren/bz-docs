@@ -23,7 +23,7 @@ This creates a `.bz/` directory with:
 - **`AGENT.md`** — Entry point for AI assistants (give them this file)
 - **`config.json`** — Server URL, API endpoint, version
 - **`.env`** — Auth token (gitignored)
-- **`mcp-api.md`** — Full API reference with parameters for all 40+ tools
+- **`mcp-api.md`** — Full API reference with parameters for every tool
 - **`concepts.md`**, **`workflows.md`**, **`best-practices.md`** — AI-readable guides
 
 Cache your project structure so AI agents don't need to re-fetch it:
@@ -96,13 +96,16 @@ AI Assistant ←→ MCP API ←→ Boozang Platform
 ```
 
 Authentication uses project-scoped tokens (prefixed `bzmcp_`) with two scopes:
-- **`read`** — Browse projects, modules, tests, environments, IDE state
-- **`write`** — All read operations plus create, edit, delete, and IDE control
+- **`read`** — Browse modules, tests, actions, environments, models and settings; read IDE state, stored reports and the current page
+- **`write`** — Everything, including create/edit/delete, running tests and controlling the IDE and the application window
 
-The API provides 40+ tools across six categories:
-- **Module/Test/Action CRUD** — Full lifecycle management
-- **Environment management** — Create, edit, provision environments
-- **IDE control** — Navigate, run tests, get screenshots, set breakpoints
+The API's tools cover:
+- **Modules, tests and actions** — Full lifecycle management, including plugging tests into suites and moving actions
+- **Models** — Read and edit data-model fields, forms, templates and scenarios
+- **Environments and settings** — Create, edit and provision environments; read and change IDE settings
+- **IDE control** — Navigate, run, pause and stop tests, breakpoints, console log, screenshots
+- **Page inspection and authoring** — Resolve selectors, scan the page, read the DOM, click, fill and evaluate in the application
+- **Reports** — Read CI run reports and failure screenshots
 - **Auth configuration** — Manage authentication settings
 
 See the [MCP API Reference](./mcp-api.md) for an overview, or the [full specification with parameters](pathname:///agent/mcp-api.md) for complete details.

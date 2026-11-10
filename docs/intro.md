@@ -11,7 +11,7 @@ Welcome to the **Boozang** documentation. Boozang is a web-based test automation
 - **Browser-based IDE** — no installation required
 - **Natural language element selectors** — tests survive UI changes
 - **Real-time collaboration** — multiple users can work simultaneously
-- **MCP API** — programmatic access for AI agents (40+ tools)
+- **MCP API** — programmatic access for AI agents (60+ tools)
 - **CI/CD integration** — Docker runner for Jenkins, GitHub Actions, GitLab, and more
 
 ## Getting Started
