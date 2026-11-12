@@ -27,25 +27,86 @@ TEST=m72/t10
 GROUP=
 SCOPE=
 PARAMETER=
+FILTER=
+EXEMODE=dynamic
 WORKERS=1
 
-echo Running $WORKERS processes for test: $TEST
+echo "Running $WORKERS worker(s) for test: $TEST"
 
-echo Setting up workers
+worker_url() {
+  local key=$1
+  local suffix=$2
+  echo "${BASE}/extension?token=${TOKEN}&number=${BUILD_NUMBER}&total=${WORKERS}&filter=${FILTER}&group=${GROUP}&scope=${SCOPE}&parameter=${PARAMETER}&env=${ENV}&key=${key}&self=${SELF}#${PROJECT}/${BRANCH}${suffix}"
+}
+
+# Workers 2..N join the run and wait to be given shards
 counter=1
-while [ $counter -lt ${WORKERS} ]
-do
-  ((counter++))
-  WORKER_URL="${BASE}/extension?parameter=${PARAMETER}&token=${TOKEN}${PROJECT}group=${GROUP}&scope=${SCOPE}&env=${ENV}&key=${counter}&self=${SELF}#${PROJECT}/${BRANCH}"
-  nohup docker run --rm --shm-size=1g -v "$(pwd):/var/boozang/" --name=bzworker${counter} styrman/boozang-playwright "${WORKER_URL}" > out_${counter}.log &
+while [ $counter -lt ${WORKERS} ]; do
+  counter=$((counter + 1))
+  nohup docker run --rm --shm-size=1g -v "$(pwd):/var/boozang/" \
+    --name=bzworker${counter} styrman/boozang-playwright \
+    "$(worker_url ${counter} '')" > out_${counter}.log 2>&1 &
 done
 
-echo All workers done. Starting master job.
-
-MASTER_URL="${BASE}/extension?parameter=${PARAMETER}&token=${TOKEN}${PROJECT}&group=${GROUP}&scope=${SCOPE}&env=${ENV}&key=1&self=${SELF}#${PROJECT}/${BRANCH}/${TEST}/run"
-docker run --rm --shm-size=1g -v "$(pwd):/var/boozang/" --name=bzworker1 styrman/boozang-playwright "${MASTER_URL}"
+# Worker 1 is the master. The /run suffix is what actually starts the test.
+docker run --rm --shm-size=1g -v "$(pwd):/var/boozang/" \
+  --name=bzworker1 styrman/boozang-playwright \
+  "$(worker_url 1 "/${TEST}/run?exemode=${EXEMODE}")"
 ```
 
-It's often a good idea to add parameters to the job, for instance "module_id/test_id" and "number_of_workers".
+## Job parameters
+
+Rather than editing the script for every run, expose these as job parameters.
+They map directly onto the runner URL:
+
+| Parameter | Maps to | Example |
+|-----------|---------|---------|
+| `BRANCH` | the version in the hash route | `master` |
+| `TEST` | `module/test` in the hash route | `m72/t10` |
+| `WORKERS` | `total`, and the number of containers started | `4` |
+| `FILTER` | `filter` — only tests carrying the tag run | `modeltests` |
+| `EXEMODE` | `exemode`, appended after `/run` | `dynamic` |
+| `NUMBER` | `number` — the run id shared by all workers | `$BUILD_NUMBER` |
+
+`key` is the worker index and is set by the loop, not by a parameter. Together
+`key` and `total` are what shard the suite across workers.
+
+## Running a single test
+
+Because `TEST` is just the hash path, a single test is the same job with
+`WORKERS=1` and an empty `FILTER`:
+
+```
+#PROJECT/BRANCH/m72/t10/run?exemode=dynamic
+```
+
+This is the quickest way to confirm one fix on real CI infrastructure without
+waiting for a full suite.
+
+## Triggering a build remotely
+
+With an API token from `<jenkins>/me/security`, a parameterised job can be
+started over HTTP:
+
+```bash
+CRUMB=$(curl -s --user "$USER:$TOKEN" "$JENKINS/crumbIssuer/api/json" \
+  | python3 -c 'import sys,json;d=json.load(sys.stdin);print(d["crumbRequestField"]+":"+d["crumb"])')
+
+curl -s -D- -o /dev/null -X POST --user "$USER:$TOKEN" -H "$CRUMB" \
+  "$JENKINS/job/<job%20name>/buildWithParameters" \
+  --data-urlencode BRANCH=master \
+  --data-urlencode TEST=m72/t10 \
+  --data-urlencode WORKERS=1 \
+  --data-urlencode EXEMODE=dynamic
+```
+
+The `Location:` response header points at the queue item; fetching
+`<queue url>/api/json` then gives the build number once it starts.
+
+## Reading results
+
+Only worker 1's output reaches the Jenkins console. The run's full report —
+every worker's results — is reachable from the "Summary report:" URL in that
+log, and failure screenshots are logged as `Screenshot:<id>` references.
 
 In order to see an example setup using an upstream pipeline, check out this post on our user forum: https://boozang.com/forum/topic/jenkins-config-for-distributed-runs/
