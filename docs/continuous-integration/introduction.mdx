@@ -16,6 +16,34 @@ docker run --rm --shm-size=1g \
   "https://ai.boozang.com/extension?token=TOKEN#PROJECT/VERSION/MODULE/TEST/run"
 ```
 
+### The runner URL
+
+The URL is the whole interface: everything before the `#` is a query string the
+extension reads, everything after it is the Boozang route.
+
+| Query parameter | Meaning |
+|-----------------|---------|
+| `token` | Run token. Keep it in a CI secret, not in the job body. |
+| `env` | Environment index to run against. |
+| `key` | Worker index, 1-based. Worker 1 is the master. |
+| `total` | Number of workers. `key` and `total` together shard the suite. |
+| `number` | Run id shared by every worker of one run — typically the CI build number. |
+| `filter` | Tag filter; only tests carrying the tag run. Empty means no filtering. |
+| `group`, `scope`, `parameter` | Optional group, scope and parameter overrides. |
+| `self` | `1` to run against the project's own AUT definition. |
+| `tmpDb=false` | Opt out of the temporary database (on by default). |
+
+| Route (after `#`) | Meaning |
+|-------------------|---------|
+| `PROJECT/VERSION` | Worker route — the container joins the run and waits for shards. |
+| `PROJECT/VERSION/MODULE/TEST/run` | Master route — this is what starts the run. |
+| `…/run?exemode=dynamic` | Execution mode, appended after `/run`. |
+| `…/run?schedule=ID` | Schedule id, appended after `/run` alongside `exemode`. |
+
+`MODULE/TEST` is an ordinary Boozang path, so running one test is the same URL
+with `total=1`, an empty `filter` and that test's path — useful for verifying a
+single fix without running a whole suite.
+
 ### Runner Options
 
 | Option | Description |
