@@ -704,7 +704,7 @@ Update an existing action in a test
 | `testCode` | string | Yes | Test code |
 | `actionKey` | string | Yes | Key of the action to edit |
 | `type` | number | No | New action type |
-| `element` | string,number[] | No | New element selector path array, e.g. ["BZ.TW.document", "H3:equal(Planning)", 0] |
+| `element` | (string \| number)[] | No | New element selector path array, e.g. ["BZ.TW.document", "H3:equal(Planning)", 0] |
 | `event` | object | No | New trigger event. Click: {type:"mouse",action:"click"}. Set value: {type:"change",value:"...",autoBlur:"on"}. |
 | `description` | string | No | New action description |
 | `disable` | boolean | No | Disable/enable the action |
