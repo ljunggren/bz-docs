@@ -687,10 +687,10 @@ Add a new action to a test
 | `type` | number | Yes | Action type: 0=validation, 1=trigger, 2=extract, 3=script, 4=ref, 5=comment, 6=navigate, 7=group |
 | `element` | string[] | No | Element selector path array, e.g. ["BZ.TW.document", ":RowCol(Row\|Col)"] |
 | `event` | object | No | Trigger event (for type 1). Click: {type:"mouse",action:"click"}. Set value: {type:"change",value:"text or {{$parameter.x}}",autoBlur:"on"}. Defaults to click for type 1. |
-| `method` | number | No | Validation/extract method number (for type 0 and 2) |
-| `content` | object | No | Expected content for validation (for type 0) |
-| `compareMark` | string | No | Compare mark for validation, e.g. "==" (for type 0) |
-| `expectation` | string | No | Expected value for validation (for type 0) |
+| `method` | number | No | Validation/extract method (types 0 and 2): 0 = compare what `content` reads against `expectation` (default), 1 = script |
+| `content` | object | No | What a validation (type 0) reads from the element: {type:"innerText"} its visible text, {type:"value"} an input's value, {type:"data"} its data, or a state check that needs no expectation: {type:"exist"}, {type:"unexist"}, {type:"checked"}, {type:"disable"}, {type:"enable"}. Omitted: the step passes as soon as the element is found and no value is checked — set innerText or value to assert a value. Example: {type:0, element:["BZ.TW.document",":RowCol(ORD-006\|Amount)"], content:{type:"innerText"}, compareMark:"==", expectation:"750"} |
+| `compareMark` | string | No | How a validation compares the value `content` read with `expectation` (type 0): "==" (default), "!=", ">", ">=", "<", "<=", "regex", "include", "exclude" |
+| `expectation` | string | No | The value to compare against, for content innerText, value or data (type 0). innerText is the element's visible text with whitespace collapsed, e.g. a table body's rows as "ORD-003 Client-003 375 Overdue ORD-006 ..." |
 | `description` | string | No | Action description |
 | `position` | number | No | Insert position (0-based). Defaults to end of list. |
 | `groupKey` | string | No | Key of parent group to insert into (for nested actions) |
