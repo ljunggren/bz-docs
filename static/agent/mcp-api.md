@@ -78,6 +78,21 @@ Tools that work in the IDE (IDE control, page inspection and authoring) need the
 Call `tools/list` for the same list at runtime.
 
 <!-- generated:mcp-tools (scripts/gen-mcp-api-docs.js in bz) -->
+## Branch Tools
+
+### createVersion
+
+Create a branch (version) in the project by copying an existing one, default master. Use it to get an isolated branch to author and run tests in; switch the IDE to it with setIDEUrl.
+
+**Scope:** `write`
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `code` | string | Yes | New branch code, e.g. "claude-ab". Letters, digits, ".", "_" and "-" |
+| `base` | string | No | Branch to copy (default "master") |
+| `comment` | string | No | Branch description |
+| `projectId` | string | No | Boozang project code (default: the token's project) |
+
 ## Module Tools
 
 ### getModules
@@ -640,6 +655,7 @@ Plug a test into another test or suite as a reference (type-4 ref action)
 | `description` | string | No | Optional description for the ref action. Defaults to the IDE auto-description. |
 | `position` | number | No | Insert position (0-based). Defaults to end of list. |
 | `groupKey` | string | No | Key of a parent group action (type 7) to insert into |
+| `stepKey` | string | No | Gherkin keyword rendered in front of this step: "given" \| "when" \| "then" \| "and" \| "but". Inside a given/when/then group, omit it and it is derived — the group keyword on the first step, "and" on the ones after. |
 
 ## Action Tools
 
@@ -682,7 +698,7 @@ Add a new action to a test
 | `refOfSuccess` | string | No | Exit condition on success. Format: [test-key/][dots/][status/] — test-key: "m1.t2/" runs that test (a type-4 ref; prefer the dedicated plugTest tool, which verifies the test exists); dots: .=continue, ..=break test, ...=skip group, ....=stop all; status: s/f/e/w. E.g. ".../s/" skips the group and reports success. |
 | `refOfFailed` | string | No | Exit condition on failure. Same format as refOfSuccess, including the optional [test-key/] prefix. Default: "../" (break test on failure). Use ".../s/" to skip group and report success. |
 | `refOfError` | string | No | Exit condition on error. Same format as refOfSuccess, including the optional [test-key/] prefix. Default: "../" (break test on error). |
-| `groupType` | string | No | Group kind (type 7 only): "if" \| "else if" \| "else" \| "while" \| "finally". An "if"/"else if" group runs only when its conditionAction passes; following "else" groups are skipped once one is entered. Empty string clears. |
+| `groupType` | string | No | Group kind (type 7 only): "if" \| "else if" \| "else" \| "while" \| "finally" \| "given" \| "when" \| "then". An "if"/"else if" group runs only when its conditionAction passes; following "else" groups are skipped once one is entered. given/when/then are the Gherkin groups a scenario test is built from and take no condition. Empty string clears. |
 | `conditionAction` | object | No | Condition for an "if"/"else if"/"while" group: { element: [...selector], max?: "8000" (wait ms), min?, method?: 0, compareMark?: "==", content?: {type:"exist"}, refOfFailed?/refOfError?: ".../w" }. Defaults to an "exists" check. Pass null to remove. |
 | `loopData` | string | No | Group loop/guard expression (type 7 only), evaluated in the IDE each run with $parameter, $loop, $test in scope. 0 or [] skips the group, N runs it N times, an array once per item. E.g. '$parameter.$label.includes("/planning")?1:0' runs the group only on that page — a branch with no failing step. Empty string clears. |
 | `withEntry` | boolean | No | Press Enter after a change event (IDE "change + enter"). For inputs that only commit on Enter, e.g. inline renames. false clears. |
@@ -714,7 +730,7 @@ Update an existing action in a test
 | `refOfSuccess` | string | No | Exit condition on success. Format: [test-key/][dots/][status/] — test-key: "m1.t2/" runs that test (a type-4 ref; prefer the dedicated plugTest tool). E.g. ".../s/" skips group and reports success. |
 | `refOfFailed` | string | No | Exit condition on failure. Same format as refOfSuccess. Use ".../s/" to skip group and report success instead of failing. |
 | `refOfError` | string | No | Exit condition on error. |
-| `groupType` | string | No | Group kind (type 7 only): "if" \| "else if" \| "else" \| "while" \| "finally". An "if"/"else if" group runs only when its conditionAction passes; following "else" groups are skipped once one is entered. Empty string clears. |
+| `groupType` | string | No | Group kind (type 7 only): "if" \| "else if" \| "else" \| "while" \| "finally" \| "given" \| "when" \| "then". An "if"/"else if" group runs only when its conditionAction passes; following "else" groups are skipped once one is entered. given/when/then are the Gherkin groups a scenario test is built from and take no condition. Empty string clears. |
 | `conditionAction` | object | No | Condition for an "if"/"else if"/"while" group: { element: [...selector], max?: "8000" (wait ms), min?, method?: 0, compareMark?: "==", content?: {type:"exist"}, refOfFailed?/refOfError?: ".../w" }. Defaults to an "exists" check. Pass null to remove. |
 | `loopData` | string | No | Group loop/guard expression (type 7 only), evaluated in the IDE each run with $parameter, $loop, $test in scope. 0 or [] skips the group, N runs it N times, an array once per item. E.g. '$parameter.$label.includes("/planning")?1:0' runs the group only on that page — a branch with no failing step. Empty string clears. |
 | `withEntry` | boolean | No | Press Enter after a change event (IDE "change + enter"). For inputs that only commit on Enter, e.g. inline renames. false clears. |
