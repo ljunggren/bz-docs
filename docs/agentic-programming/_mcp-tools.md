@@ -77,7 +77,7 @@
 | Tool | Scope | Description | Parameters |
 |------|-------|-------------|------------|
 | `getTests` | read | Retrieve list of tests in a module | `projectId`*, `versionId`*, `moduleCode`* |
-| `createTest` | write | Create a new test in a module | `projectId`*, `versionId`*, `moduleCode`*, `name`*, `type`, `subtype`, `description`, `tag`, `comment`, `url` |
+| `createTest` | write | Create a new test in a module. | `projectId`*, `versionId`*, `moduleCode`*, `name`*, `type`, `subtype`, `description`, `tag`, `comment`, `url` |
 | `editTest` | write | Update an existing test's properties | `projectId`*, `versionId`*, `moduleCode`*, `testCode`*, `name`, `type`, `subtype`, `description`, `tag`, `comment` |
 | `deleteTest` | write | Delete a test and its associated document | `projectId`*, `versionId`*, `moduleCode`*, `testCode`* |
 | `plugTest` | write | Plug a test into another test or suite as a reference (type-4 ref action) | `projectId`*, `versionId`*, `targetModuleCode`*, `targetTestCode`*, `refModuleCode`*, `refTestCode`*, `description`, `position`, `groupKey`, `stepKey` |
@@ -87,8 +87,8 @@
 | Tool | Scope | Description | Parameters |
 |------|-------|-------------|------------|
 | `getActions` | read | Retrieve actions for a test | `projectId`*, `versionId`*, `moduleCode`*, `testCode`* |
-| `createAction` | write | Add a new action to a test | `projectId`*, `versionId`*, `moduleCode`*, `testCode`*, `type`*, `element`, `event`, `method`, `content`, `compareMark`, `expectation`, `description`, `position`, `groupKey`, `failedReaction`, `refOfSuccess`, `refOfFailed`, `refOfError`, `groupType`, `conditionAction`, `loopData`, `withEntry`, `withSubmit`, `max`, `min` |
-| `editAction` | write | Update an existing action in a test | `projectId`*, `versionId`*, `moduleCode`*, `testCode`*, `actionKey`*, `type`, `element`, `event`, `description`, `disable`, `preScript`, `resultscript`, `failedReaction`, `refOfSuccess`, `refOfFailed`, `refOfError`, `groupType`, `conditionAction`, `loopData`, `withEntry`, `withSubmit`, `max`, `min` |
+| `createAction` | write | Add a new action to a test | `projectId`*, `versionId`*, `moduleCode`*, `testCode`*, `type`*, `element`, `event`, `method`, `content`, `compareMark`, `expectation`, `description`, `position`, `groupKey`, `failedReaction`, `refOfSuccess`, `refOfFailed`, `refOfError`, `groupType`, `conditionAction`, `loopData`, `withEntry`, `withSubmit`, `loadURL`, `clearCookie`, `clearLocalStorage`, `max`, `min` |
+| `editAction` | write | Update an existing action in a test | `projectId`*, `versionId`*, `moduleCode`*, `testCode`*, `actionKey`*, `type`, `element`, `event`, `description`, `disable`, `preScript`, `resultscript`, `failedReaction`, `refOfSuccess`, `refOfFailed`, `refOfError`, `groupType`, `conditionAction`, `loopData`, `withEntry`, `withSubmit`, `loadURL`, `clearCookie`, `clearLocalStorage`, `max`, `min` |
 | `deleteAction` | write | Remove an action from a test | `projectId`*, `versionId`*, `moduleCode`*, `testCode`*, `actionKey`* |
 | `moveAction` | write | Move an action (with all its fields) into a group, out to the top level, or to another position | `projectId`*, `versionId`*, `moduleCode`*, `testCode`*, `actionKey`*, `groupKey`, `position` |
 

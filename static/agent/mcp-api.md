@@ -589,7 +589,7 @@ Retrieve list of tests in a module
 
 ### createTest
 
-Create a new test in a module
+Create a new test in a module. A test is replayed in the same browser session, so an app that keeps its login in cookies or storage is still signed in on the second run and a login step then finds no form. A test that signs in should open with a conditional sign-out: an "if" group whose conditionAction is the sign-out control, with refOfFailed and refOfError ".../w" so the group is skipped when the app is already signed out.
 
 **Scope:** `write`
 
@@ -703,6 +703,9 @@ Add a new action to a test
 | `loopData` | string | No | Group loop/guard expression (type 7 only), evaluated in the IDE each run with $parameter, $loop, $test in scope. 0 or [] skips the group, N runs it N times, an array once per item. E.g. '$parameter.$label.includes("/planning")?1:0' runs the group only on that page — a branch with no failing step. Empty string clears. |
 | `withEntry` | boolean | No | Press Enter after a change event (IDE "change + enter"). For inputs that only commit on Enter, e.g. inline renames. false clears. |
 | `withSubmit` | boolean | No | Submit the form after a change event (IDE "change + submit"). false clears. |
+| `loadURL` | string | No | Navigate action (type 6) only: the URL to load. Omitted, the action reloads the current page. |
+| `clearCookie` | boolean | No | Navigate action (type 6) only: clear the app's cookies before loading. false clears the flag. |
+| `clearLocalStorage` | boolean | No | Navigate action (type 6) only: clear the app's localStorage and sessionStorage. It runs AFTER the page has loaded, so it does not give this load a clean start — the app has already restored its session by then — it affects the next load. To make a test that signs in replayable, open it with a conditional sign-out group instead (see createTest). false clears the flag. |
 | `max` | number | No | Wait up to this many ms for the action's element (IDE timeout). Use it for a step that runs right after a navigation or re-render, e.g. validating a heading after a click; a headless runner is slower than the IDE. 0 clears. |
 | `min` | number | No | Wait this many ms before running the action. 0 clears. |
 
@@ -735,6 +738,9 @@ Update an existing action in a test
 | `loopData` | string | No | Group loop/guard expression (type 7 only), evaluated in the IDE each run with $parameter, $loop, $test in scope. 0 or [] skips the group, N runs it N times, an array once per item. E.g. '$parameter.$label.includes("/planning")?1:0' runs the group only on that page — a branch with no failing step. Empty string clears. |
 | `withEntry` | boolean | No | Press Enter after a change event (IDE "change + enter"). For inputs that only commit on Enter, e.g. inline renames. false clears. |
 | `withSubmit` | boolean | No | Submit the form after a change event (IDE "change + submit"). false clears. |
+| `loadURL` | string | No | Navigate action (type 6) only: the URL to load. Omitted, the action reloads the current page. |
+| `clearCookie` | boolean | No | Navigate action (type 6) only: clear the app's cookies before loading. false clears the flag. |
+| `clearLocalStorage` | boolean | No | Navigate action (type 6) only: clear the app's localStorage and sessionStorage. It runs AFTER the page has loaded, so it does not give this load a clean start — the app has already restored its session by then — it affects the next load. To make a test that signs in replayable, open it with a conditional sign-out group instead (see createTest). false clears the flag. |
 | `max` | number | No | Wait up to this many ms for the action's element (IDE timeout). Use it for a step that runs right after a navigation or re-render, e.g. validating a heading after a click; a headless runner is slower than the IDE. 0 clears. |
 | `min` | number | No | Wait this many ms before running the action. 0 clears. |
 
